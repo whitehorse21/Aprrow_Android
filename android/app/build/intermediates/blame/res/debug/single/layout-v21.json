@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/layout-v21/notification_action.xml"
+    }
+]

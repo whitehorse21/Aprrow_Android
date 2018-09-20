@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/aprrow_pro.png",
+        "source": "/var/www/html/Aprrow_Android/android/app/src/main/res/mipmap-xxxhdpi/aprrow_pro.png"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
+        "source": "/var/www/html/Aprrow_Android/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/aprrow_dev.png",
+        "source": "/var/www/html/Aprrow_Android/android/app/src/main/res/mipmap-xxxhdpi/aprrow_dev.png"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/icon.png",
+        "source": "/var/www/html/Aprrow_Android/android/app/src/main/res/mipmap-xxxhdpi/icon.png"
+    }
+]

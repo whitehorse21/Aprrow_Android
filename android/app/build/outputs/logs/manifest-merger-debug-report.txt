@@ -1,0 +1,680 @@
+-- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:43:7-51:20
+MERGED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-21:20
+MERGED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-21:20
+MERGED from [:react-native-image-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
+MERGED from [:react-native-image-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:47:13-47
+	android:authorities
+		INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:45:13-60
+	android:exported
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:44:13-67
+manifest
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-133:12
+INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-133:12
+INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-133:12
+INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-133:12
+MERGED from [:react-native-splash-screen] /var/www/html/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:react-native-google-signin] /var/www/html/Aprrow_Android/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-push-notification] /var/www/html/Aprrow_Android/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-share] /var/www/html/Aprrow_Android/node_modules/react-native-share/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-prompt-android] /var/www/html/Aprrow_Android/node_modules/react-native-prompt-android/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-fbsdk] /var/www/html/Aprrow_Android/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:1-30:12
+MERGED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-29:12
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] /home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:21:1-50:12
+MERGED from [:react-native-cookies] /var/www/html/Aprrow_Android/node_modules/react-native-cookies/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-mixpanel] /var/www/html/Aprrow_Android/node_modules/react-native-mixpanel/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-locale] /var/www/html/Aprrow_Android/node_modules/react-native-locale/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:bugsnag-react-native] /var/www/html/Aprrow_Android/node_modules/bugsnag-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-fetch-blob] /var/www/html/Aprrow_Android/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-open-settings] /var/www/html/Aprrow_Android/node_modules/react-native-open-settings/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-iap] /var/www/html/Aprrow_Android/node_modules/react-native-iap/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-contacts] /var/www/html/Aprrow_Android/node_modules/react-native-contacts/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-background-timer] /var/www/html/Aprrow_Android/node_modules/react-native-background-timer/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-to-base64] /var/www/html/Aprrow_Android/node_modules/react-native-image-to-base64/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-aws-cognito-js] /var/www/html/Aprrow_Android/node_modules/react-native-aws-cognito-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-sqlite-storage] /var/www/html/Aprrow_Android/node_modules/react-native-sqlite-storage/src/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-device-info] /var/www/html/Aprrow_Android/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.52.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/50c5d21ddfc649f50f924d2bfb03afec/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/AndroidManifest.xml:17:1-22:12
+MERGED from [com.bugsnag:bugsnag-android:3.7.2] /home/vishal/.gradle/caches/transforms-1/files-1.1/bugsnag-android-3.7.2.aar/8c06127450e5076b3076da51be6c1f7e/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.billingclient:billing:1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/billing-1.0.aar/af8f55225a93d85cbc45bbae0ec95c29/AndroidManifest.xml:2:1-18:12
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/fcda81b18b6142a6ddfed4a629aef58f/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:customtabs:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/customtabs-25.3.1.aar/4cb2ac73a9d9d15c2afa843fa0e2f470/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/3f6d222a754be7856f2a5333ecfd2fc4/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/2fd827067ac2924ae36aa148b5e58321/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:15.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.1.0.aar/46a41e9b7c3f2387f49fb2dda281814a/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/75b28a3d59eafcf4f72b0319e86f6d5b/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/6fd20948bdea0ec65861f9072daa94ab/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/243f356d5b1c8b196579b597b1facf71/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/8513b8c6dcc9ff8a3b19e90130e777a7/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/84f71162703f553cbc61cecce17a5112/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/db42b1fff1d31e8caac0048d47333f03/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/0bf60608847a6bc7741c9c8f3de7d981/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/28197a218470e800edd82397ec561abe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/7a9c95921ffcb8b07e2c86e888eb9b50/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/8873f1966c8f0750bc287c9b380058d8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/ee5900adb29cbd6a07b0c713b22a228f/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/c68cdc35517a8c46ddd78cebe22dd219/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/f60a8cea21da489d2aa591d9bc075f81/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2945e7a31b82846a713a19a09379b106/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /home/vishal/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/76407d2a71dd86711c3d79af1d123cd4/AndroidManifest.xml:1:1-3:12
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/AndroidManifest.xml:2:1-108:12
+MERGED from [id.zelory:compressor:2.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/compressor-2.1.0.aar/78c3edf0551576383df11b49544d026e/AndroidManifest.xml:2:1-12:12
+MERGED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:2:1-41:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/23b00d45315c8b70023b21b44857ac5a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/75c00ec8b931e991684c0dec45130727/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/d3c0aec00570b4a64e0b79f4c807810b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/52e8088e4a54b46384dacd02ab9f73ac/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c366e9f9f66b6305887ba7ea8c1e35d2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/bfde06b3adf02675a960cb3451874d9f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/87db991b5840e98ab2279e3a0165388d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/2174f74a4433e6a35f07bcd86ad8b4ff/AndroidManifest.xml:17:1-22:12
+INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-133:12
+INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-133:12
+INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-133:12
+	package
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:3:5-25
+		INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+		INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+		INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:2:5-51
+	xmlns:android
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+		INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:6:5-68
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:6:22-65
+permission#com.aprrow.permission.C2D_MESSAGE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:7:5-9:47
+	android:protectionLevel
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:9:9-44
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:8:9-57
+uses-permission#com.aprrow.permission.C2D_MESSAGE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:10:5-73
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:10:22-70
+uses-permission#android.permission.VIBRATE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:11:22-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:12:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:13:5-67
+MERGED from [com.bugsnag:bugsnag-android:3.7.2] /home/vishal/.gradle/caches/transforms-1/files-1.1/bugsnag-android-3.7.2.aar/8c06127450e5076b3076da51be6c1f7e/AndroidManifest.xml:12:5-67
+MERGED from [com.bugsnag:bugsnag-android:3.7.2] /home/vishal/.gradle/caches/transforms-1/files-1.1/bugsnag-android-3.7.2.aar/8c06127450e5076b3076da51be6c1f7e/AndroidManifest.xml:12:5-67
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/3f6d222a754be7856f2a5333ecfd2fc4/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/3f6d222a754be7856f2a5333ecfd2fc4/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/75b28a3d59eafcf4f72b0319e86f6d5b/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/75b28a3d59eafcf4f72b0319e86f6d5b/AndroidManifest.xml:24:5-67
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/AndroidManifest.xml:10:5-67
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:13:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:14:22-76
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:15:5-77
+MERGED from [com.facebook.react:react-native:0.52.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/50c5d21ddfc649f50f924d2bfb03afec/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.52.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/50c5d21ddfc649f50f924d2bfb03afec/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:15:22-75
+uses-permission#android.permission.CAMERA
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:16:5-65
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:16:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:17:5-80
+MERGED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
+MERGED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:17:22-78
+uses-permission#android.permission.BLUETOOTH
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:18:5-67
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:18:22-65
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:19:5-74
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:19:22-72
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:20:5-79
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:20:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:21:5-81
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:21:22-78
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:22:5-72
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:22:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:23:5-73
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:23:22-70
+uses-permission#android.permission.READ_PROFILE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:24:5-71
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:24:22-68
+uses-permission#android.permission.PACKAGE_USAGE_STATS
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:26:5-28:46
+	tools:ignore
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:28:9-44
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:27:9-62
+uses-sdk
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:30:5-32:41
+INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:30:5-32:41
+INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:30:5-32:41
+MERGED from [:react-native-splash-screen] /var/www/html/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] /var/www/html/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] /var/www/html/Aprrow_Android/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] /var/www/html/Aprrow_Android/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] /var/www/html/Aprrow_Android/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] /var/www/html/Aprrow_Android/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-share] /var/www/html/Aprrow_Android/node_modules/react-native-share/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-share] /var/www/html/Aprrow_Android/node_modules/react-native-share/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-prompt-android] /var/www/html/Aprrow_Android/node_modules/react-native-prompt-android/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-prompt-android] /var/www/html/Aprrow_Android/node_modules/react-native-prompt-android/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fbsdk] /var/www/html/Aprrow_Android/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-fbsdk] /var/www/html/Aprrow_Android/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] /home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] /home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-cookies] /var/www/html/Aprrow_Android/node_modules/react-native-cookies/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-cookies] /var/www/html/Aprrow_Android/node_modules/react-native-cookies/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-mixpanel] /var/www/html/Aprrow_Android/node_modules/react-native-mixpanel/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-mixpanel] /var/www/html/Aprrow_Android/node_modules/react-native-mixpanel/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-locale] /var/www/html/Aprrow_Android/node_modules/react-native-locale/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-locale] /var/www/html/Aprrow_Android/node_modules/react-native-locale/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:bugsnag-react-native] /var/www/html/Aprrow_Android/node_modules/bugsnag-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:bugsnag-react-native] /var/www/html/Aprrow_Android/node_modules/bugsnag-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] /var/www/html/Aprrow_Android/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] /var/www/html/Aprrow_Android/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-open-settings] /var/www/html/Aprrow_Android/node_modules/react-native-open-settings/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-open-settings] /var/www/html/Aprrow_Android/node_modules/react-native-open-settings/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-iap] /var/www/html/Aprrow_Android/node_modules/react-native-iap/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-iap] /var/www/html/Aprrow_Android/node_modules/react-native-iap/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-contacts] /var/www/html/Aprrow_Android/node_modules/react-native-contacts/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-contacts] /var/www/html/Aprrow_Android/node_modules/react-native-contacts/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-background-timer] /var/www/html/Aprrow_Android/node_modules/react-native-background-timer/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-background-timer] /var/www/html/Aprrow_Android/node_modules/react-native-background-timer/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-to-base64] /var/www/html/Aprrow_Android/node_modules/react-native-image-to-base64/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-to-base64] /var/www/html/Aprrow_Android/node_modules/react-native-image-to-base64/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-aws-cognito-js] /var/www/html/Aprrow_Android/node_modules/react-native-aws-cognito-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-aws-cognito-js] /var/www/html/Aprrow_Android/node_modules/react-native-aws-cognito-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-sqlite-storage] /var/www/html/Aprrow_Android/node_modules/react-native-sqlite-storage/src/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-sqlite-storage] /var/www/html/Aprrow_Android/node_modules/react-native-sqlite-storage/src/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /var/www/html/Aprrow_Android/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /var/www/html/Aprrow_Android/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.52.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/50c5d21ddfc649f50f924d2bfb03afec/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.52.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/50c5d21ddfc649f50f924d2bfb03afec/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/AndroidManifest.xml:20:5-44
+MERGED from [com.bugsnag:bugsnag-android:3.7.2] /home/vishal/.gradle/caches/transforms-1/files-1.1/bugsnag-android-3.7.2.aar/8c06127450e5076b3076da51be6c1f7e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.bugsnag:bugsnag-android:3.7.2] /home/vishal/.gradle/caches/transforms-1/files-1.1/bugsnag-android-3.7.2.aar/8c06127450e5076b3076da51be6c1f7e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.billingclient:billing:1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/billing-1.0.aar/af8f55225a93d85cbc45bbae0ec95c29/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.billingclient:billing:1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/billing-1.0.aar/af8f55225a93d85cbc45bbae0ec95c29/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/fcda81b18b6142a6ddfed4a629aef58f/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/fcda81b18b6142a6ddfed4a629aef58f/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:customtabs:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/customtabs-25.3.1.aar/4cb2ac73a9d9d15c2afa843fa0e2f470/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/customtabs-25.3.1.aar/4cb2ac73a9d9d15c2afa843fa0e2f470/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/3f6d222a754be7856f2a5333ecfd2fc4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/3f6d222a754be7856f2a5333ecfd2fc4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/2fd827067ac2924ae36aa148b5e58321/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/2fd827067ac2924ae36aa148b5e58321/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:15.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.1.0.aar/46a41e9b7c3f2387f49fb2dda281814a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:15.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.1.0.aar/46a41e9b7c3f2387f49fb2dda281814a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/75b28a3d59eafcf4f72b0319e86f6d5b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/75b28a3d59eafcf4f72b0319e86f6d5b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/6fd20948bdea0ec65861f9072daa94ab/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/6fd20948bdea0ec65861f9072daa94ab/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/243f356d5b1c8b196579b597b1facf71/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/243f356d5b1c8b196579b597b1facf71/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/8513b8c6dcc9ff8a3b19e90130e777a7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/8513b8c6dcc9ff8a3b19e90130e777a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/84f71162703f553cbc61cecce17a5112/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/84f71162703f553cbc61cecce17a5112/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/db42b1fff1d31e8caac0048d47333f03/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/db42b1fff1d31e8caac0048d47333f03/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/0bf60608847a6bc7741c9c8f3de7d981/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/0bf60608847a6bc7741c9c8f3de7d981/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/28197a218470e800edd82397ec561abe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/28197a218470e800edd82397ec561abe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/7a9c95921ffcb8b07e2c86e888eb9b50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/7a9c95921ffcb8b07e2c86e888eb9b50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/8873f1966c8f0750bc287c9b380058d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/8873f1966c8f0750bc287c9b380058d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/ee5900adb29cbd6a07b0c713b22a228f/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/ee5900adb29cbd6a07b0c713b22a228f/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/c68cdc35517a8c46ddd78cebe22dd219/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/c68cdc35517a8c46ddd78cebe22dd219/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/f60a8cea21da489d2aa591d9bc075f81/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/f60a8cea21da489d2aa591d9bc075f81/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2945e7a31b82846a713a19a09379b106/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2945e7a31b82846a713a19a09379b106/AndroidManifest.xml:2:3-70
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/AndroidManifest.xml:5:5-7:41
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/AndroidManifest.xml:5:5-7:41
+MERGED from [id.zelory:compressor:2.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/compressor-2.1.0.aar/78c3edf0551576383df11b49544d026e/AndroidManifest.xml:8:5-10:41
+MERGED from [id.zelory:compressor:2.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/compressor-2.1.0.aar/78c3edf0551576383df11b49544d026e/AndroidManifest.xml:8:5-10:41
+MERGED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/23b00d45315c8b70023b21b44857ac5a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/23b00d45315c8b70023b21b44857ac5a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/75c00ec8b931e991684c0dec45130727/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/75c00ec8b931e991684c0dec45130727/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/d3c0aec00570b4a64e0b79f4c807810b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/d3c0aec00570b4a64e0b79f4c807810b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/52e8088e4a54b46384dacd02ab9f73ac/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/52e8088e4a54b46384dacd02ab9f73ac/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c366e9f9f66b6305887ba7ea8c1e35d2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c366e9f9f66b6305887ba7ea8c1e35d2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/bfde06b3adf02675a960cb3451874d9f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/bfde06b3adf02675a960cb3451874d9f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/87db991b5840e98ab2279e3a0165388d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/87db991b5840e98ab2279e3a0165388d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/2174f74a4433e6a35f07bcd86ad8b4ff/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/2174f74a4433e6a35f07bcd86ad8b4ff/AndroidManifest.xml:20:5-44
+INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:30:5-32:41
+INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:30:5-32:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/84f71162703f553cbc61cecce17a5112/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:32:9-38
+		INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+		INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:31:9-35
+		INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+		INJECTED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+application
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:35:5-131:19
+MERGED from [:react-native-splash-screen] /var/www/html/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:react-native-splash-screen] /var/www/html/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:react-native-fbsdk] /var/www/html/Aprrow_Android/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:5-20
+MERGED from [:react-native-fbsdk] /var/www/html/Aprrow_Android/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:5-20
+MERGED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-27:19
+MERGED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-27:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:28:5-48:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:28:5-48:19
+MERGED from [:react-native-fetch-blob] /var/www/html/Aprrow_Android/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] /var/www/html/Aprrow_Android/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-image-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.52.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/50c5d21ddfc649f50f924d2bfb03afec/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.52.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/50c5d21ddfc649f50f924d2bfb03afec/AndroidManifest.xml:13:5-20
+MERGED from [com.android.billingclient:billing:1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/billing-1.0.aar/af8f55225a93d85cbc45bbae0ec95c29/AndroidManifest.xml:11:5-16:19
+MERGED from [com.android.billingclient:billing:1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/billing-1.0.aar/af8f55225a93d85cbc45bbae0ec95c29/AndroidManifest.xml:11:5-16:19
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/fcda81b18b6142a6ddfed4a629aef58f/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/fcda81b18b6142a6ddfed4a629aef58f/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:customtabs:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/customtabs-25.3.1.aar/4cb2ac73a9d9d15c2afa843fa0e2f470/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:customtabs:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/customtabs-25.3.1.aar/4cb2ac73a9d9d15c2afa843fa0e2f470/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/3f6d222a754be7856f2a5333ecfd2fc4/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/3f6d222a754be7856f2a5333ecfd2fc4/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/75b28a3d59eafcf4f72b0319e86f6d5b/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/75b28a3d59eafcf4f72b0319e86f6d5b/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/6fd20948bdea0ec65861f9072daa94ab/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/6fd20948bdea0ec65861f9072daa94ab/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/243f356d5b1c8b196579b597b1facf71/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/243f356d5b1c8b196579b597b1facf71/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/8513b8c6dcc9ff8a3b19e90130e777a7/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/8513b8c6dcc9ff8a3b19e90130e777a7/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/84f71162703f553cbc61cecce17a5112/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/84f71162703f553cbc61cecce17a5112/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/AndroidManifest.xml:25:5-29:19
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2945e7a31b82846a713a19a09379b106/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2945e7a31b82846a713a19a09379b106/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /home/vishal/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/76407d2a71dd86711c3d79af1d123cd4/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /home/vishal/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/76407d2a71dd86711c3d79af1d123cd4/AndroidManifest.xml:2:3-17
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/AndroidManifest.xml:36:5-106:19
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/AndroidManifest.xml:36:5-106:19
+	android:supportsRtl
+		ADDED from [:react-native-splash-screen] /var/www/html/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:38:7-39
+	android:icon
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:39:7-41
+	android:allowBackup
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:37:7-33
+	android:theme
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:40:7-38
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:36:7-48
+receiver#com.google.android.gms.gcm.GcmReceiver
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:53:13-61:20
+	android:exported
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:55:13-36
+	android:permission
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:56:13-73
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:54:13-66
+intent-filter#com.aprrow+com.google.android.c2dm.intent.RECEIVE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:57:13-60:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:58:17-81
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:58:25-78
+category#com.aprrow
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:59:17-55
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:59:27-52
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:63:9-110
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:63:19-107
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:64:9-68:20
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:64:19-115
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:65:13-67:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:66:17-79
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:66:25-76
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:69:9-118
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:69:18-116
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:70:9-76:19
+	android:exported
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:72:13-37
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:71:13-107
+intent-filter#com.google.android.c2dm.intent.RECEIVE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:73:13-75:29
+meta-data#com.bugsnag.android.API_KEY
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:77:7-78:59
+	android:value
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:78:9-57
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:77:18-60
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:81:7-105
+	android:value
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:81:64-103
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:81:18-63
+activity#com.aprrow.SplashActivity
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:82:7-88:20
+	android:label
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:86:13-45
+	android:launchMode
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:85:13-44
+	android:theme
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:84:13-47
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:83:13-43
+activity#com.aprrow.MainActivity
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:89:7-110:18
+	android:screenOrientation
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:93:9-45
+	android:label
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:91:9-41
+	android:launchMode
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:94:9-40
+	android:windowSoftInputMode
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:95:9-51
+	android:exported
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:96:9-32
+	android:configChanges
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:92:9-79
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:90:9-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:98:13-101:29
+action#android.intent.action.MAIN
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:99:17-69
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:99:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:100:17-77
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:100:27-74
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:102:11-108:27
+	android:label
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:102:26-58
+action#android.intent.action.VIEW
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:103:15-66
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:103:23-64
+category#android.intent.category.DEFAULT
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:104:15-73
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:104:25-71
+category#android.intent.category.BROWSABLE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:105:15-75
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:105:25-73
+data
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:106:15-76
+	android:host
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:106:21-50
+	android:scheme
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:106:51-73
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:111:7-84
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:111:17-81
+receiver#com.aprrow.widget.homescreewidget
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:112:9-120:20
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:112:19-67
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:113:13-115:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:114:17-84
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:114:25-81
+meta-data#android.appwidget.provider
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:117:13-119:64
+	android:resource
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:119:17-61
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:118:17-58
+service#com.aprrow.widget.homescreenwidgetservice
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:121:9-123:71
+	android:permission
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:123:13-69
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:122:13-69
+activity#com.aprrow.widget.homescreewidgetConfigureActivity
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:125:9-129:20
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:125:19-84
+intent-filter#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:126:13-128:29
+action#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:127:17-87
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:127:25-84
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:48:13-50:58
+MERGED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:13-20:58
+MERGED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:13-20:58
+MERGED from [:react-native-image-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
+MERGED from [:react-native-image-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
+	android:resource
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:50:17-55
+	android:name
+		ADDED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:49:17-67
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:9-26:72
+	android:screenOrientation
+		ADDED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:13-49
+	android:theme
+		ADDED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:26:13-69
+	android:name
+		ADDED from [:react-native-image-crop-picker] /var/www/html/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:13-60
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:29:9-32:66
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:33:19-68
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:44:9-47:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:46:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/AndroidManifest.xml:45:13-70
+uses-permission#com.android.vending.BILLING
+ADDED from [com.android.billingclient:billing:1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/billing-1.0.aar/af8f55225a93d85cbc45bbae0ec95c29/AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from [com.android.billingclient:billing:1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/billing-1.0.aar/af8f55225a93d85cbc45bbae0ec95c29/AndroidManifest.xml:9:22-64
+activity#com.android.billingclient.api.ProxyBillingActivity
+ADDED from [com.android.billingclient:billing:1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/billing-1.0.aar/af8f55225a93d85cbc45bbae0ec95c29/AndroidManifest.xml:12:9-15:75
+	android:configChanges
+		ADDED from [com.android.billingclient:billing:1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/billing-1.0.aar/af8f55225a93d85cbc45bbae0ec95c29/AndroidManifest.xml:14:13-96
+	android:theme
+		ADDED from [com.android.billingclient:billing:1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/billing-1.0.aar/af8f55225a93d85cbc45bbae0ec95c29/AndroidManifest.xml:15:13-72
+	android:name
+		ADDED from [com.android.billingclient:billing:1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/billing-1.0.aar/af8f55225a93d85cbc45bbae0ec95c29/AndroidManifest.xml:13:13-78
+meta-data#android.support.VERSION
+ADDED from [com.android.support:cardview-v7:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/fcda81b18b6142a6ddfed4a629aef58f/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:customtabs:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/customtabs-25.3.1.aar/4cb2ac73a9d9d15c2afa843fa0e2f470/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:customtabs:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/customtabs-25.3.1.aar/4cb2ac73a9d9d15c2afa843fa0e2f470/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:cardview-v7:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/fcda81b18b6142a6ddfed4a629aef58f/AndroidManifest.xml:24:9-31
+	android:name
+		ADDED from [com.android.support:cardview-v7:25.3.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/fcda81b18b6142a6ddfed4a629aef58f/AndroidManifest.xml:23:9-47
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/07f6d83e4be622fe4e4f8fc63392e246/AndroidManifest.xml:34:13-89
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/3f6d222a754be7856f2a5333ecfd2fc4/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/75b28a3d59eafcf4f72b0319e86f6d5b/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/75b28a3d59eafcf4f72b0319e86f6d5b/AndroidManifest.xml:23:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/3f6d222a754be7856f2a5333ecfd2fc4/AndroidManifest.xml:23:22-79
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/8513b8c6dcc9ff8a3b19e90130e777a7/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/8513b8c6dcc9ff8a3b19e90130e777a7/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/8513b8c6dcc9ff8a3b19e90130e777a7/AndroidManifest.xml:24:13-58
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /var/www/html/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-133:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /home/vishal/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/c6149073e308c1f3c54f023f60daa2ea/AndroidManifest.xml:39:22-90

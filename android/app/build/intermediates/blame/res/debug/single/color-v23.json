@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/var/www/html/Aprrow_Android/android/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    }
+]

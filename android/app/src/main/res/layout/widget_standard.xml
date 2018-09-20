@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/widgetbackground"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/widgetbgimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@null" />
+
+    <LinearLayout
+        android:id="@+id/widgetheader"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#0000FF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/sharpIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left"
+            android:contentDescription="@null"
+            android:layout_marginLeft="2dp"
+
+            android:src="@drawable/iconsharp_widget" />
+
+        <TextView
+
+            android:id="@+id/widgetTitle"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="new widget"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/nav_Icon"
+            android:visibility="gone"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="right"
+            android:contentDescription="@null"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/icon_fullscreen_white" />
+
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/widgetGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/widgetheader"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:horizontalSpacing="150dp"
+        android:numColumns="2"
+        android:verticalSpacing="35dp"
+        android:visibility="visible" />
+
+
+    <GridView
+        android:visibility="gone"
+        android:id="@+id/widgetGrid_normal"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/widgetheader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:gravity="center"
+        android:verticalSpacing="35dp"
+        android:layout_marginEnd="8dp"/>
+
+</RelativeLayout>

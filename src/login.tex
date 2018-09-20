@@ -1,0 +1,2210 @@
+import React, { Component } from 'react';
+import prompt from 'react-native-prompt-android';
+//import Loader from './utils/Loader';
+import LoaderNew from './utils/LoaderNew';
+import Slider from "react-native-slider";
+
+import { CognitoUserPool, CognitoUserAttribute, CognitoUser, AuthenticationDetails } from 'react-native-aws-cognito-js';
+import {
+  Config,
+  CognitoIdentityCredentials
+} from 'aws-sdk/dist/aws-sdk-react-native';
+import { Dialog } from 'react-native-simple-dialogs';
+import PopupDialog from 'react-native-popup-dialog';
+import FBSDK, {
+  LoginManager,
+  LoginButton,
+  AccessToken,
+  GraphRequest,
+  GraphRequestManager
+} from "react-native-fbsdk";
+import commons from './commons';
+import device_style from './styles/device.style';
+
+import {
+  AppRegistry,
+  Text,
+  TextInput,
+  View,
+  Image,
+  Button,
+  ScrollView,
+  StyleSheet,
+  TouchableOpacity,
+  ImageBackground,
+  KeyboardAvoidingView,
+  ToastAndroid,
+  BackHandler,
+  AsyncStorage,
+  Dimensions
+} from 'react-native';
+import SideMenu from 'react-native-side-menu';
+import { NavigationActions } from 'react-navigation';
+import databasehelper from './utils/databasehelper.js';
+import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
+
+var aws_data11 = require("./config/AWSConfig.json");
+var Mixpanel = require('react-native-mixpanel');
+
+const awsCognitoSettings = {
+  UserPoolId:aws_data11.UserPoolId,
+  ClientId: aws_data11.ClientId
+ // UserPoolId: 'us-west-2_wf8naaz4L',
+ // ClientId: '274mf2e9pblfadhb1ssfccg8ba'
+};
+
+var AWS = require("aws-sdk");
+AWS.config.update({ region:""+aws_data11.region});
+var flogin = 0;
+
+export default class Login extends Component {
+
+  static navigationOptions = {
+    header: () => null
+  }
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      username: '',
+      Password: '',
+      Email_warningborder: "grey",
+      Email_warning: "none",
+
+      Password_warning: "none",
+      Password_warningborder: "grey",
+      password_help: "Enter verification code to reset your password",
+      password_help_email: "Enter your email address. you will receive a verification code to reset your password",
+      buttonText: "Retrieve Password",
+      loading: false,
+      eula_id: "",
+      eula_text: "",
+      user: "",
+      forgetPass: false,
+
+      Email: "",
+      Email_warningborder: "grey",
+      Email_warning: "none",
+
+      CurrentPassword: "",
+      CurrentPassword_warningborder: "grey",
+      CurrentPassword_warning: "none",
+
+      Password: "",
+      Password_warningborder: "grey",
+      password_color_charlimit: "grey",
+      password_color_uppercase: "#004d99",
+      password_color_lowercase: "#004d99",
+      password_color_number: "#004d99",
+      password_color_Specialcharachters: "#004d99",
+
+      password_char_limitwarning: "Use at least 6 characters.",
+      password_uppercase_warning: "- uppercase",
+      password_lowercase_warning: "- lowercase",
+      password_number_warning: "- Number",
+      password_Specialcharachters_warning: "- special characters",
+
+      ConfirmPassword: "",
+      ConfirmPassword_warningborder: "grey",
+      ConfirmPassword_warning: "none",
+      cognitouserdata: '',
+      dialogWidget_delete: false,
+      verificationcode: '',
+      changePwdFail: false,
+      headColor: "#006BBC",
+      bodyColor: "#bcb7b7",
+      pwdImage:true,
+      pwdHelpMsg:false
+
+    };
+    this.downloadimages = this.downloadimages.bind(this);
+
+    this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
+
+  }
+
+  async componentWillUnmount() {
+    BackHandler.removeEventListener('hardwareBackPress', this.handleBackButtonClick);
+  }
+  async handleBackButtonClick() {
+    BackHandler.exitApp();
+    return false;
+  }
+  async componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
+    this._setupGoogleSignin();
+  }
+
+  async facebookLogin() { //this.setState({loading:true});
+    var image = [];
+    
+
+    const { navigate } = this.props.navigation;
+    var _this=this;
+    await LoginManager.logInWithReadPermissions(['public_profile']).then(await
+      function (result) {
+        if (result.isCancelled) {
+          ToastAndroid.show('Login was cancelled', 3000);
+        } else {
+          _this.refs.loaderTest.show();
+          //this.setState({loading:false});
+          //const{navigate}=this.props.navigation;
+          // console.log("result==>"+JSON.stringify(result))
+          var facebookmap=aws_data11.facebookmap;
+          AccessToken.getCurrentAccessToken().then(async data => {
+            AWS.config.region =aws_data11.region; // "us-west-2";
+            AWS.config.credentials = new AWS.CognitoIdentityCredentials(
+              {
+                IdentityPoolId:aws_data11.IdentityPoolId,//  "us-west-2:2ab8f260-0d64-4bed-9dcc-f9566abacd25",
+                Logins: {
+                  'graph.facebook.com':data.accessToken.toString()
+                  //"graph.facebook.com": data.accessToken.toString()
+                }
+                //  alert(data.accessToken.toString()) // I am able to see the access token so I know i am getting it succesfully
+              });
+
+
+            AWS.config.credentials.get(async function () {
+              var id = AWS.config.credentials.accessToken;
+              
+             //  console.log("Cognito Identity Id:"+JSON.stringify(AWS.config.credentials));
+              // Access AWS resources here.
+              // console.log("user==>"+data.userID.toString());
+              // console.log("data==>"+JSON.stringify(data));
+              var accessKeyId = AWS.config.credentials.accessKeyId;
+              var secretAccessKey = AWS.config.credentials.secretAccessKey;
+              //  console.log("accesskeyid==>"+accessKeyId);
+              //  console.log("secretkey==>"+ secretAccessKey);
+              //  console.log("identityId==>"+ AWS.config.credentials);
+              //  console.log("identityId==>"+AWS.config.credentials.toString);
+              //var dataa = AWS.config.credentials.identityId;
+              // console.log("identityId =>"+dataa)
+
+              let accessToken = data.accessToken;
+              // console.log("accesstoken==>"+accessToken.toString());
+
+              const responseInfoCallback = async (error, result) => {
+                if (error) {
+                  console.log(error)
+                  //   alert('Error fetching data: ' + error.toString());
+                } else {                
+                 
+                 
+                  var aws_data = require("./config/AWSConfig.json");
+                  var acceestoken1=await commons.get_token();
+                  await fetch('' + aws_data.path + aws_data.stage + 'accountvalidation', {
+                    method: 'POST',
+                    headers: {
+                      Accept: 'application/json',
+                      'Content-Type': 'application/json',
+                      'Authorization':acceestoken1
+                    },
+                    body: JSON.stringify({
+                      "username": ""+result.email,
+                      "from": "facebook"
+                    }),
+                  }).then((response) => response.json())
+                    .then(async (responseJson) => {
+                   
+                      if(responseJson.status==true || responseJson.status=="true")
+                      {
+                  //  console.log("ParamResul==>"+JSON.stringify(result));
+                  //   alert('Success fetching data: ' + result.toString());
+
+                  //to signup or login  result={id: "104550563698015", last_name: "Abraham", first_name: "Soju", name: "Soju Abraham"}
+                  //{id: "104550563698015", last_name: "Abraham", first_name: "Soju", name: "Soju Abraham", email: "soju.abraham@dhisigma.com"}
+                  //alert("facebook result===>>>"+JSON.stringify(result));
+                  //console.log("facebook result===>>>"+JSON.stringify(result));
+                  //console.log("username%%%%%%%%===>>>"+result.id);
+
+
+                  //delete all tables 
+                  // await databasehelper.AllTableDelete();
+                  var uuid = await commons.getuuid()
+                      uuid = "facebook"+uuid;
+
+                  await databasehelper.AllTableDelete();
+
+                  var createtime = await commons.gettimestamp();
+                  var dataObj = {};
+                  dataObj.firstname = result.first_name;
+                  dataObj.lastname = result.last_name;
+                  dataObj.accountUniqueID = result.id;
+                  //dataObj.username = result.id;
+                  dataObj.username = uuid;
+                  dataObj.eulaid = "1";
+                  dataObj.createtime = createtime;
+
+                  dataObj.email = result.email;
+                  //dataObj.federatedId=identityId;
+                  dataObj.federatedId = id;
+                  dataObj.facebookId = result.id;
+                  dataObj.loginfrom = "facebook";
+                  dataObj.accessToken = accessToken;
+
+                  //alert("dataObj===>>>"+JSON.stringify(dataObj));
+                  // console.log("dataObj===>>>"+JSON.stringify(dataObj));
+                /*  var returnData = await databasehelper.insertuser(dataObj);
+                  var returnData = await databasehelper.insertprofile(dataObj);
+
+                  var proObj = {};
+                  proObj.profileimage = '0';
+                  proObj.username = dataObj.username;
+                  proObj.createtime = dataObj.createtime;
+                  var imagereturnData = await databasehelper.insertProfileImage(proObj);*/
+                  //----------------------------------------------------------------------------------------------
+                  
+                  var aws_data = require("./config/AWSConfig.json");
+                  
+                  var acceestoken=await commons.get_token();
+                  await fetch("" + aws_data.path + aws_data.stage + "newusermgnt", {
+                    method: 'POST',
+                    headers: {
+                      Accept: 'application/json',
+                      'Content-Type': 'application/json',
+                      'Authorization':acceestoken
+                    },
+                    body: JSON.stringify({
+                      "operation": "CreateNewUser01",
+                      "TableName": aws_data.usertable,
+                      "payload": dataObj
+                    }),
+                  }).then((response) => response.json())
+                    .then(async (responseJson) => {
+                      //alert("responseJson===>>"+JSON.stringify(responseJson));
+                 
+                      //var username = dataObj.username;
+                      //   console.log("&&&&&username===>>"+username);
+                     // if (JSON.stringify(responseJson) == "SUCCESS" || responseJson == "SUCCESS" || JSON.stringify(responseJson) == "Already_exists" || responseJson == "Already_exists") {
+                        if (responseJson.status == "SUCCESS" ||responseJson.status == '"SUCCESS"' || responseJson.status == "Already_exists"|| responseJson.status == '"Already_exists"') {
+                        
+                          var username     = responseJson.username;
+                          //alert("Enter======>>>>>"+responseJson.username);
+                          dataObj.username = username;
+                          var returnData = await databasehelper.insertuser(dataObj);
+                          var returnData = await databasehelper.insertprofile(dataObj);
+        
+                          var proObj = {};
+                          proObj.profileimage = '0';
+                          proObj.username = dataObj.username;
+                          proObj.createtime = dataObj.createtime;
+                          var imagereturnData = await databasehelper.insertProfileImage(proObj);
+                        //--------------------------login start-------------------------------------------------
+                        //await AsyncStorage.setItem("username", result.id);
+                        await AsyncStorage.setItem("username", responseJson.username);
+                        await AsyncStorage.setItem("facebook", "1");
+                        await AsyncStorage.setItem("firstrun", "1");
+
+
+                        var aws_data = require("./config/AWSConfig.json");
+                        var acceestoken2=await commons.get_token();
+                        await fetch('' + aws_data.path + aws_data.stage + 'userdatamgnt', {
+                          method: 'POST',
+                          headers: {
+                            Accept: 'application/json',
+                            'Content-Type': 'application/json',
+                            'Authorization':acceestoken2
+                          },
+                          body: JSON.stringify({
+
+                            "operation": "getUser",
+                            "TableName": "Users",
+                            "username": username
+
+                          }),
+                        }).then((response) => response.json())
+                          .then(async (responseJson) => {
+
+                            var username11 = await AsyncStorage.getItem("username");
+
+                            // console.log("username11=======================>>"+username11);
+                            // console.log("username11=======================>>"+JSON.stringify(username11));                 
+                            // console.log("responseJson=======================>>"+JSON.stringify(responseJson));
+
+                            var userdata = {};
+                            userdata["firstname"] = responseJson.firstname;
+                            userdata["lastname"] = responseJson.lastname;
+                            userdata["username"] = responseJson.username;
+                            userdata["eulaid"] = responseJson.eulaid;
+                            userdata["loginfrom"] = responseJson.loginfrom;
+                            userdata["email"] = responseJson.email;
+                            userdata["createtime"] = "0";
+
+
+                            var profiledata = responseJson.profile;
+                            var devicedata = responseJson.device;
+                            var widgetdata = responseJson.widgets;
+
+
+                            //  console.log("profile>>>>"+JSON.stringify(profiledata));
+                            var em="";
+                            if(responseJson.hasOwnProperty("email")) 
+                              em=responseJson.email;
+
+                           //console.log("\n\nem===>>"+em);
+
+                            await AsyncStorage.setItem("email",em);
+                            await databasehelper.insertuser(userdata);
+                            await databasehelper.insertprofile(profiledata);
+
+                            //insertprofile image if has one 
+                            var proObj = {};
+                            proObj["profileimage"] = '0';
+                            if (profiledata.profileimage != undefined && profiledata.profileimage != 'undefined') {
+                              proObj.profileimage = profiledata.profileimage;
+                            }
+                            proObj.username = profiledata.username;
+                            proObj.createtime = profiledata.createtime;
+                            var imagereturnData = databasehelper.insertProfileImage(proObj);
+
+                            //get current device
+                            var DeviceInfo = require('react-native-device-info');
+                            var curr_deviceid_hardid = await DeviceInfo.getUniqueID();
+                            var curr_device_uuid = "";
+                            if (devicedata != null && devicedata.length > 0) {
+                              await databasehelper.bulkinsertdevice(devicedata);
+                              for (var i = 0; i < devicedata.length; i++) {
+
+                                if (devicedata[i].devicehardwareid == curr_deviceid_hardid) {
+                                  curr_device_uuid = devicedata[i].deviceid;
+
+                                  break;
+                                }
+
+                              }
+
+                            }
+
+                            var mostusedwidgetid = "";
+                            var smartstaxid="";
+                            var fileids_download = [];
+                            if (widgetdata != null && widgetdata.length > 0) {
+                              await databasehelper.bulkinsertwidget(widgetdata);
+
+                              for (var i = 0; i < widgetdata.length; i++) {
+                                if (widgetdata[i].deviceid == curr_device_uuid && widgetdata[i].mostusedwidget == "0") {
+                                  mostusedwidgetid = widgetdata[i].widgetid;
+                                  //  alert(mostusedwidgetid);
+
+                                }
+                                if(widgetdata[i].deviceid==curr_device_uuid&&widgetdata[i].mostusedwidget=="4")
+                                     {
+                                      smartstaxid=widgetdata[i].widgetid;
+                                     //  alert(mostusedwidgetid);
+                                      
+                                     }
+                                //if (widgetdata[i].deviceid==curr_device_uuid&&widgetdata[i].hasOwnProperty("backgroundpicture") && widgetdata[i]["backgroundpicture"] != null && widgetdata[i]["backgroundpicture"] != "" && widgetdata[i]["backgroundpicture"] != "undefined" && widgetdata[i]["backgroundpicture"] != "null")
+
+                                if (widgetdata[i].deviceid == curr_device_uuid && commons.isimagevalid(widgetdata[i])) {
+                                  fileids_download.push(widgetdata[i].fileid)
+                                }
+
+                              }
+                              image = fileids_download;
+
+
+                            }
+
+                            await AsyncStorage.setItem("mostusedwidgetid", mostusedwidgetid);
+                            await AsyncStorage.setItem("smartstaxid", smartstaxid);   
+                            await AsyncStorage.setItem("currentdeviceid", curr_device_uuid);
+
+
+
+
+                          })
+                          .catch((error) => {
+
+                            console.error(error);
+                          });
+
+                        //---------------------------- login end----------------------------------------------
+                      }
+
+                      if (JSON.stringify(responseJson) == "SUCCESS" || responseJson.status == "SUCCESS") {
+                        ToastAndroid.show('Sign Up Successful.', 500);
+                         _this.refs.loaderTest.hide();
+                        //navigate("welcome",{ screen:"welcome"});   
+                        navigate("bottom_menu", user = { "page": "Home" });
+                        //commons.replaceScreen(this,"bottom_menu",user={"page":"Home"});                     
+                        // navigate("profile",user={'from':'facebooksignup'}); 
+                        flogin = 1;
+                        //    commons.replaceScreen(this,'profile',{'from':'facebooksignup'});
+                        //await this.refs.loaderTest.hide();
+                      }
+                      else if (JSON.stringify(responseJson) == "Already_exists" || responseJson.status == "Already_exists") {
+                         _this.refs.loaderTest.hide();
+                        ToastAndroid.show('Login successfully.', 500);
+                        // commons.replaceScreen(this,'welcome', {});                                                
+                        // navigate("welcome",{ screen:"welcome"});  
+                        // navigate("welcome"); 
+                        navigate("bottom_menu", user = { "page": "Home" });
+                        // commons.replaceScreen(this,"bottom_menu",user={"page":"Home"}); 
+                        flogin = 2;
+                        //  commons.replaceScreen(this,"welcome",{});   
+                                               
+                      }
+                      else {
+                         _this.refs.loaderTest.hide();
+                        //navigate("profile",user={'from':'facebooksignup'});                    
+                        ToastAndroid.show(JSON.stringify(responseJson), 500);
+                      }
+                    })
+                    .catch((error) => {
+                      console.error(error);
+                    });
+                  //--------------------------------------------------------------------------------------------------------
+                  }
+                  else
+                  {
+                    LoginManager.logOut();   
+                    _this.refs.loaderTest.hide();
+                    var existingAccount=responseJson.existingAccount;
+                    if(existingAccount=="app")
+                        existingAccount="APRROW";
+   
+                     ToastAndroid.show("This account is already linked with "+existingAccount+". Please use "+existingAccount+" sign-in", 3000);
+                  }
+                });
+
+                }
+                //..........'''''''''''''''''.............................''''''''''''........''''''''''''''.....
+              }
+
+              const infoRequest = new GraphRequest('/me', {
+                accessToken: accessToken,
+                parameters: {
+                  fields: {
+                    string: 'email,name,first_name,middle_name,last_name'
+                  }
+                }
+              }, await responseInfoCallback);
+
+              // Start the graph request.
+              new GraphRequestManager()
+                .addRequest(infoRequest)
+                .start();
+
+
+
+              //this.AWSSync = AWS
+              //this.syncManager = new this.AWSSync.CognitoSyncManager(); 
+              //this.syncManager.openOrCreateDataset('test', (err, dataset) => {
+              //  dataset.get('k', (err, value) => {
+              //    console.log('k: ' + value);
+              //  });
+              //});
+              // alert("Access==>" + data.accessToken.toString());
+            });
+          });
+        }
+
+      },
+      await function (error) {
+        ToastAndroid.show('Login failed with error: ' + error, 500);
+      }
+    );
+    if (image.length > 0) {
+      alert(image.length);
+      this.downloadimages(image);
+    }
+    
+  }
+
+  async downloadimages(ids) {
+
+    for (var i = 0; i < ids.length; i++) {
+      var res = await commons.download_file_tocache(ids[i], '.jpg');
+      //alert(i+"/"+id.length);
+    }
+
+
+  }
+
+
+  async _setupGoogleSignin() {
+    try {
+      await GoogleSignin.hasPlayServices({ autoResolve: true });
+      
+      await GoogleSignin.configure({
+        webClientId:aws_data11.webClientId,
+        offlineAccess: false
+      });
+
+      const user = await GoogleSignin.currentUserAsync();
+      //console.log("userDetais", user);
+      this.setState({ user });
+    }
+    catch (err) {
+      console.log("There are any error", err.message);
+    }
+  }
+
+  async onGoogleSignInButton() {
+   // this._setupGoogleSignin();
+    GoogleSignin.signIn()
+      .then(async (user) => {
+    //console.log("google login");
+    var aws_data = require("./config/AWSConfig.json");
+    var acceestoken1=await commons.get_token();
+    await fetch('' + aws_data.path + aws_data.stage + 'accountvalidation', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        'Authorization':acceestoken1
+      },
+      body: JSON.stringify({
+        "username": ""+user.email,
+        "from": "google"
+      }),
+    }).then((response) => response.json())
+      .then(async (responseJson) => {
+        if(responseJson.status==true)
+        {
+        
+        // console.log("userDetais", user);
+       await this.refs.loaderTest.show();
+       var googlemap=aws_data11.googlemap;
+       var IdentityPoolId= aws_data11.IdentityPoolId;
+       const { navigate } = this.props.navigation;
+        // console.log("result==>"+JSON.stringify(result))
+        
+        //     AccessToken.getCurrentAccessToken().then(user => {
+        var idToken = user.idToken;
+        var accessToken = user.accessToken;
+        //console.log(">>>>>Value>>>>>>>>"+idToken+">>>>>>>>>>"+googlemap);
+        AWS.config.region =aws_data11.region;// 'us-west-2';
+          
+        AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+           //'us-west-2:2ab8f260-0d64-4bed-9dcc-f9566abacd25', // your identity pool id here
+          IdentityPoolId:IdentityPoolId,
+          Logins: {
+            // Change the key below according to the specific region your user pool is in.
+            
+            'accounts.google.com': user.idToken
+            // 'cognito-idp.us-west-2.amazonaws.com/us-west-2_TjdKHhmlt_Google' : id_token
+          }
+        });
+        
+        //refreshes credentials using AWS.CognitoIdentity.getCredentialsForIdentity()
+        AWS.config.credentials.refresh(async (error) => {
+          if (error) {
+            console.error(error);
+            await this.refs.loaderTest.hide();
+            ToastAndroid.show(error, 3000);
+          } else {
+
+            console.log('Successfully logged!');
+
+            await databasehelper.AllTableDelete();
+            var identity_id = AWS.config.credentials.identityId;
+           
+            var accessKeyId = AWS.config.credentials.accessKeyId;
+            var secretAccessKey = AWS.config.credentials.secretAccessKey;
+           
+
+            let accessToken = user.accessToken;
+           
+            var uuid = await commons.getuuid()
+                uuid="google"+uuid;
+
+
+            var createtime = commons.gettimestamp();
+            var dataObj = {};
+            dataObj.firstname = user.givenName;
+            dataObj.lastname = user.familyName;
+            //dataObj.username = user.id;
+            dataObj.username =uuid;
+            dataObj.accountUniqueID =user.id;
+            dataObj.eulaid = "1";
+            dataObj.createtime = createtime;
+
+            dataObj.email = user.email;
+            //dataObj.federatedId=identityId;
+            dataObj.federatedId = identity_id;
+            dataObj.googleId = user.id;
+            dataObj.loginfrom = "google";
+            dataObj.accessToken = accessToken;
+
+            //alert("dataObj===>>>"+JSON.stringify(dataObj));
+            // console.log("dataObj===>>>"+JSON.stringify(dataObj));
+          /*  var returnData = await databasehelper.insertuser(dataObj);
+            var returnData = await databasehelper.insertprofile(dataObj);
+
+            var proObj = {};
+            proObj.profileimage = '0';
+            proObj.username = dataObj.username;
+            proObj.createtime = dataObj.createtime;
+            var imagereturnData = await databasehelper.insertProfileImage(proObj);*/
+            //----------------------------------------------------------------------------------------------
+            
+            var aws_data = require("./config/AWSConfig.json");
+            var acceestoken=await commons.get_token();
+            await fetch("" + aws_data.path + aws_data.stage + "newusermgnt", {
+              method: 'POST',
+              headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization':acceestoken
+              },
+              body: JSON.stringify({
+                "operation": "CreateNewUser01",
+                "TableName": aws_data.usertable,
+                "payload": dataObj
+              }),
+            }).then((response) => response.json())
+              .then(async (responseJson) => {
+                //  console.log("createUse>>>>>>respons"+JSON.stringify(responseJson));
+               
+                console.log("1");
+                //   console.log("&&&&&username===>>"+username);
+               // if (JSON.stringify(responseJson) == "SUCCESS" || responseJson == "SUCCESS" || JSON.stringify(responseJson) == "Already_exists" || responseJson == "Already_exists") {
+                  if (responseJson.status == "SUCCESS" || responseJson.status == "Already_exists") {
+                
+                  
+                  dataObj.username = responseJson.username;
+                  var username = dataObj.username;
+                  var returnData = await databasehelper.insertuser(dataObj);
+                  var returnData = await databasehelper.insertprofile(dataObj);
+
+                  var proObj = {};
+                  proObj.profileimage = '0';
+                  proObj.username = dataObj.username;
+                  proObj.createtime = dataObj.createtime;
+                  var imagereturnData = await databasehelper.insertProfileImage(proObj);
+                  //--------------------------login start-------------------------------------------------Already_exists
+                  //await AsyncStorage.setItem("username", username);
+                  await AsyncStorage.setItem("firstrun", "1");
+                  await AsyncStorage.setItem("username",responseJson.username);
+                  
+                  var acceestoken2=await commons.get_token();
+                  var aws_data = require("./config/AWSConfig.json");
+                  await fetch('' + aws_data.path + aws_data.stage + 'userdatamgnt', {
+                    method: 'POST',
+                    headers: {
+                      Accept: 'application/json',
+                      'Content-Type': 'application/json',
+                      'Authorization':acceestoken2
+                    },
+                    body: JSON.stringify({
+
+                      "operation": "getUser",
+                      "TableName": "Users",
+                      "username": username
+
+                    }),
+                  }).then((response) => response.json())
+                    .then(async (responseJson) => {
+                      console.log("2");
+                      await AsyncStorage.setItem("google", "1");
+                     // console.log("getUser>>>>>>respons" + JSON.stringify(responseJson));
+                      var username11 = await AsyncStorage.getItem("username");
+
+                      // console.log("username11=======================>>"+username11);
+                      // console.log("username11=======================>>"+JSON.stringify(username11));                 
+                      // console.log("responseJson=======================>>"+JSON.stringify(responseJson));   
+                      await AsyncStorage.setItem("email", responseJson.email);
+                      console.log("3");
+                      var userdata = {};
+                      userdata["firstname"] = responseJson.firstname;
+                      userdata["lastname"] = responseJson.lastname;
+                      userdata["username"] = responseJson.username;
+                      userdata["eulaid"] = responseJson.eulaid;
+                      userdata["loginfrom"] = responseJson.loginfrom;
+                      userdata["email"] = responseJson.email;
+                      userdata["createtime"] = "0";
+
+
+                      var profiledata = responseJson.profile;
+                      var devicedata = responseJson.device;
+                      var widgetdata = responseJson.widgets;
+                       //console.log(JSON.stringify(profiledata));
+
+                      //  console.log("profile>>>>"+JSON.stringify(profiledata));
+
+                      // await databasehelper.AllTableDelete();                     
+                      var rs1 = await databasehelper.insertuser(userdata);                     
+                      var rs2 = await databasehelper.insertprofile(profiledata);
+                      
+                      //   console.log("insert user>>>>>>>"+JSON.stringify(rs1));
+                      //   console.log("insert profile>>>>"+JSON.stringify(rs2));
+                      //insertprofile image if has one
+
+                      var proObj = {};
+                            proObj["profileimage"] = '0';
+                            if (profiledata.profileimage != undefined && profiledata.profileimage != 'undefined') {
+                              proObj.profileimage = profiledata.profileimage;
+                            }
+                            proObj.username = profiledata.username;
+                            proObj.createtime = profiledata.createtime;
+                            var imagereturnData = databasehelper.insertProfileImage(proObj);
+
+
+                      //get current device
+                      var DeviceInfo = require('react-native-device-info');
+                      var curr_deviceid_hardid = await DeviceInfo.getUniqueID();
+                      var curr_device_uuid = "";
+                      //console.log("device>>>>>>>"+JSON.stringify(devicedata));
+                      if (devicedata != null && devicedata.length > 0) {
+                        var rs3 = await databasehelper.bulkinsertdevice(devicedata);
+
+                      
+                        for (var i = 0; i < devicedata.length; i++) {
+
+                          if (devicedata[i].devicehardwareid == curr_deviceid_hardid) {
+                            curr_device_uuid = devicedata[i].deviceid;
+
+                            break;
+                          }
+
+                        }
+
+                      }
+
+                      var mostusedwidgetid = "";
+                      var smartstaxid="";
+                      var fileids_download = [];
+
+                      if (widgetdata != null && widgetdata.length > 0) {
+                        var rs4 = await databasehelper.bulkinsertwidget(widgetdata);
+                        //  console.log("widget>>>>>>>>>>>>>>"+JSON.stringify(rs4));
+                        for (var i = 0; i < widgetdata.length; i++) {
+                          if (widgetdata[i].deviceid == curr_device_uuid && widgetdata[i].mostusedwidget == "0") {
+                            mostusedwidgetid = widgetdata[i].widgetid;
+                            //  alert(mostusedwidgetid);
+
+                          }
+                          if(widgetdata[i].deviceid==curr_device_uuid&&widgetdata[i].mostusedwidget=="4")
+                                     {
+                                      smartstaxid=widgetdata[i].widgetid;
+                                     //  alert(mostusedwidgetid);                                      
+                                     }
+                          //if (widgetdata[i].deviceid==curr_device_uuid&&widgetdata[i].hasOwnProperty("backgroundpicture") && widgetdata[i]["backgroundpicture"] != null && widgetdata[i]["backgroundpicture"] != "" && widgetdata[i]["backgroundpicture"] != "undefined" && widgetdata[i]["backgroundpicture"] != "null")
+                          if (widgetdata[i].deviceid == curr_device_uuid && commons.isimagevalid(widgetdata[i])) {
+                            fileids_download.push(widgetdata[i].fileid)
+                          }
+
+                        }
+                        this.downloadimages(fileids_download);
+
+                      }
+
+                      await AsyncStorage.setItem("mostusedwidgetid", mostusedwidgetid);
+                      await AsyncStorage.setItem("smartstaxid", smartstaxid);  
+                      await AsyncStorage.setItem("currentdeviceid", curr_device_uuid);
+
+
+
+
+
+                    })
+                    .catch((error) => {
+
+                      console.error(error);
+                    });
+
+                  //---------------------------- login end----------------------------------------------
+                }
+                this.refs.loaderTest.hide();
+
+
+                if (JSON.stringify(responseJson) == "SUCCESS" || responseJson.status == "SUCCESS") {
+                  ToastAndroid.show('Sign Up Successful.', 500);
+                  // navigate("profile",user={'from':'facebooksignup'}); 
+                  // commons.replaceScreen(this,'welcome', {});  
+     //             commons.replaceScreen(this, "bottom_menu", user = { "page": "Home" });
+                   navigate("bottom_menu",user={"page":"Home"});    
+                  // commons.replaceScreen(this,'profile',{'from':'signup'});
+
+                }
+                else if (JSON.stringify(responseJson) == "Already_exists" || responseJson.status == "Already_exists") {
+                  ToastAndroid.show('Login successfully.', 500);
+                  //navigate("welcome",{ screen:"welcome"});  
+                  // commons.replaceScreen(this,'welcome', {});  
+                  navigate("bottom_menu",user={"page":"Home"});
+    //              commons.replaceScreen(this, "bottom_menu", user = { "page": "Home" });
+                  // ToastAndroid.show('Login successfully.',500);                                                 
+                  //navigate("welcome",{ screen:"welcome"});  
+                  // commons.replaceScreen(this,'welcome', {});                          
+                }
+                else {
+
+                  //navigate("profile",user={'from':'facebooksignup'});                    
+                  ToastAndroid.show(JSON.stringify(responseJson), 500);
+                }
+              })
+              .catch((error) => {
+                console.error(error);
+              });
+          }
+        })
+
+      
+    //------------------
+      }
+      else
+      {
+        
+        GoogleSignin.revokeAccess().then(() => GoogleSignin.signOut()).then(() => {
+          //this.setState({user: null});
+          })
+          .done();
+          var existingAccount=responseJson.existingAccount;
+
+          if(existingAccount=="app")
+            existingAccount="APRROW";
+
+       // ToastAndroid.show("This account is already linked with APRROW. Please use APRROW sign-in", 3000);
+        ToastAndroid.show("This account is already linked with "+existingAccount+". Please use "+existingAccount+" sign-in", 3000);
+      }
+      });
+    //------------------
+      })
+
+
+      .catch((err) => {
+        console.log('error', err);
+
+      })
+      .done();
+  }
+
+  onGoogleSignOut() {
+    GoogleSignin.revokeAccess().then(() => GoogleSignin.signOut()).then(() => {
+      this.setState({ user: null });
+    })
+      .done();
+  }
+
+
+
+  openDialog(show) {
+    this.setState({
+      headColor: "#006BBC",
+      bodyColor: "",
+      buttonText: "Retrieve Password",
+      pwdImage:true,
+      //password_help_email:"This email does not exist. Enter another email"});
+      //  alert(err, err.stack);
+      Password_warningborder: "grey",
+      // password_help:"Enter verification code to reset your password",
+      password_help_email: "Enter your email address. you will receive a verification code to reset your password",
+    });
+    this.setState({ showDialog: show });
+  }
+  openDialog_d2(show) {
+
+    this.setState({ showDialog_d2: show });
+  }
+
+  password_reset(show) {
+    this.setState({ showDialog: false });
+    // this.setState({forgetPass:true});
+
+    /*   const userPool = new CognitoUserPool(
+              awsCognitoSettings
+            );
+      
+            const cognitoUser = new CognitoUser({
+              Username: (this.state.username).toLowerCase(),//"sijin.pc@dhisigma.com",
+              Pool: userPool
+            });
+         
+         cognitoUser.forgotPassword({
+              onSuccess: function(result) {
+                prompt(   
+                  "Enter Verification Code",
+                  "",
+                  [
+                    {
+                      text: "Cancel",
+                      onPress: () => "",
+                      style: "cancel"
+                    },
+                    {
+                      text: "OK",
+                      onPress: verification => {
+                        //alert(verification)
+                        prompt(
+                          "Enter New Password",
+                          "",
+                          [
+                            {
+                              text: "Cancel",
+                              onPress: () => "",
+                              style: "cancel"
+                            },
+                            { 
+                              text: "OK",
+                              onPress: password => {
+                                //alert(verification+password);
+                                cognitoUser.confirmPassword(verification, password, {
+                                 async onFailure(err) {
+                      
+                                      alert(err);
+                                  },
+                                 async onSuccess() {
+                                   
+                                      alert("Success");
+                                  },
+                              });
+                              }
+                            }
+                          ],
+                          {
+                            type: 'secure-text',
+                            cancelable: false,
+                            defaultValue: "",
+                            placeholder: "Type Here"
+                          }
+                        );
+                      }
+                    }
+                  ],
+                  {
+                    type: "text",
+                    cancelable: false,
+                    defaultValue: "",
+                    placeholder: "Type Here"
+                  }
+                );
+              },
+              onFailure: function(err) {
+              
+                
+                alert('Errorrr '+err);
+            },
+            });  */
+
+    var params = {
+      ClientId: 'STRING_VALUE', /* required */
+      ConfirmationCode: 'STRING_VALUE', /* required */
+      Password: 'STRING_VALUE', /* required */
+      Username: 'STRING_VALUE', /* required */
+      AnalyticsMetadata: {
+        AnalyticsEndpointId: 'STRING_VALUE'
+      },
+      SecretHash: 'STRING_VALUE',
+      UserContextData: {
+        EncodedData: 'STRING_VALUE'
+      }
+    };
+    cognitoidentityserviceprovider.confirmForgotPassword(params, function (err, data) {
+      if (err) console.log(err, err.stack); // an error occurred
+      else console.log(data);           // successful response
+    });
+
+
+
+
+
+    /*  this.setState({ showDialog_d2: !show });
+      this.setState({ showDialog: show }); */
+
+  }
+
+  ////async componentWillMount (){
+  //// await AsyncStorage.clear();    
+  //// await databasehelper.AllTableDelete();
+  //}
+  async geteulaText() {
+    var aws_data = require("./config/AWSConfig.json");
+    
+    var acceestoken=await commons.get_token();
+    fetch('' + aws_data.path + aws_data.stage + 'eulaDataMgnt', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        'Authorization':acceestoken
+      },
+      body: JSON.stringify({
+        "operation": "getEulatext",
+        "TableName": "EulaDetails",
+        "eulaId": "1"
+      }),
+    }).then((response) => response.json())
+      .then((responseJson) => {
+        var result = JSON.parse(responseJson);
+        this.state.eula_id = result.Item.eulaId.S;
+        this.state.eula_text = result.Item.eulaText.S;
+        //alert(this.state.eula_text)
+        //  this.props.Text.value = result.Item.eulaText.S;
+
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+
+  async dataFetch(username) {
+
+    AsyncStorage.setItem("username", username);
+
+    var aws_data = require("./config/AWSConfig.json");
+    var acceestoken=await commons.get_token();
+    fetch('' + aws_data.path + aws_data.stage + 'userdatamgnt', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        'Authorization':acceestoken
+      },
+      body: JSON.stringify({
+
+        "operation": "getUser",
+        "TableName": "Users",
+        "username": username
+
+      }),
+    }).then((response) => response.json())
+      .then((responseJson) => {
+
+
+        //console.log(responseJson);
+
+        var userdata = {};
+        userdata["firstname"] = responseJson.firstname;
+        userdata["lastname"] = responseJson.lastname;
+        userdata["username"] = responseJson.username;
+        userdata["eulaid"] = responseJson.eulaid;
+        userdata["loginfrom"] = responseJson.loginfrom;
+        userdata["email"] = responseJson.email;
+        userdata["createtime"] = "0";
+
+
+        var profiledata = responseJson.profile;
+        var devicedata = responseJson.device;
+        var widgetdata = responseJson.widgets;
+
+
+        // console.log("profile>>>>"+profiledata);
+        // console.log("profile>>>>"+profiledata);
+
+        databasehelper.insertuser(userdata);
+        databasehelper.insertprofile(profiledata);
+
+        //insertprofile image if has one
+
+        //get current device
+        var DeviceInfo = require('react-native-device-info');
+        var curr_deviceid_hardid = DeviceInfo.getUniqueID();
+        var curr_device_uuid = "";
+        if (devicedata != null && devicedata.length > 0) {
+          databasehelper.bulkinsertdevice(devicedata);
+          for (var i = 0; i < devicedata.length; i++) {
+
+            if (devicedata[i].devicehardwareid == curr_deviceid_hardid) {
+              curr_device_uuid = devicedata[i].deviceid;
+
+              break;
+            }
+
+          }
+
+        }
+
+        var mostusedwidgetid = "";
+        var smartstaxid="";
+        if (widgetdata != null && widgetdata.length > 0) {
+          databasehelper.bulkinsertwidget(widgetdata);
+
+          for (var i = 0; i < widgetdata.length; i++) {
+            if (widgetdata[i].deviceid == curr_device_uuid && widgetdata[i].mostusedwidget == "0") {
+              mostusedwidgetid = widgetdata[i].widgetid;
+              //  alert(mostusedwidgetid);
+              break;
+            }
+            else if(widgetdata[i].deviceid==curr_device_uuid&&widgetdata[i].mostusedwidget=="4")
+            {
+              smartstaxid=widgetdata[i].widgetid;
+               //alert(mostusedwidgetid);
+              //break;
+            }
+
+          }
+        }
+
+        AsyncStorage.setItem("mostusedwidgetid", mostusedwidgetid);
+        AsyncStorage.setItem("smartstaxid", smartstaxid);  
+        AsyncStorage.setItem("currentdeviceid", curr_device_uuid);
+        this.refs.loaderTest.hide();
+        commons.replaceScreen(this, 'welcome', {});
+
+
+      })
+      .catch((error) => {
+        this.refs.loaderTest.hide();
+        console.error(error);
+      });
+  }
+  async  login() {
+            
+    this.refs.loaderTest.show();
+
+    // this.setState({loading: true});
+    var username = (this.state.username).toLowerCase();
+    var password = this.state.Password;
+      var _this=this
+    //alert((this.state.username).toLowerCase());
+    const userPool = new CognitoUserPool(awsCognitoSettings);
+    const authDetails = new AuthenticationDetails({
+      Username: (this.state.username).toLowerCase(),
+      Password: this.state.Password
+    });
+    const cognitoUser = new CognitoUser({
+      Username: (this.state.username).toLowerCase(),
+      Pool: userPool
+    });
+    cognitoUser.authenticateUser(authDetails, {
+      onSuccess:async (result) => {
+        // alert(result.getAccessToken().getJwtToken());
+        var userpoolmap=aws_data11["userpoolmap"];
+        var loginmap={};
+        loginmap[userpoolmap]= result.getIdToken().getJwtToken();
+        await databasehelper.AllTableDelete();
+        AWS.config.region =aws_data11.region;// "us-west-2";
+        AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+          IdentityPoolId:aws_data11.IdentityPoolId,// "us-west-2:2ab8f260-0d64-4bed-9dcc-f9566abacd25",
+          Logins: loginmap
+        });
+         // alert(result.getAccessToken().getJwtToken());
+        var identity_id = ""
+        AWS.config.credentials.get(async function () {
+
+          var identity_id = AWS.config.credentials.identityId;
+          // alert("identityId =>"+dataa)
+        });
+        AWS.config.credentials.refresh((error) => {
+          if (error) {
+            this.setState({ dialogWidget_delete: true });
+          } else {
+            // Instantiate aws sdk service objects now that the credentials have been updated.
+            // example: var s3 = new AWS.S3();
+
+          }
+        });
+        /*    alert(JSON.stringify(userPool.getCurrentUser()));
+            cognitoUser.getUserAttributes(function(err, attributes) {
+              if (err) {
+                  // Handle error
+              } else {
+                  alert(attributes);
+              }
+          }); */
+
+          var params = {
+            AccessToken: result.getAccessToken().getJwtToken()
+          };
+          var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider();
+          cognitoidentityserviceprovider.getUser(params,async function(err, data11) {
+            if (err) console.log(err, err.stack); // an error occurred
+            else
+            {    
+                
+                username=data11.Username;                
+                await AsyncStorage.setItem("username", username);
+            
+        AsyncStorage.setItem("firstrun", "1");
+
+        var acceestoken=await commons.get_token();
+        var aws_data = require("./config/AWSConfig.json");
+        fetch('' + aws_data.path + aws_data.stage + 'userdatamgnt', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization':acceestoken
+          },
+          body: JSON.stringify({
+
+            "operation": "getUser",
+            "TableName": "Users",
+            "username": username
+
+          }),
+        }).then((response) => response.json())
+          .then(async (responseJson) => {
+
+            AsyncStorage.setItem("email", responseJson.email);
+
+            var userdata = {};
+            userdata["firstname"] = responseJson.firstname;
+            userdata["lastname"] = responseJson.lastname;
+            userdata["username"] = responseJson.username;
+            userdata["eulaid"] = responseJson.eulaid;
+            userdata["loginfrom"] = responseJson.loginfrom;
+            userdata["email"] = responseJson.email;
+            userdata["createtime"] = "0";
+
+            var profiledata = responseJson.profile;
+            var devicedata = responseJson.device;
+            var widgetdata = responseJson.widgets;
+
+            await databasehelper.insertuser(userdata);
+            await databasehelper.insertprofile(profiledata);
+            //console.log(">>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<");
+
+            var proObj = {};
+            proObj["profileimage"] = '0';
+            if (profiledata.profileimage != undefined && profiledata.profileimage != 'undefined') {
+              proObj.profileimage = profiledata.profileimage;
+            }
+            proObj.username = profiledata.username;
+            proObj.createtime = profiledata.createtime;
+            var imagereturnData = databasehelper.insertProfileImage(proObj);
+
+            //console.log("ttttttttttttttttttttttttt=>"+JSON.stringify(imagereturnData));
+
+            //insertprofile image if has one
+
+            //get current device
+            var DeviceInfo = require('react-native-device-info');
+            var curr_deviceid_hardid = DeviceInfo.getUniqueID();
+            var curr_device_uuid = "";
+            if (devicedata != null && devicedata.length > 0) {
+              await databasehelper.bulkinsertdevice(devicedata);
+              for (var i = 0; i < devicedata.length; i++) {
+
+                if (devicedata[i].devicehardwareid == curr_deviceid_hardid) {
+                  curr_device_uuid = devicedata[i].deviceid;
+
+                  break;
+                }
+
+              }
+
+            }
+
+            var mostusedwidgetid = "";
+            var smartstaxid="";
+            var fileids_download = [];
+            if (widgetdata != null && widgetdata.length > 0) {
+              await databasehelper.bulkinsertwidget(widgetdata);
+
+              for (var i = 0; i < widgetdata.length; i++) {
+                if (widgetdata[i].deviceid == curr_device_uuid && widgetdata[i].mostusedwidget == "0") {
+                  mostusedwidgetid = widgetdata[i].widgetid;
+                  //  alert(mostusedwidgetid);
+                  // break;
+                }
+                if(widgetdata[i].deviceid==curr_device_uuid&&widgetdata[i].mostusedwidget=="4")
+                {
+                  smartstaxid=widgetdata[i].widgetid;
+                //  alert(mostusedwidgetid);
+                 // break;
+                }
+
+                if (widgetdata[i].deviceid == curr_device_uuid && commons.isimagevalid(widgetdata[i])) {
+                  fileids_download.push(widgetdata[i].fileid)
+                }
+
+              }
+              // alert(fileids_download.length);
+              _this.downloadimages(fileids_download);
+            }
+            //console.log("ttttttttttttttttttttttttt=>"+JSON.stringify(imagereturnData));
+            await AsyncStorage.setItem("mostusedwidgetid", mostusedwidgetid);          
+            await  AsyncStorage.setItem("smartstaxid", smartstaxid);  
+            await AsyncStorage.setItem("currentdeviceid", curr_device_uuid);
+            //  this.setState({loading: false});
+            _this.refs.loaderTest.hide();
+            commons.replaceScreen(_this, 'bottom_menu', {});
+          })
+          .catch((error) => {
+            _this.refs.loaderTest.hide();
+
+            //  this.setState({loading: false});
+            console.error(error);
+          });
+        } 
+      });  
+//????????
+      },
+      onFailure: (err) => {
+        // this.setState({loading: false});
+        this.refs.loaderTest.hide();
+
+        this.setState({ dialogWidget_delete: true });                //this.setState({ username: '', Password: '' });
+        return;
+      }
+    });
+
+
+
+  }
+  async pass() {
+   
+    const userPool = new CognitoUserPool(
+      awsCognitoSettings
+    );
+    var params = {
+      ClientId:aws_data11.ClientId,/* required */
+      Username: (this.state.username).toLowerCase(), /* required */
+
+    };
+    var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider();
+    var _this = this;
+    cognitoidentityserviceprovider.forgotPassword(params, function (err, data) {
+      if (err) {
+        _this.setState({
+          pwdImage:false,
+          headColor: "red",
+          bodyColor: "red",
+          buttonText: "Try Again",
+          password_help_email: "This email does not exist.\n\t Enter another email"
+        });
+        //  alert(err, err.stack);
+
+      } // an error occurred
+      else {   //  alert(JSON.stringify(data));  
+       // _this.setState({ forgetPass: true });
+       _this.setState({ pwdHelpMsg: true,showDialog:false });
+
+      }          // successful response
+    });
+
+  }
+
+
+
+  async verificationPass() {
+    this.setState({ showDialog: false });
+    this.setState({ forgetPass: false });
+    var params = {
+      ClientId: aws_data11.ClientId, /* required */
+      ConfirmationCode: this.state.verificationcode, /* required */
+      Password: this.state.Password, /* required */
+      Username: (this.state.username).toLowerCase(), /* required */
+    };
+    var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider();
+    cognitoidentityserviceprovider.confirmForgotPassword(params, function (err, data) {
+      if (err) {
+        var errormsg = JSON.stringify(err);
+        // alert("TTTT: "+errormsg);
+        // if(err=="CodeMismatchException: Invalid verification code provided,please try again.")
+        if (errormsg.contains("Invalid verification")) {
+          ToastAndroid.show('Incorrect Verification Code', 500);
+
+          //alert("Failed");
+          //this.setState({changePwdFail:true});
+        }
+        else if (errormsg.contains("lambda")) {
+          ToastAndroid.show('Password Changed Successfully ', 500);
+
+          //alert("Success");
+        }
+        else {
+          alert(err, err.stackerr);
+        }
+      } // an error occurred
+      else {
+        alert("Success==> " + JSON.stringify(data));           // successful response
+      }
+    });
+
+  }
+  _handleSave = () => {
+
+
+    var errocount = 0;
+
+
+
+    /*
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      var emailstatus = re.test(this.state.Email.toLowerCase());
+    
+      if (!emailstatus) {
+                          this.setState({
+                                            Email_warning: "flex",
+                                            Email_warningborder: "red"
+                                        });
+                          errocount++;
+                        }
+      else {
+                      this.setState({
+                                      Email_warning: "none",
+                                      Email_warningborder: "grey"
+                                    });
+          } */
+
+    //password validation 
+    var temp_password = this.state.Password;
+    if (temp_password == null)
+      temp_password = "";
+
+    if (temp_password.length < 6 || temp_password.length > 15) {
+      errocount++;
+      this.setState({
+        Password_warningborder: "red",
+        password_char_limitwarning: "* 6 to 15 characters",
+        password_color_charlimit: "red",
+      })
+    }
+    else {
+      this.setState({
+        Password_warningborder: "grey",
+        password_char_limitwarning: "✓  6 to 15 characters",
+        password_color_charlimit: "green",
+      })
+    }
+
+
+    /*
+      var hasupper = (/[A-Z]/.test(temp_password));
+      if (!hasupper) {
+        errocount++;
+        this.setState({
+          Password_warningborder: "red",
+          password_uppercase_warning: "x uppercase",
+          password_color_uppercase: "red",
+        })
+      }
+      else {
+        this.setState({
+          Password_warningborder: "grey",
+          password_uppercase_warning: "✓ uppercase",
+          password_color_uppercase: "green",
+        })
+      }
+    
+      var haslower = (/[a-z]/.test(temp_password));
+      if (!haslower) {
+        errocount++;
+        this.setState({
+          Password_warningborder: "red",
+          password_lowercase_warning: "x lowercase",
+          password_color_lowercase: "red",
+        })
+      }
+      else {
+        this.setState({
+          Password_warningborder: "grey",
+          password_lowercase_warning: "✓ lowercase",
+          password_color_lowercase: "green",
+        })
+      }
+    
+    
+      var hasnumber = (/\d/.test(temp_password));
+      if (!hasnumber) {
+        errocount++;
+        this.setState({
+          Password_warningborder: "red",
+          password_number_warning: "x Number",
+          password_color_number: "red",
+        })
+      }
+      else {
+        this.setState({
+          Password_warningborder: "grey",
+          password_number_warning: "✓ Number",
+          password_color_number: "green",
+        })
+      }
+    
+    
+    
+      var hasspecial = (/^[a-zA-Z0-9]*$/.test(temp_password));
+      if (temp_password == null || temp_password == "" || hasspecial) {
+        errocount++;
+        this.setState({
+          Password_warningborder: "red",
+          password_Specialcharachters_warning: "x special charachters",
+          password_color_Specialcharachters: "red",
+        })
+      }
+      else {
+        this.setState({
+          Password_warningborder: "grey",
+          password_Specialcharachters_warning: "✓ special charachters",
+          password_color_Specialcharachters: "green",
+        })
+      }
+      */
+    //confirm password validations
+    if (this.state.ConfirmPassword == null || this.state.ConfirmPassword == "" || this.state.ConfirmPassword != this.state.Password) {
+      errocount++;
+      this.setState({
+        ConfirmPassword_warning: "flex",
+        ConfirmPassword_warningborder: "red"
+      });
+      errocount++;
+    }
+    else {
+      this.setState({
+        ConfirmPassword_warning: "none",
+        ConfirmPassword_warningborder: "grey"
+      });
+    }
+
+    //Current  password null  validations
+    /*  if (this.state.CurrentPassword == null || this.state.CurrentPassword == "" ) {
+       errocount++;
+       this.setState({
+         CurrentPassword_warning: "flex",
+         CurrentPassword_warningborder: "red"
+       });
+       errocount++;
+     }
+     else {
+       this.setState({
+         CurrentPassword_warning: "none",
+         CurrentPassword_warningborder: "grey"
+       });
+     } */
+
+
+    if (errocount == 0) {
+      //---------------------------------------------------------------------------------------
+      this.verificationPass();
+
+    }
+  }
+
+
+  Get_password_strength(password_user_input) {
+    var temp_password = password_user_input;
+
+    var strength = 0;
+    var label = "";
+    var color = "";
+
+
+    if (temp_password == null)
+      temp_password = "";
+
+
+
+
+    var n = temp_password.length;
+    var haslower = false;
+    var hasupper = false;
+    var good_length = false;
+    var has_special = false;
+    var hasnumber = false;
+
+
+
+    var hasupper = (/[A-Z]/.test(temp_password));
+    var haslower = (/[a-z]/.test(temp_password));
+    var hasnumber = (/\d/.test(temp_password));
+    var has_special = (/^[a-zA-Z0-9]*$/.test(temp_password));
+
+    var strength = 0;
+
+    if (hasupper)
+      strength++;
+
+    if (haslower)
+      strength++;
+
+    if (hasnumber)
+      strength++;
+
+    if (!has_special)
+      strength++;
+
+
+
+    //alert(hasupper+">>>"+haslower+">>>>"+hasnumber+">>>>"+has_special);
+    if (n >= 6 && strength >= 4) {
+      strength = 100;
+      color = "#2CAE1C";
+      label = "STRONG";
+
+    }
+    else if (n >= 6 && strength >= 3) {
+      strength = 60;
+      color = "#0065B2";
+      label = "Good";
+
+    }
+    else {
+      strength = 30;
+      color = "#CC0000";
+      label = "Weak";
+
+      //alert("weak");
+
+    }
+
+    this.setState({
+      strength: strength,
+      color: color,
+      label: label
+    });
+
+  }
+
+  _next = () => {
+    this._password && this._password.focus();
+    }
+  _submit = () => {
+    this.login();
+    };
+  render() {
+    var windowProp = Dimensions.get('window');
+    var winheight = windowProp.height;
+    var winwidth = windowProp.width;
+
+    const { navigate } = this.props.navigation
+    return (
+
+
+
+      <ImageBackground source={require('./assets/login_background.png')}
+        style={{ flex: 1 }}>
+        < KeyboardAvoidingView behavior='padding' keyboardVerticalOffset={-300} style={{ flex: 1 }}>
+          <LoaderNew ref={"loaderTest"} />
+          <ScrollView style={{width:'100%',height:'100%'}}>
+          <View style={{ height: '100%', alignItems: 'center' }}>
+
+            <View style={{
+              width: '82%',
+              flexDirection: 'column',
+              alignItems: 'center',
+              //backgroundColor: '#014E82',
+              paddingTop: '5%',
+              alignItems: 'center'
+            }}
+            >
+
+              <Image source={require('./assets/login_logo.png')}
+                style={{
+                  //    resizeMode:'cover',
+                  marginTop: '15%',
+                  marginBottom: '15%'
+                }}
+              />
+
+
+
+              <View style={styles.container}>
+
+                <View style={styles.SectionStyle}>
+
+
+                   <TextInput allowFontScaling={false}
+                    style={{ flex: 1, borderColor: this.state.Email_warningborder,padding:10 }}
+                    
+                    placeholder="Email"
+                    ref={ref => {this._username = ref}}
+                    //autoFocus={true}
+                    onChangeText={(username) => this.setState({ username })}
+                    autoCapitalize="none"
+                    keyboardType="email-address"
+                    underlineColorAndroid="transparent"
+                    value={this.state.username}
+                    returnKeyType="next"
+                    onSubmitEditing={this._next}
+                  />
+                </View>
+
+              </View>
+
+              <Text allowFontScaling={false} style={{ color: "red", display: this.state.Email_warning, fontSize: 10, fontWeight: 'bold', marginTop: 1, marginLeft: 12 }}>Enter a valid email</Text>
+
+
+              <View style={styles.container}>
+
+                <View style={styles.SectionStyle}>
+
+                  <TextInput allowFontScaling={false}
+                    style={{ flex: 1, borderColor: this.state.Password_warningborder,padding:10 }}
+                    Password={true}
+                    secureTextEntry={true}
+                    /*  style={{height: 50,width: 300,borderColor: 'gray', borderWidth: 1,
+                      borderRadius: 8,
+                      marginBottom:20,padding:10,backgroundColor:'#ffffff'}} */
+                    ref={ref => {this._password = ref}}
+                    autoCapitalize="none"
+                    onChangeText={(Password) => this.setState({ Password })}
+                    underlineColorAndroid='transparent'
+                    placeholder="Password"
+                    keyboardType="default"
+                    returnKeyType="send"
+                    onSubmitEditing={this._submit}
+                    value={this.state.Password}
+                  />
+                </View>
+
+              </View>
+              <Text allowFontScaling={false} style={{ color: "red", display: this.state.Password_warning, fontSize: 10, fontWeight: 'bold', marginTop: 1, marginLeft: 12 }}>Enter Password</Text>
+
+
+
+
+
+
+              <View style={styles.container}>
+
+                <TouchableOpacity style={{ width: "100%" }} onPress={this.login.bind(this)}>
+                  <View style={[styles.SectionStyle2]}>
+                    <View style={{ backgroundColor: "#F16822", borderRadius: 5, alignItems: 'center', width: '100%', padding: '4%' }}>
+                      <Text allowFontScaling={false} style={{ color: 'white', fontFamily:'Roboto-Bold', fontSize: 18 }}>Login</Text>
+                      {/* <Button
+                  color="#e67300"
+                  title='Log In'
+                  style={{borderRadius:10 }}
+                  onPress={this.login.bind(this)}
+                 // onPress={() => navigate("welcome", { screen: "welcome" })}
+
+               /> */}
+
+                    </View>
+                  </View>
+                </TouchableOpacity>
+
+              </View>
+
+
+              {/*   <Button
+              onPress={() => navigate("profile", { screen: "profile" })}
+              title="Welcome"
+              /> 
+              <Button
+              onPress={() => navigate("device", { screen: "device" })}
+              title="Welcome"
+              /> */}
+              <View style={[styles.container, { marginTop: '3%', marginBottom: '8%' }]}>
+
+
+                <View style={[styles.SectionStyle2]}>
+
+                  <Text allowFontScaling={false} onPress={() => this.openDialog(true)} style={{ marginTop: '0.003%', marginBottom: '0.3%', color: '#ffffff', fontFamily:'Roboto-Bold' }} numberOfLines={1}>                 Forgot your password?</Text>
+                </View>
+              </View>
+              <Dialog visible={this.state.showDialog}
+                onTouchOutside={() => this.openDialog(false)}
+                contentStyle={{ justifyContent: 'center', alignItems: 'center', }}
+                animationType="fade">
+
+
+                <View style={{ height: 300,width:'90%' }}>
+                  <View style={{ marginTop: 15, alignContent: 'center', alignItems: 'center', justifyContent: 'center' }}>
+                    <Text allowFontScaling={false} style={{ color: this.state.headColor, fontFamily:'Roboto-Bold', fontSize: 28, textAlign: 'left', alignSelf: 'center' }}>Password Help</Text>
+                    <Text allowFontScaling={false} style={{  color: this.state.bodyColor, fontSize: 15, marginTop: 22 }}>{this.state.password_help_email}</Text>
+
+
+                  </View>
+
+                  <View style={{ flexDirection: 'row', marginTop: 10 }}>
+                    <Text allowFontScaling={false} style={{ color: '#FF0000', textAlign: 'left' }}>*</Text>
+                    <Text allowFontScaling={false} style={{ color: this.state.headColor, textAlign: 'left', fontFamily:'Roboto-Bold' }}>Email address</Text>
+                  </View>
+                  <View style={styles.dialog_container}>
+
+
+                    <View style={[styles.dialog_SectionStyle, { borderColor: this.state.headColor }]}>
+
+                      {/*<Image source={require('./assets/ic_email_small.png')} style={styles.dialog_ImageStyle} />*/}
+                      {commons.renderIf(this.state.pwdImage,
+                      <Image source={require('./assets/ic_email_small.png')} style={styles.dialog_ImageStyle} />
+                      )}
+                       {commons.renderIf(!this.state.pwdImage,
+                      <Image source={require('./assets/icon_email_error_20px.png')} style={styles.dialog_ImageStyle} />
+                      )}
+                      
+                      <TextInput allowFontScaling={false}
+                        style={{ flex: 1, borderColor: this.state.Email_warningborder }}
+                        autoCapitalize="none"
+                        onChangeText={(username) => this.setState({ username })}
+                        underlineColorAndroid="transparent"
+                        value={this.state.username}
+                      />
+
+                    </View>
+
+
+                    {/*     
+                    <View style={{marginTop:20}}>
+                      <Button
+                      style={{flex:1}}
+                      title={this.state.buttonText}
+                      color="#006BBC"
+                     // onPress={() =>this.password_reset() }
+                      onPress={() =>this.pass() }
+                      />
+                   </View>*/}
+                    <TouchableOpacity style={{ marginTop: 20, marginRight: 10, height: 45, width: '65%', backgroundColor: "#0065B2", borderRadius: 5, alignItems: "center", justifyContent: "center" }} onPress={() => this.pass()}>
+                      <Text allowFontScaling={false} style={{ color: "white", fontFamily:'Roboto-Bold' }}>{this.state.buttonText}</Text>
+                    </TouchableOpacity>
+                  </View>
+                  <View style={{ marginTop: 10 }}>
+                    <Text allowFontScaling={false} onPress={() => this.openDialog(false)} style={{ textAlign: 'left', color: '#2554C7' }}>Back to Sign in</Text>
+                  </View>
+
+                </View>
+
+              </Dialog>
+
+              {/*oops*/}
+              <Dialog
+                visible={this.state.changePwdFail}
+                onTouchOutside={() => this.setState({ changePwdFail: false })}
+                animation='fade'
+              >
+                <View >
+                  <Image source={require('./assets/icon_error_grey_60px.png')} style={{ alignSelf: 'center' }} />
+                  <Text allowFontScaling={false} style={{ fontSize: 28, marginBottom: 15, marginTop: 10, fontFamily:'Roboto-Bold', textAlign: 'center' }}>Opps !</Text>
+                  <Text allowFontScaling={false} style={{ fontSize: 20, marginBottom: 5, fontWeight: '300', textAlign: 'center' }}>Incorrect verification code</Text>
+                  <Text allowFontScaling={false} style={{ fontSize: 20, fontWeight: 'bold', marginBottom: 5, textAlign: 'center' }}>Please try again</Text>
+
+
+                  <View style={[{ flexDirection: 'row', marginTop: 50 }, device_style.device_manage]}>
+
+                    <TouchableOpacity style={{ marginRight: 10, height: 45, width: '45%', backgroundColor: "#0065B2", borderRadius: 5, alignItems: "center", justifyContent: "center" }} onPress={() => { this.setState({ changePwdFail: false }) }}>
+                      <Text allowFontScaling={false} style={{ color: "white",fontFamily:'Roboto-Bold' }}>OK</Text>
+                    </TouchableOpacity>
+                    {/*<Text allowFontScaling={false} style={device_style.dialog_btn_cancel} onPress={() => { this.setState({ dialogWidget_delete: false }) }}>CANCEL</Text>
+
+                <Text allowFontScaling={false} style={device_style.dialog_btn_ok} onPress={() => this.deletewidget()}>DELETE</Text>*/}
+                  </View>
+                </View>
+              </Dialog>
+                {/*password-Msg-*/}
+                <Dialog
+                visible={this.state.pwdHelpMsg}
+                onTouchOutside={() => this.setState({ pwdHelpMsg: false })}
+                animation='fade'
+              >
+                <View >
+                  <Image source={require('./assets/icon_email_blue_40px.png')} style={{ alignSelf: 'center' }} />
+                  <Text allowFontScaling={false} style={{ fontSize: 28, marginBottom: 15, marginTop: 10, fontFamily:'Roboto-Bold', textAlign: 'center',color:'#236dd3' }}>Change Password</Text>
+                  <Text allowFontScaling={false} style={{ fontSize: 14, marginBottom: 5, fontWeight: '300', textAlign: 'center' }}>Verification code have been sent</Text>
+                  <Text allowFontScaling={false} style={{ fontSize: 14,  marginBottom: 5, textAlign: 'center' }}>to your email address</Text>
+
+
+                  <View style={[{ flexDirection: 'row', marginTop: 50 }, device_style.device_manage]}>
+
+                    <TouchableOpacity style={{ marginRight: 10, height: 45, width: '45%', backgroundColor: "#0065B2", borderRadius: 5, alignItems: "center", justifyContent: "center" }} onPress={() => { this.setState({ forgetPass: true,pwdHelpMsg:false }) }}>
+                      <Text allowFontScaling={false} style={{ color: "white", fontFamily:'Roboto-Bold' }}>OK</Text>
+                    </TouchableOpacity>
+                    {/*<Text allowFontScaling={false} style={device_style.dialog_btn_cancel} onPress={() => { this.setState({ dialogWidget_delete: false }) }}>CANCEL</Text>
+
+                <Text allowFontScaling={false} style={device_style.dialog_btn_ok} onPress={() => this.deletewidget()}>DELETE</Text>*/}
+                  </View>
+                </View>
+              </Dialog>
+
+              {/*oops*/}
+              <Dialog
+                visible={this.state.dialogWidget_delete}
+                onTouchOutside={() => this.setState({ dialogWidget_delete: false })}
+                animation='fade'
+              >
+                <View >
+                  <Image source={require('./assets/icon_error_grey_60px.png')} style={{ alignSelf: 'center' }} />
+                  <Text allowFontScaling={false} style={{ fontSize: 28, marginBottom: 15, marginTop: 10, fontWeight: 'bold', textAlign: 'center' }}>Opps !</Text>
+                  <Text allowFontScaling={false} style={{ fontSize: 20, marginBottom: 5, fontWeight: '300', textAlign: 'center' }}>Incorrect email or password</Text>
+                  <Text allowFontScaling={false} style={{ fontSize: 20, fontWeight: 'bold', marginBottom: 5, textAlign: 'center' }}>Please try again</Text>
+
+
+                  <View style={[{ flexDirection: 'row', marginTop: 50 }, device_style.device_manage]}>
+
+                    <TouchableOpacity style={{ marginRight: 10, height: 45, width: '45%', backgroundColor: "#0065B2", borderRadius: 5, alignItems: "center", justifyContent: "center" }} onPress={() => { this.setState({ dialogWidget_delete: false }) }}>
+                      <Text allowFontScaling={false} style={{ color: "white", fontWeight: "500" }}>OK</Text>
+                    </TouchableOpacity>
+                    {/*<Text allowFontScaling={false} style={device_style.dialog_btn_cancel} onPress={() => { this.setState({ dialogWidget_delete: false }) }}>CANCEL</Text>
+
+                <Text allowFontScaling={false} style={device_style.dialog_btn_ok} onPress={() => this.deletewidget()}>DELETE</Text>*/}
+                  </View>
+                </View>
+              </Dialog>
+
+
+
+
+              <Dialog visible={this.state.forgetPass}
+                onTouchOutside={() => this.setState({ forgetPass: true })}
+                contentStyle={{ justifyContent: 'center', alignItems: 'center', }}
+                style={{ width: '100%', height: '100%' }}
+                animationType="fade">
+                <ScrollView style={styless.container}>
+                  <View style={{ marginTop: 15 }}>
+                    <Text allowFontScaling={false} style={{ fontSize: 20, color: "#F88017", textAlign: 'left', fontFamily:'Roboto-Bold' }}>Change Password</Text>
+                    <Text allowFontScaling={false} style={{ marginTop: 20 }}>{this.state.password_help}</Text>
+                  </View>
+
+
+                  <Text allowFontScaling={false} style={styless.headStyle}>Verification Code</Text>
+                  <TextInput allowFontScaling={false}
+                    // placeholder="Password"
+                    underlineColorAndroid="transparent"
+                    autoCapitalize="none"
+                    Password={true}
+                    secureTextEntry={true}
+                    style={[styless.textInputStyle, { borderColor: this.state.Password_warningborder }]}
+                    onChangeText={(verificationcode) => this.setState({ verificationcode })}
+                    value={this.state.verificationcode}
+                  />
+
+                  <Text allowFontScaling={false} style={styless.headStyle}>New Password</Text>
+                  <TextInput allowFontScaling={false}
+                    placeholder="Password"
+                    underlineColorAndroid="transparent"
+                    autoCapitalize="none"
+                    Password={true}
+                    secureTextEntry={true}
+                    style={{ padding: '2%', borderRadius: 3, borderColor: this.state.Password_warningborder, borderWidth: 1, marginTop: 10, marginLeft: 10, marginRight: 10 }}
+                    onChangeText={(Password) => {
+                      this.setState({ Password });
+                      this.Get_password_strength(Password)
+
+                    }}
+                    value={this.state.Password}
+                  />
+
+
+                  <Text allowFontScaling={false} style={{ alignSelf: "flex-end", color: this.state.password_color_charlimit, marginTop: 10, marginRight: 10 }}>{this.state.password_char_limitwarning}</Text>
+
+
+
+                  {/*show password strength indicator here*/}
+
+
+                  <View style={{ flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
+
+                    <View style={{ flexDirection: "row", marginTop: 10, flex: .4 }}>
+                      <Image source={require("./assets/icon_password_level_blue_48px.png")} />
+                      <Text allowFontScaling={false} style={{ marginLeft: 5, color: "#006BBC", fontSize: 14, fontWeight: "300" }}>Password Level :</Text>
+                    </View>
+
+
+
+
+                    <View style={{ flex: .4, marginTop: "5%", marginLeft: '6%' }} >
+                      <Slider
+
+                        minimumValue={0}
+                        maximumValue={100}
+                        step={1}
+                        value={this.state.strength}
+                        disabled={true}
+                        trackStyle={customStyles6.track}
+                        thumbStyle={customStyles6.thumb}
+                        minimumTrackTintColor={this.state.color} />
+                      <Text allowFontScaling={false} style={{ alignSelf: "center", color: this.state.color, marginTop: -5 }}>{this.state.label}</Text>
+
+                    </View>
+                  </View>
+
+                  <Text allowFontScaling={false} style={styless.headStyle}>Confirm New Password</Text>
+                  <TextInput allowFontScaling={false}
+                    // placeholder="Confirm Password"
+                    Password={true}
+                    secureTextEntry={true}
+                    autoCapitalize="none"
+                    underlineColorAndroid="transparent"
+                    style={[styless.textInputStyle, { borderColor: this.state.ConfirmPassword_warningborder }]}
+                    onChangeText={(ConfirmPassword) => this.setState({ ConfirmPassword })}
+                    value={this.state.ConfirmPassword}
+                  />
+                  <Text allowFontScaling={false} style={[styless.warningText, { display: this.state.ConfirmPassword_warning }]}>the specified passwords do not match</Text>
+
+                  <Text allowFontScaling={false} style={{ color: "red", display: this.state.checked_warning, fontSize: 10, fontWeight: 'bold', marginTop: '10%', marginLeft: 12 }}></Text>
+                  <TouchableOpacity onPress={() => this._handleSave()}>
+                    <View style={{ borderRadius: 10, backgroundColor: 'orange', padding: 10, alignItems: 'center', marginLeft: 8, marginRight: 8 }}>
+                      <Text allowFontScaling={false} style={{ color: 'white', fontSize: 16, fontWeight: '500' }}>Submit</Text>
+                    </View>
+                  </TouchableOpacity>
+                  <View style={{ bottom: 0, right: 0, paddingTop: '0.2%' }}>
+                    <Text allowFontScaling={false} onPress={() => this.setState({ forgetPass: false, showDialog: false })} style={{ textAlign: 'left', color: 'blue' }}>Back to Sign in</Text>
+                  </View>
+                </ScrollView>
+
+              </Dialog>
+
+              
+              {/*NEW SIGNUP*/}
+              <View style={[styles.container, { marginTop: '6%' }]}>
+                <View style={styles.SectionStyle2}>
+                  <View style={{ width: '60%' }}>
+                    <Text allowFontScaling={false} style={{ color: '#FFFFFF',fontSize:winwidth>350?14:12, fontFamily:'Roboto-Bold' }}
+                      numberOfLines={1}
+                    >Don't have an account?</Text>
+                  </View>
+                  <TouchableOpacity style={{}} onPress={() => navigate("signup", { screen: "signup" })} style={{ width: '40%' }}>
+                    <View style={{ backgroundColor: '#F16822', alignItems: 'center', padding: '2%', borderRadius: 13 }}>
+                      <Text allowFontScaling={false} style={{ color: 'white', fontFamily:'Roboto-Bold', fontSize: 14 }}>    Sign Up    </Text>
+                    </View>
+                  </TouchableOpacity>
+
+                </View>
+              </View>
+
+              {/* <Login/> */}
+
+             <View style={{width:"100%",height:240,flexDirection:"column",alignItems:"center",justifyContent:"center",marginTop:-20}}>
+                <TouchableOpacity style={{ borderRadius: 5, flexDirection: "row", width: '90%', height: '18%', backgroundColor: 'white', alignItems: 'center', justifyContent: "center" }} onPress={() => this.facebookLogin()} >
+                  <Image source={require('./assets/icon_facebook_28px.png')} />
+                  <Text allowFontScaling={false} style={{ marginLeft: '8%', fontSize: 15, fontFamily:'Roboto-Bold', color: "#000F70" }}>Log in With Facebook</Text>
+                </TouchableOpacity>
+
+
+                <TouchableOpacity style={{ marginTop: 14, borderRadius: 5, flexDirection: "row", width: '90%', height: '18%', backgroundColor: 'white', alignItems: 'center', justifyContent: "center" }} onPress={() => this.onGoogleSignInButton()} >
+                  <Image source={require('./assets/icon_google+.png')} />
+                  <Text allowFontScaling={false} style={{ marginLeft: '8%', fontSize: 15, fontFamily:'Roboto-Bold', color: "#D21919" }}>Log in With Google+</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+
+
+          </View>
+         </ ScrollView>
+        </KeyboardAvoidingView>
+      </ImageBackground>
+    );
+  }
+}
+
+
+
+
+
+
+const styles = StyleSheet.create({
+
+  container: {
+
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: '4%'
+  },
+
+  SectionStyle: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    borderWidth: .5,
+    borderColor: '#000',
+    padding: '0.005%',
+    width: '90%',
+    borderRadius: 5,
+    marginBottom: '0.556%'
+  },
+  SectionStyle2: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '0.005%',
+    width: '90%',
+    borderRadius: 5,
+    marginBottom: '0.556%'
+  },
+  ImageStyle: {
+    padding: 10,
+    margin: 5,
+    height: 25,
+    width: 25,
+    resizeMode: 'stretch',
+    alignItems: 'center'
+  },
+  dialogbutton: {
+    alignItems: 'center',
+    width: 0.5,
+    height: 40,
+    padding: 10
+  },
+  dialog_container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+
+  },
+  dialog_SectionStyle: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    borderWidth: .5,
+    // borderColor: 'red',
+  },
+  dialog_SectionStyle1: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    borderWidth: .5,
+    borderColor: '#FF0000',
+  },
+  dialog_ImageStyle: {
+    padding: 10,
+    margin: 5,
+    height: 25,
+    width: 25,
+    resizeMode: 'stretch',
+    alignItems: 'center'
+  },
+
+});
+const styless = StyleSheet.create({
+  container: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: "white"
+
+  },
+  buttonStyle: {
+    color: 'red',
+    marginTop: 10,
+    padding: 20,
+    backgroundColor: 'green'
+  },
+  content: {
+    marginBottom: 10,
+  },
+  textInputStyle: {
+    padding: 3,
+    borderRadius: 3,
+    height: 40,
+    borderWidth: 1,
+    marginTop: 4,
+    marginLeft: 10,
+    marginRight: 10
+  },
+  warningText:
+    {
+      color: "red",
+      fontSize: 10,
+      fontFamily:'Roboto-Bold',
+      marginTop: 4,
+      marginLeft: 12
+    },
+  headStyle: {
+    color: "dodgerblue",
+    fontSize: 12,
+    fontFamily:'Roboto-Bold',
+    marginTop: 10,
+    marginLeft: 10
+  },
+
+});
+var customStyles6 =
+  StyleSheet.create({
+    track: {
+      height: 14,
+      borderRadius: 2,
+      backgroundColor: '#BFBFBF',
+      borderColor: '#BFBFBF',
+      borderWidth: 1,
+    },
+    thumb: {
+      width: 0,
+      height: 0,
+      borderRadius: 2,
+      backgroundColor: '#BFBFBF',
+      borderColor: '#9a9a9a',
+      borderWidth: 1,
+    },
+    texstyle: {
+      fontSize: 18,
+      color: "black"
+    }
+
+  });

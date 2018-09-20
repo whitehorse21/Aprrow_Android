@@ -1,0 +1,23 @@
+{
+      "bulkappstatistics":"bulkappstatistics",
+      "sentbulkemail":"sentbulkemail",
+      "deviceappoperations":"deviceappoperations",
+      "bulkupdate":"bulkupdate",
+      "snspushnotification":"snspushnotification",
+      "getPreSignedURL":"getPreSignedURL",
+      "userdatamgnt":"userdatamgnt",
+      "eulaDataMgnt":"eulaDataMgnt",
+      "sharingfunction":"sharingfunction",
+      "bulklocationupdation":"bulklocationupdation",
+      "accountvalidation":"accountvalidation",
+      "newusermgnt":"newusermgnt",
+      "notificationcountsstyle":"notificationcountsstyle",
+      "profilemgnt":"profilemgnt",
+      "rewardmanagement":"rewardmanagement",
+      "smartstaxmgmt":"smartstaxmgmt",
+      "commenapis":"commenapis",
+      "categorylistfunctions":"categorylistfunctions",
+      "contentmanagement":"contentmanagement",
+      "webrewardsmanagement":"webrewardsmanagement",
+      "multilanguage":"aprrow-user-management-multilanguageapi-dev"
+    } 

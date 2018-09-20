@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/../node_modules/bugsnag-react-native/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-aws-cognito-js/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-background-timer/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-contacts/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-cookies/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-device-info/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-fbsdk/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-fetch-blob/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-google-signin/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-iap/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-image-crop-picker/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-image-picker/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-image-to-base64/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-locale/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-mixpanel/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-open-settings/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-prompt-android/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-push-notification/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-share/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-splash-screen/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-sqlite-storage/src/android" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

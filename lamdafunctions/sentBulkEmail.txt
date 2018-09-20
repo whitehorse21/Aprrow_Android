@@ -1,0 +1,296 @@
+var AWS = require('aws-sdk');
+//var crypto = require('crypto');
+var sns = new AWS.SNS();
+var documentClient = new AWS.DynamoDB.DocumentClient();
+var dynamodb = new AWS.DynamoDB();
+let targetEmail = 'priya.baby@dhisigma.com';
+const fromEmail = 'aprrow@mobileuxtech.com';
+const bccEmail = 'sajin.joseph@dhisigma.com,soju.abraham@dhisigma.com';
+const username= 'aprrow@mobileuxtech.com';
+const passkey = 'MUX2018!aprrow';
+var text = 'hello friends';
+var platformArn='arn:aws:sns:us-west-2:825693432974:app/GCM/Aprrow';
+var platformArnIOS="arn:aws:sns:us-west-2:825693432974:app/APNS_SANDBOX/Aprrow";
+var token="";
+const TableName='StaxSharing';
+const payload = {};
+let i=0;
+let length=0;
+AWS.config.update({
+                    accessKeyId: '"AKIAIYSGDOBNTCCCBKEQ"',
+                    secretAccessKey: '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',
+                    region: 'us-west-2'
+                    });
+payload.TableName =TableName; 
+
+
+exports.handler = function(event, context) {
+  
+ // targetEmail=event.tomail;
+ // text=event.message;
+  
+  shareStax(context,event);
+  //sendMail(context);
+};
+function sendMail(context) {
+	var nodemailer = require('nodemailer');
+	var smtpTransport = require('nodemailer-smtp-transport');
+
+	var transporter =nodemailer.createTransport(smtpTransport({
+	    host: 'smtp.office365.com', //host: 'smtp.gmail.com',
+	    port: 587,  // port: 465,
+	    auth: {
+	        user: username,
+        	pass: passkey
+	    }
+	}));
+
+	
+
+	var mailOptions = {
+	    from: fromEmail,
+	    to: targetEmail,
+	    bcc: bccEmail,
+	    subject: 'Shared widget',
+	    text: text 
+	};
+
+
+ transporter.sendMail(mailOptions,function(error, info){
+          if(error){
+              console.log(error);
+               return context.fail();
+          }else return context.done(null, 'Completed');
+          
+      });
+      
+}
+function pushNotifications(context)
+{
+                
+                var Mparams = {
+		                                TableName : "SNSNotification",
+	    	                            KeyConditionExpression: "#uid = :userid",
+		                                ExpressionAttributeNames:{
+                                                        "#uid": "userid"
+                                                        },
+                                        ExpressionAttributeValues: {
+                                                        ":userid":targetEmail
+                                                        }
+	                       };
+	                      
+	                                    documentClient.query(Mparams, function(err, data) {
+                                            if (err) {
+                                                    console.log("Unable to query. Error:", JSON.stringify(err, null, 2));
+                                                     return context.fail();
+                                                } else {
+                                                    if(data.Count==0)
+                                                    {
+                                                        
+                                                    }
+                                                    else if(data.Count>0)
+                                                    {
+                                                        if(data.Items[0].device!=undefined && data.Items[0].device!='undefined')
+                                                        {
+                                                            
+                                                        var deviceObj=data.Items[0].device;
+                                                        var keys = Object.keys(deviceObj);
+                                                        for (var x in keys) 
+                                                        {
+                                                            var pkey=keys[x];
+                                                            var pvalue=deviceObj[pkey];
+                                                            token=pvalue;
+                                                            //token="cE4nYRtef2w:APA91bEog62sJk4fOSB-IEMog8O9Flaw5Ni0E4IUwucT0ITlo07K1oiLxoMFnUL7IXgyxVZb8w5sdnRf5aOnUooV04PEYv3qo0bUH5lrsEcMSvITlHhmEkgZGvJSldIuN6kHrxK2JI_l";
+                                                            //token="e83b4c6c48bd235e0bfe7cc22c27f8184a60407cfa881b93805dddf855e32967";
+                                                            console.log(token);
+                                                            if(token!=""&&token!=" "&&token!=null&&token!="null")
+                                                            {
+                                                                var urldata = "";
+                                                                urldata = pkey.split("#");
+                                                                if(urldata[1]=='android')
+                                                                {
+                                                                    SNSNotification(context,platformArn)
+                                                                }
+                                                                else if(urldata[1]=='IOS')
+                                                                {
+                                                                    SNSNotification(context,platformArnIOS)
+                                                                }
+                                                            }
+                                                            
+                                                        }
+                                                        }
+                                                       
+                                                    }
+                                                }
+	                                        });
+
+                
+            
+            
+            
+            
+        
+}
+function SNSNotification(context,platform)
+{           
+           
+            sns.createPlatformEndpoint({
+                                        PlatformApplicationArn: platform,
+                                        Token: token
+                                        }, function(err, data) {
+                                        if (err) {
+                                                    console.log(err.stack);
+                                                    
+                                                   // return;
+                                                   return context.fail()
+                                                    }else{
+
+            var endpointArn = data.EndpointArn;
+
+            var payload = {
+                            "default": "The message string.",
+                            "APNS": "{\"aps\":{\"alert\": \"Check out these awesome deals!\",\"url\":\"www.amazon.com\"} }",
+                            "GCM":"{\"data\":{\"message\":\"please click link to get your widget!\",\"url\":\"http://aprrow.net/#8cb7b8fd-ad8e-4b8f-8d42-c39e9de1831b\"}}",
+                            "ADM": "{ \"data\": { \"message\": \"Check out these awesome deals!\",\"url\":\"www.amazon.com\" }}" 
+                          };
+
+            // first have to stringify the inner APNS object...
+            payload.APNS = JSON.stringify(payload.GCM);
+            // then have to stringify the entire message payload
+            payload = JSON.stringify(payload);
+
+            console.log('sending push');
+            if(endpointArn!=null&&endpointArn!=null)
+            sns.publish({
+                            Message: payload,
+                            MessageStructure: 'json',
+                            TargetArn: endpointArn
+                        }, function(err, data) {
+                        if (err) {
+                                
+                                console.log(err.stack);
+                                
+                                 return context.fail();
+                               // return;
+                                }else{
+
+                        console.log('push sent');
+                        console.log(data);
+                         //return context.done(null,"complete");
+                                }
+                        });
+                                                    }
+            }); 
+            
+         
+            
+}
+
+
+
+function shareStax(context,event)
+{
+		   var inputDataObj={};
+           var sharingdata=event.payload;
+           var keys = Object.keys(sharingdata);
+           for (var x in keys) 
+           {
+                  var pkey=keys[x];
+                  var pvalue="";
+                  if(pkey=="widget")
+                  {
+                     pvalue=JSON.stringify(sharingdata[pkey]);
+                  }
+                  else if(pkey=="to")
+                  {
+                  	
+                  }
+                  else
+                  {
+                    pvalue=sharingdata[pkey];
+                  }
+                  
+                  if(pvalue!="")
+                  {
+                    inputDataObj[pkey]={"S": ""+pvalue}
+                  }
+                  
+           }
+           length=(sharingdata["to"].length)-1;
+           for(i=0;i<sharingdata["to"].length;i++)
+           {
+           	
+           inputDataObj["to"]={"S": ""+sharingdata["to"][i]["email"]}
+           inputDataObj["sharingid"]={"S": ""+sharingdata["to"][i]["uuid"]}
+           
+           payload.Item=inputDataObj;
+           //console.log("payload===>>"+i+JSON.stringify(payload));
+           
+           //Mail Sending...........
+           
+                                
+          
+           dynamodb.putItem(payload, function(err, data) 
+           {
+                            if (err) 
+                            {
+                            // context.fail('ERROR: Dynamo failed: ' + err);
+                            console.log('ERROR: Dynamo failed: ' + err);
+                            return context.fail();
+                            } 
+                            else 
+                            {   console.log('Dynamo Success: ' + JSON.stringify(data, null, '  '));
+                            
+                                if(i==((sharingdata["to"].length)-1))
+                                {
+                                return context.succeed('SUCCESS');
+                                }
+                                
+                            }
+                            });  
+               
+                              
+                                
+           
+           }
+           for(i=0;i<sharingdata["to"].length;i++)
+           {
+           	
+           inputDataObj["to"]={"S": ""+sharingdata["to"][i]["email"]}
+           inputDataObj["sharingid"]={"S": ""+sharingdata["to"][i]["uuid"]}
+           //console.log("payload===>>"+i+JSON.stringify(payload));
+           
+           //Mail Sending...........
+          
+                                targetEmail=sharingdata["to"][i]["email"];
+          
+                                text="please click link to get your widget\n http://aprrow.net/#"+sharingdata["to"][i]["uuid"];
+           
+                                pushNotifications(context);
+          
+                        
+                                
+           
+           }
+           for(i=0;i<sharingdata["to"].length;i++)
+           {
+           	
+           inputDataObj["to"]={"S": ""+sharingdata["to"][i]["email"]}
+           inputDataObj["sharingid"]={"S": ""+sharingdata["to"][i]["uuid"]}
+           //console.log("payload===>>"+i+JSON.stringify(payload));
+           
+           //Mail Sending...........
+          
+                                targetEmail=sharingdata["to"][i]["email"];
+          
+                                text="please click link to get your widget\n http://aprrow.net/#"+sharingdata["to"][i]["uuid"];
+                                //text="please click link to get your widget\n aprrow://#"+sharingdata["to"][i]["uuid"];
+                                sendMail(context);
+          
+                       
+                                
+           
+           }
+}
+
+ 

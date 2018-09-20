@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "1065698909699",
+    "firebase_url": "https://aprrow-prod.firebaseio.com",
+    "project_id": "aprrow-prod",
+    "storage_bucket": "aprrow-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065698909699:android:747a90ca357afdd3",
+        "android_client_info": {
+          "package_name": "com.aprrow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065698909699-5l0re43351l30o66qbqhq1v91af07jng.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprrow",
+            "certificate_hash": "236706779de8493731e53f44c4c4b2593d8d98ab"
+          }
+        },
+        {
+          "client_id": "1065698909699-k4p40vk8chtfjan9efi4i1fh93j9l5ir.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprrow",
+            "certificate_hash": "e8d8977d743097b845f797f918ec7aff8c78a245"
+          }
+        },
+        {
+          "client_id": "1065698909699-gibqan1d79v4uhd25psmtp0ioq0oi7ip.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1065698909699-gibqan1d79v4uhd25psmtp0ioq0oi7ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoutCq_ZLDx28ZA7fzpbylMcQnBtK36S8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065698909699-gibqan1d79v4uhd25psmtp0ioq0oi7ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

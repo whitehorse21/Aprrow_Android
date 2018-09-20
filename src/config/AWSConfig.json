@@ -1,0 +1,47 @@
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^QA^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+   /*{
+        "path":"https://oieq9ievn2.execute-api.us-west-2.amazonaws.com/",
+        "stage":"beta/",
+        "usertable":"Users",
+        "s3path":"https://s3-us-west-2.amazonaws.com",
+        "s3folder":"Stax-backgrounds",
+        "s3storefolder":"Store_Images",
+        "storebanners":"storebanners",
+        "homebanners":"homebanners",
+        "s3bucketname":"www.approw.net",
+        "localimagestore":"/cachedimages/",
+        "UserPoolId": "us-west-2_wf8naaz4L", 
+        "ClientId": "274mf2e9pblfadhb1ssfccg8ba",
+        "senderID": "503074132222",
+        "webClientId": "1065698909699-gibqan1d79v4uhd25psmtp0ioq0oi7ip.apps.googleusercontent.com",
+        "region":"us-west-2",
+        "IdentityPoolId": "us-west-2:2ab8f260-0d64-4bed-9dcc-f9566abacd25",
+        "userpoolmap":"cognito-idp.us-west-2.amazonaws.com/us-west-2_wf8naaz4L",
+        "facebookmap":"graph.facebook.com",
+        "googlemap":"accounts.google.com",
+        "mixpanel_token":"69ceaf82bce9388c2c4493d562b09d7a"
+    } */ 
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^PRODUCTION^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+    
+    {
+        "path":"https://nfna1en792.execute-api.eu-west-1.amazonaws.com/",
+        "stage":"prod/",
+        "usertable":"Users",
+        "s3path":"https://s3-eu-west-1.amazonaws.com",
+        "s3folder":"Stax-backgrounds",
+        "s3storefolder":"Store_Images",
+        "storebanners":"storebanners",
+        "homebanners":"homebanners",
+        "s3bucketname":"www.aprrow.tech",
+        "localimagestore":"/cachedimages/",
+        "UserPoolId": "eu-west-1_K4T0IISqj", 
+        "ClientId": "3e995qeofspvbq2qopn1ctimik",
+        "senderID": "1065698909699",
+        "webClientId": "1065698909699-gibqan1d79v4uhd25psmtp0ioq0oi7ip.apps.googleusercontent.com",
+        "region":"eu-west-1",
+        "IdentityPoolId": "eu-west-1:71bb878d-868c-4559-9284-50cd29166e68",
+        "userpoolmap":"cognito-idp.eu-west-1.amazonaws.com/eu-west-1_K4T0IISqj",
+        "facebookmap":"graph.facebook.com",
+        "googlemap":"accounts.google.com",
+        "mixpanel_token":"b34ebb531380413166ece45d7b266087"
+    } 

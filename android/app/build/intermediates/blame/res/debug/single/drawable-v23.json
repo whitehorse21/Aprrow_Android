@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable-v23/abc_control_background_material.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable-v23/abc_control_background_material.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable-v23/abc_control_background_material.xml"
+    }
+]

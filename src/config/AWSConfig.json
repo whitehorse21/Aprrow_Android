@@ -1,15 +1,18 @@
     /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^QA^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-   /*{
+ /* {
         "path":"https://oieq9ievn2.execute-api.us-west-2.amazonaws.com/",
         "stage":"beta/",
         "usertable":"Users",
         "s3path":"https://s3-us-west-2.amazonaws.com",
         "s3folder":"Stax-backgrounds",
         "s3storefolder":"Store_Images",
+        "s3languagefolder":"language",
+        "s3languagesubfolder":"jsons",
         "storebanners":"storebanners",
         "homebanners":"homebanners",
         "s3bucketname":"www.approw.net",
         "localimagestore":"/cachedimages/",
+        "locallanguagestore":"/cachedlanguage/",
         "UserPoolId": "us-west-2_wf8naaz4L", 
         "ClientId": "274mf2e9pblfadhb1ssfccg8ba",
         "senderID": "503074132222",
@@ -19,21 +22,28 @@
         "userpoolmap":"cognito-idp.us-west-2.amazonaws.com/us-west-2_wf8naaz4L",
         "facebookmap":"graph.facebook.com",
         "googlemap":"accounts.google.com",
-        "mixpanel_token":"69ceaf82bce9388c2c4493d562b09d7a"
-    } */ 
+        "mixpanel_token":"69ceaf82bce9388c2c4493d562b09d7a",
+        "WebsitePath":"https://www.aprrow.net",
+        "XApiKey":"xgWUKSHoA3aQpDhrrZnxb1A3TFkx0J3J6d7lcuok"
+
+  } */
     /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^PRODUCTION^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-    
+
     {
+
         "path":"https://nfna1en792.execute-api.eu-west-1.amazonaws.com/",
         "stage":"prod/",
         "usertable":"Users",
         "s3path":"https://s3-eu-west-1.amazonaws.com",
         "s3folder":"Stax-backgrounds",
         "s3storefolder":"Store_Images",
+        "s3languagefolder":"language",
+        "s3languagesubfolder":"jsons",
         "storebanners":"storebanners",
         "homebanners":"homebanners",
         "s3bucketname":"www.aprrow.tech",
         "localimagestore":"/cachedimages/",
+        "locallanguagestore":"/cachedlanguage/",
         "UserPoolId": "eu-west-1_K4T0IISqj", 
         "ClientId": "3e995qeofspvbq2qopn1ctimik",
         "senderID": "1065698909699",
@@ -43,5 +53,7 @@
         "userpoolmap":"cognito-idp.eu-west-1.amazonaws.com/eu-west-1_K4T0IISqj",
         "facebookmap":"graph.facebook.com",
         "googlemap":"accounts.google.com",
-        "mixpanel_token":"b34ebb531380413166ece45d7b266087"
-    } 
+        "mixpanel_token":"b34ebb531380413166ece45d7b266087",
+        "WebsitePath":"https://www.aprrow.tech",
+        "XApiKey":"xgWUKSHoA3aQpDhrrZnxb1A3TFkx0J3J6d7lcuok"
+    }

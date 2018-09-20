@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/layout-v21/notification_template_icon_group.xml"
+    }
+]

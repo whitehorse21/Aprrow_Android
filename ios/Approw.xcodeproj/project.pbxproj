@@ -81,6 +81,8 @@
 		2D29098868994938A3C0CBB2 /* libRCTLocale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD9B7C4EA144B9E86985A2F /* libRCTLocale.a */; };
 		01D8797AF7374348B1121529 /* libRNMixpanel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F455CFC5DF784954A7E0977F /* libRNMixpanel.a */; };
 		883168D62B8D4FDAB20F46E4 /* libRNMixpanel-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9916C70D6A477CBE62034E /* libRNMixpanel-tvOS.a */; };
+		820FFBCBF9514A08B84DEF54 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EC6C3CF4E5404C8E75EE56 /* libsqlite3.0.tbd */; };
+		CB6B6D5B918C451584C7993E /* libReactNativeLocalization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E51C53C9E1C4C719BFA0D74 /* libReactNativeLocalization.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -392,6 +394,9 @@
 		F0F5ADE8CBC04CABBC2473FE /* RNMixpanel.xcodeproj */ = {isa = PBXFileReference; name = "RNMixpanel.xcodeproj"; path = "../node_modules/react-native-mixpanel/RNMixpanel.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		F455CFC5DF784954A7E0977F /* libRNMixpanel.a */ = {isa = PBXFileReference; name = "libRNMixpanel.a"; path = "libRNMixpanel.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		AF9916C70D6A477CBE62034E /* libRNMixpanel-tvOS.a */ = {isa = PBXFileReference; name = "libRNMixpanel-tvOS.a"; path = "libRNMixpanel-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		F0EC6C3CF4E5404C8E75EE56 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; name = "libsqlite3.0.tbd"; path = "usr/lib/libsqlite3.0.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		3B3F87C52B4841D0A8149726 /* ReactNativeLocalization.xcodeproj */ = {isa = PBXFileReference; name = "ReactNativeLocalization.xcodeproj"; path = "../node_modules/react-native-localization/ReactNativeLocalization.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		3E51C53C9E1C4C719BFA0D74 /* libReactNativeLocalization.a */ = {isa = PBXFileReference; name = "libReactNativeLocalization.a"; path = "libReactNativeLocalization.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,6 +447,8 @@
 				2D29098868994938A3C0CBB2 /* libRCTLocale.a in Frameworks */,
 				01D8797AF7374348B1121529 /* libRNMixpanel.a in Frameworks */,
 				883168D62B8D4FDAB20F46E4 /* libRNMixpanel-tvOS.a in Frameworks */,
+				820FFBCBF9514A08B84DEF54 /* libsqlite3.0.tbd in Frameworks */,
+				CB6B6D5B918C451584C7993E /* libReactNativeLocalization.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +593,7 @@
 				A762D8297DE84F3AA71308AE /* SafariServices.framework */,
 				1CF4A4CDBB6D429C8FFF8D97 /* SystemConfiguration.framework */,
 				1449B4233E304C08957EA2A3 /* AddressBook.framework */,
+				F0EC6C3CF4E5404C8E75EE56 /* libsqlite3.0.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -640,6 +648,7 @@
 				4CB586A2DF0D4FD4BD0973A9 /* imageCropPicker.xcodeproj */,
 				CB5883DF342E464ABE44CEB1 /* RCTLocale.xcodeproj */,
 				F0F5ADE8CBC04CABBC2473FE /* RNMixpanel.xcodeproj */,
+				3B3F87C52B4841D0A8149726 /* ReactNativeLocalization.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1266,12 +1275,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1292,6 +1295,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-crop-picker\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-locale\ios\RCTLocale",
 					"$(SRCROOT)\..\node_modules\react-native-mixpanel\RNMixpanel",
+					"$(SRCROOT)/../node_modules/react-native-localization",
+					"$(SRCROOT)\..\node_modules\react-native-localization",
 				);
 			};
 			name = Debug;
@@ -1313,12 +1318,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1339,6 +1338,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-crop-picker\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-locale\ios\RCTLocale",
 					"$(SRCROOT)\..\node_modules\react-native-mixpanel\RNMixpanel",
+					"$(SRCROOT)/../node_modules/react-native-localization",
+					"$(SRCROOT)\..\node_modules\react-native-localization",
 				);
 			};
 			name = Release;
@@ -1377,6 +1378,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-crop-picker\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-locale\ios\RCTLocale",
 					"$(SRCROOT)\..\node_modules\react-native-mixpanel\RNMixpanel",
+					"$(SRCROOT)/../node_modules/react-native-localization",
+					"$(SRCROOT)\..\node_modules\react-native-localization",
 				);
 			};
 			name = Debug;
@@ -1414,6 +1417,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-crop-picker\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-locale\ios\RCTLocale",
 					"$(SRCROOT)\..\node_modules\react-native-mixpanel\RNMixpanel",
+					"$(SRCROOT)/../node_modules/react-native-localization",
+					"$(SRCROOT)\..\node_modules\react-native-localization",
 				);
 			};
 			name = Release;
@@ -1444,12 +1449,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1470,6 +1469,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-crop-picker\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-locale\ios\RCTLocale",
 					"$(SRCROOT)\..\node_modules\react-native-mixpanel\RNMixpanel",
+					"$(SRCROOT)/../node_modules/react-native-localization",
+					"$(SRCROOT)\..\node_modules\react-native-localization",
 				);
 			};
 			name = Debug;
@@ -1500,12 +1501,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1526,6 +1521,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-crop-picker\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-locale\ios\RCTLocale",
 					"$(SRCROOT)\..\node_modules\react-native-mixpanel\RNMixpanel",
+					"$(SRCROOT)/../node_modules/react-native-localization",
+					"$(SRCROOT)\..\node_modules\react-native-localization",
 				);
 			};
 			name = Release;
@@ -1551,12 +1548,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -1581,12 +1572,6 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};

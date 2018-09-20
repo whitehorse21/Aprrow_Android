@@ -1,22 +1,25 @@
 import Moment from 'moment';
 import nativefucntions from './nativemodules/Toast';
-import { NetInfo, AsyncStorage, Dimensions } from 'react-native';
+import { NetInfo, AsyncStorage, Dimensions ,NativeModules} from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import FBSDK, { LoginManager, LoginButton, AccessToken, GraphRequest, GraphRequestManager } from "react-native-fbsdk";
-import appusageservice from './services/smartstaxAppUpdateservice';
-import syncingservice from './services/backgroundservices.js';
-import loactiontrackingservice from './services/locationtracking';
-import smartstaxservice from './services/smartstaxservice';
-import smartstaxAppUpdateservice from './services/smartstaxAppUpdateservice.js';
+import appusageservice from './appusageupdatingservice.js';
+import syncingservice from './backgroundservices.js';
+import loactiontrackingservice from './locationtracking.js';
+import smartstaxservice from './smartstaxservice.js';
+
+import smartstaxAppUpdateservice from './smartstaxAppUpdateservice.js';
 import databasehelper from './utils/databasehelper.js';
 var DeviceInfo = require('react-native-device-info');
 import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
 import { CognitoIdToken, CognitoAccessToken, CognitoUserSession, CognitoRefreshToken, CognitoUserPool, CognitoUserAttribute, CognitoUser, AuthenticationDetails } from 'react-native-aws-cognito-js';
-import RNFetchBlob from 'react-native-fetch-blob'
+import RNFetchBlob from 'react-native-fetch-blob';
+import Strings from './utils/strings.js';
 import {
     Config,
     CognitoIdentityCredentials
 } from 'aws-sdk/dist/aws-sdk-react-native';
+
 const AWS = require('aws-sdk')
 var enable_logging = false;
 var smart_stax_flag = true;
@@ -30,15 +33,18 @@ var aws_data12 = require("./config/AWSConfig.json");
      ClientId: '274mf2e9pblfadhb1ssfccg8ba'
  };
 */
-const awsCognitoSettings = {
-    UserPoolId: aws_data12.UserPoolId,
-    ClientId: aws_data12.ClientId
-};
+ const awsCognitoSettings = {
+     UserPoolId:aws_data12.UserPoolId,
+     ClientId: aws_data12.ClientId
+ };
 
 
 
 const commons = {
-    AWSConfig : require('./config/AWSConfig.json'),
+
+
+    //You might need to install the utf8 package, 
+    //since it was removed from React Native on version 0.54:
     async get_token() {
 
         var username = await AsyncStorage.getItem("username");
@@ -65,14 +71,6 @@ const commons = {
             return encoded;
         }
 
-    },
-
-    async getHeader() {
-        return {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-            'Authorization': await this.get_token()
-        }
     },
 
     async update_creds(acceestoken, idtoken, refreshtoken) {
@@ -151,6 +149,7 @@ const commons = {
                     webClientId: aws_data12.webClientId,
                     offlineAccess: false
                 });
+               // webClientId: "503074132222-vgq3t3nh2kg34jgf99srp41rhplbf2mp.apps.googleusercontent.com",              
                 const user = await GoogleSignin.currentUserAsync();
                 console.log("userDetais", user);
                 // this.setState({user});
@@ -207,6 +206,8 @@ const commons = {
         var username = await AsyncStorage.getItem("username");
         var curdevice = await AsyncStorage.getItem("currentdeviceid");
 
+        //sync applist to server 
+
         /////////app syncing started////////////
 
         var apps = await AsyncStorage.getItem("appdata");
@@ -244,15 +245,29 @@ const commons = {
 
 
                 //opload new apps to s3.
+                //for(var i=0;i<newapps.length;i++)
+                //{
 
+
+                // var filename= newapps[i].package;
+                // var filepaths= newapps[i].icon;
+
+                // await uploadicon()
+
+                // }                          
                 //sync apps  in apps to synsc on success update following
 
                 if (newapps.length > 0 || deletedapps.length > 0 || prevdevice == null || prevdevice != curdevice) {
                     var acceestoken = await commons.get_token();
                     var aws_data = require("./config/AWSConfig.json");
-                    const response = await fetch('' + aws_data.path + aws_data.stage + 'deviceappoperations', {
+                    var aws_lamda = require("./config/AWSLamdaConfig.json"); 
+                    const response = await fetch('' + aws_data.path + aws_data.stage + aws_lamda.deviceappoperations, {
                         method: 'POST',
-                        headers: commons.getHeader(),
+                        headers: {
+                            Accept: 'application/json',
+                            'Content-Type': 'application/json',
+                            'Authorization': acceestoken
+                        },
                         body: JSON.stringify({ "operation": "insertorupdateapps", "deviceid": curdevice, "applist": appstosync, "userid": username }),
                     });
                     const json = await response.json();
@@ -350,8 +365,9 @@ const commons = {
 
             return new Promise(async (resolve, reject) => {
                 var aws_data = require("./config/AWSConfig.json");
+                var aws_lamda = require("./config/AWSLamdaConfig.json");
                 var acceestoken = await this.get_token();
-                await fetch('' + aws_data.path + aws_data.stage + 'bulkupdate', {
+                await fetch('' + aws_data.path + aws_data.stage + aws_lamda.bulkupdate, {
                     method: 'POST',
                     headers: {
                         Accept: 'application/json',
@@ -430,6 +446,7 @@ const commons = {
     },
     async  SNSNotification(user) {
         var aws_data = require("./config/AWSConfig.json");
+        var aws_lamda = require("./config/AWSLamdaConfig.json");
         var Notificationid = await AsyncStorage.getItem("username");
         var emailId = Notificationid;
         var DhId = DeviceInfo.getUniqueID();
@@ -445,7 +462,7 @@ const commons = {
         }
 
         var acceestoken = await this.get_token();
-        await fetch('' + aws_data.path + aws_data.stage + 'snspushnotification', {
+        await fetch('' + aws_data.path + aws_data.stage + aws_lamda.snspushnotification, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -464,9 +481,18 @@ const commons = {
     },
 
     async  getsignedurl(bucketname, path, type) {
+        /* AWS.config.update({
+             accessKeyId: 'AKIAI6CRBBBWLMHSOYUA', secretAccessKey: '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'
+         });
+         var s3config = require("./config/AWSConfig.json");
+ 
+         var s3 = new AWS.S3({ region: "us-west-2" });
+         var params = { Bucket:bucketname , Key:path , ACL: 'public-read', ContentType: 'image/jpg', Expires:300 };
+         var url = s3.getSignedUrl('putObject', params);*/
         var acceestoken = await this.get_token();
         var aws_data = require("./config/AWSConfig.json");
-        const response = await fetch('' + aws_data.path + aws_data.stage + 'getPreSignedURL', {
+        var aws_lamda = require("./config/AWSLamdaConfig.json");
+        const response = await fetch('' + aws_data.path + aws_data.stage + aws_lamda.getPreSignedURL, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -511,37 +537,37 @@ const commons = {
     },
 
 
-    //download image of shared stax
-    async download_sharedimage_tocache(filename_remote, filename_local, username, extension) {
+        //download image of shared stax
+        async download_sharedimage_tocache(filename_remote,filename_local,username, extension) {
 
-        var s3config = require("./config/AWSConfig.json");
-        //var username = await AsyncStorage.getItem("username");
-
-        let dirs = RNFetchBlob.fs.dirs;
-        try {
-            var exist = await RNFetchBlob.fs.exists(dirs.DocumentDir + s3config.localimagestore);
-            if (!exist)
-                await RNFetchBlob.fs.mkdir(dirs.DocumentDir + s3config.localimagestore);
-
-            const path = '' + s3config.s3path + '/' + s3config.s3bucketname + '/' + s3config.s3folder + '/' + username + '/' + filename_remote + extension;
-            await RNFetchBlob.fs.unlink(dirs.DocumentDir + s3config.localimagestore + filename_local + extension);
-
-            var result = await RNFetchBlob.config({
-                // response data will be saved to this path if it has access right.
-                fileCache: true,
-                path: dirs.DocumentDir + s3config.localimagestore + filename_local + extension
-            }).fetch('GET', path, {});
-
-            //   var bs64 = await result.base64();
-            //  alert(result.path() + ">>>size>>>" + bs64.length);
-            return true;
-        }
-        catch (error) {
-            //alert(error.message);
-            return false;
-        }
-
-    },
+            var s3config = require("./config/AWSConfig.json");
+            //var username = await AsyncStorage.getItem("username");
+    
+            let dirs = RNFetchBlob.fs.dirs;
+            try {
+                var exist = await RNFetchBlob.fs.exists(dirs.DocumentDir + s3config.localimagestore);
+                if (!exist)
+                    await RNFetchBlob.fs.mkdir(dirs.DocumentDir + s3config.localimagestore);
+    
+                const path = '' + s3config.s3path + '/' + s3config.s3bucketname + '/' + s3config.s3folder + '/' + username + '/' + filename_remote + extension;
+                await RNFetchBlob.fs.unlink(dirs.DocumentDir + s3config.localimagestore + filename_local + extension);
+    
+                var result = await RNFetchBlob.config({
+                    // response data will be saved to this path if it has access right.
+                    fileCache: true,
+                    path: dirs.DocumentDir + s3config.localimagestore + filename_local + extension
+                }).fetch('GET', path, {});
+    
+                //   var bs64 = await result.base64();
+                //  alert(result.path() + ">>>size>>>" + bs64.length);
+                return true;
+            }
+            catch (error) {
+                //alert(error.message);
+                return false;
+            }
+    
+        },
 
 
 
@@ -607,20 +633,53 @@ const commons = {
         }
 
     },
+    //download language files from s3 for multilanguage
+    async download_language_file_tocache(storeimage_path, filename, extension) {
+
+        
+        var s3config = require("./config/AWSConfig.json");
+        //  var username = await AsyncStorage.getItem("username");
+
+        let dirs = RNFetchBlob.fs.dirs;
+        //alert(dirs.DocumentDir);
+        try {
+            var exist = await RNFetchBlob.fs.exists(dirs.DocumentDir + s3config.locallanguagestore);
+            if (!exist)
+                await RNFetchBlob.fs.mkdir(dirs.DocumentDir + s3config.locallanguagestore);
+
+            const path_down = storeimage_path+filename + extension; //'' + s3config.s3path + '/' + s3config.s3bucketname + '/' + s3config.s3storefolder + '/' + filename + extension;
+            await RNFetchBlob.fs.unlink(dirs.DocumentDir + s3config.locallanguagestore + filename + extension);
+            console.log("path"+dirs.DocumentDir + s3config.locallanguagestore + filename + extension);
+            var result = await RNFetchBlob.config({
+                // response data will be saved to this path if it has access right.
+                fileCache: true,
+                path: dirs.DocumentDir + s3config.locallanguagestore + filename + extension
+            }).fetch('GET', path_down, {});
+            //alert(JSON.stringify(result));
+            var bs64 = await result.base64();
+            //alert(result.path() + ">>>size>>>" + bs64.length);
+            return true;
+        }
+        catch (error) {
+            //alert(error.message);
+            return false;
+        }
+
+    },
     async CognitoLogout() {
         var aws_data11 = await require("./config/AWSConfig.json");
-        /* const awsCognitoSettings = {
-             UserPoolId: 'us-west-2_wf8naaz4L',
-             ClientId: '274mf2e9pblfadhb1ssfccg8ba'
-         };
- */
+       /* const awsCognitoSettings = {
+            UserPoolId: 'us-west-2_wf8naaz4L',
+            ClientId: '274mf2e9pblfadhb1ssfccg8ba'
+        };
+*/
         const awsCognitoSettings = {
-            UserPoolId: aws_data11.UserPoolId,
+            UserPoolId:aws_data11.UserPoolId,
             ClientId: aws_data11.ClientId
         };
 
         var cognitoParams = {
-            IdentityPoolId: aws_data11.IdentityPoolId,// "us-west-2:2ab8f260-0d64-4bed-9dcc-f9566abacd25"
+            IdentityPoolId:aws_data11.IdentityPoolId,// "us-west-2:2ab8f260-0d64-4bed-9dcc-f9566abacd25"
         };
         var credentials = new AWS.CognitoIdentityCredentials(cognitoParams);
         credentials.clearCachedId();
@@ -758,10 +817,14 @@ const commons = {
         pointer-events: none;
         cursor: default;
         text-decoration: none;
-        color: black;}
+        color: black;
+        
+      }
         </style>
   </head>
-  <body><div id="fb-root"></div>
+  <body>
+  
+  <div id="fb-root"></div>
         <script src="//connect.facebook.net/en_US/all.js"></script>
         <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -769,14 +832,17 @@ const commons = {
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&autoLogAppEvents=1&version=v3.0&appId=760632257475072';
         fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script><div class="fb-page" data-href="`+ facebook + `" data-tabs="timeline" data-width="` + width + `" data-height="` + height + `"   data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="` + facebook + `" class="fb-xfbml-parse-ignore"></blockquote></div>
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <div class="fb-page" data-href="`+ facebook + `" data-tabs="timeline" data-width="` + width + `" data-height="` + height + `"   data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="` + facebook + `" class="fb-xfbml-parse-ignore"></blockquote></div>
+        
   </body>
   </html>
     `
 
 
 
-            );
+    );
         }
         else if (medium == 'instagram')
             return (`
@@ -807,8 +873,11 @@ html, body {
 </style>
 </head>
 <body>
-<div class="h_iframe"><iframe width="100%"  src="`+ facebook + `" frameborder="0"></iframe><br/>
-</div></body>
+<div class="h_iframe">   
+<iframe width="100%"  src="`+facebook+`" frameborder="0"></iframe><br/>
+</div>     
+
+</body>
 </html>
     `); else if (medium == 'twitter')
             return (`
@@ -825,8 +894,15 @@ html, body {
       }
         </style>
   </head>
-  <body><a class="twitter-timeline" href="`+ facebook + `"> </a>
+  <body>
+  
+ 
+        <a class="twitter-timeline" href="`+ facebook + `"> </a>
+       
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+       
+        
+        
   </body>
   </html>
     `); else if (medium == 'youtube')
@@ -858,7 +934,11 @@ html, body {
     </style>
     </head>
     <body>
-    <div class="h_iframe"><iframe src="https://www.youtube.com/embed/+lastest?list=`+ facebook + `" frameborder="0" ></iframe><br/></div></body>
+    <div class="h_iframe">    
+  <iframe src="https://www.youtube.com/embed/+lastest?list=`+facebook+`" frameborder="0" ></iframe><br/>
+  </div>     
+        
+  </body>
   </html>
     `); else if (medium == 'pinterest')
             return (`
@@ -868,6 +948,7 @@ html, body {
             <title>Simple todo with React</title>
             <style>
             .not-active {
+            
             cursor: default;
             text-decoration: none;
             color: black;
@@ -888,13 +969,14 @@ html, body {
             </style>
             </head>
             <body>
-            <div class="h_iframe">
-            <iframe width="100%"  src="`+ facebook + `" frameborder="0"></iframe><br/>
-            </div>
+            <div class="h_iframe">   
+            <iframe width="100%"  src="`+facebook+`" frameborder="0"></iframe><br/>
+            </div>     
+            
             </body>
             </html>
-    `); else if (medium == 'website')
-            return (`
+    `);else if (medium == 'website')
+    return (`
 <html lang="en">
 <head>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -922,10 +1004,14 @@ html, body {
 </style>
 </head>
 <body>
-<div class="h_iframe"><iframe width="100%"  src="`+ facebook + `" frameborder="0"></iframe><br/></div></body>
+<div class="h_iframe">   
+<iframe width="100%"  src="`+facebook+`" frameborder="0"></iframe><br/>
+</div>     
+
+</body>
 </html>
-`); else if (medium == 'donate')
-            return (`
+`);else if (medium == 'donate')
+return (`
 <html lang="en">
 <head>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -953,10 +1039,13 @@ width:100%;
 </style>
 </head>
 <body>
-<div class="h_iframe"><iframe width="100%"  src="`+ facebook + `" frameborder="0"></iframe><br/>
-</div></body>
+<div class="h_iframe">   
+<iframe width="100%"  src="`+facebook+`" frameborder="0"></iframe><br/>
+</div>     
+
+</body>
 </html>
-`);
+`); 
     },
     getHTML(facebook, medium) {
         var height = Dimensions.get('window').height;
@@ -977,10 +1066,12 @@ width:100%;
         cursor: default;
         text-decoration: none;
         color: black;
+        
       }
         </style>
   </head>
   <body>
+  
   <div id="fb-root"></div>
         <script src="//connect.facebook.net/en_US/all.js"></script>
         <script>(function(d, s, id) {
@@ -990,7 +1081,7 @@ width:100%;
         js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&autoLogAppEvents=1&version=v3.0&appId=760632257475072';
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-        <div class="not-active">
+        <div class="not-active">   
         <div class="fb-page" data-href="`+ facebook + `" data-tabs="timeline" data-width="` + width + `" data-height="` + height + `"   data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="` + facebook + `" class="fb-xfbml-parse-ignore"></blockquote></div>
         </div>
   </body>
@@ -1026,9 +1117,10 @@ html, body {
 </style>
 </head>
 <body>
-<div class="h_iframe">
-<iframe width="100%"  src="`+ facebook + `" frameborder="0"></iframe><br/>
-</div>
+<div class="h_iframe">   
+<iframe width="100%"  src="`+facebook+`" frameborder="0"></iframe><br/>
+</div>     
+
 </body>
 </html>
     `); else if (medium == 'twitter')
@@ -1039,6 +1131,7 @@ html, body {
       <title>Simple todo with React</title>
       <style>
       .not-active {
+        
         cursor: default;
         text-decoration: none;
         color: black;
@@ -1046,10 +1139,14 @@ html, body {
         </style>
   </head>
   <body>
-        <div class="not-active">
+  
+        <div class="not-active">   
         <a class="twitter-timeline" href="`+ facebook + `"> </a>
         </div>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+       
+        
+        
   </body>
   </html>
     `); else if (medium == 'youtube')
@@ -1060,6 +1157,7 @@ html, body {
       <title>Simple todo with React</title>
       <style>
       .not-active {
+       
         cursor: default;
         text-decoration: none;
         color: black;
@@ -1080,9 +1178,10 @@ html, body {
     </style>
     </head>
     <body>
-    <div class="h_iframe">
-    <iframe src="https://www.youtube.com/embed/+lastest?list=`+ facebook + `" frameborder="0" ></iframe><br/>
-  </div>
+    <div class="h_iframe">   
+    <iframe src="https://www.youtube.com/embed/+lastest?list=`+facebook+`" frameborder="0" ></iframe><br/>
+  </div>     
+        
   </body>
   </html>
     `); else if (medium == 'pinterest')
@@ -1093,6 +1192,7 @@ html, body {
             <title>Simple todo with React</title>
             <style>
             .not-active {
+            
             cursor: default;
             text-decoration: none;
             color: black;
@@ -1113,13 +1213,14 @@ html, body {
             </style>
             </head>
             <body>
-            <div class="h_iframe">
-                <iframe width="100%"  src="`+ facebook + `" frameborder="0"></iframe><br/>
-            </div>
+            <div class="h_iframe">   
+            <iframe width="100%"  src="`+facebook+`" frameborder="0"></iframe><br/>
+            </div>     
+            
             </body>
             </html>
-    `); else if (medium == 'donate')
-            return (`
+    `);else if (medium == 'donate')
+    return (`
 <html lang="en">
 <head>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -1147,13 +1248,14 @@ html, body {
 </style>
 </head>
 <body>
-<div class="h_iframe">
-<iframe width="100%"  src="`+ facebook + `" frameborder="0"></iframe><br/>
-</div>
+<div class="h_iframe">   
+<iframe width="100%"  src="`+facebook+`" frameborder="0"></iframe><br/>
+</div>     
+
 </body>
 </html>
-`); else if (medium == 'website')
-            return (`
+`);else if (medium == 'website')
+return (`
 <html lang="en">
 <head>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -1181,12 +1283,14 @@ width:100%;
 </style>
 </head>
 <body>
-<div class="h_iframe">
-<iframe  src="`+ facebook + `" frameborder="0"></iframe><br/>
-</div></body>
+<div class="h_iframe">   
+<iframe  src="`+facebook+`" frameborder="0"></iframe><br/>
+</div>     
+
+</body>
 </html>
-`); else if (medium == 'google')
-            return (`
+`);else if (medium == 'google')
+return (`
 <html lang="en">
 <head>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -1214,53 +1318,207 @@ width:100%;
 </style>
 </head>
 <body>
-<div class="h_iframe"><iframe width="100%"  src="https://www.google.com" frameborder="0"></iframe><br/></div></body></html>
-`); else if (medium == 'common')
-            return (`
-<html lang="en">
-<head>
-<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Simple todo with React</title>
-<style>
-.not-active {
+<div class="h_iframe">   
+<iframe width="100%"  src="https://www.google.com" frameborder="0"></iframe><br/>
+</div>     
 
-cursor: default;
-text-decoration: none;
-color: black;
-}
-html, body {
-height:100%;
-width:100%;
-margin:0;
-}
-.h_iframe iframe {
-width:100%;
-height:100%;
-}
-.h_iframe {
-height: 100%;
-width:100%;
-}
-</style>
-</head>
-<body>
-<div class="h_iframe"><iframe width="100%"  src="`+ facebook + `" frameborder="0"></iframe><br/>
-</div></body>
+</body>
 </html>
-`);
+`);else if (medium == 'common')
+return (`
+<html lang="en">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Simple todo with React</title>
+<style>
+.not-active {
+
+cursor: default;
+text-decoration: none;
+color: black;
+}
+html, body {
+height:100%;
+width:100%;
+margin:0;
+}
+.h_iframe iframe {
+width:100%;
+height:100%;
+}
+.h_iframe {
+height: 100%;
+width:100%;
+}
+</style>
+</head>
+<body>
+<div class="h_iframe">   
+<iframe width="100%"  src="`+facebook+`" frameborder="0"></iframe><br/>
+</div>     
+
+</body>
+</html>
+`); 
     },
-    isJsonstring(str) {
+isJsonstring(str) {
         try {
-            var m = JSON.parse(str);
-
-            if (m == null || !m instanceof Array)
-                return false;
-
+           var m= JSON.parse(str);
+           
+           if(m==null || !m instanceof Array)
+           return false;
+         
         } catch (e) {
             return false;
         }
         return true;
+    },
+    //dynamic json file Reader for multi language file reading
+async jsonReader(str)
+{
+  var s3config = require("./config/AWSConfig.json"); 
+  //var json=require("/data/com.aprrow/files/cachedlanguage/language.json");
+  let dirs = RNFetchBlob.fs.dirs;
+  var path=dirs.DocumentDir + s3config.locallanguagestore + str+".json"
+  //var path="/data/user/0/com.aprrow/files/cachedlanguage/"+str+".json";
+  var lan=await AsyncStorage.getItem("lan");
+  //console.log("read ok");
+  if(str!=lan)
+  {
+  await RNFetchBlob.fs.readFile(path, 'utf8')
+  .then(async (data) => {
+    // handle the data ..
+    //console.log(data);
+    try{
+    var data22={str:JSON.parse(data)};
+    }catch(err)
+    {
+        //alert(err);
     }
+    //  console.log("s3"+JSON.stringify(data22));
+    //console.log(JSON.stringify(data22));
+        await Strings.setContent(data22);
+        
+        await Strings.setLanguage(str);
+        await AsyncStorage.setItem("lan",str);
+    //  this.replaceScreen(this,"loading"); 
+           
+
+  })
+  return true; 
+    }
+  else
+  return false;
+    
+
+},
+//setting the app language
+async setLanguage()
+{
+  
+  var lan=await AsyncStorage.getItem("lan");
+  
+  if(lan!=null)
+  {
+  var s3config = require("./config/AWSConfig.json"); 
+  let dirs = RNFetchBlob.fs.dirs;
+  var path=dirs.DocumentDir + s3config.locallanguagestore + lan+ ".json"
+  RNFetchBlob.fs.readFile(path, 'utf8')
+  .then(async (data) => {
+    // handle the data ..
+   
+    var data22={lan:JSON.parse(data)};
+   
+    //    console.log("s3"+JSON.stringify(data22));
+    
+        Strings.setContent(data22);
+        
+        Strings.setLanguage(lan);
+        await AsyncStorage.setItem("lan",lan);
+    
+
+  })
+    
+ }else{
+    var locale = NativeModules.I18nManager.localeIdentifier;
+    var localeArray=locale.split("_");
+    if(localeArray.length>0)
+    locale=localeArray[0];
+    if(this.isconnected())
+    {
+            var username=await AsyncStorage.getItem("username");
+            var aws_data=require("./config/AWSConfig.json"); 
+            var aws_lamda = require("./config/AWSLamdaConfig.json");     
+            var acceestoken=await this.get_token();
+            var urlName="";
+            if (username == null || username == commons.guestuserkey()) {     
+                urlName=aws_lamda.commenapis;
+              }
+              else
+              {
+                urlName=aws_lamda.multilanguage;
+              }   
+              //alert(aws_data.path+aws_data.stage+urlName)
+            await fetch(''+aws_data.path+aws_data.stage+urlName, {
+                    method: 'POST',
+                    headers: {
+                                Accept: 'application/json',
+                                'Content-Type': 'application/json',
+                                'Authorization':acceestoken
+                                
+                                },
+                    body: JSON.stringify({
+                    "operation":"checkLanguageExists",
+                    "languageCode":locale
+                                        }),
+                    }).then((response) => response.json())
+                    .then(async (responseJson) => {
+                        //alert(JSON.stringify(responseJson));
+                        try{
+                        if(responseJson.status)
+                        {
+                        var str=locale;
+                        var aws_data11 = require("./config/AWSConfig.json");
+                        var path=aws_data11.s3path+"/"+aws_data11.s3bucketname+"/"+aws_data11.s3languagefolder+"/"+aws_data11.s3languagesubfolder+"/";
+                        
+                        var connectionstatus = await this.isconnected();
+                        if (connectionstatus)
+                        { 
+                        await this.download_language_file_tocache(path,str,".json");
+                    
+                        var data=await this.jsonReader(str);
+                        
+                        }
+                        } 
+                    }catch(err)
+                    {
+
+                    }
+                    
+                    })
+                    .catch((error) => {
+                    console.error(error);
+                    });
+
+    }else{
+        if(locale=="pt")
+        {   //alert(locale);
+        var data22=require("./utils/pt-BR.json");
+        Strings.setContent(data22);
+        
+        Strings.setLanguage("pt");
+        await AsyncStorage.setItem("lan",locale);
+        }
+
+    }
+   // alert(locale);
+
+    
+    console.log(locale);
+ }
+   
+    
+}
 
 }
 export default commons;

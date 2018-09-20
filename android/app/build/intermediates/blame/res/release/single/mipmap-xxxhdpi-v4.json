@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi-v4\\ic_launcher.png",
+        "source": "F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi-v4\\aprrow_pro.png",
+        "source": "F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\aprrow_pro.png"
+    },
+    {
+        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi-v4\\icon.png",
+        "source": "F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon.png"
+    },
+    {
+        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi-v4\\ic_launcher_dev.png",
+        "source": "F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_dev.png"
+    }
+]

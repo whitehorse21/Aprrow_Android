@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/menu/ucrop_menu_activity.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/5b5a0331aff5c270099918baa861a957/res/menu/ucrop_menu_activity.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/menu/ucrop_menu_activity.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/5b5a0331aff5c270099918baa861a957/res/menu/ucrop_menu_activity.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/menu/ucrop_menu_activity.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/5b5a0331aff5c270099918baa861a957/res/menu/ucrop_menu_activity.xml"
+    }
+]

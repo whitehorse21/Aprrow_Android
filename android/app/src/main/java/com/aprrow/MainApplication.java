@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.aprrow.Toast.Toastpackage;
 import com.facebook.react.ReactApplication;
+import com.babisoft.ReactNativeLocalization.ReactNativeLocalizationPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 
 import com.psykar.cookiemanager.CookieManagerPackage;
@@ -54,6 +55,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
+            new ReactNativeLocalizationPackage(),
             new SplashScreenReactPackage(),
             new CookieManagerPackage(),
             new RNMixpanel(),

@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/xml/provider_paths.xml",
+        "source": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/res/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/xml/homescreewidget_info.xml",
+        "source": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/res/xml/homescreewidget_info.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/199496f0cb7d259e05cb974ba039eb77/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/5c5f88f53a2c5f5f40e8024ae1c902a3/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/xml/homescreewidget_info.xml",
+        "source": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/res/xml/homescreewidget_info.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/xml/provider_paths.xml",
+        "source": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/res/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/xml/provider_paths.xml",
+        "source": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/src/main/res/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/26823e855f8dffb4d6d2b9bd6fe07719/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/xml/homescreewidget_info.xml",
+        "source": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/src/main/res/xml/homescreewidget_info.xml"
+    }
+]

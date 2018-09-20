@@ -1,105 +1,96 @@
 import React from 'react';
-import { CognitoUserPool } from 'react-native-aws-cognito-js';
+import { AuthenticationDetails, CognitoUser, CognitoUserAttribute, CognitoUserPool } from 'react-native-aws-cognito-js';
 import { AsyncStorage } from 'react-native';
 import databasehelper from './utils/databasehelper.js';
 import LoaderNew from './utils/LoaderNew';
-import { StyleSheet, Text, View, TextInput, ScrollView, ToastAndroid, Image, KeyboardAvoidingView, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, ScrollView, NativeModules, ToastAndroid, Image, KeyboardAvoidingView, TouchableOpacity } from 'react-native';
 import { Dialog } from 'react-native-simple-dialogs';
+import { NavigationActions } from 'react-navigation';
 import Slider from "react-native-slider";
 import Modal from 'react-native-modal';
 import commons from './commons.js';
 import CheckBox from 'react-native-check-box';
-
+import Strings from './utils/strings.js';
+import assetsConfig from "./config/assets.js";
+var awsData = require("./config/AWSConfig.json");
+var Mixpanel = require('react-native-mixpanel');
 export default class signup extends React.Component {
-
+ 
   static navigationOptions = ({ navigation }) => {
-    let title = 'Sign up';
+    const { params = {} } = navigation.state;
+    const { navigate } = navigation
+    let title = Strings.signup_page_head;
     let headerStyle = { backgroundColor: '#006BBD' };
-    let headerTitleAllowFontScaling = false;
-    let headerTitleStyle = { color: 'white', fontFamily: 'Roboto-Bold', fontWeight: '200', marginLeft: 0, fontSize: 18 };
+    let headerTitleAllowFontScaling=false;
+    let headerTitleStyle = { color: 'white',fontFamily: 'Roboto-Bold',fontWeight:'200', marginLeft: 0, fontSize: 18 };
     let headerTintColor = 'white';
-
-    return {
-      title, headerStyle, headerTitleStyle, headerTintColor, headerTitleAllowFontScaling
-    };
+    return { title, headerStyle, headerTitleStyle, headerTintColor,headerTitleAllowFontScaling 
+     };
   };
   constructor(props) {
     super(props);
     this.state = {
       dialogVisible: false,
-      FirstName_warningborder: "grey",
-      FirstName: "",
-      FirstName_warning: "none",
-
-      LastName: "",
-      LastName_warningborder: "grey",
-      LastName_warning: "none",
-
-      Email: "",
-      Email_warningborder: "grey",
-      Email_warning: "none",
-
-      Password: "",
-      Password_warningborder: "grey",
-      password_color_charlimit: "#757575",
-      password_color_uppercase: "#004d99",
-      password_color_lowercase: "#004d99",
-      password_color_number: "#004d99",
-      password_color_Specialcharachters: "#004d99",
-
-      password_char_limitwarning: " Use at least 6 characters",
-      password_uppercase_warning: "- Upper case",
-      password_lowercase_warning: "- Lower case",
-      password_number_warning: "- Number",
-      password_Specialcharachters_warning: "- Special Character",
-      ConfirmPassword: "",
-      ConfirmPassword_warningborder: "grey",
-      ConfirmPassword_warning: "none",
-
-
+      firstNameWarningBorder: "grey",
+      firstName: "",
+      firstNameWarning: "none",
+      lastName: "",
+      lastNameWarningBorder: "grey",
+      lastNameWarning: "none",
+      email: "",
+      emailWarningBorder: "grey",
+      emailWarning: "none",
+      password: "",
+      passwordWarningBorder: "grey",
+      passwordColorCharLimit: "#757575",
+      passwordCharLimitWarning: Strings.signup_page_passrule,
+      confirmPassword: "",
+      confirmPasswordWarningBorder: "grey",
+      confirmPasswordWarning: "none",
       checked: false,
-      checked_warning: "none",
-      eula_id: "",
-      eula_text: "",
+      checkedWarning: "none",
+      eulaId: "",
+      eulaText: "",
       page: "",
       loading: false,
-      VerificationMail: false,
-      appsdisplay: false,
-
+      verificationMail: false,
+      appsDisplay: false,
       strength: 30,
       color: "#CC0000",
       label: "Weak",
-
-      userid: "",
-      acceptedeula: false,
-      eula_warning: "#004d99"
+      userId:"",
+      acceptedEula: false,
+      eulaWarning:"#004d99"
     };
-    // this.eula.bind(this);
-
   }
-
   openDialog(show) {
-
     this.setState({ showDialog: show })
   }
-
+  
   componentDidMount() {
+    this.mixpanelTrack("Signup View");
     this.refs.loaderRef.show();
     this.eula();
     this.refs.loaderRef.hide();
-
   }
-
-
+          /** 
+(It gets eula text from dynamoDB)
+@param  :nil     
+@return :nil
+@created by    :dhi
+@modified by   :dhi
+@modified date :05/09/18
+*/
   async eula() {
-    var aws_data = require("./config/AWSConfig.json");
-    var acceestoken = await commons.get_token();
-    await fetch('' + aws_data.path + aws_data.stage + 'eulaDataMgnt', {
+    var awsData = require("./config/AWSConfig.json");
+    var awsLamda = require("./config/AWSLamdaConfig.json");
+    var acceestoken=await commons.get_token();
+    await fetch('' + awsData.path + awsData.stage + awsLamda.eulaDataMgnt, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        'Authorization': acceestoken
+        'Authorization':acceestoken
       },
       body: JSON.stringify({
         "operation": "getEulatext",
@@ -109,346 +100,348 @@ export default class signup extends React.Component {
     }).then((response) => response.json())
       .then((responseJson) => {
         var result = JSON.parse(responseJson);
-        this.state.eula_id = result.Item.eulaId.S;
-        this.state.eula_text = result.Item.eulaText.S;
-        //alert(this.state.eula_text)
-        //  this.props.Text.value = result.Item.eulaText.S;
-
+        this.state.eulaId = result.Item.eulaId.S;
+        this.state.eulaText = result.Item.eulaText.S;
       })
       .catch((error) => {
         console.error(error);
       });
   }
-
-  Get_password_strength(password_user_input) {
-    var temp_password = password_user_input;
-
+  
+          /** 
+(Mixpanel event function)
+@param  :event     
+@return :nil
+@created by    :dhi
+@modified by   :dhi
+@modified date :05/09/18
+*/
+  async mixpanelTrack(event)
+   {
+    try{
+        var mixpanelToken=awsData.mixpanel_token;
+        Mixpanel.default.sharedInstanceWithToken(mixpanelToken).then(() => {
+            Mixpanel.default.track(event);
+            });
+      }catch(err){
+      }
+   }
+     /** 
+(Checks the strength of the password on each text change event from input box)
+@param  :event     
+@return :nil
+@created by    :dhi
+@modified by   :dhi
+@modified date :05/09/18
+*/
+  getPasswordStrength(password_user_input) {
+    var tempPassword = password_user_input;
     var strength = 0;
     var label = "";
     var color = "";
-
-
-    if (temp_password == null)
-      temp_password = "";
-
-
-
-
-    var n = temp_password.length;
-    var haslower = false;
-    var hasupper = false;
-    var has_special = false;
-    var hasnumber = false;
-
-
-
-    var hasupper = (/[A-Z]/.test(temp_password));
-    var haslower = (/[a-z]/.test(temp_password));
-    var hasnumber = (/\d/.test(temp_password));
-    var has_special = (/^[a-zA-Z0-9]*$/.test(temp_password));
-
+    if (tempPassword == null)
+      tempPassword = "";
+    var n = tempPassword.length;
+    var good_length = false;
+    var hasUpper = (/[A-Z]/.test(tempPassword));
+    var hasLower = (/[a-z]/.test(tempPassword));
+    var hasNumber = (/\d/.test(tempPassword));
+    var hasSpecial = (/^[a-zA-Z0-9]*$/.test(tempPassword));
     var strength = 0;
-
-    if (hasupper)
+    if (hasUpper)
       strength++;
-
-    if (haslower)
+    if (hasLower)
       strength++;
-
-    if (hasnumber)
+    if (hasNumber)
       strength++;
-
-    if (!has_special)
+    if (!hasSpecial)
       strength++;
-
-
-
-    //alert(hasupper+">>>"+haslower+">>>>"+hasnumber+">>>>"+has_special);
-    if (n >= 6 && strength >= 4) {
+    if (n >= 6 && strength>=4 ) {
       strength = 100;
       color = "#2CAE1C";
       label = "STRONG";
-
     }
-    else if (n >= 6 && strength >= 3) {
+    else if (n >= 6 && strength>=3 ) {
       strength = 60;
       color = "#0065B2";
       label = "Good";
-
     }
     else {
       strength = 30;
       color = "#CC0000";
       label = "Weak";
-
-      //alert("weak");
-
     }
-
     this.setState({
       strength: strength,
       color: color,
       label: label
     });
-
   }
-
-
-  async singup() {
-
+     /** 
+(Signup functionalities-Checks password validations- Creates new user in db and cognito)
+@param  :event     
+@return :nil
+@created by    :dhi
+@modified by   :dhi
+@modified date :05/09/18
+*/
+  async signupFunction() {
     var errocount = 0;
-
-    if (this.state.FirstName == null || this.state.FirstName == "") {
+    if (this.state.firstName == null || this.state.firstName == "") {
       this.setState({
-        FirstName_warning: "flex",
-        FirstName_warningborder: "red"
+        firstNameWarning: "flex",
+        firstNameWarningBorder: "red"
       });
       errocount++;
     }
     else {
       this.setState({
-        FirstName_warning: "none",
-        FirstName_warningborder: "grey"
+        firstNameWarning: "none",
+        firstNameWarningBorder: "grey"
       });
     }
-
-
-
-    if (this.state.LastName == null || this.state.LastName == "") {
+    if (this.state.lastName == null || this.state.lastName == "") {
       this.setState({
-        LastName_warning: "flex",
-        LastName_warningborder: "red"
+        lastNameWarning: "flex",
+        lastNameWarningBorder: "red"
       });
       errocount++;
     }
     else {
       this.setState({
-        LastName_warning: "none",
-        LastName_warningborder: "grey"
+        lastNameWarning: "none",
+        lastNameWarningBorder: "grey"
       });
     }
-
-
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    var emailstatus = re.test(this.state.Email.toLowerCase());
-
-    if (!emailstatus) {
+    var emailStatus = re.test(this.state.email.toLowerCase());
+    if (!emailStatus) {
       this.setState({
-        Email_warning: "flex",
-        Email_warningborder: "red"
+        emailWarning: "flex",
+        emailWarningBorder: "red"
       });
       errocount++;
     }
     else {
       this.setState({
-        Email_warning: "none",
-        Email_warningborder: "grey"
+        emailWarning: "none",
+        emailWarningBorder: "grey"
       });
     }
-
     //password validation 
-    var temp_password = this.state.Password;
-    if (temp_password == null)
-      temp_password = "";
-
-    if (temp_password.length < 6) {
+    var tempPassword = this.state.password;
+    if (tempPassword == null)
+      tempPassword = "";
+    if (tempPassword.length < 6) {
       errocount++;
       this.setState({
-        Password_warningborder: "red",
-        password_char_limitwarning: "Use at least 6 characters",
-        password_color_charlimit: "red",
+        passwordWarningBorder: "red",
+        passwordCharLimitWarning: Strings.signup_page_passrule,
+        passwordColorCharLimit: "red",
       })
     }
     else {
       this.setState({
-        Password_warningborder: "grey",
-        password_char_limitwarning: "Use at least 6 characters",
-        password_color_charlimit: "#757575",
+        passwordWarningBorder: "grey",
+        passwordCharLimitWarning: Strings.signup_page_passrule,
+        passwordColorCharLimit: "#757575",
       })
     }
-
     //confirm password validations
-
-    if (this.state.ConfirmPassword == null || this.state.ConfirmPassword == "" || this.state.ConfirmPassword != this.state.Password) {
+    
+    if (this.state.confirmPassword == null || this.state.confirmPassword == "" || this.state.confirmPassword != this.state.password) {
       errocount++;
       this.setState({
-        ConfirmPassword_warning: "flex",
-        ConfirmPassword_warningborder: "red"
+        confirmPasswordWarning: "flex",
+        confirmPasswordWarningBorder: "red"
       });
       errocount++;
     }
     else {
       this.setState({
-        ConfirmPassword_warning: "none",
-        ConfirmPassword_warningborder: "grey"
+        confirmPasswordWarning: "none",
+        confirmPasswordWarningBorder: "grey"
       });
     }
-    if (!this.state.acceptedeula) {
+    if(!this.state.acceptedEula)
+    {
       this.setState({
-        eula_warning: "red",
+        eulaWarning: "red",
       });
       errocount++;
     }
-    var userdata = {};
-    userdata["firstname"] = this.state.firstname;
-    userdata["LastName"] = this.state.LastName;
-    userdata["Email"] = (this.state.Email).toLowerCase();
-    userdata["Password"] = this.state.Password;
-
-    var aws_data11 = require("./config/AWSConfig.json");
+    
+    var userData = {};
+    userData["firstname"] = this.state.firstname;
+    userData["LastName"] = this.state.lastName;
+    userData["Email"] = (this.state.email).toLowerCase();
+    userData["Password"] = this.state.password;
+    
+    var awsData = require("./config/AWSConfig.json");
     const awsCognitoSettings = {
-      UserPoolId: aws_data11.UserPoolId,
-      ClientId: aws_data11.ClientId
+      UserPoolId:awsData.UserPoolId,
+      ClientId: awsData.ClientId
     };
-
     if (errocount == 0) {
       this.refs.loaderRef.show();
       const userPool = new CognitoUserPool(awsCognitoSettings);
-
+      // Sign up
+      const attributeList = [
+        {
+          Name: 'custom:first_name',
+          Value: this.state.firstName
+        },
+        { Name: 'custom:last_name', Value: this.state.lastName }
+      
+      ];
       var attribute = [{
         Name: 'custom:first_name',
-        Value: this.state.FirstName
+        Value: this.state.firstName
       },
       {
         Name: 'custom:last_name',
-        Value: this.state.LastName
+        Value: this.state.lastName
       },
-      // { Name:'custom:eula_text',Value:this.state.eula_text },
       {
         Name: 'custom:eula_id',
-        Value: this.state.eula_id
+        Value: this.state.eulaId
       }];
       console.log(attribute);
-      //''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-      var aws_data = require("./config/AWSConfig.json");
-      var acceestoken1 = await commons.get_token();
-      await fetch('' + aws_data.path + aws_data.stage + 'accountvalidation', {
+//''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+      var awsData = require("./config/AWSConfig.json");
+      var awsLamda = require("./config/AWSLamdaConfig.json");
+      var acceestoken1=await commons.get_token();
+      await fetch('' + awsData.path + awsData.stage + awsLamda.accountvalidation, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json',
-          'Authorization': acceestoken1
+          'Authorization':acceestoken1
         },
         body: JSON.stringify({
-          "username": "" + (this.state.Email).toLowerCase(),
+          "username": ""+(this.state.email).toLowerCase(),
           "from": "app"
         }),
       }).then((response) => response.json())
         .then(async (responseJson) => {
-          if (responseJson.status == true) {
-
-            var createtime = await commons.gettimestamp();
-
-            var dataObj = {};
-            dataObj.firstname = this.state.FirstName;
-            dataObj.lastname = this.state.LastName;
-            //dataObj.username = (this.state.Email).toLowerCase();
-            dataObj.eulaid = this.state.eula_id;
-            dataObj.createtime = createtime;
-            dataObj.email = (this.state.Email).toLowerCase();
-            dataObj.accountUniqueID = (this.state.Email).toLowerCase();
-            dataObj.loginfrom = "app";
-
-            userPool.signUp(
-              (this.state.Email).toLowerCase(),
-              this.state.Password,
-              attribute,
-              null,
-              async (err, result) => {
-                // alert(JSON.stringify(result));
-                if (err) {
-                  alert(err);
-                  this.refs.loaderRef.hide();
-                  this.setState({ Email: '', Password: '' });
-                  return;
-                }
-                dataObj.username = result.userSub;
-
-                await this.setState({ userid: result.userSub });
-
-                var proObj = {};
-                proObj.profileimage = '0';
-                proObj.username = dataObj.username;
-                proObj.createtime = dataObj.createtime;
-
-                //---------------------------------------------------
-                var aws_data = require("./config/AWSConfig.json");
-
-                var acceestoken = await commons.get_token();
-                fetch("" + aws_data.path + aws_data.stage + "newusermgnt", {
-                  method: 'POST',
-                  headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json',
-                    'Authorization': acceestoken
-                  },
-                  body: JSON.stringify({
-                    "operation": "CreateNewUser01",
-                    "TableName": aws_data.usertable,
-                    "payload": dataObj
-                  }),
-                }).then((response) => response.json())
-                  .then((responseJson) => {
-
-
-                    if (responseJson.status == "SUCCESS") {
-                      ToastAndroid.show('Sign Up Successful.  Check your Email for a verification', 500);
-                      this.setState({ page: '' });
-                      this.refs.loaderRef.hide();
-                      this.setState({ VerificationMail: true })
-
-                    }
-                    else {
-                      this.refs.loaderRef.hide();
-                      ToastAndroid.show(JSON.stringify(responseJson), 500);
-                    }
-                  })
-                  .catch((error) => {
-                    console.error(error);
-                  });
-              }
-            );
-            //------------------
-          }
-          else {
-            var existingAccount = responseJson.existingAccount;
-            if (existingAccount == "app")
-              existingAccount = "APRROW";
-
-            ToastAndroid.show("This account is already linked with " + existingAccount + ". Please use " + existingAccount + " sign-in", 3000);
-            // ToastAndroid.show("This account is already linked with google. Please use google sign-in", 3000);
+          if(responseJson.status==true)
+          {
+      //------------------------------------------------------
+      //insert into sqllite 
+      var createTime = await commons.gettimestamp();
+      var dataObj = {};
+      dataObj.firstname = this.state.firstName;
+      dataObj.lastname = this.state.lastName;
+      dataObj.eulaid = this.state.eulaId;
+      dataObj.createtime = createTime;
+      dataObj.email = (this.state.email).toLowerCase();
+      dataObj.accountUniqueID = (this.state.email).toLowerCase();
+      dataObj.loginfrom = "app";
+      //------------------------------------------------------
+      userPool.signUp(
+        (this.state.email).toLowerCase(),
+        this.state.password,
+        attribute,
+        null,
+        async (err, result) => {
+          if (err) {
+            alert(err);
             this.refs.loaderRef.hide();
+            this.setState({ email: '', password: '' });
+            return;
           }
+          dataObj.username=result.userSub;
+          await this.setState({userId:result.userSub});
+        
+          var returnData = await databasehelper.insertuser(dataObj);
+          var returnData = await databasehelper.insertprofile(dataObj);
+          var proObj = {};
+          proObj.profileimage = '0';
+          proObj.username = dataObj.username;
+          proObj.createtime = dataObj.createTime;
+          var imagereturnData = databasehelper.insertProfileImage(proObj);
+          
+          //---------------------------------------------------
+          var awsData = require("./config/AWSConfig.json");
+          var awsLamda = require("./config/AWSLamdaConfig.json");
+         
+          var acceestoken=await commons.get_token();
+          fetch("" + awsData.path + awsData.stage + awsLamda.newusermgnt, {
+            method: 'POST',
+            headers: {
+              Accept: 'application/json',
+              'Content-Type': 'application/json',
+              'Authorization':acceestoken
+            },
+            body: JSON.stringify({
+              "operation": "CreateNewUser01",
+              "TableName": awsData.usertable,
+              "payload": dataObj
+            }),
+          }).then((response) => response.json())
+            .then((responseJson) => {
+           
+              if (responseJson.status == "SUCCESS") {
+                ToastAndroid.show(Strings.signup_toast_success, 500);
+                this.setState({ page: '' });
+                this.refs.loaderRef.hide();
+                this.setState({ verificationMail: true })
+               
+              }
+              else {
+                this.refs.loaderRef.hide();
+                ToastAndroid.show(JSON.stringify(responseJson), 500);
+              }
+            })
+            .catch((error) => {
+              console.error(error);
+            });
+          //--------------------------------------------------------------
+        
+        }
+      );
+      //------------------
+        }
+        else
+        {
+          var existingAccount=responseJson.existingAccount;
+          if(existingAccount=="app")
+          existingAccount="APRROW";
+   
+          ToastAndroid.show(Strings.login_toast_existing+existingAccount+Strings.login_toast_existing1+existingAccount+Strings.login_toast_existing2, 3000);
+          this.refs.loaderRef.hide();
+        }
         });
       //------------------
-
     }
   }
-
+    /** 
+(Email send to backend)
+@param  :event     
+@return :nil
+@created by    :dhi
+@modified by   :dhi
+@modified date :05/09/18
+*/
   async  VerificationMessagePopUp() {
-
-    var username = await AsyncStorage.getItem("username");
-    var device_id = await AsyncStorage.getItem("currentdeviceid");
-    if (username != null && username == commons.guestuserkey()) {
-      AsyncStorage.setItem("username", this.state.userid);
-      var isconnected = await commons.isconnected();
-      if (isconnected) {
-
-        var mostusedwidgetid = await AsyncStorage.getItem("mostusedwidgetid");
-        //alert("mostusedwidgetid=====>>"+mostusedwidgetid);
-        if (device_id != null && mostusedwidgetid != null && mostusedwidgetid != undefined) {
-          var smart_widget_id = await commons.getuuid();
-          var smart_widget_name = "Smart Aprrow";
-          var smart_mostusedwidget = 4;
-          var smart_applists = [];
-
-          var time = commons.gettimestamp();
-
-
-
-          var result = await databasehelper.insertwidget(smart_widget_id, smart_widget_name, JSON.stringify(smart_applists), time, smart_mostusedwidget, device_id);
+    var userName = await AsyncStorage.getItem("username");
+    var deviceId=await AsyncStorage.getItem("currentdeviceid");
+    if (userName != null && userName == commons.guestuserkey()) {
+      AsyncStorage.setItem("username", this.state.userId);
+      var isConnected = await commons.isconnected();
+      if (isConnected) {
+        var mostUsedWidgetId = await AsyncStorage.getItem("mostusedwidgetid");        
+        if(deviceId!=null&&mostUsedWidgetId!=null &&mostUsedWidgetId!=undefined)
+        {
+                        var smartWidgetId = await commons.getuuid();
+                        var smartWidgetName = "Smart Aprrow";
+                        var smartMostUsedWidget = 4;
+                        var smartApplists = [];
+                        
+                        var time = commons.gettimestamp();
+             
+              var result = await databasehelper.insertwidget(smartWidgetId, smartWidgetName, JSON.stringify(smartApplists), time, smartMostUsedWidget, deviceId);
         }
-
         var result = await commons.syncdatatobackend();
         if (result == "SUCCESS") {
           await commons.SNSNotification();
@@ -458,13 +451,13 @@ export default class signup extends React.Component {
           await commons.stopallservice();
           await databasehelper.AllTableDelete();
           commons.reset(this, "login", {});
-
           await AsyncStorage.setItem("firstrun", "1");
-
-          try {
-            LoginManager.logOut();
+          try{
+          LoginManager.logOut();
           }
-          catch (err) { }
+          catch(err)
+          {}
+          const { navigate } = this.props.navigation;
           commons.replaceScreen(this, "login", {});
         }
         else {
@@ -472,126 +465,128 @@ export default class signup extends React.Component {
         }
       }
       else {
-        ToastAndroid.show("No network available.", 500);
+        ToastAndroid.show(Strings.network_toast_msg1, 500);
       }
-
     }
-    else {
-      commons.replaceScreen(this, "login", {});
-    }
-
-
+   else
+   {
+    const { navigate } = this.props.navigation;
+    commons.replaceScreen(this, "login", {});
+   }
   }
+      /** 
+(Mixpanel track event of signup)
+@param  :event     
+@return :nil
+@created by    :dhi
+@modified by   :dhi
+@modified date :05/09/18
+*/
+  async UserRegistr(thiss)
+  {
+    this.mixpanelTrack("User Register");
+    this.signupFunction();
+  }
+    /** 
+(To move  next input box on enter press)
+@param  :value->input box     
+@return :nil
+@created by    :dhi
+@modified by   :dhi
+@modified date :05/09/18
+*/
   _next = (value) => {
     //alert(">>>>>>>>>");
-    if (value == 'fname')
-      this._lname && this._lname.focus();
-    if (value == 'lname')
-      this._email && this._email.focus();
-    if (value == 'email')
-      this._password && this._password.focus();
-    if (value == 'password')
-      this._cpassword && this._cpassword.focus();
-    if (value == 'cpassword')
-      this._check && this._check.focus();
-
-  }
-  _submit = () => {
-    //this.login();
-  };
-
+    if(value=='fname')
+    this._lname && this._lname.focus();
+    if(value=='lname')
+    this._email && this._email.focus();
+    if(value=='email')
+    this._password && this._password.focus();
+    if(value=='password')
+    this._cpassword && this._cpassword.focus();
+    if(value=='cpassword')
+    this._check && this._check.focus();
+    
+    }
+  
   render() {
-
     return (
       < KeyboardAvoidingView behavior='padding' keyboardVerticalOffset={-170} style={{ flex: 1, backgroundColor: "white" }}>
         <LoaderNew ref={"loaderRef"} />
         <ScrollView style={{ width: '100%', height: '100%' }}>
           <View style={{ width: '100%', justifyContent: 'center', alignItems: 'center' }}>
             <View style={{ width: '90%', justifyContent: 'center' }}>
-              <Text allowFontScaling={false} style={{ fontSize: 16, fontFamily: 'Roboto', marginTop: '8%', marginLeft: 12, color: 'black' }} >Create an account</Text>
-
+              <Text allowFontScaling={false} style={{ fontSize: 16, fontFamily:'Roboto', marginTop: '8%', marginLeft: 12, color: 'black' }} >{Strings.signup_page_title}</Text>
               <TextInput
-
-                placeholder="First Name"
+                
+                placeholder={Strings.signup_page_placeholder_first}
                 underlineColorAndroid="transparent"
-                style={{ padding: '2%', borderColor: this.state.FirstName_warningborder, borderWidth: 1, marginTop: 10, marginLeft: 10, marginRight: 10, borderRadius: 3 }}
-                onChangeText={(FirstName) => this.setState({ FirstName })}
-                value={this.state.FirstName}
-                ref={ref => { this._fname = ref }}
+                style={{ padding: '2%', borderColor: this.state.firstNameWarningBorder, borderWidth: 1, marginTop: 10, marginLeft: 10, marginRight: 10, borderRadius: 3 }}
+                onChangeText={(firstName) => this.setState({ firstName })}
+                value={this.state.firstName}
+                ref={ref => {this._fname = ref}}
                 autoFocus={true}
                 keyboardType="default"
                 returnKeyType="next"
                 autoCapitalize="none"
-                onSubmitEditing={() => this._next("fname")}
-
+                onSubmitEditing={()=>this._next("fname")}
               />
-
-              <Text allowFontScaling={false} style={{ color: "red", display: this.state.FirstName_warning, fontSize: 10, fontFamily: 'Roboto', marginTop: 1, marginLeft: 12 }}>This information is required</Text>
-
-
+              <Text allowFontScaling={false} style={{ color: "red", display: this.state.firstNameWarning, fontSize: 10,fontFamily:'Roboto', marginTop: 1, marginLeft: 12 }}>{Strings.signup_page_warn}</Text>
               <TextInput
-                placeholder="Last Name"
+                placeholder={Strings.signup_page_placeholder_last}
                 underlineColorAndroid="transparent"
                 autoCapitalize="none"
-                style={{ padding: '2%', borderRadius: 3, borderColor: this.state.LastName_warningborder, borderWidth: 1, marginTop: 10, marginLeft: 10, marginRight: 10 }}
-                onChangeText={(LastName) => this.setState({ LastName })}
-                value={this.state.LastName}
-                ref={ref => { this._lname = ref }}
+                style={{ padding: '2%', borderRadius: 3, borderColor: this.state.lastNameWarningBorder, borderWidth: 1, marginTop: 10, marginLeft: 10, marginRight: 10 }}
+                onChangeText={(lastName) => this.setState({ lastName })}
+                value={this.state.lastName}
+                ref={ref => {this._lname = ref}}
                 keyboardType="default"
                 returnKeyType="next"
-                onSubmitEditing={() => this._next("lname")}
+                onSubmitEditing={()=>this._next("lname")}
               />
-              <Text allowFontScaling={false} style={{ color: "red", display: this.state.LastName_warning, fontSize: 10, fontFamily: 'Roboto', marginTop: 1, marginLeft: 12 }}>This information is required</Text>
-
+              <Text allowFontScaling={false} style={{ color: "red", display: this.state.lastNameWarning, fontSize: 10, fontFamily:'Roboto', marginTop: 1, marginLeft: 12 }}>{Strings.signup_page_warn}</Text>
               <View style={{ marginTop: '6%', height: 1, width: '100%', backgroundColor: "#b2babb" }}>
-
               </View>
-
               <TextInput
-                placeholder="Email"
+                placeholder={Strings.signup_page_placeholder_email}
                 underlineColorAndroid="transparent"
                 autoCapitalize="none"
-                style={{ padding: '2%', borderRadius: 3, borderColor: this.state.Email_warningborder, borderWidth: 1, marginTop: 15, marginLeft: 10, marginRight: 10 }}
-                onChangeText={(Email) => this.setState({ Email })}
-                value={this.state.Email}
-                ref={ref => { this._email = ref }}
+                style={{ padding: '2%', borderRadius: 3, borderColor: this.state.emailWarningBorder, borderWidth: 1, marginTop: 15, marginLeft: 10, marginRight: 10 }}
+                onChangeText={(email) => this.setState({ email })}
+                value={this.state.email}
+                ref={ref => {this._email = ref}}
                 keyboardType="email-address"
                 returnKeyType="next"
-                onSubmitEditing={() => this._next("email")}
+                onSubmitEditing={()=>this._next("email")}
               />
-              <Text allowFontScaling={false} style={{ color: "red", display: this.state.Email_warning, fontSize: 10, fontFamily: 'Roboto', marginTop: 1, marginLeft: 12 }}>Enter a valid email</Text>
-
+              <Text allowFontScaling={false} style={{ color: "red", display: this.state.emailWarning, fontSize: 10,fontFamily:'Roboto', marginTop: 1, marginLeft: 12 }}>{Strings.signup_page_warnemail}</Text>
               <TextInput
-                placeholder="Password"
+                placeholder={Strings.signup_page_placeholder_password}
                 underlineColorAndroid="transparent"
                 autoCapitalize="none"
                 Password={true}
                 secureTextEntry={true}
-                style={{ padding: '2%', borderRadius: 3, borderColor: this.state.Password_warningborder, borderWidth: 1, marginTop: 10, marginLeft: 10, marginRight: 10 }}
-                onChangeText={(Password) => {
-                  this.setState({ Password });
-                  this.Get_password_strength(Password)
-
+                style={{ padding: '2%', borderRadius: 3, borderColor: this.state.passwordWarningBorder, borderWidth: 1, marginTop: 10, marginLeft: 10, marginRight: 10 }}
+                onChangeText={(password) => {
+                  this.setState({ password });
+                  this.getPasswordStrength(password)
                 }}
-                value={this.state.Password}
-                ref={ref => { this._password = ref }}
+                value={this.state.password}
+                ref={ref => {this._password = ref}}
                 keyboardType="default"
                 returnKeyType="next"
-                onSubmitEditing={() => this._next("password")}
+                onSubmitEditing={()=>this._next("password")}
               />
-
-
-              <Text allowFontScaling={false} style={{ alignSelf: "flex-end", color: this.state.password_color_charlimit, marginTop: 10, marginRight: 10 }}>{this.state.password_char_limitwarning}</Text>
-
+              <Text allowFontScaling={false} style={{ alignSelf: "flex-end", color: this.state.passwordColorCharLimit, marginTop: 10, marginRight: 10 }}>{this.state.passwordCharLimitWarning}</Text>
+              {/*show password strength indicator here*/}
               <View style={{ flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
-
                 <View style={{ flexDirection: "row", marginTop: 10, flex: .4 }}>
-                  <Image source={require("./assets/icon_password_level_blue_48px.png")} />
-                  <Text allowFontScaling={false} style={{ marginLeft: 5, color: "#006BBC", fontSize: 14, fontWeight: "300" }}>Password Level :</Text>
+                  <Image source={assetsConfig.iconPasswordLevelBlue48px} />
+                  <Text allowFontScaling={false} style={{ marginLeft: 5, color: "#006BBC", fontSize: 14, fontWeight: "300" }}>{Strings.signup_page_passwordlevel}</Text>
                 </View>
                 <View style={{ flex: .4, marginTop: "5%", marginLeft: '6%' }} >
                   <Slider
-
                     minimumValue={0}
                     maximumValue={100}
                     step={1}
@@ -601,117 +596,82 @@ export default class signup extends React.Component {
                     thumbStyle={customStyles6.thumb}
                     minimumTrackTintColor={this.state.color} />
                   <Text allowFontScaling={false} style={{ alignSelf: "center", color: this.state.color, marginTop: -5 }}>{this.state.label}</Text>
-
                 </View>
               </View>
-
               <TextInput
-                placeholder="Confirm Password"
+                placeholder={Strings.signup_page_placeholder_cpass}
                 Password={true}
                 secureTextEntry={true}
                 autoCapitalize="none"
                 underlineColorAndroid="transparent"
-                style={{ padding: '2%', borderRadius: 3, borderColor: this.state.ConfirmPassword_warningborder, borderWidth: 1, marginTop: 20, marginLeft: 10, marginRight: 10 }}
-                onChangeText={(ConfirmPassword) => this.setState({ ConfirmPassword })}
-                value={this.state.ConfirmPassword}
-                ref={ref => { this._cpassword = ref }}
+                style={{ padding: '2%', borderRadius: 3, borderColor: this.state.confirmPasswordWarningBorder, borderWidth: 1, marginTop: 20, marginLeft: 10, marginRight: 10 }}
+                onChangeText={(confirmPassword) => this.setState({ confirmPassword })}
+                value={this.state.confirmPassword}
+                ref={ref => {this._cpassword = ref}}
                 keyboardType="default"
                 returnKeyType="next"
-                onSubmitEditing={() => this._next("cpassword")}
+                onSubmitEditing={()=>this._next("cpassword")}
               />
-              <Text allowFontScaling={false} style={{ color: "red", display: this.state.ConfirmPassword_warning, fontSize: 10, fontFamily: 'Roboto', marginTop: 1, marginLeft: 12 }}>the specified passwords do not match</Text>
-
+              <Text allowFontScaling={false} style={{ color: "red", display: this.state.confirmPasswordWarning, fontSize: 10, fontFamily:'Roboto', marginTop: 1, marginLeft: 12 }}>{Strings.signup_page_warnpass}</Text>
               <View style={{ flex: 1, flexDirection: 'row' }}>
-                <View style={{ marginTop: 20 }}>
-                  <CheckBox
-                    onClick={() => {
-                      var eualastatus = this.state.acceptedeula;
-                      this.setState({ acceptedeula: !eualastatus })
-                    }}
-
-                    checkedImage={<Image source={require("./assets/icon_checkbox_on_lightblue_24px.png")} />}
-                    unCheckedImage={<Image source={require("./assets/icon_checkbox_off_grey_24px.png")} />}
-                  />
+              <View style={{marginTop: 20}}>
+              <CheckBox
+                          onClick={() => {
+                              var eualaStatus = this.state.acceptedEula;
+                              this.setState({ acceptedEula: !eualaStatus })
+                          }}
+                          checkedImage={<Image source={assetsConfig.checkboxCheckedIcon} />}
+                          unCheckedImage={<Image source={assetsConfig.checkbocUncheckedIcon} />}
+                          />
                 </View>
                 <View style={{ flexDirection: 'column' }}>
-                  <Text allowFontScaling={false} style={{ color: this.state.eula_warning, marginTop: 20, marginLeft: 10 }}>I confirm that i have read and agree to the</Text>
-                  <TouchableOpacity disabled={this.state.appsdisplay} onPress={async () => {
-                    await this.setState({ appsdisplay: true })
+                  <Text allowFontScaling={false} style={{ color:this.state.eulaWarning , marginTop: 20, marginLeft: 10 }}>{Strings.signup_page_eula1}</Text>
+                  <TouchableOpacity disabled={this.state.appsDisplay} onPress={async () => {
+                    await this.setState({ appsDisplay: true })
                     const { navigate } = this.props.navigation
                     navigate("eula", { screen: 'eula' })
-                    setTimeout(() => { this.setState({ appsdisplay: false }) }, 1000);
+                    setTimeout(() => { this.setState({ appsDisplay: false }) }, 1000);
                   }}>
-                    <Text allowFontScaling={false} style={{ color: this.state.eula_warning, marginTop: 1, marginLeft: 10, textDecorationLine: 'underline' }}>end user license agreement</Text>
-
+                    <Text allowFontScaling={false} style={{ color:this.state.eulaWarning , marginTop: 1, marginLeft: 10, textDecorationLine: 'underline' }}>{Strings.signup_page_eula2}</Text>
+                    
                   </TouchableOpacity>
                 </View>
-
+                
               </View>
-
-
-              <Dialog
-                visible={this.state.showDialog}
-                style={{ width: '100%', height: '100%' }}
-                onTouchOutside={() => this.openDialog(false)}
-                contentStyle={{ justifyContent: 'center', alignItems: 'center', backgroundColor: '#006BBD' }}
-                animationType="fade">
-                <View style={{ justifyContent: 'center', alignItems: 'center', backgroundColor: 'white', borderRadius: 10 }}>
-                  <Image source={require('./assets/logo_mobileux.png')} style={{ marginTop: 10, marginLeft: 30 }} />
-
-
-                  <Text allowFontScaling={false} style={{ fontSize: 14, fontWeight: 'bold', marginTop: 8, textAlign: 'center', color: 'black' }} >MOBILEUX TECHNOLOGIES</Text>
-                  <Text allowFontScaling={false} style={{ fontSize: 14, fontWeight: 'bold', marginTop: 2, marginBottom: 10, textAlign: 'left', color: 'black' }} >END USER LICENCE AGREEMENT</Text>
-                  <ScrollView  >
-                    <Text allowFontScaling={false} style={{ fontSize: 10, marginTop: 5, marginBottom: 10, marginRight: '2%', marginLeft: '2%', textAlign: 'justify', fontSize: 13, fontWeight: '300' }}>{this.state.eula_text}</Text>
-
-
-                  </ScrollView>
-                  <TouchableOpacity onPress={() => this.openDialog(false)} style={{ backgroundColor: '#006BBD', padding: '4%', marginTop: '3%', marginBottom: '2%' }}>
-                    <Text allowFontScaling={false} style={{ color: 'white', fontWeight: '500' }}>CLOSE</Text>
-                  </TouchableOpacity>
-                  {/* <Button onPress={() => this.openDialog(false)} style={{ marginTop: 10 }} title="CLOSE" /> */}
-                </View>
-              </Dialog>
+             
               <Modal
-                isVisible={this.state.VerificationMail}
+                isVisible={this.state.verificationMail}
                 style={{ flex: 1 }}
                 swipeDirection="right"
                 animationIn="fadeIn"
                 animationOut="fadeOut">
-
                 <View style={{ paddingLeft: 30, paddingBottom: 30, paddingRight: 30, paddingTop: 20, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white', width: '100%', flexDirection: "column" }}>
-
-                  <Image style={{ marginTop: 12 }} source={require('./assets/icon_email_blue_40px.png')} />
-                  <Text allowFontScaling={false} style={{ marginTop: 12, textAlign: "center", color: "#0065B2", fontSize: 23, fontWeight: 'bold' }}>Email verification</Text>
-
-                  <Text allowFontScaling={false} style={{ marginTop: 15, textAlign: "center", color: '#757575', fontSize: 18, fontWeight: '300' }}>Thank you for creating your APRROW account and welcome to our community!</Text>
-                  <Text allowFontScaling={false} style={{ marginTop: 15, textAlign: "center", color: '#757575', fontSize: 18, fontWeight: '300' }}>We want to be sure that we have the email that you’d like us to use, so check your Inbox and verify your email.</Text>
-                  <Text allowFontScaling={false} style={{ marginTop: 15, textAlign: "center", color: '#757575', fontSize: 18, fontWeight: '300' }}>Please note that our email might be on your Junk Box.</Text>
-
+                  <Image style={{ marginTop: 12 }} source={assetsConfig.iconEmailBlue40px} />
+                  <Text allowFontScaling={false} style={{ marginTop: 12, textAlign: "center", color: "#0065B2", fontSize: 23, fontWeight: 'bold' }}>{Strings.signup_popemail_head}</Text>
+                  <Text allowFontScaling={false} style={{ marginTop: 15, textAlign: "center", color: '#757575', fontSize: 18, fontWeight: '300' }}>{Strings.signup_popemail_message1}</Text>
+                  <Text allowFontScaling={false} style={{ marginTop: 15, textAlign: "center", color: '#757575', fontSize: 18, fontWeight: '300' }}>{Strings.signup_popemail_message2}</Text>
+                  <Text allowFontScaling={false} style={{ marginTop: 15, textAlign: "center", color: '#757575', fontSize: 18, fontWeight: '300' }}>{Strings.signup_popemail_message3}</Text>
                   <TouchableOpacity onPress={() => this.VerificationMessagePopUp()} style={{ marginTop: 25, height: 45, width: 130, backgroundColor: "#0065B2", borderRadius: 5, alignItems: "center", justifyContent: "center" }}>
-                    <Text allowFontScaling={false} style={{ color: "white", fontWeight: "500", fontSize: 18 }}>OK</Text>
+                    <Text allowFontScaling={false} style={{ color: "white", fontWeight: "500", fontSize: 18 }}>{Strings.signup_popemail_button}</Text>
                   </TouchableOpacity>
                 </View>
               </Modal>
-              <Text allowFontScaling={false} style={{ color: "red", display: this.state.checked_warning, fontSize: 10, fontWeight: 'bold', marginTop: 1, marginLeft: 12 }}>This information is required</Text>
-
+              <Text allowFontScaling={false} style={{ color: "red", display: this.state.checkedWarning, fontSize: 10, fontWeight: 'bold', marginTop: 1, marginLeft: 12 }}>This information is required</Text>
               <View style={{ marginTop: 20, marginBottom: 20, marginLeft: 10, marginRight: 10, borderRadius: 5 }}>
-                <TouchableOpacity onPress={this.singup.bind(this)}>
+                <TouchableOpacity onPress={()=>this.UserRegistr(this)}>
                   <View style={{ backgroundColor: "#F16822", borderRadius: 10, alignItems: 'center', padding: 10 }}>
-                    <Text allowFontScaling={false} style={{ color: 'white', fontFamily: 'Roboto-Bold', fontSize: 18 }}>Login</Text>
+                    <Text allowFontScaling={false} style={{ color: 'white', fontFamily:'Roboto-Bold', fontSize: 18 }}>{Strings.signup_page_button}</Text>
+                    
                   </View>
                 </TouchableOpacity>
               </View>
             </View>
           </View>
         </ScrollView >
-
       </ KeyboardAvoidingView>
     );
   }
 }
-
-
 var customStyles6 =
   StyleSheet.create({
     track: {
@@ -733,7 +693,18 @@ var customStyles6 =
       fontSize: 18,
       color: "black"
     }
-
   });
-
-
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "white"
+  },
+  buttonStyle: {
+    color: 'red',
+    marginTop: 20,
+    padding: 20,
+    backgroundColor: 'green'
+  }, content: {
+    marginBottom: 20,
+  }
+});

@@ -107,4 +107,5 @@
   <androidx.media2/>
   <com.google.ads.afsn/>
   <com.google.android.ads/>
+  <androidx.biometric/>
 </metadata>

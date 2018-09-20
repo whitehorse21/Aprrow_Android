@@ -1,97 +1,87 @@
 import React from 'react';
-import { AsyncStorage, StyleSheet, View, Linking } from 'react-native';
+import {AppState,AsyncStorage, CheckBox, StyleSheet, Text, View, TextInput, Button, ScrollView, ToastAndroid, Image, KeyboardAvoidingView, AppRegistry, ToolbarAndroid, SectionList, TouchableOpacity, Dimensions, Linking } from 'react-native';
+import { Dialog } from 'react-native-simple-dialogs';
+import { NavigationActions } from 'react-navigation';
+import { Dropdown } from 'react-native-material-dropdown';
 import commons from './commons.js';
 import SplashScreen from 'react-native-splash-screen';
-var DeviceInfo = require('react-native-device-info');
+import Strings from './utils/strings.js';
+var deviceInfo = require('react-native-device-info');
 export default class profile extends React.Component {
   static navigationOptions = {
     title: '',
     headerStyle: { backgroundColor: 'black' },
     headerTitleStyle: { color: 'black' },
     headerTintColor: 'black'
-
   };
   constructor(props) {
     super(props);
-    this.state = {
-      dialogVisible: false,
-      prop1: this.props.test,
-      test: "5"
+    this.state = 
+    {
     };
-
     navigation = this.props.navigation;
-    this.handleAppStateChange = this.handleAppStateChange.bind(this);
+    this.handleAppStateChange=this.handleAppStateChange.bind(this);
   }
-
-  async componentDidMount() {
-    SplashScreen.hide()
-    var isTab = DeviceInfo.isTablet();
-    await AsyncStorage.setItem("istab", "" + isTab);
-
+  async componentDidMount() 
+  {
+    SplashScreen.hide();
+    await commons.setLanguage();
+    var isTab= deviceInfo.isTablet();
+    await AsyncStorage.setItem("istab",""+isTab);
     Linking.getInitialURL().then(async (url) => {
-      this.handleAppStateChange(url);
-
-    });
-    Linking.addEventListener('url', this.handleAppStateChange);
-
-
-
+        this.handleAppStateChange(url);
+      });
+      Linking.addEventListener('url', this.handleAppStateChange);
   }
-  async componentWillUnmount() {
+  async componentWillUnmount() 
+  {
     Linking.removeEventListener('url', this.handleAppStateChange);
   }
-  async handleAppStateChange(url) {
-    console.log(">>>>>>>>>>>loading<<<<<<<<<<<<<");
-    var username = await AsyncStorage.getItem("username");
-    var isfirstrun = await AsyncStorage.getItem("firstrun");
-    setTimeout(() => {
-      if (username != null) {
-        //navigate("welcome", { screen: "welcome" }); 
-        var urldata = "";
-
-        if (url != null && username != commons.guestuserkey()) {
-          urldata = url.split("#");
-          //alert(urldata[1]);
-          commons.replaceScreen(this, 'widgetrecievebeta', { "launchurl": urldata[1] });
-
-        }
-        else {
-          var wId_frm_HSW = "";
-          wId_frm_HSW = this.props.screenProps["WidgetID"];
-          // this.props.screenProps="";
-          if (wId_frm_HSW != null && wId_frm_HSW != 'undefined' && wId_frm_HSW != undefined && wId_frm_HSW != "") {
-            commons.replaceScreen(this, "bottom_menu", { "page": "STAX", "widget_id1": wId_frm_HSW });
+   /** 
+(Multiway Switch from splash  screen)
+@param  :  URL
+@return : nil
+@created by    : Dhi
+@modified by   : Dhi
+@modified date : 04/09/18
+*/
+ async handleAppStateChange(url) {
+        var userName = await AsyncStorage.getItem("username");
+        var isFirstRun=await AsyncStorage.getItem("firstrun");
+        setTimeout(() => {
+          if (userName != null) {
+            var urlData = "";
+            if (url != null&&userName!=commons.guestuserkey()) { //Accept shared stax 
+              urlData = url.split("#");
+              commons.replaceScreen(this, 'widgetrecievebeta', { "launchurl": urlData[1] });
+            }
+            else {                                                
+              var wIdFromHSW="";
+              wIdFromHSW=this.props.screenProps["WidgetID"];
+              if(wIdFromHSW!=null&&wIdFromHSW!='undefined'&&wIdFromHSW!=undefined&&wIdFromHSW!="")
+                  {
+                  commons.replaceScreen(this, "bottom_menu", { "page": "STAX", "widget_id1": wIdFromHSW });
+                  }
+               else{
+                 commons.replaceScreen(this, 'bottom_menu', {});
+                    }           
+            }
           }
           else {
-            commons.replaceScreen(this, 'bottom_menu', {});
+            if(isFirstRun==null)
+             commons.replaceScreen(this, 'userypeselector', {});
+            else
+             commons.replaceScreen(this, 'login', {});
           }
-        }
-      }
-      else {
-        // navigate("login", { screen: "login" }); 
-        if (isfirstrun == null)
-          commons.replaceScreen(this, 'userypeselector', {});
-        else
-          commons.replaceScreen(this, 'login', {});
-
-
-      }
-    }, 500);
-
-
-    // }
+        }, 500);  
   }
-
-
   render() {
-
+    const { navigate } = this.props.navigation;
     return (
       <View style={styles.loadingStyle}>
-        {/*<Image source={require('./assets/logo_mobileux.png')} /> */}
       </View>
-
-    );
-  }
+    ); 
+} 
 }
 const styles = StyleSheet.create({
   container: {
@@ -104,5 +94,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flex: 1
   }
-
 });

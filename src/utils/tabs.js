@@ -5,7 +5,8 @@ import {
   TouchableOpacity,   // Pressable container
   View                // Container component
 } from 'react-native';
-
+var Mixpanel = require('react-native-mixpanel');
+var aws_data11 = require("./../config/AWSConfig.json");
 export default class Tabs extends Component {
   
   // Initialize State
@@ -14,6 +15,17 @@ export default class Tabs extends Component {
     // First tab is active by default
     activeTab: 0
   }
+  async mixpanelTrack(events)
+  {
+    try{
+         var Mixpannel_tocken=aws_data11.mixpanel_token;
+         Mixpanel.default.sharedInstanceWithToken(Mixpannel_tocken).then(() => {
+             Mixpanel.default.track(events);
+             });
+       }catch(err){
+ 
+       }
+   }
   
  
   async setVal()
@@ -38,7 +50,7 @@ export default class Tabs extends Component {
                 index === this.state.activeTab ? styles.tabContainerActive : []
               ]}
               // Change active tab
-              onPress={() => this.setState({ activeTab: index }) }
+              onPress={() => {this.setState({ activeTab: index });this.mixpanelTrack(title)}}
               // Required key prop for components generated returned by map iterator
               key={index}
             >

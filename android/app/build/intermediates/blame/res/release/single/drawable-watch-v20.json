@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-watch-v20\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\drawable-watch-v20\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-watch-v20\\common_google_signin_btn_text_light_normal.xml",
+        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-16.0.0.aar\\9ba567ac17a9a9c746ba353b5e843c20\\res\\drawable-watch-v20\\common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-watch-v20\\common_google_signin_btn_text_disabled.xml",
+        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-16.0.0.aar\\9ba567ac17a9a9c746ba353b5e843c20\\res\\drawable-watch-v20\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-watch-v20\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-16.0.0.aar\\9ba567ac17a9a9c746ba353b5e843c20\\res\\drawable-watch-v20\\common_google_signin_btn_text_dark_normal.xml"
+    }
+]

@@ -19,5 +19,7 @@
       "categorylistfunctions":"categorylistfunctions",
       "contentmanagement":"contentmanagement",
       "webrewardsmanagement":"webrewardsmanagement",
+      "promotionalMail":"aprrow-web-promotionalmail-managementapi-dev",
       "multilanguage":"aprrow-user-management-multilanguageapi-dev"
+
     } 

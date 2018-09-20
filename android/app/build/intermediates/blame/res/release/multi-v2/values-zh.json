@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,109,163",
+                        "endColumns": "53,53,46",
+                        "endOffsets": "104,158,205"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,109,163",
+                        "endColumns": "53,53,46",
+                        "endOffsets": "104,158,205"
+                    }
+                }
+            ]
+        }
+    ]
+}

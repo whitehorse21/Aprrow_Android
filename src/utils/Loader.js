@@ -12,12 +12,12 @@ const Loader = props => {
     ...attributes
   } = props;
 
-  return (
+  return (  
     <Modal
       transparent={true}
       animationType={'none'}
       visible={false}
-      onRequestClose={() => { console.log('close modal') }}>
+      onRequestClose={() => {console.log('close modal')}}>
       <View style={styles.modalBackground}>
         <View style={styles.activityIndicatorWrapper}>
           <ActivityIndicator

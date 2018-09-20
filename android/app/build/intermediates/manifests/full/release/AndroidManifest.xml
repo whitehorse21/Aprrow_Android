@@ -1,0 +1,100 @@
+<manifest package="com.aprrow" android:versionCode="11" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="0.9.2">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <permission android:name="com.aprrow.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+  <uses-permission android:name="com.aprrow.permission.C2D_MESSAGE"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.BLUETOOTH"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.READ_CONTACTS"/>
+  <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+  <uses-permission android:name="android.permission.READ_PROFILE"/>
+  <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+  <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+  <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+  <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+  <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+  <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+  <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+  <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+  <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+  <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+  <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="com.android.vending.BILLING"/>
+  <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <application android:name="com.aprrow.MainApplication" android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme">
+    <provider android:name="android.support.v4.content.FileProvider" android:authorities="com.aprrow.provider" android:exported="false" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+    </provider>
+    <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+        <category android:name="com.aprrow"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher"/>
+    <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService"/>
+    <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService" android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </service>
+    <meta-data android:name="com.bugsnag.android.API_KEY" android:value="9de0d66b71a4d44a2613b08a68f4e958"/>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+    <activity android:name="com.aprrow.SplashActivity" android:label="@string/app_name" android:launchMode="singleTask" android:theme="@style/SplashTheme"/>
+    <activity android:name="com.aprrow.MainActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+        <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+      </intent-filter>
+      <intent-filter android:label="@string/app_name">
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="www.aprrow.com" android:scheme="https"/>
+      </intent-filter>
+    </activity>
+    <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+    <receiver android:name="com.aprrow.widget.homescreewidget">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@xml/homescreewidget_info"/>
+    </receiver>
+    <service android:name="com.aprrow.widget.homescreenwidgetservice" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+    <activity android:name="com.aprrow.widget.homescreewidgetConfigureActivity">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+      </intent-filter>
+    </activity>
+    <activity android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+    <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@style/com_facebook_activity_theme"/>
+    <activity android:name="com.facebook.CustomTabMainActivity"/>
+    <provider android:name="com.facebook.internal.FacebookInitProvider" android:authorities="com.aprrow.FacebookInitProvider" android:exported="false"/>
+    <activity android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:excludeFromRecents="true" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:exported="true" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+    <activity android:name="com.android.billingclient.api.ProxyBillingActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+    <meta-data android:name="com.bugsnag.android.BUILD_UUID" android:value="39c62f1b-6f9e-4c11-b7b3-bf300091c682"/>
+  </application>
+</manifest>

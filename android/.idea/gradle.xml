@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/../node_modules/react-native-image-picker/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-image-to-base64/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-locale/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-localization/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-mixpanel/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-open-settings/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-prompt-android/android" />

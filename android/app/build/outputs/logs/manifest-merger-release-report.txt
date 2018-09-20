@@ -1,0 +1,687 @@
+-- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:44:7-52:20
+MERGED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:13:9-21:20
+MERGED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:13:9-21:20
+MERGED from [:react-native-image-picker] F:\Aprrow_Mobile\node_modules\react-native-image-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:12:9-20:20
+MERGED from [:react-native-image-picker] F:\Aprrow_Mobile\node_modules\react-native-image-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:48:13-47
+	android:authorities
+		INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:46:13-60
+	android:exported
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:45:13-67
+manifest
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:1:1-135:12
+INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:1:1-135:12
+INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:1:1-135:12
+INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:1:1-135:12
+MERGED from [:react-native-localization] F:\Aprrow_Mobile\node_modules\react-native-localization\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-splash-screen] F:\Aprrow_Mobile\node_modules\react-native-splash-screen\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-17:12
+MERGED from [:react-native-cookies] F:\Aprrow_Mobile\node_modules\react-native-cookies\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-mixpanel] F:\Aprrow_Mobile\node_modules\react-native-mixpanel\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-locale] F:\Aprrow_Mobile\node_modules\react-native-locale\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-29:12
+MERGED from [:bugsnag-react-native] F:\Aprrow_Mobile\node_modules\bugsnag-react-native\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-fetch-blob] F:\Aprrow_Mobile\node_modules\react-native-fetch-blob\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-google-signin] F:\Aprrow_Mobile\node_modules\react-native-google-signin\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-push-notification] F:\Aprrow_Mobile\node_modules\react-native-push-notification\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-open-settings] F:\Aprrow_Mobile\node_modules\react-native-open-settings\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-iap] F:\Aprrow_Mobile\node_modules\react-native-iap\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-share] F:\Aprrow_Mobile\node_modules\react-native-share\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-contacts] F:\Aprrow_Mobile\node_modules\react-native-contacts\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-prompt-android] F:\Aprrow_Mobile\node_modules\react-native-prompt-android\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-fbsdk] F:\Aprrow_Mobile\node_modules\react-native-fbsdk\android\build\intermediates\manifests\full\release\AndroidManifest.xml:21:1-30:12
+MERGED from [:react-native-background-timer] F:\Aprrow_Mobile\node_modules\react-native-background-timer\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-to-base64] F:\Aprrow_Mobile\node_modules\react-native-image-to-base64\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-picker] F:\Aprrow_Mobile\node_modules\react-native-image-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-aws-cognito-js] F:\Aprrow_Mobile\node_modules\react-native-aws-cognito-js\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ucrop-2.2.2-native.aar\a5565d601a2e8dda652b5034c293ed9c\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:21:1-50:12
+MERGED from [:react-native-sqlite-storage] F:\Aprrow_Mobile\node_modules\react-native-sqlite-storage\src\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-device-info] F:\Aprrow_Mobile\node_modules\react-native-device-info\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.52.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\react-native-0.52.0.aar\9d8c934b14e4cddbdb108bf79d6e8883\AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\227091b7447e2dad3802e2cc985d77a6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\mixpanel-android-5.3.0.aar\35c709faca42e80dc778177bd8c89d44\AndroidManifest.xml:2:1-108:12
+MERGED from [id.zelory:compressor:2.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\compressor-2.1.0.aar\06c630a9248be9a0461c8358563bcb8c\AndroidManifest.xml:2:1-12:12
+MERGED from [com.bugsnag:bugsnag-android:3.7.2] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\bugsnag-android-3.7.2.aar\489fe215d482e1643a9d22dfe799df9f\AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\bf9f804991f317f4f1038c5c2a829601\AndroidManifest.xml:17:1-28:12
+MERGED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:2:1-41:12
+MERGED from [com.android.billingclient:billing:1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\billing-1.0.aar\80b0995ce82d6717e7e9133d6ae17f0f\AndroidManifest.xml:2:1-18:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\8bb6eddf78347a96a1b15eb35c5db691\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\dba949da52b2cc23e5d2cc47994c232f\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\customtabs-25.3.1.aar\36256faa574563341b8e916083581606\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\ffba0e73a3a65041e14ae224b5eeb649\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\4bc4b97e34e9a8ae94c68bd3f456b80d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-15.0.1.aar\e71c9e24c0719ebb469ddc7216c556ee\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:15.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-15.1.0.aar\ec4d017e0bb9b59d6ff359601ab7a25c\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\cafc59cf696e9220c849ef36dcfccc03\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\6258daf3a519994589acb09bbf51020e\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\d80c41ff0d5c4d6e53220f65238b810c\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-stats-15.0.1.aar\4578f071432ea9b9b1f4fdf9eaa0bf71\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\557e444a74555bf76279b853c460ceaa\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\63a298e0cd4af1958cff8dc422fb78ea\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\99ce139f3b13e265133e9ed354f61a2c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\3032a799b4e729decce143a4d581c664\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\c7efef69f6458b7de50a849329410450\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\6d647e06d4399a3cc418b0db5952320a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\d8fc74615c9763d8cbde4a198c6591ee\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\795576ae22a7dd2c9ca84e8f4e152996\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\fba8442d56ccbf7287e66db25a518ab3\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\42b955058a0cfec6f10ca71cda2a8045\AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\eaf79ca6e0485edae6aa0bda47b38525\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5f7b75cd44cc664f9c6ddf77b43e2a62\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2b8c9945690c501be446de76d83229cb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fc876366eb87648dc5df7b5aa407e070\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\de8104a09df01af6c346e2ec6db99897\AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\49846eec727763d1c539c39af51fb0a6\AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\9026fe5de26d89f740d83f4fdefb0d0b\AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\0a9802934df0a40f9d34183ce834e4b7\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\b760120ab2d91285588afce6cf4af9dc\AndroidManifest.xml:2:1-9:12
+INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:1:1-135:12
+INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:1:1-135:12
+INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:1:1-135:12
+	package
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:3:5-25
+		INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:5:5-32
+		INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:2:5-51
+	xmlns:android
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:4:5-29
+		INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WAKE_LOCK
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:6:5-68
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:6:22-65
+permission#com.aprrow.permission.C2D_MESSAGE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:7:5-9:47
+	android:protectionLevel
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:9:9-44
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:8:9-57
+uses-permission#com.aprrow.permission.C2D_MESSAGE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:10:5-73
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:10:22-70
+uses-permission#android.permission.VIBRATE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:11:22-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.INTERNET
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:13:5-67
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\mixpanel-android-5.3.0.aar\35c709faca42e80dc778177bd8c89d44\AndroidManifest.xml:10:5-67
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\mixpanel-android-5.3.0.aar\35c709faca42e80dc778177bd8c89d44\AndroidManifest.xml:10:5-67
+MERGED from [com.bugsnag:bugsnag-android:3.7.2] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\bugsnag-android-3.7.2.aar\489fe215d482e1643a9d22dfe799df9f\AndroidManifest.xml:12:5-67
+MERGED from [com.bugsnag:bugsnag-android:3.7.2] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\bugsnag-android-3.7.2.aar\489fe215d482e1643a9d22dfe799df9f\AndroidManifest.xml:12:5-67
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\bf9f804991f317f4f1038c5c2a829601\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\bf9f804991f317f4f1038c5c2a829601\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\cafc59cf696e9220c849ef36dcfccc03\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\cafc59cf696e9220c849ef36dcfccc03\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:13:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:14:5-81
+MERGED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:10:5-81
+MERGED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:14:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:15:22-76
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:16:5-77
+MERGED from [com.facebook.react:react-native:0.52.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\react-native-0.52.0.aar\9d8c934b14e4cddbdb108bf79d6e8883\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.52.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\react-native-0.52.0.aar\9d8c934b14e4cddbdb108bf79d6e8883\AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:16:22-75
+uses-permission#android.permission.CAMERA
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:17:5-65
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:17:22-62
+uses-permission#android.permission.BLUETOOTH
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:19:5-67
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:19:22-65
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:20:5-74
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:20:22-72
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:21:5-79
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:21:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:22:22-78
+uses-permission#android.permission.READ_CONTACTS
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:23:5-72
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:23:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:24:5-73
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:24:22-70
+uses-permission#android.permission.READ_PROFILE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:25:5-71
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:25:22-68
+uses-permission#android.permission.PACKAGE_USAGE_STATS
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:27:5-29:46
+	tools:ignore
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:29:9-44
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:28:9-62
+uses-sdk
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:31:5-33:41
+INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:31:5-33:41
+INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:31:5-33:41
+MERGED from [:react-native-localization] F:\Aprrow_Mobile\node_modules\react-native-localization\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-localization] F:\Aprrow_Mobile\node_modules\react-native-localization\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] F:\Aprrow_Mobile\node_modules\react-native-splash-screen\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] F:\Aprrow_Mobile\node_modules\react-native-splash-screen\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-cookies] F:\Aprrow_Mobile\node_modules\react-native-cookies\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-cookies] F:\Aprrow_Mobile\node_modules\react-native-cookies\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-mixpanel] F:\Aprrow_Mobile\node_modules\react-native-mixpanel\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-mixpanel] F:\Aprrow_Mobile\node_modules\react-native-mixpanel\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-locale] F:\Aprrow_Mobile\node_modules\react-native-locale\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-locale] F:\Aprrow_Mobile\node_modules\react-native-locale\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:6:5-8:41
+MERGED from [:bugsnag-react-native] F:\Aprrow_Mobile\node_modules\bugsnag-react-native\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:bugsnag-react-native] F:\Aprrow_Mobile\node_modules\bugsnag-react-native\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] F:\Aprrow_Mobile\node_modules\react-native-fetch-blob\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] F:\Aprrow_Mobile\node_modules\react-native-fetch-blob\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] F:\Aprrow_Mobile\node_modules\react-native-google-signin\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] F:\Aprrow_Mobile\node_modules\react-native-google-signin\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] F:\Aprrow_Mobile\node_modules\react-native-push-notification\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] F:\Aprrow_Mobile\node_modules\react-native-push-notification\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-open-settings] F:\Aprrow_Mobile\node_modules\react-native-open-settings\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-open-settings] F:\Aprrow_Mobile\node_modules\react-native-open-settings\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-iap] F:\Aprrow_Mobile\node_modules\react-native-iap\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-iap] F:\Aprrow_Mobile\node_modules\react-native-iap\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-share] F:\Aprrow_Mobile\node_modules\react-native-share\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-share] F:\Aprrow_Mobile\node_modules\react-native-share\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-contacts] F:\Aprrow_Mobile\node_modules\react-native-contacts\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-contacts] F:\Aprrow_Mobile\node_modules\react-native-contacts\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-prompt-android] F:\Aprrow_Mobile\node_modules\react-native-prompt-android\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-prompt-android] F:\Aprrow_Mobile\node_modules\react-native-prompt-android\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fbsdk] F:\Aprrow_Mobile\node_modules\react-native-fbsdk\android\build\intermediates\manifests\full\release\AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-fbsdk] F:\Aprrow_Mobile\node_modules\react-native-fbsdk\android\build\intermediates\manifests\full\release\AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-background-timer] F:\Aprrow_Mobile\node_modules\react-native-background-timer\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-background-timer] F:\Aprrow_Mobile\node_modules\react-native-background-timer\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-to-base64] F:\Aprrow_Mobile\node_modules\react-native-image-to-base64\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-to-base64] F:\Aprrow_Mobile\node_modules\react-native-image-to-base64\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] F:\Aprrow_Mobile\node_modules\react-native-image-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] F:\Aprrow_Mobile\node_modules\react-native-image-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-aws-cognito-js] F:\Aprrow_Mobile\node_modules\react-native-aws-cognito-js\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-aws-cognito-js] F:\Aprrow_Mobile\node_modules\react-native-aws-cognito-js\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ucrop-2.2.2-native.aar\a5565d601a2e8dda652b5034c293ed9c\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ucrop-2.2.2-native.aar\a5565d601a2e8dda652b5034c293ed9c\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-sqlite-storage] F:\Aprrow_Mobile\node_modules\react-native-sqlite-storage\src\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-sqlite-storage] F:\Aprrow_Mobile\node_modules\react-native-sqlite-storage\src\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] F:\Aprrow_Mobile\node_modules\react-native-device-info\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] F:\Aprrow_Mobile\node_modules\react-native-device-info\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.52.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\react-native-0.52.0.aar\9d8c934b14e4cddbdb108bf79d6e8883\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.52.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\react-native-0.52.0.aar\9d8c934b14e4cddbdb108bf79d6e8883\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\227091b7447e2dad3802e2cc985d77a6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\227091b7447e2dad3802e2cc985d77a6\AndroidManifest.xml:20:5-44
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\mixpanel-android-5.3.0.aar\35c709faca42e80dc778177bd8c89d44\AndroidManifest.xml:5:5-7:41
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\mixpanel-android-5.3.0.aar\35c709faca42e80dc778177bd8c89d44\AndroidManifest.xml:5:5-7:41
+MERGED from [id.zelory:compressor:2.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\compressor-2.1.0.aar\06c630a9248be9a0461c8358563bcb8c\AndroidManifest.xml:8:5-10:41
+MERGED from [id.zelory:compressor:2.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\compressor-2.1.0.aar\06c630a9248be9a0461c8358563bcb8c\AndroidManifest.xml:8:5-10:41
+MERGED from [com.bugsnag:bugsnag-android:3.7.2] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\bugsnag-android-3.7.2.aar\489fe215d482e1643a9d22dfe799df9f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.bugsnag:bugsnag-android:3.7.2] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\bugsnag-android-3.7.2.aar\489fe215d482e1643a9d22dfe799df9f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\bf9f804991f317f4f1038c5c2a829601\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\bf9f804991f317f4f1038c5c2a829601\AndroidManifest.xml:20:5-44
+MERGED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.billingclient:billing:1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\billing-1.0.aar\80b0995ce82d6717e7e9133d6ae17f0f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.billingclient:billing:1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\billing-1.0.aar\80b0995ce82d6717e7e9133d6ae17f0f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\8bb6eddf78347a96a1b15eb35c5db691\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\8bb6eddf78347a96a1b15eb35c5db691\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\dba949da52b2cc23e5d2cc47994c232f\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\dba949da52b2cc23e5d2cc47994c232f\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\customtabs-25.3.1.aar\36256faa574563341b8e916083581606\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\customtabs-25.3.1.aar\36256faa574563341b8e916083581606\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\ffba0e73a3a65041e14ae224b5eeb649\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\ffba0e73a3a65041e14ae224b5eeb649\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\4bc4b97e34e9a8ae94c68bd3f456b80d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\4bc4b97e34e9a8ae94c68bd3f456b80d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-15.0.1.aar\e71c9e24c0719ebb469ddc7216c556ee\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-15.0.1.aar\e71c9e24c0719ebb469ddc7216c556ee\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:15.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-15.1.0.aar\ec4d017e0bb9b59d6ff359601ab7a25c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:15.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-15.1.0.aar\ec4d017e0bb9b59d6ff359601ab7a25c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\cafc59cf696e9220c849ef36dcfccc03\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\cafc59cf696e9220c849ef36dcfccc03\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\6258daf3a519994589acb09bbf51020e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\6258daf3a519994589acb09bbf51020e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\d80c41ff0d5c4d6e53220f65238b810c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\d80c41ff0d5c4d6e53220f65238b810c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-stats-15.0.1.aar\4578f071432ea9b9b1f4fdf9eaa0bf71\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-stats-15.0.1.aar\4578f071432ea9b9b1f4fdf9eaa0bf71\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\557e444a74555bf76279b853c460ceaa\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\557e444a74555bf76279b853c460ceaa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\63a298e0cd4af1958cff8dc422fb78ea\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\63a298e0cd4af1958cff8dc422fb78ea\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\99ce139f3b13e265133e9ed354f61a2c\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\99ce139f3b13e265133e9ed354f61a2c\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\3032a799b4e729decce143a4d581c664\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\3032a799b4e729decce143a4d581c664\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\c7efef69f6458b7de50a849329410450\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\c7efef69f6458b7de50a849329410450\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\6d647e06d4399a3cc418b0db5952320a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\6d647e06d4399a3cc418b0db5952320a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\d8fc74615c9763d8cbde4a198c6591ee\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\d8fc74615c9763d8cbde4a198c6591ee\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\795576ae22a7dd2c9ca84e8f4e152996\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\795576ae22a7dd2c9ca84e8f4e152996\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\fba8442d56ccbf7287e66db25a518ab3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\fba8442d56ccbf7287e66db25a518ab3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\42b955058a0cfec6f10ca71cda2a8045\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\42b955058a0cfec6f10ca71cda2a8045\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\eaf79ca6e0485edae6aa0bda47b38525\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\eaf79ca6e0485edae6aa0bda47b38525\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5f7b75cd44cc664f9c6ddf77b43e2a62\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5f7b75cd44cc664f9c6ddf77b43e2a62\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2b8c9945690c501be446de76d83229cb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2b8c9945690c501be446de76d83229cb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fc876366eb87648dc5df7b5aa407e070\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fc876366eb87648dc5df7b5aa407e070\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\de8104a09df01af6c346e2ec6db99897\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\de8104a09df01af6c346e2ec6db99897\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\49846eec727763d1c539c39af51fb0a6\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\49846eec727763d1c539c39af51fb0a6\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\0a9802934df0a40f9d34183ce834e4b7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\0a9802934df0a40f9d34183ce834e4b7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\b760120ab2d91285588afce6cf4af9dc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\b760120ab2d91285588afce6cf4af9dc\AndroidManifest.xml:5:5-7:41
+INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:31:5-33:41
+INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:31:5-33:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\63a298e0cd4af1958cff8dc422fb78ea\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:33:9-38
+		INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:32:9-35
+		INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml
+application
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:36:5-133:19
+MERGED from [:react-native-splash-screen] F:\Aprrow_Mobile\node_modules\react-native-splash-screen\android\build\intermediates\manifests\full\release\AndroidManifest.xml:11:5-15:19
+MERGED from [:react-native-splash-screen] F:\Aprrow_Mobile\node_modules\react-native-splash-screen\android\build\intermediates\manifests\full\release\AndroidManifest.xml:11:5-15:19
+MERGED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:12:5-27:19
+MERGED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:12:5-27:19
+MERGED from [:react-native-fetch-blob] F:\Aprrow_Mobile\node_modules\react-native-fetch-blob\android\build\intermediates\manifests\full\release\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] F:\Aprrow_Mobile\node_modules\react-native-fetch-blob\android\build\intermediates\manifests\full\release\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fbsdk] F:\Aprrow_Mobile\node_modules\react-native-fbsdk\android\build\intermediates\manifests\full\release\AndroidManifest.xml:28:5-20
+MERGED from [:react-native-fbsdk] F:\Aprrow_Mobile\node_modules\react-native-fbsdk\android\build\intermediates\manifests\full\release\AndroidManifest.xml:28:5-20
+MERGED from [:react-native-image-picker] F:\Aprrow_Mobile\node_modules\react-native-image-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] F:\Aprrow_Mobile\node_modules\react-native-image-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:28:5-48:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:28:5-48:19
+MERGED from [com.facebook.react:react-native:0.52.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\react-native-0.52.0.aar\9d8c934b14e4cddbdb108bf79d6e8883\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.52.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\react-native-0.52.0.aar\9d8c934b14e4cddbdb108bf79d6e8883\AndroidManifest.xml:13:5-20
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\mixpanel-android-5.3.0.aar\35c709faca42e80dc778177bd8c89d44\AndroidManifest.xml:36:5-106:19
+MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\mixpanel-android-5.3.0.aar\35c709faca42e80dc778177bd8c89d44\AndroidManifest.xml:36:5-106:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\bf9f804991f317f4f1038c5c2a829601\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\bf9f804991f317f4f1038c5c2a829601\AndroidManifest.xml:26:5-20
+MERGED from [com.android.billingclient:billing:1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\billing-1.0.aar\80b0995ce82d6717e7e9133d6ae17f0f\AndroidManifest.xml:11:5-16:19
+MERGED from [com.android.billingclient:billing:1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\billing-1.0.aar\80b0995ce82d6717e7e9133d6ae17f0f\AndroidManifest.xml:11:5-16:19
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\dba949da52b2cc23e5d2cc47994c232f\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\dba949da52b2cc23e5d2cc47994c232f\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\customtabs-25.3.1.aar\36256faa574563341b8e916083581606\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\customtabs-25.3.1.aar\36256faa574563341b8e916083581606\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\cafc59cf696e9220c849ef36dcfccc03\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\cafc59cf696e9220c849ef36dcfccc03\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\6258daf3a519994589acb09bbf51020e\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\6258daf3a519994589acb09bbf51020e\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\d80c41ff0d5c4d6e53220f65238b810c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\d80c41ff0d5c4d6e53220f65238b810c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-stats-15.0.1.aar\4578f071432ea9b9b1f4fdf9eaa0bf71\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-stats-15.0.1.aar\4578f071432ea9b9b1f4fdf9eaa0bf71\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\557e444a74555bf76279b853c460ceaa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\557e444a74555bf76279b853c460ceaa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\63a298e0cd4af1958cff8dc422fb78ea\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\63a298e0cd4af1958cff8dc422fb78ea\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\99ce139f3b13e265133e9ed354f61a2c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\99ce139f3b13e265133e9ed354f61a2c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\49846eec727763d1c539c39af51fb0a6\AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\49846eec727763d1c539c39af51fb0a6\AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\9026fe5de26d89f740d83f4fdefb0d0b\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\9026fe5de26d89f740d83f4fdefb0d0b\AndroidManifest.xml:2:3-17
+	android:supportsRtl
+		ADDED from [:react-native-splash-screen] F:\Aprrow_Mobile\node_modules\react-native-splash-screen\android\build\intermediates\manifests\full\release\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:39:7-39
+	android:icon
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:40:7-41
+	android:allowBackup
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:38:7-33
+	android:theme
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:41:7-38
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:37:7-48
+receiver#com.google.android.gms.gcm.GcmReceiver
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:54:13-62:20
+	android:exported
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:56:13-36
+	android:permission
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:57:13-73
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:55:13-66
+intent-filter#com.aprrow+com.google.android.c2dm.intent.RECEIVE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:58:13-61:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:59:17-81
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:59:25-78
+category#com.aprrow
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:60:17-55
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:60:27-52
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:64:9-110
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:64:19-107
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:65:9-69:20
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:65:19-115
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:66:13-68:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:67:17-79
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:67:25-76
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:70:9-118
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:70:18-116
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:71:9-77:19
+	android:exported
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:73:13-37
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:72:13-107
+intent-filter#com.google.android.c2dm.intent.RECEIVE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:74:13-76:29
+meta-data#com.bugsnag.android.API_KEY
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:78:7-79:59
+	android:value
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:79:9-57
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:78:18-60
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:82:7-105
+	android:value
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:82:64-103
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:82:18-63
+activity#com.aprrow.SplashActivity
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:83:7-89:20
+	android:label
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:87:13-45
+	android:launchMode
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:86:13-44
+	android:theme
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:85:13-47
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:84:13-43
+activity#com.aprrow.MainActivity
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:90:7-112:18
+	android:screenOrientation
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:94:9-45
+	android:label
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:92:9-41
+	android:launchMode
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:95:9-40
+	android:windowSoftInputMode
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:96:9-51
+	android:exported
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:97:9-32
+	android:configChanges
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:93:9-79
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:91:9-47
+intent-filter#android.intent.action.DOWNLOAD_COMPLETE+android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:99:13-103:29
+action#android.intent.action.MAIN
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:100:17-69
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:100:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:101:17-77
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:101:27-74
+action#android.intent.action.DOWNLOAD_COMPLETE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:102:6-70
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:102:14-68
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:104:11-110:27
+	android:label
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:104:26-58
+action#android.intent.action.VIEW
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:105:15-66
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:105:23-64
+category#android.intent.category.DEFAULT
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:106:15-73
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:106:25-71
+category#android.intent.category.BROWSABLE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:107:15-75
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:107:25-73
+data
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:108:15-76
+	android:host
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:108:21-50
+	android:scheme
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:108:51-73
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:113:7-84
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:113:17-81
+receiver#com.aprrow.widget.homescreewidget
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:114:9-122:20
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:114:19-67
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:115:13-117:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:116:17-84
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:116:25-81
+meta-data#android.appwidget.provider
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:119:13-121:64
+	android:resource
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:121:17-61
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:120:17-58
+service#com.aprrow.widget.homescreenwidgetservice
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:123:9-125:71
+	android:permission
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:125:13-69
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:124:13-69
+activity#com.aprrow.widget.homescreewidgetConfigureActivity
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:127:9-131:20
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:127:19-84
+intent-filter#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:128:13-130:29
+action#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:129:17-87
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:129:25-84
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:49:13-51:58
+MERGED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:18:13-20:58
+MERGED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:18:13-20:58
+MERGED from [:react-native-image-picker] F:\Aprrow_Mobile\node_modules\react-native-image-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:17:13-19:58
+MERGED from [:react-native-image-picker] F:\Aprrow_Mobile\node_modules\react-native-image-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:17:13-19:58
+	android:resource
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:51:17-55
+	android:name
+		ADDED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:50:17-67
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:23:9-26:72
+	android:screenOrientation
+		ADDED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:25:13-49
+	android:theme
+		ADDED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:26:13-69
+	android:name
+		ADDED from [:react-native-image-crop-picker] F:\Aprrow_Mobile\node_modules\react-native-image-crop-picker\android\build\intermediates\manifests\full\release\AndroidManifest.xml:24:13-60
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:29:9-32:66
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:33:19-68
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:44:9-47:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:46:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.26.0.aar\989db86d54c24d576d5c877a61e2a5b5\AndroidManifest.xml:45:13-70
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-auth-16.0.0.aar\9ba567ac17a9a9c746ba353b5e843c20\AndroidManifest.xml:34:13-89
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\bf9f804991f317f4f1038c5c2a829601\AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\cafc59cf696e9220c849ef36dcfccc03\AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\cafc59cf696e9220c849ef36dcfccc03\AndroidManifest.xml:23:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\bf9f804991f317f4f1038c5c2a829601\AndroidManifest.xml:23:22-79
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.8.aar\12133739f60f744c9453034e413bd798\AndroidManifest.xml:39:22-90
+uses-permission#com.android.vending.BILLING
+ADDED from [com.android.billingclient:billing:1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\billing-1.0.aar\80b0995ce82d6717e7e9133d6ae17f0f\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from [com.android.billingclient:billing:1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\billing-1.0.aar\80b0995ce82d6717e7e9133d6ae17f0f\AndroidManifest.xml:9:22-64
+activity#com.android.billingclient.api.ProxyBillingActivity
+ADDED from [com.android.billingclient:billing:1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\billing-1.0.aar\80b0995ce82d6717e7e9133d6ae17f0f\AndroidManifest.xml:12:9-15:75
+	android:configChanges
+		ADDED from [com.android.billingclient:billing:1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\billing-1.0.aar\80b0995ce82d6717e7e9133d6ae17f0f\AndroidManifest.xml:14:13-96
+	android:theme
+		ADDED from [com.android.billingclient:billing:1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\billing-1.0.aar\80b0995ce82d6717e7e9133d6ae17f0f\AndroidManifest.xml:15:13-72
+	android:name
+		ADDED from [com.android.billingclient:billing:1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\billing-1.0.aar\80b0995ce82d6717e7e9133d6ae17f0f\AndroidManifest.xml:13:13-78
+meta-data#android.support.VERSION
+ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\dba949da52b2cc23e5d2cc47994c232f\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\customtabs-25.3.1.aar\36256faa574563341b8e916083581606\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\customtabs-25.3.1.aar\36256faa574563341b8e916083581606\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\99ce139f3b13e265133e9ed354f61a2c\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\99ce139f3b13e265133e9ed354f61a2c\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\dba949da52b2cc23e5d2cc47994c232f\AndroidManifest.xml:24:9-31
+	android:name
+		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\dba949da52b2cc23e5d2cc47994c232f\AndroidManifest.xml:23:9-47
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\6258daf3a519994589acb09bbf51020e\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\6258daf3a519994589acb09bbf51020e\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\6258daf3a519994589acb09bbf51020e\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\6258daf3a519994589acb09bbf51020e\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\557e444a74555bf76279b853c460ceaa\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\557e444a74555bf76279b853c460ceaa\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\DHISIGMA\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\557e444a74555bf76279b853c460ceaa\AndroidManifest.xml:24:13-58
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from F:\Aprrow_Mobile\android\app\src\main\AndroidManifest.xml:1:1-135:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

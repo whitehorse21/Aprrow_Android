@@ -6,6 +6,8 @@ import {
   View                // Container component
 } from 'react-native';
 
+var Mixpanel = require('react-native-mixpanel');
+var aws_data11 = require("./../config/AWSConfig.json");
 export default class Tabs extends Component {
 
   // Initialize State
@@ -13,6 +15,27 @@ export default class Tabs extends Component {
     // First tab is active by default
     activeTab: 0
   }
+  async mixpanelTrack(titles)
+  {
+    var PassData="";
+    if(titles=="ACTIVITIES")
+    {
+      PassData="Rewards "+titles;
+    }
+    else
+    {
+      PassData="Rewards in "+titles;
+    }
+    
+    try{
+         var Mixpannel_tocken=aws_data11.mixpanel_token;
+         Mixpanel.default.sharedInstanceWithToken(Mixpannel_tocken).then(() => {
+             Mixpanel.default.track(PassData);
+             });
+       }catch(err){
+ 
+       }
+   }
 
   // Pull children out of props passed from App component
   render({ children } = this.props) {
@@ -31,7 +54,7 @@ export default class Tabs extends Component {
                 index === this.state.activeTab ? styles.tabContainerActive : []
               ]}
               // Change active tab
-              onPress={() => this.setState({ activeTab: index }) }
+              onPress={() =>{ this.setState({ activeTab: index }); this.mixpanelTrack(title) }}
               // Required key prop for components generated returned by map iterator
               key={index}
             >

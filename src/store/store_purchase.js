@@ -1242,7 +1242,7 @@ export default class storepurchase extends Component {
                 </View> */}
 
               {/* </View> */}
-              <View style={{marginTop:'7%', marginLeft:'30%',width:'50%'}}>
+              <View style={{marginTop:'9%', marginLeft:'30%',width:'50%'}}>
                 <Text allowFontScaling={false} style={{ marginTop: 18, marginLeft:10, }}>{this.state.downloads} downloads</Text>
               </View>
             </View>

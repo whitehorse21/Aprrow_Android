@@ -341,8 +341,8 @@ async headerComponent()
     var header=undefined;
 
     const headerRight=(
-      <View style={{ flexDirection: 'row', margin: 10 }}>
-
+      <View style={{ flexDirection: 'row', margin: 10 ,paddingTop:25}}>
+<View style={{marginTop:5, marginLeft:5}}>
      <TouchableOpacity onPress={() => { this.refs.widget.syncdata() }}>
               <Image source={require('./assets/icon_sync_white_21px.png')}
                   style={{
@@ -352,17 +352,9 @@ async headerComponent()
                   }}
               />
           </TouchableOpacity>
+          </View>
           
-          <TouchableOpacity onPress={() => { this.refs.widget.showdevicemanagment() }}>
-              <Image source={require('./assets/icon_device_white_21px.png')}
-                  style={{
-                      marginLeft: 10,
-                      marginTop: 1,
-                      marginBottom: 1
-                  }}
-              />
-          </TouchableOpacity>
-
+          <View style={{marginTop:5}}>
           <Touch pointerEvents = {'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.refs.widget.shareApplist()}>
               <Image source={require('./assets/icon_applist_white_21px.png')}
                   style={{
@@ -372,10 +364,11 @@ async headerComponent()
                   }}
               />
           </Touch>
+          </View>
 
 
 
-          <TouchableOpacity onPress={() => this.refs.widget.sharewidget()}>
+          {/* <TouchableOpacity onPress={() => this.refs.widget.sharewidget()}>
               <Image source={require('./assets/icon_share_white.png')}
                   style={{
                       marginLeft: 10,
@@ -383,18 +376,9 @@ async headerComponent()
                       marginBottom: 1
                   }}
               />
-          </TouchableOpacity>
-
-          <TouchableOpacity onPress={() => this.refs.widget.serach_widget()}>
-              <Image source={require('./assets/icon_search_white_21px.png')}
-                  style={{
-                      marginLeft: 10,
-                      marginTop: 1,
-                      marginBottom: 1
-                  }}
-              />
-          </TouchableOpacity>
-
+          </TouchableOpacity> */}
+     
+     <View style={{marginTop:5, marginLeft:5}}>
           <TouchableOpacity onPress={() => this.refs.widget.OrganizeStax()}>
               <Image source={require('./assets/icon_organizer_white_21px.png')}
                   style={{
@@ -404,8 +388,33 @@ async headerComponent()
                   }}
               />
           </TouchableOpacity>
-
-
+          </View>
+               
+               <View style={{marginTop:5}}>
+                                <TouchableOpacity onPress={() => this.refs.widget.serach_widget()}>
+                                    <Image source={require('./assets/icon_search_white_21px.png')}
+                                        style={{
+                                            marginLeft: 10,
+                                            marginTop: 1,
+                                            marginBottom: 1
+                                        }}
+                                    />
+                                </TouchableOpacity>
+                                </View>
+                                            <View style={{paddingBottom:3}}>
+                                                <TouchableOpacity style={{marginBottom:10}} onPress={() => {  }}>
+                                                    <Image  source={require('./assets/bt_add.png')}
+                                                        style={{
+                                                            marginLeft: 10,
+                                                            marginTop: 1,
+                                                            marginBottom: 1,
+                                                            width:42,
+                                                            height:42,
+                                                        }}
+                                                    />
+                                                </TouchableOpacity>
+                                            </View>
+                                            
 
 
       </View>

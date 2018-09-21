@@ -130,5 +130,8 @@ export default {
     iconHelpBlue24px:require('../assets/icon_help_blue_24px.png'),
     iconInstagram28px:require('../assets/icon_instagram_28px.png'),
     iconYoutube28px:require('../assets/icon_youtube_28px.png'),
-    iconPerfil:require('../assets/icon_perfil.png')
+    iconPerfil:require('../assets/icon_perfil.png'),
+    settingIconbar:require('../assets/icon_settings_white_21px.png'),
+    sharesIconbar:require('../assets/icon_share_white_21px.png'),
+    
   };

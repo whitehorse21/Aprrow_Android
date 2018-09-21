@@ -900,6 +900,8 @@ export default class storepurchase extends Component {
           style={{ height:100 }}
           swipeDirection="right"
           animationIn="fadeIn"
+          onBackButtonPress={()=>this.setState({paymentTab:false})}
+          onSwipe={()=>this.setState({paymentTab:false})}
           animationOut="fadeOut">
           <View style={{height:325, width:300,backgroundColor:'white', borderRadius: 3,alignSelf:"center"} }>
             <View style={{flexDirection:'column', flex:1,padding:20}}>

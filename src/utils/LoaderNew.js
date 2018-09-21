@@ -12,17 +12,33 @@ export default class LoaderNew extends Component {
       loadingFlag:false
     }
   } 
+/** 
+(Set the loading flag as true
+ >>Start the loader)
+@param  :nil     
+@return :nil
+@created by    :dhi
+@modified by   :dhi
+@modified date :05/09/18
+*/  
   show(){
 this.setState({loadingFlag:true});
   }
+/** 
+(Set the loading flag as false
+ >>Hide loader)
+@param  :nil     
+@return :nil
+@created by    :dhi
+@modified by   :dhi
+@modified date :05/09/18
+*/     
   hide()
   {
     this.setState({loadingFlag:false});
-
   }
 render(){
   return (
-   
     <Modal
       transparent={true}
       animationType={'none'}
@@ -35,10 +51,7 @@ render(){
         </View>
       </View>
     </Modal>
-   
   )
-
-
 }
 }
 const styles = StyleSheet.create({
@@ -59,4 +72,3 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around'
   }
 });
-

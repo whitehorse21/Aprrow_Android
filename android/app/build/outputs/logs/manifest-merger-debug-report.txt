@@ -1,49 +1,49 @@
 -- Merging decision tree log ---
 provider#android.support.v4.content.FileProvider
-INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:44:7-52:20
-MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-21:20
-MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-21:20
-MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
-MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
+INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:44:7-52:20
+MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-21:20
+MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-21:20
+MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
+MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:48:13-47
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:48:13-47
 	android:authorities
-		INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:46:13-60
+		INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:46:13-60
 	android:exported
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:47:13-37
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:45:13-67
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:45:13-67
 manifest
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-135:12
-INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-135:12
-INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-135:12
-INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-135:12
-MERGED from [:react-native-localization] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-localization/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [:react-native-cookies] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-cookies/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-mixpanel] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-mixpanel/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-locale] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-locale/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-29:12
-MERGED from [:bugsnag-react-native] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/bugsnag-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-fetch-blob] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-14:12
-MERGED from [:react-native-google-signin] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-push-notification] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-open-settings] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-open-settings/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-iap] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-iap/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-share] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-share/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-contacts] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-contacts/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-prompt-android] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-prompt-android/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-fbsdk] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:1-30:12
-MERGED from [:react-native-background-timer] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-background-timer/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-image-to-base64] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-to-base64/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [:react-native-aws-cognito-js] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-aws-cognito-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:1:1-135:12
+INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:1:1-135:12
+INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:1:1-135:12
+INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:1:1-135:12
+MERGED from [:react-native-localization] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-localization/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:react-native-cookies] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-cookies/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-mixpanel] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-mixpanel/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-locale] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-locale/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-29:12
+MERGED from [:bugsnag-react-native] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/bugsnag-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-fetch-blob] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-google-signin] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-push-notification] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-open-settings] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-open-settings/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-iap] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-iap/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-share] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-share/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-contacts] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-contacts/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-prompt-android] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-prompt-android/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-fbsdk] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:1-30:12
+MERGED from [:react-native-background-timer] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-background-timer/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-to-base64] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-to-base64/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-aws-cognito-js] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-aws-cognito-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.yalantis:ucrop:2.2.2-native] /Users/admin/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/5b5a0331aff5c270099918baa861a957/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/AndroidManifest.xml:21:1-50:12
-MERGED from [:react-native-sqlite-storage] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-sqlite-storage/src/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-device-info] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/5c5f88f53a2c5f5f40e8024ae1c902a3/AndroidManifest.xml:2:1-15:12
+MERGED from [:react-native-sqlite-storage] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-sqlite-storage/src/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-device-info] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/199496f0cb7d259e05cb974ba039eb77/AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/AndroidManifest.xml:17:1-22:12
 MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/AndroidManifest.xml:2:1-108:12
 MERGED from [id.zelory:compressor:2.1.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/compressor-2.1.0.aar/90d56fe680be291f76fa080250d7beea/AndroidManifest.xml:2:1-12:12
@@ -82,49 +82,49 @@ MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/admin/.gradle/caches/t
 MERGED from [org.webkit:android-jsc:r174650] /Users/admin/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/bcc48a66af3a70a67aab4a1b56a6e9a0/AndroidManifest.xml:1:1-3:12
 MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/71c207e42511e1fbb6f6cb147314fdf9/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/87a0560522bb8e761e3d8116156eb748/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-135:12
-INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-135:12
-INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-135:12
+INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:1:1-135:12
+INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:1:1-135:12
+INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:1:1-135:12
 	package
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:3:5-25
-		INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:3:5-25
+		INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:5:5-32
-		INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:5:5-31
+		INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:2:5-51
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:2:5-51
 	xmlns:android
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:1:11-69
 	android:versionCode
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:4:5-29
-		INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:6:5-68
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:6:5-68
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:6:22-65
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:6:22-65
 permission#com.aprrow.permission.C2D_MESSAGE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:7:5-9:47
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:7:5-9:47
 	android:protectionLevel
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:9:9-44
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:9:9-44
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:8:9-57
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:8:9-57
 uses-permission#com.aprrow.permission.C2D_MESSAGE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:10:5-73
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:10:5-73
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:10:22-70
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:10:22-70
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:11:5-66
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:11:5-66
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:11:22-63
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:11:22-63
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:12:5-80
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:12:22-78
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:12:22-78
 uses-permission#android.permission.INTERNET
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:13:5-67
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:13:5-67
 MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/AndroidManifest.xml:10:5-67
 MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/AndroidManifest.xml:10:5-67
 MERGED from [com.bugsnag:bugsnag-android:3.7.2] /Users/admin/.gradle/caches/transforms-1/files-1.1/bugsnag-android-3.7.2.aar/aeb8805ea5d09e47b785e149c6095049/AndroidManifest.xml:12:5-67
@@ -134,115 +134,115 @@ MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/admin/.grad
 MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/771eb1f51672468956ae4117fb0c1f31/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/771eb1f51672468956ae4117fb0c1f31/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:13:22-64
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:13:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:14:5-81
-MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
-MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:14:5-81
+MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
+MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:14:22-78
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:14:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:15:5-79
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:15:5-79
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:15:22-76
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:15:22-76
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:16:5-77
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/5c5f88f53a2c5f5f40e8024ae1c902a3/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/5c5f88f53a2c5f5f40e8024ae1c902a3/AndroidManifest.xml:11:5-78
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:16:5-77
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/199496f0cb7d259e05cb974ba039eb77/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/199496f0cb7d259e05cb974ba039eb77/AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:16:22-75
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:16:22-75
 uses-permission#android.permission.CAMERA
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:17:5-65
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:17:5-65
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:17:22-62
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:17:22-62
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:19:5-67
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:19:5-67
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:19:22-65
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:19:22-65
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:20:5-74
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:20:5-74
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:20:22-72
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:20:22-72
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:21:5-79
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:21:5-79
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:21:22-76
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:21:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:22:5-81
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:22:22-78
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:22:22-78
 uses-permission#android.permission.READ_CONTACTS
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:23:5-72
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:23:5-72
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:23:22-69
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:23:22-69
 uses-permission#android.permission.WRITE_CONTACTS
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:24:5-73
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:24:5-73
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:24:22-70
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:24:22-70
 uses-permission#android.permission.READ_PROFILE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:25:5-71
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:25:5-71
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:25:22-68
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:25:22-68
 uses-permission#android.permission.PACKAGE_USAGE_STATS
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:27:5-29:46
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:27:5-29:46
 	tools:ignore
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:29:9-44
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:29:9-44
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:28:9-62
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:28:9-62
 uses-sdk
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:31:5-33:41
-INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:31:5-33:41
-INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:31:5-33:41
-MERGED from [:react-native-localization] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-localization/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-localization] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-localization/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-cookies] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-cookies/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-cookies] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-cookies/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-mixpanel] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-mixpanel/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-mixpanel] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-mixpanel/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-locale] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-locale/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-locale] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-locale/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:6:5-8:41
-MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:6:5-8:41
-MERGED from [:bugsnag-react-native] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/bugsnag-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:bugsnag-react-native] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/bugsnag-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-google-signin] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-google-signin] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-push-notification] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-push-notification] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-open-settings] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-open-settings/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-open-settings] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-open-settings/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-iap] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-iap/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-iap] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-iap/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-share] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-share/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-share] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-share/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-contacts] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-contacts/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-contacts] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-contacts/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-prompt-android] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-prompt-android/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-prompt-android] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-prompt-android/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fbsdk] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-26:41
-MERGED from [:react-native-fbsdk] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-26:41
-MERGED from [:react-native-background-timer] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-background-timer/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-background-timer] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-background-timer/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-to-base64] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-to-base64/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-to-base64] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-to-base64/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-aws-cognito-js] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-aws-cognito-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-aws-cognito-js] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-aws-cognito-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:31:5-33:41
+INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:31:5-33:41
+INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:31:5-33:41
+MERGED from [:react-native-localization] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-localization/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-localization] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-localization/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-cookies] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-cookies/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-cookies] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-cookies/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-mixpanel] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-mixpanel/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-mixpanel] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-mixpanel/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-locale] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-locale/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-locale] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-locale/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [:bugsnag-react-native] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/bugsnag-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:bugsnag-react-native] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/bugsnag-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-open-settings] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-open-settings/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-open-settings] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-open-settings/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-iap] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-iap/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-iap] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-iap/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-share] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-share/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-share] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-share/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-contacts] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-contacts/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-contacts] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-contacts/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-prompt-android] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-prompt-android/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-prompt-android] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-prompt-android/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fbsdk] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-fbsdk] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-background-timer] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-background-timer/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-background-timer] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-background-timer/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-to-base64] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-to-base64/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-to-base64] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-to-base64/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-aws-cognito-js] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-aws-cognito-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-aws-cognito-js] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-aws-cognito-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.yalantis:ucrop:2.2.2-native] /Users/admin/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/5b5a0331aff5c270099918baa861a957/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.yalantis:ucrop:2.2.2-native] /Users/admin/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/5b5a0331aff5c270099918baa861a957/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/AndroidManifest.xml:24:5-26:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/AndroidManifest.xml:24:5-26:41
-MERGED from [:react-native-sqlite-storage] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-sqlite-storage/src/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-sqlite-storage] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-sqlite-storage/src/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-device-info] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-device-info] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/5c5f88f53a2c5f5f40e8024ae1c902a3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/5c5f88f53a2c5f5f40e8024ae1c902a3/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-sqlite-storage] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-sqlite-storage/src/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-sqlite-storage] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-sqlite-storage/src/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/199496f0cb7d259e05cb974ba039eb77/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/199496f0cb7d259e05cb974ba039eb77/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/AndroidManifest.xml:20:5-44
 MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/AndroidManifest.xml:5:5-7:41
@@ -317,34 +317,34 @@ MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/admin/.gradle/caches/trans
 MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/71c207e42511e1fbb6f6cb147314fdf9/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/87a0560522bb8e761e3d8116156eb748/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/87a0560522bb8e761e3d8116156eb748/AndroidManifest.xml:5:5-7:41
-INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:31:5-33:41
-INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:31:5-33:41
+INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:31:5-33:41
+INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:31:5-33:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:26.1.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/769e18914a547af797b66c8061cbf76a/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:33:9-38
-		INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:33:9-38
+		INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:32:9-35
-		INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:32:9-35
+		INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:36:5-133:19
-MERGED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
-MERGED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
-MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-27:19
-MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-27:19
-MERGED from [:react-native-fetch-blob] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-fetch-blob] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-fbsdk] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:5-20
-MERGED from [:react-native-fbsdk] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:5-20
-MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:36:5-133:19
+MERGED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-27:19
+MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-27:19
+MERGED from [:react-native-fetch-blob] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fbsdk] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:5-20
+MERGED from [:react-native-fbsdk] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:5-20
+MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/AndroidManifest.xml:28:5-48:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/AndroidManifest.xml:28:5-48:19
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/5c5f88f53a2c5f5f40e8024ae1c902a3/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/5c5f88f53a2c5f5f40e8024ae1c902a3/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/199496f0cb7d259e05cb974ba039eb77/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/199496f0cb7d259e05cb974ba039eb77/AndroidManifest.xml:13:5-20
 MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/AndroidManifest.xml:36:5-106:19
 MERGED from [com.mixpanel.android:mixpanel-android:5.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/AndroidManifest.xml:36:5-106:19
 MERGED from [com.google.android.gms:play-services-auth:16.0.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/1dc2bb36d5e3b37740bd832e61e10009/AndroidManifest.xml:22:5-37:19
@@ -376,189 +376,189 @@ MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/admin/.gradle/caches/t
 MERGED from [org.webkit:android-jsc:r174650] /Users/admin/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/bcc48a66af3a70a67aab4a1b56a6e9a0/AndroidManifest.xml:2:3-17
 MERGED from [org.webkit:android-jsc:r174650] /Users/admin/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/bcc48a66af3a70a67aab4a1b56a6e9a0/AndroidManifest.xml:2:3-17
 	android:supportsRtl
-		ADDED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:9-35
+		ADDED from [:react-native-splash-screen] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:39:7-39
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:39:7-39
 	android:icon
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:40:7-41
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:40:7-41
 	android:allowBackup
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:38:7-33
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:38:7-33
 	android:theme
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:41:7-38
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:41:7-38
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:37:7-48
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:37:7-48
 receiver#com.google.android.gms.gcm.GcmReceiver
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:54:13-62:20
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:54:13-62:20
 	android:exported
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:56:13-36
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:56:13-36
 	android:permission
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:57:13-73
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:57:13-73
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:55:13-66
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:55:13-66
 intent-filter#com.aprrow+com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:58:13-61:29
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:58:13-61:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:59:17-81
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:59:17-81
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:59:25-78
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:59:25-78
 category#com.aprrow
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:60:17-55
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:60:17-55
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:60:27-52
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:60:27-52
 receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:64:9-110
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:64:9-110
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:64:19-107
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:64:19-107
 receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:65:9-69:20
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:65:9-69:20
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:65:19-115
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:65:19-115
 intent-filter#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:66:13-68:29
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:66:13-68:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:67:17-79
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:67:17-79
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:67:25-76
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:67:25-76
 service#com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:70:9-118
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:70:9-118
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:70:18-116
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:70:18-116
 service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:71:9-77:19
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:71:9-77:19
 	android:exported
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:73:13-37
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:73:13-37
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:72:13-107
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:72:13-107
 intent-filter#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:74:13-76:29
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:74:13-76:29
 meta-data#com.bugsnag.android.API_KEY
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:78:7-79:59
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:78:7-79:59
 	android:value
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:79:9-57
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:79:9-57
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:78:18-60
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:78:18-60
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:82:7-105
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:82:7-105
 	android:value
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:82:64-103
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:82:64-103
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:82:18-63
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:82:18-63
 activity#com.aprrow.SplashActivity
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:83:7-89:20
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:83:7-89:20
 	android:label
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:87:13-45
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:87:13-45
 	android:launchMode
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:86:13-44
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:86:13-44
 	android:theme
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:85:13-47
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:85:13-47
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:84:13-43
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:84:13-43
 activity#com.aprrow.MainActivity
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:90:7-112:18
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:90:7-112:18
 	android:screenOrientation
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:94:9-45
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:94:9-45
 	android:label
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:92:9-41
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:92:9-41
 	android:launchMode
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:95:9-40
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:95:9-40
 	android:windowSoftInputMode
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:96:9-51
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:96:9-51
 	android:exported
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:97:9-32
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:97:9-32
 	android:configChanges
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:93:9-79
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:93:9-79
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:91:9-47
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:91:9-47
 intent-filter#android.intent.action.DOWNLOAD_COMPLETE+android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:99:13-103:29
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:99:13-103:29
 action#android.intent.action.MAIN
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:100:17-69
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:100:17-69
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:100:25-66
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:100:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:101:17-77
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:101:17-77
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:101:27-74
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:101:27-74
 action#android.intent.action.DOWNLOAD_COMPLETE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:102:6-70
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:102:6-70
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:102:14-68
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:102:14-68
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:104:11-110:27
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:104:11-110:27
 	android:label
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:104:26-58
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:104:26-58
 action#android.intent.action.VIEW
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:105:15-66
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:105:15-66
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:105:23-64
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:105:23-64
 category#android.intent.category.DEFAULT
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:106:15-73
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:106:15-73
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:106:25-71
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:106:25-71
 category#android.intent.category.BROWSABLE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:107:15-75
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:107:15-75
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:107:25-73
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:107:25-73
 data
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:108:15-76
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:108:15-76
 	android:host
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:108:21-50
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:108:21-50
 	android:scheme
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:108:51-73
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:108:51-73
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:113:7-84
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:113:7-84
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:113:17-81
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:113:17-81
 receiver#com.aprrow.widget.homescreewidget
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:114:9-122:20
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:114:9-122:20
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:114:19-67
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:114:19-67
 intent-filter#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:115:13-117:29
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:115:13-117:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:116:17-84
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:116:17-84
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:116:25-81
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:116:25-81
 meta-data#android.appwidget.provider
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:119:13-121:64
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:119:13-121:64
 	android:resource
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:121:17-61
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:121:17-61
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:120:17-58
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:120:17-58
 service#com.aprrow.widget.homescreenwidgetservice
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:123:9-125:71
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:123:9-125:71
 	android:permission
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:125:13-69
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:125:13-69
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:124:13-69
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:124:13-69
 activity#com.aprrow.widget.homescreewidgetConfigureActivity
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:127:9-131:20
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:127:9-131:20
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:127:19-84
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:127:19-84
 intent-filter#android.appwidget.action.APPWIDGET_CONFIGURE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:128:13-130:29
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:128:13-130:29
 action#android.appwidget.action.APPWIDGET_CONFIGURE
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:129:17-87
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:129:17-87
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:129:25-84
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:129:25-84
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:49:13-51:58
-MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:13-20:58
-MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:13-20:58
-MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
-MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
+ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:49:13-51:58
+MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:13-20:58
+MERGED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:13-20:58
+MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
+MERGED from [:react-native-image-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
 	android:resource
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:51:17-55
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:51:17-55
 	android:name
-		ADDED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:50:17-67
+		ADDED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:50:17-67
 activity#com.yalantis.ucrop.UCropActivity
-ADDED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:9-26:72
+ADDED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:9-26:72
 	android:screenOrientation
-		ADDED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:13-49
+		ADDED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:13-49
 	android:theme
-		ADDED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:26:13-69
+		ADDED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:26:13-69
 	android:name
-		ADDED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/Aprrow_Android/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:13-60
+		ADDED from [:react-native-image-crop-picker] /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:13-60
 activity#com.facebook.FacebookActivity
 ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/AndroidManifest.xml:29:9-32:66
 	android:configChanges
@@ -684,4 +684,4 @@ ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/admin/.
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/6a5318f023a48d4497f0c0f52903882e/AndroidManifest.xml:24:13-58
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/AndroidManifest.xml:1:1-135:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/AndroidManifest.xml:1:1-135:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

@@ -21,6 +21,7 @@ import CheckBox from 'react-native-check-box';
 import Touch from 'react-native-touch';
 import Strings from './utils/strings.js';
 import assetsConfig from "./config/assets.js";
+import settingIcon from './config/assets.js'
 var Mixpanel = require('react-native-mixpanel');
 var awsData = require("./config/AWSConfig.json");
 const window = Dimensions.get('window');
@@ -2506,22 +2507,26 @@ async mixpanelTrack(event)
                                     <View style={styles.slide1} key={key}>
                                         <View style={[widgets_style.box_view, { backgroundColor: item_main.backgroundcolor }]}>
                                             <View style={[widgets_style.box_view_bar, { backgroundColor: item_main.headercolor, justifyContent: "space-between" }]}>
-                                                < View style={{ flexDirection: "row", alignItems: 'center' }}>
+                                                < View style={{ flexDirection: "row", alignItems: 'center',marginRight:4,marginLeft:4 }}>
+                                                <Touch timeout={3500} pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.editor_click()}>
                                                     <View style={{ width: '10%' }}>
-                                                        <Image style={widgets_style.box_view_bar_icon} source={assetsConfig.sharpLogoSquareOrange} />
+                                                        <Image style={widgets_style.box_view_bar_icon} source={assetsConfig.settingIconbar} />
                                                     </View>
-                                                    <View style={{ width: '75%' }}>
+                                                </Touch>
+                                                    <View style={{ width: '80%' }}>
                                                         <Text allowFontScaling={false} style={widgets_style.box_view_bar_text}>{item_main.widgetname=="Most Frequent"?Strings.mostfrequent_stax:item_main.widgetname}</Text>
                                                     </View>
                                                     <TouchableOpacity style={{ width: '15%', alignSelf: 'center' }} onPress={async() => {
-                                                        this.mixpanelTrack("Full Screen View");
-                                                        this.mixpanelTrack("Full Screen View :"+this.state.widgetName);
-                                                        var feed=this.state.feedUrl;
-                                                        this.resetWebViewToInitialUrl();
-                                                        var openLink=this.state.openLink;
-                                                        navigate("widgetFullScreen", { "widgetdata": this.state.widgetData,"feed":feed,"openLink":feed, "index": this.state.curindex, scrollto: this.scrollto.bind(this) });
+                                                        
+                                                        // this.mixpanelTrack("Full Screen View");
+                                                        // this.mixpanelTrack("Full Screen View :"+this.state.widgetName);
+                                                        // var feed=this.state.feedUrl;
+                                                        // this.resetWebViewToInitialUrl();
+                                                        // var openLink=this.state.openLink;
+                                                        // navigate("widgetFullScreen", { "widgetdata": this.state.widgetData,"feed":feed,"openLink":feed, "index": this.state.curindex, scrollto: this.scrollto.bind(this) });
                                                     }}>
-                                                        <Image style={[widgets_style.box_view_bar_icon, { height: 15, width: 15, marginLeft: '55%' }]} source={assetsConfig.iconFullscreenWhite} />
+                                                    
+                                                        <Image style={[widgets_style.box_view_bar_icon, { height: 20, width: 20, marginLeft: '15%' }]} source={assetsConfig.sharesIconbar} />
                                                     </TouchableOpacity>
                                                 </View>
                                             </View>
@@ -2647,7 +2652,7 @@ async mixpanelTrack(event)
                             })}
                         </Swiper>
                     )}
-                    <View style={[widgets_style.bottom_image_view, { left: 0, display: this.state.configStyle }]}>
+                    {/* <View style={[widgets_style.bottom_image_view, { left: 0, display: this.state.configStyle }]}>
                         <Touch timeout={3500} pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.editor_click()}>
                             <Image style={widgets_style.bottom_image} source={assetsConfig.configButton} />
                         </Touch>
@@ -2665,7 +2670,7 @@ async mixpanelTrack(event)
                         }}>
                             <Image style={[widgets_style.bottom_image]} source={assetsConfig.addButton} />
                         </TouchableOpacity>
-                    </View>
+                    </View> */}
                    
                 </View>
                 <Dialog

@@ -17,7 +17,6 @@
     "react-native-iap": "^0.2.17",
     "react-native-image-picker": "^0.26.7",
     "react-native-image-to-base64": "^0.1.0",
-    "react-native-localization": "^2.0.0",
     "react-native-open-settings": "^1.0.1",
     "react-native-picker-dropdown": "^0.1.1",
     "react-native-side-menu": "^1.1.3",

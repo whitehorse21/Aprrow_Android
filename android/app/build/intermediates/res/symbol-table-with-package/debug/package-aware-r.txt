@@ -1198,9 +1198,9 @@ int layout widget_intial_layout 0x7f04004b
 int layout widget_standard 0x7f04004c
 int layout widget_standard_grid_item 0x7f04004d
 int menu ucrop_menu_activity 0x7f0f0000
-int mipmap aprrow_pro 0x7f030000
-int mipmap ic_launcher 0x7f030001
-int mipmap ic_launcher_dev 0x7f030002
+int mipmap aprrow_dev 0x7f030000
+int mipmap aprrow_pro 0x7f030001
+int mipmap ic_launcher 0x7f030002
 int mipmap icon 0x7f030003
 int string abc_action_bar_home_description 0x7f080000
 int string abc_action_bar_up_description 0x7f080001

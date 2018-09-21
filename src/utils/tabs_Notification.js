@@ -5,16 +5,22 @@ import {
   TouchableOpacity,   // Pressable container
   View                // Container component
 } from 'react-native';
-
 var Mixpanel = require('react-native-mixpanel');
 var aws_data11 = require("./../config/AWSConfig.json");
 export default class Tabs extends Component {
-
   // Initialize State
   state = {
     // First tab is active by default
     activeTab: 0
   }
+/** 
+  * (Trigger the track event of mixpanel)
+  * @param  :event     
+  * @return :nil
+  * @created by    :dhi
+  * @modified by   :dhi
+  * @modified date :05/09/18
+*/   
   async mixpanelTrack(titles)
   {
     var PassData=titles+" Notifications View";
@@ -24,10 +30,8 @@ export default class Tabs extends Component {
              Mixpanel.default.track(PassData);
              });
        }catch(err){
- 
        }
    }
-  
   // Pull children out of props passed from App component
   render({ children } = this.props) {
     return (
@@ -63,13 +67,11 @@ export default class Tabs extends Component {
     );
   }
 }
-
 const styles = StyleSheet.create({
   // Component container
   container: {
     flex: 1,
     backgroundColor: "#006BBD" 
-                            // Take up all available space
   },
   // Tabs row container
   tabsContainer: {
@@ -78,12 +80,10 @@ const styles = StyleSheet.create({
   },
   // Individual tab container
   tabContainer: {
-  
     flex: 1,                            // Take up equal amount of space for each tab
     paddingVertical: 15,                // Vertical padding
     borderBottomWidth: 3,               // Add thick border at the bottom
     borderBottomColor: "#006BBD",
-       // Transparent border for inactive tabs
   },
   // Active tab container
   tabContainerActive: {
@@ -93,13 +93,11 @@ const styles = StyleSheet.create({
   tabText: {
     color: 'white',
     fontFamily: 'Roboto-Bold',
-    //fontWeight: 'bold',
     textAlign: 'center',
   },
   inactabText: {
     color: '#2699FB',
     fontFamily: 'Roboto-Bold',
-    //fontWeight: 'bold',
     textAlign: 'center',
   },
   // Content container

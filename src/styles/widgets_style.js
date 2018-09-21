@@ -28,12 +28,12 @@ export default StyleSheet.create({
 
     },box_view:{
         alignItems:'center',
-        marginTop:20,
+        marginTop:10,
      //  borderRadius:10,
         marginRight:30,
         marginLeft:30,
-        height:'80%',
-        width:'85%',
+        height:'100%',
+        width:'100%',
         backgroundColor:'white'
     },
     box_view1:{
@@ -81,7 +81,7 @@ export default StyleSheet.create({
         backgroundColor:'#006BBD',
        // borderTopLeftRadius:10,
       //  borderTopRightRadius:10,
-        height:'5%',
+        height:'6%',
         flexDirection:'row',
         width:'100%'
 
@@ -130,8 +130,8 @@ export default StyleSheet.create({
         width:150,
     },
     box_view_bar_icon:{
-        height:15,
-        width:15,
+        height:20,
+        width:20,
         marginLeft:5,
         
         marginTop:2

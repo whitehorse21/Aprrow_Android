@@ -4,47 +4,15 @@
         "source": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/aprrow_dev.png",
+        "source": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/res/mipmap-xhdpi/aprrow_dev.png"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/icon.png",
         "source": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/res/mipmap-xhdpi/icon.png"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/aprrow_pro.png",
         "source": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/res/mipmap-xhdpi/aprrow_pro.png"
-    },
-    {
-        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher_dev.png",
-        "source": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/src/main/res/mipmap-xhdpi/ic_launcher_dev.png"
-    },
-    {
-        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
-        "source": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/aprrow_pro.png",
-        "source": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/src/main/res/mipmap-xhdpi/aprrow_pro.png"
-    },
-    {
-        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher_dev.png",
-        "source": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/res/mipmap-xhdpi/ic_launcher_dev.png"
-    },
-    {
-        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
-        "source": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/icon.png",
-        "source": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/src/main/res/mipmap-xhdpi/icon.png"
-    },
-    {
-        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/aprrow_pro.png",
-        "source": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/res/mipmap-xhdpi/aprrow_pro.png"
-    },
-    {
-        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/icon.png",
-        "source": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/res/mipmap-xhdpi/icon.png"
-    },
-    {
-        "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher_dev.png",
-        "source": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/res/mipmap-xhdpi/ic_launcher_dev.png"
     }
 ]

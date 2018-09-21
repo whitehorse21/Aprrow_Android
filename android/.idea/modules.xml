@@ -4,28 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Approw.iml" filepath="$PROJECT_DIR$/Approw.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/bugsnag-react-native/android/bugsnag-react-native.iml" filepath="$PROJECT_DIR$/../node_modules/bugsnag-react-native/android/bugsnag-react-native.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-aws-cognito-js/android/react-native-aws-cognito-js.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-aws-cognito-js/android/react-native-aws-cognito-js.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-background-timer/android/react-native-background-timer.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-background-timer/android/react-native-background-timer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-contacts/android/react-native-contacts.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-contacts/android/react-native-contacts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-cookies/android/react-native-cookies.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-cookies/android/react-native-cookies.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-device-info/android/react-native-device-info.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-device-info/android/react-native-device-info.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-fbsdk/android/react-native-fbsdk.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-fbsdk/android/react-native-fbsdk.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-fetch-blob/android/react-native-fetch-blob.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-fetch-blob/android/react-native-fetch-blob.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-google-signin/android/react-native-google-signin.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-google-signin/android/react-native-google-signin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-iap/android/react-native-iap.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-iap/android/react-native-iap.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-image-crop-picker/android/react-native-image-crop-picker.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-image-crop-picker/android/react-native-image-crop-picker.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-image-picker/android/react-native-image-picker.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-image-picker/android/react-native-image-picker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-image-to-base64/android/react-native-image-to-base64.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-image-to-base64/android/react-native-image-to-base64.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-locale/android/react-native-locale.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-locale/android/react-native-locale.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-localization/android/react-native-localization.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-localization/android/react-native-localization.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-mixpanel/android/react-native-mixpanel.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-mixpanel/android/react-native-mixpanel.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-open-settings/android/react-native-open-settings.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-open-settings/android/react-native-open-settings.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-prompt-android/android/react-native-prompt-android.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-prompt-android/android/react-native-prompt-android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-push-notification/android/react-native-push-notification.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-push-notification/android/react-native-push-notification.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-share/android/react-native-share.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-share/android/react-native-share.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-splash-screen/android/react-native-splash-screen.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-splash-screen/android/react-native-splash-screen.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-sqlite-storage/src/android/react-native-sqlite-storage.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-sqlite-storage/src/android/react-native-sqlite-storage.iml" />
     </modules>
   </component>
 </project>

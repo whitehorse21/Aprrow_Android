@@ -63,7 +63,8 @@ export default class storepurchase extends Component {
       feed: [],
       goback: false,
       priceUnit: "Buy",
-      istab: false
+      istab: false,
+      paymentTab:false
     };
     this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
     this.openLink = this.openLink.bind(this);
@@ -240,7 +241,8 @@ export default class storepurchase extends Component {
     }
     if (mod == "payment") {
       this.setState({ methode: mod });
-      this.downloadstax_execute();
+      this.setState({paymentTab:true})
+      // this.downloadstax_execute();
     }
     else {
       this.setState({ confirm_purchase: true, methode: mod });
@@ -894,6 +896,68 @@ export default class storepurchase extends Component {
           </View>
         </Modal>
         <Modal
+          isVisible={this.state.paymentTab}
+          style={{ height:100 }}
+          swipeDirection="right"
+          animationIn="fadeIn"
+          animationOut="fadeOut">
+          <View style={{height:325, width:300,backgroundColor:'white', borderRadius: 3,alignSelf:"center"} }>
+            <View style={{flexDirection:'column', flex:1,padding:20}}>
+            <View style={{flexDirection:'row'}}>
+            <Image style={{width:32,height:32,}} source={assetsConfig.  purchaseLogoo} />
+            <Text style={{fontSize:15,marginLeft:15,marginTop:5}} >APPROW Stax</Text>
+            </View>
+            <View style={{marginTop:20}} ><Text style={{marginBottom:2,fontSize:12,color:'#1698E2',fontWeight:'bold'}}>SELECT PURCHASE OPTION:</Text>
+            <View style={{borderWidth:.4,borderColor:'grey'}} />
+            </View>
+            <View style={{flexDirection:'row',marginTop:10,justifyContent:'space-between'}}>
+                <View style={{flexDirection:'column', marginTop:2}}>
+                  <Text style={{fontWeight:'600',fontSize:15}}>STAX Name</Text>
+                  <Text style={{fontSize:11,marginTop:3}}> Purchase this stax only </Text>
+                </View>
+                <View style={{flexDirection:'column'}}>
+                <View style={{flexDirection:'row'}}>
+                  <Text style={{marginLeft:65,color:'#1698E2',fontWeight:'bold'}}>USD 0.09</Text>
+                  <Image style={{width:25,height:25,marginTop:-2, }} source={assetsConfig.rightArrow} />
+                </View>
+                  <View style={{borderWidth:.5,width:120, marginLeft:20, marginBottom:5,borderColor:'grey',borderWidth:.4}} />
+                  <View style={{flexDirection:'row',marginLeft:60,justifyContent:'space-between'}}>
+                  <Image style={{height:21,width:21}} source={assetsConfig.puchaseCurrency} />{/* <View>USD 2.99</View> */}
+                  <Text style={{color:"#1698E2",fontWeight:'bold'}}>10</Text>
+                  <Image style={{width:25,height:25,marginTop:-2, }} source={assetsConfig.rightArrow} />
+                  </View>
+                </View>
+            </View>
+            {/* <View style={{marginTop:10}}/> */}
+            <View style={{flexDirection:'row', marginTop:15, marginBottom:15}}>
+            <View style={{ width:'41%',height:.5,marginTop:10, marginRight:15,backgroundColor:'grey' }}></View>
+                    <Text style={{textAlign:'center'}}>OR</Text>
+            <View style={{ width:'40%',height:.5,marginTop:10, marginLeft:15,backgroundColor:'grey'  }}></View>
+            </View>
+            <View style={{flexDirection:'row'}}>
+              <View>
+              <Text style={{fontWeight:'600',fontSize:15}}>Monthly subscription</Text>
+              <Text style={{marginBottom:2,fontSize:11,marginTop:3}}>Unlimited App Stax Downloads</Text>
+              </View>
+              <View style={{flexDirection:'row', marginLeft:30, marginTop:8}}>
+                <Text style={{color:'#1698E2',fontWeight:'bold'}}>USD 2.99</Text>
+                <Image style={{width:25,height:25,marginTop:-2, }} source={assetsConfig.rightArrow} />
+              </View>
+            </View>
+            <View style={{borderWidth:.3,borderColor:'grey',marginTop:13, marginBottom:13}} />
+            <View style={{flexDirection:"column"}}>
+              <Text style={{textAlign:'center', fontSize:11.5}}>By processing,you agree to the</Text>
+              <Text style={{textAlign:'center',color:'#1698E2',textDecorationLine:'underline',fontSize:11,fontWeight:'bold',fontFamily:'Italic'}} >Purchase terms  & conditions </Text>
+            </View>
+            
+            
+            {/* <TouchableOpacity onPress={() => { this.setState({ paymentTab: false }) }} style={{ backgroundColor: "#006BBD", height: 36, width: '35%', alignItems: "center", marginBottom: 8, borderRadius: 3 }}>
+              <Text allowFontScaling={false} style={{ fontSize: 18, paddingTop: 5, color: "white" }}>CLOSE</Text>
+            </TouchableOpacity> */}
+          </View>
+          </View>
+        </Modal>
+        <Modal
           isVisible={this.state.gotologinflow}
           onBackButtonPress={() => this.setState({ gotologinflow: false })}
           style={{ flex: 1 }}
@@ -1098,6 +1162,7 @@ var styles = {
       },
     }),
   },
+  
   title: {
     fontSize: 20,
     paddingVertical: 20,

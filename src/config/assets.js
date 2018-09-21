@@ -133,5 +133,9 @@ export default {
     iconPerfil:require('../assets/icon_perfil.png'),
     settingIconbar:require('../assets/icon_settings_white_21px.png'),
     sharesIconbar:require('../assets/icon_share_white_21px.png'),
+    purchaseLogoo:require('../assets/arrow-icon.png'),
+    rightArrow:require('../assets/icon-keyboard-arrow-right.png'),
+    puchaseCurrency:require('../assets/arrow-coin.png'),
+    
     
   };

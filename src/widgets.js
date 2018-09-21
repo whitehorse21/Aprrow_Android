@@ -2517,12 +2517,13 @@ async mixpanelTrack(event)
                                                         <Text allowFontScaling={false} style={widgets_style.box_view_bar_text}>{item_main.widgetname=="Most Frequent"?Strings.mostfrequent_stax:item_main.widgetname}</Text>
                                                     </View>
                                                     <TouchableOpacity style={{ width: '15%', alignSelf: 'center' }} onPress={async() => {
-                                                        this.mixpanelTrack("Full Screen View");
-                                                        this.mixpanelTrack("Full Screen View :"+this.state.widgetName);
-                                                        var feed=this.state.feedUrl;
-                                                        this.resetWebViewToInitialUrl();
-                                                        var openLink=this.state.openLink;
-                                                        navigate("widgetFullScreen", { "widgetdata": this.state.widgetData,"feed":feed,"openLink":feed, "index": this.state.curindex, scrollto: this.scrollto.bind(this) });
+                                                        
+                                                        // this.mixpanelTrack("Full Screen View");
+                                                        // this.mixpanelTrack("Full Screen View :"+this.state.widgetName);
+                                                        // var feed=this.state.feedUrl;
+                                                        // this.resetWebViewToInitialUrl();
+                                                        // var openLink=this.state.openLink;
+                                                        // navigate("widgetFullScreen", { "widgetdata": this.state.widgetData,"feed":feed,"openLink":feed, "index": this.state.curindex, scrollto: this.scrollto.bind(this) });
                                                     }}>
                                                     
                                                         <Image style={[widgets_style.box_view_bar_icon, { height: 20, width: 20, marginLeft: '15%' }]} source={assetsConfig.sharesIconbar} />

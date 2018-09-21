@@ -62,7 +62,7 @@ export default class storepurchase extends Component {
       gotologinflow: false,
       feed: [],
       goback: false,
-      priceUnit: "USD",
+      priceUnit: "Buy",
       istab: false
     };
     this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
@@ -985,58 +985,78 @@ export default class storepurchase extends Component {
           <ImageBackground style={{ height: this.state.istab == true ? Dimensions.get('window').width - 80 : Dimensions.get('window').width - 50, width: Dimensions.get('window').width }}
             source={{ uri: this.state.staxbackground + "?time=" + this.state.timestamp }}
             imageStyle={{ resizeMode: 'stretch' }}
+
           >
           </ImageBackground>
+
           <View style={{ flexDirection: "row", flex: 1, marginTop: 2, marginLeft: '8%', marginTop: '2%' }}>
-            <View style={{ flexDirection: "column", alignItems: "center" }}>
+            <View style={{ flexDirection: "column", alignItems: "center",padding:8 }}>
               <Touch pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.favorite()}>
-                <Image source={this.state.favoriteicon} />
-                <Text allowFontScaling={false} style={{ fontSize: 12, fontFamily: 'Roboto' }}>{Strings.discoverpurchase_page_favorite}</Text>
+                <View style={{flexDirection:'row',justifyContent:'center',alignContent:'center'}}>
+                  <Image source={this.state.favoriteicon} />
+                </View>
+                <Text allowFontScaling={false} style={{ fontSize: 12, fontFamily: 'Roboto' }}>Favorites</Text>
               </Touch>
             </View>
-            <View style={{ flexDirection: "column", alignItems: "center", marginLeft: '8%' }}>
+
+            {/* <View style={{ flexDirection: "column", alignItems: "center", marginLeft: '8%' }}>
               <Touch pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.like()}>
                 <Image source={this.state.likeicon} />
                 <Text allowFontScaling={false} style={{ fontSize: 12, fontFamily: 'Roboto' }}>{this.state.likecount}</Text>
               </Touch>
-            </View>
-            <View style={{ flexDirection: "column", alignItems: "center", marginLeft: '8%' }}>
+
+            </View> */}
+
+            <View style={{ flexDirection: "column", alignItems: "center", marginLeft: '8%', padding:8, marginTop:1 }}>
               <Touch pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.share_widget()}>
-                <Image source={assetsConfig.iconShareGrey} />
-                <Text allowFontScaling={false} style={{ fontSize: 12, fontFamily: 'Roboto' }}>{Strings.discoverpurchase_page_share}</Text>
+                <View style={{flexDirection:'row',justifyContent:'center',alignContent:'center'}}>
+                   <Image style={{height:23, width:23}} source={require("./assets/icon_share_grey.png")} />
+                </View>
+                <Text allowFontScaling={false} style={{ fontSize: 12, fontFamily: 'Roboto' }}>Share</Text>
               </Touch>
             </View>
-            <View style={{ flex: 1, height: "50%", width: "50%", flexDirection: "column", marginTop: '-5%', marginLeft: '2%' }}>
+
+            <View style={{ flex: 1, height: "50%", width: "50%", flexDirection: "column", marginTop: '-6.5%', marginLeft: '2%',justifyContent:'space-between' }}>
               <View style={{ alignItems: "center", justifyContent: "center", alignSelf: "center" }}>
                 <Touch pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.downloadstax("payment")} style={{ marginLeft: '15%', flex: 1 }}>
-                  <Image source={assetsConfig.btPrice} />
+                  <Image source={require("./assets/bt_price.png")} />
                 </Touch>
-                <Text allowFontScaling={false} style={{ marginTop: this.state.istab == true ? -36 : '-30%', fontSize: 17, marginLeft: this.state.istab == true ? '16%' : '5%', color: "white" }} onPress={() => this.downloadstax("payment")} >{this.state.priceUnit} {this.state.price}</Text>
+                <Text allowFontScaling={false} style={{ marginTop: this.state.istab == true ? -31 : '-22%', fontSize: 17, marginLeft: this.state.istab == true ? '16%' : '11%', color: "white" }} onPress={() => this.downloadstax("payment")} >Buy</Text>
               </View>
-              <Text allowFontScaling={false} style={{ marginTop: '3%', marginLeft: this.state.istab == true ? "55%" : "50%" }}>{Strings.discoverpurchase_page_or}</Text>
-              <View style={{ flex: 1, marginTop: '1%', alignItems: "center", justifyContent: "center" }}>
-                <Touch pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.downloadstax("coins")} style={{ marginLeft: '15%' }}>
-                  <Image source={assetsConfig.btCoin} />
+              {/* <Text allowFontScaling={false} style={{ marginTop: '3%', marginLeft: this.state.istab == true ? "55%" : "50%" }}>or</Text> */}
+
+              {/* <View style={{ flex: 1, marginTop: '1%', alignItems: "center", justifyContent: "center" }}> */}
+                {/* <Touch pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.downloadstax("coins")} style={{ marginLeft: '15%' }}>
+                  <Image source={require("../assets/bt_coin.png")} />
                 </Touch>
                 <View style={{ flexDirection: "row", marginTop: this.state.istab == true ? '-10%' : '-22%', marginLeft: this.state.istab == true ? "10%" : "15%", alignSelf: "center", alignItems: "center" }} onPress={() => this.downloadstax("coins")}>
-                  <Text allowFontScaling={false} style={{ fontSize: 18, color: "white" }} onPress={() => this.downloadstax("coins")}>{this.state.coins}</Text>
-                  <Touch pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.downloadstax("coins")} style={{ marginLeft: "5%" }}>
-                    <Image source={assetsConfig.aprrowCoin} />
+                  <Text allowFontScaling={false} style={{ fontSize: 18, color: "white" }} onPress={() => this.downloadstax("coins")}>{this.state.coins}</Text> */}
+                  {/*<Image style={{ marginLeft: "5%" }} source={require("./assets/aprrow_coin.png")}  />*/}
+                  {/* <Touch pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.downloadstax("coins")} style={{ marginLeft: "5%" }}>
+                    <Image source={require("../assets/aprrow_coin.png")} />
                   </Touch>
-                </View>
+                </View> */}
+
+              {/* </View> */}
+              <View style={{marginTop:'7%', marginLeft:'30%',width:'50%'}}>
+                <Text allowFontScaling={false} style={{ marginTop: 18, marginLeft:10, }}>{this.state.downloads} downloads</Text>
               </View>
             </View>
           </View>
-          <View style={{ flexDirection: "column", width: '60%', height: 5 }}>
+          {/* <View style={{ flexDirection: "column", width: '60%', height: 5 }}>
             <TouchableOpacity disabled={this.state.appsdisplay} onPress={async () => {
               await this.setState({ termsconmodel: true })
+
             }}>
-              <Text allowFontScaling={false} style={{ color: "red", marginTop: 3, marginBottom: 9, marginLeft: '6%', textDecorationLine: 'underline', fontSize: 14 }}>{Strings.discoverpurchase_page_term}</Text>
+              <Text allowFontScaling={false} style={{ color: "red", marginTop: 3, marginBottom: 9, marginLeft: '6%', textDecorationLine: 'underline', fontSize: 14 }}>Purchase Terms & Conditions</Text>
             </TouchableOpacity>
-          </View>
-          <Text allowFontScaling={false} style={{ marginTop: 18, marginLeft: 15 }}>{this.state.downloads} {Strings.discoverpurchase_page_download}</Text>
-          <Image style={{ marginTop: 8, marginLeft: 11, marginRight: 2, width: '95%' }} source={assetsConfig.line} />
+          </View> */}
+
+          <Image style={{ marginTop: 8, marginLeft: 11, marginRight: 2, width: '95%' }} source={require("./assets/line.png")} />
+
           <Text allowFontScaling={false} style={{ marginTop: 15, marginLeft: 15 }}>{this.state.Description}</Text>
+
+
         </ScrollView>
       </View >
     )

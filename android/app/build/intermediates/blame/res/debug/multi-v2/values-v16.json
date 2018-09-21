@@ -137,6 +137,40 @@
             ]
         },
         {
+            "outputFile": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/values-v16/values-v16.xml",
             "map": [
                 {
@@ -185,6 +219,40 @@
                 },
                 {
                     "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

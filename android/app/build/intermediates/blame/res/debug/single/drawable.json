@@ -1,15 +1,23 @@
 [
     {
-        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_btn_check_material.xml"
     },
     {
+        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_round.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/messenger_button_white_bg_round.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/ucrop_vector_loader.xml",
@@ -24,12 +32,28 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_round.xml",
-        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/messenger_button_blue_bg_round.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_choice_last_states.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/drawable/com_mixpanel_android_choice_last_states.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/bg.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/drawable/bg.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/tooltip_frame_light.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/tooltip_frame_light.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_round.xml",
+        "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/messenger_button_blue_bg_round.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/ucrop_shadow_upside.xml",
@@ -46,6 +70,14 @@
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_icon.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/com_facebook_button_icon.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_send_button_icon.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_send_button_icon.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_cab_background_top_material.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
@@ -84,6 +116,14 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/com_facebook_auth_dialog_header_background.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
@@ -92,16 +132,28 @@
         "source": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/res/drawable/iconsharp_widget.png"
     },
     {
-        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/edit_text_cursor.xml",
-        "source": "/Users/admin/Work/Source/Working/aprrow_dev_master/node_modules/react-native-prompt-android/android/build/intermediates/bundles/debug/res/drawable/edit_text_cursor.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_ic_clear_material.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
+        "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/edit_text_cursor.xml",
+        "source": "/Users/admin/Work/Source/Working/aprrow_dev_master/node_modules/react-native-prompt-android/android/build/intermediates/bundles/debug/res/drawable/edit_text_cursor.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/drawable/notification_bg.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_choice_first_states.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/res/drawable/com_mixpanel_android_choice_first_states.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_text_answer_border.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/drawable/com_mixpanel_android_text_answer_border.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_background.xml",
@@ -120,12 +172,20 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/res/drawable/com_mixpanel_android_arrowright_insets.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/edit_text_cursor.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/node_modules/react-native-prompt-android/android/build/intermediates/bundles/debug/res/drawable/edit_text_cursor.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/ucrop_shadow_upside.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/5b5a0331aff5c270099918baa861a957/res/drawable/ucrop_shadow_upside.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_header_background.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/com_facebook_auth_dialog_header_background.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_textfield_search_material.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
@@ -152,12 +212,20 @@
         "source": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/res/drawable/icon_sync_white_21px.png"
     },
     {
-        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/unavailableapp.png",
-        "source": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/res/drawable/unavailableapp.png"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/unavailableapp.png",
+        "source": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/res/drawable/unavailableapp.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_cancel_background.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
@@ -172,6 +240,10 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_vector_test.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
@@ -180,8 +252,16 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_text_light_normal.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_icon.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_button_icon.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_arrowleft_states.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/drawable/com_mixpanel_android_arrowleft_states.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_silver_background.xml",
@@ -200,8 +280,20 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_favicon_blue.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/com_facebook_favicon_blue.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_arrowleft_insets.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/drawable/com_mixpanel_android_arrowleft_insets.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/ucrop_shadow_upside.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/drawable/ucrop_shadow_upside.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_arrowleft_insets.xml",
@@ -214,6 +306,10 @@
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_arrowleft_states.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/res/drawable/com_mixpanel_android_arrowleft_states.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_icon.xml",
@@ -260,6 +356,14 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_icon_disabled.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_send_background.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_button_send_background.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_like_background.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_button_like_background.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/icon_sync_white_21px.png",
         "source": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/src/main/res/drawable/icon_sync_white_21px.png"
     },
@@ -284,6 +388,14 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/messenger_button_blue_bg_selector.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_textfield_search_material.xml"
     },
@@ -302,6 +414,10 @@
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/ucrop_vector_loader.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/drawable/ucrop_vector_loader.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
@@ -336,6 +452,10 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/res/drawable/com_mixpanel_android_arrowleft_insets.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_nocolor_list.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/drawable/com_mixpanel_android_nocolor_list.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_icon_light.xml"
     },
@@ -346,6 +466,10 @@
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_background.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_auth_dialog_background.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
@@ -364,8 +488,16 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_btn_borderless_material.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/ucrop_vector_loader.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/5b5a0331aff5c270099918baa861a957/res/drawable/ucrop_vector_loader.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/drawable/notification_tile_bg.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/ucrop_vector_loader_animated.xml",
@@ -380,8 +512,16 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/tooltip_frame_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/tooltip_frame_dark.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_disabled.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
@@ -416,6 +556,14 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_btn_borderless_material.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_background.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_button_background.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/icon_fullscreen_white.png",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/drawable/icon_fullscreen_white.png"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/tooltip_frame_light.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/tooltip_frame_light.xml"
     },
@@ -428,6 +576,18 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_icon_disabled.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/icon_sync_white_21px.png",
         "source": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/src/main/res/drawable/icon_sync_white_21px.png"
     },
@@ -438,6 +598,10 @@
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_background.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_button_login_background.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
@@ -460,12 +624,20 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_btn_radio_material.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_selector.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/messenger_button_white_bg_selector.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/ucrop_vector_ic_crop.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/5b5a0331aff5c270099918baa861a957/res/drawable/ucrop_vector_ic_crop.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/drawable/notification_icon_background.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_choice_last_states.xml",
@@ -500,6 +672,10 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_ratingbar_indicator_material.xml"
     },
@@ -520,6 +696,14 @@
         "source": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/src/main/res/drawable/background_splash.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_favicon_blue.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_favicon_blue.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/drawable/notification_bg_low.xml"
     },
@@ -528,8 +712,16 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/example_appwidget_preview.png",
         "source": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/src/main/res/drawable/example_appwidget_preview.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/iconsharp_widget.png",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/drawable/iconsharp_widget.png"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_arrowright_insets.xml",
@@ -550,6 +742,10 @@
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_background.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/com_facebook_button_login_background.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
@@ -584,6 +780,10 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/ucrop_vector_loader_animated.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/drawable/ucrop_vector_loader_animated.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_ic_ab_back_material.xml"
     },
@@ -594,6 +794,10 @@
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/unavailableapp.png",
         "source": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/res/drawable/unavailableapp.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_round.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/messenger_button_blue_bg_round.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
@@ -626,6 +830,14 @@
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_cancel_background.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_send_background.xml",
@@ -672,6 +884,14 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_vector_test.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_arrowright_insets.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/drawable/com_mixpanel_android_arrowright_insets.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_arrowright_states.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/drawable/com_mixpanel_android_arrowright_states.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_cab_background_internal_bg.xml"
     },
@@ -688,6 +908,10 @@
         "source": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/res/drawable/bg.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43f69bbc91054ddcf5358693eb033ea4/res/drawable/notification_bg.xml"
     },
@@ -700,8 +924,24 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_item_background_holo_light.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/ucrop_vector_ic_crop.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/drawable/ucrop_vector_ic_crop.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
@@ -720,8 +960,20 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_seekbar_track_material.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_mini_inapp_rounded.xml",
@@ -732,12 +984,20 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/res/drawable/com_mixpanel_android_checkmark_states.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_favicon_blue.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/com_facebook_favicon_blue.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_checkmark_states.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/res/drawable/com_mixpanel_android_checkmark_states.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
@@ -824,6 +1084,10 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/messenger_button_white_bg_selector.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_round.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/messenger_button_white_bg_round.xml"
     },
@@ -864,6 +1128,14 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/icon_sync_white_21px.png",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/drawable/icon_sync_white_21px.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_background.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/com_facebook_button_login_background.xml"
     },
@@ -884,8 +1156,24 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_mini_inapp_rounded.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/drawable/com_mixpanel_android_mini_inapp_rounded.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_arrowright_states.xml",
@@ -916,8 +1204,20 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_cab_background_top_material.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_selector.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/messenger_button_blue_bg_selector.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/background_splash.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/drawable/background_splash.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_dialog_material_background.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
@@ -932,8 +1232,16 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_checkmark_states.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/drawable/com_mixpanel_android_checkmark_states.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_silver_background.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_button_login_silver_background.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_background.xml",
@@ -954,6 +1262,10 @@
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_mini_inapp_rounded.xml",
@@ -996,6 +1308,10 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/messenger_button_white_bg_round.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_choice_middle_states.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/drawable/com_mixpanel_android_choice_middle_states.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_arrowleft_states.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/res/drawable/com_mixpanel_android_arrowleft_states.xml"
     },
@@ -1026,6 +1342,14 @@
     {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2f1d85df65daf1ffcc92e252f12089fe/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/iconsharp_widget.png",
@@ -1060,6 +1384,10 @@
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/drawable/notification_bg_low.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_silver_background.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/1dfb4f1fe1d89894d93d62f60c4b5a70/res/drawable/com_facebook_button_login_silver_background.xml"
     },
@@ -1080,8 +1408,44 @@
         "source": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/src/main/res/drawable/icon_fullscreen_white.png"
     },
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_choice_first_states.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/drawable/com_mixpanel_android_choice_first_states.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/example_appwidget_preview.png",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/drawable/example_appwidget_preview.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_logo.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_button_login_logo.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_mixpanel_android_mini_inapp_rounded.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/res/drawable/com_mixpanel_android_mini_inapp_rounded.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_header_background.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/drawable/com_facebook_auth_dialog_header_background.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/tooltip_frame_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/tooltip_frame_light.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/unavailableapp.png",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/drawable/unavailableapp.png"
     },
     {
         "merged": "/Users/admin/Work/Source/Working/Remote/Aprrow_Android/android/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",

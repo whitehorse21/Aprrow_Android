@@ -81,10 +81,42 @@
             ]
         },
         {
+            "outputFile": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "596"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/admin/Work/Source/Working/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/values-v11/values-v11.xml",
             "map": [
                 {
                     "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/634a6c41479ebeaff175a03cf8021071/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "596"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/values-v11/values-v11.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -9473,6 +9473,8 @@ com.aprrow.R$drawable: int src_assets_arrow_down_gold
 com.aprrow.R$drawable: int src_assets_arrow_down_orange
 com.aprrow.R$drawable: int src_assets_arrow_left
 com.aprrow.R$drawable: int src_assets_arrow_right
+com.aprrow.R$drawable: int src_assets_arrowcoin
+com.aprrow.R$drawable: int src_assets_arrowicon
 com.aprrow.R$drawable: int src_assets_background_add_device
 com.aprrow.R$drawable: int src_assets_bt_add
 com.aprrow.R$drawable: int src_assets_bt_add_customized
@@ -9526,7 +9528,6 @@ com.aprrow.R$drawable: int src_assets_icon_delete_blue_21px
 com.aprrow.R$drawable: int src_assets_icon_delete_blue_24px
 com.aprrow.R$drawable: int src_assets_icon_delete_white
 com.aprrow.R$drawable: int src_assets_icon_description_white
-com.aprrow.R$drawable: int src_assets_icon_device_white_21px
 com.aprrow.R$drawable: int src_assets_icon_devices_blue
 com.aprrow.R$drawable: int src_assets_icon_discover_active_blue_px24
 com.aprrow.R$drawable: int src_assets_icon_discover_grey_px24
@@ -9591,9 +9592,11 @@ com.aprrow.R$drawable: int src_assets_icon_rss_feed_white
 com.aprrow.R$drawable: int src_assets_icon_search_white
 com.aprrow.R$drawable: int src_assets_icon_search_white_21px
 com.aprrow.R$drawable: int src_assets_icon_settings_blue_24px
+com.aprrow.R$drawable: int src_assets_icon_settings_white_21px
 com.aprrow.R$drawable: int src_assets_icon_share_blue_24px
 com.aprrow.R$drawable: int src_assets_icon_share_grey
 com.aprrow.R$drawable: int src_assets_icon_share_white
+com.aprrow.R$drawable: int src_assets_icon_share_white_21px
 com.aprrow.R$drawable: int src_assets_icon_smartphone_white
 com.aprrow.R$drawable: int src_assets_icon_stax_active_blue_px24
 com.aprrow.R$drawable: int src_assets_icon_stax_grey_px24
@@ -9606,6 +9609,7 @@ com.aprrow.R$drawable: int src_assets_icon_waiting_orange
 com.aprrow.R$drawable: int src_assets_icon_widget_blue
 com.aprrow.R$drawable: int src_assets_icon_youtube_28px
 com.aprrow.R$drawable: int src_assets_icon_youtubers_blue_24px
+com.aprrow.R$drawable: int src_assets_iconkeyboardarrowright
 com.aprrow.R$drawable: int src_assets_line
 com.aprrow.R$drawable: int src_assets_line_blue
 com.aprrow.R$drawable: int src_assets_line_bronze_small

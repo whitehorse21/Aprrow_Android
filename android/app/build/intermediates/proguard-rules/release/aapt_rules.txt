@@ -18,16 +18,16 @@
 -keep class android.support.v7.view.menu.ListMenuItemView { <init>(...); }
 
 # view res/layout/abc_screen_toolbar.xml #generated:27
-# view v26\res/layout-v26/abc_screen_toolbar.xml #generated:27
+# view v26/res/layout-v26/abc_screen_toolbar.xml #generated:27
 -keep class android.support.v7.widget.ActionBarContainer { <init>(...); }
 
 # view res/layout/abc_action_mode_bar.xml #generated:19
 # view res/layout/abc_screen_toolbar.xml #generated:43
-# view v26\res/layout-v26/abc_screen_toolbar.xml #generated:44
+# view v26/res/layout-v26/abc_screen_toolbar.xml #generated:44
 -keep class android.support.v7.widget.ActionBarContextView { <init>(...); }
 
 # view res/layout/abc_screen_toolbar.xml #generated:17
-# view v26\res/layout-v26/abc_screen_toolbar.xml #generated:17
+# view v26/res/layout-v26/abc_screen_toolbar.xml #generated:17
 -keep class android.support.v7.widget.ActionBarOverlayLayout { <init>(...); }
 
 # view res/layout/abc_action_menu_layout.xml #generated:17
@@ -44,7 +44,7 @@
 -keep class android.support.v7.widget.AppCompatImageView { <init>(...); }
 
 # view res/layout/abc_alert_dialog_button_bar_material.xml #generated:26
-# view watch-v20\res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml #generated:18
+# view watch-v20/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml #generated:18
 -keep class android.support.v7.widget.ButtonBarLayout { <init>(...); }
 
 # view res/layout/com_facebook_device_auth_dialog_fragment.xml #generated:22
@@ -55,7 +55,7 @@
 -keep class android.support.v7.widget.ContentFrameLayout { <init>(...); }
 
 # view res/layout/abc_alert_dialog_title_material.xml #generated:45
-# view watch-v20\res/layout-watch-v20/abc_alert_dialog_title_material.xml #generated:44
+# view watch-v20/res/layout-watch-v20/abc_alert_dialog_title_material.xml #generated:44
 -keep class android.support.v7.widget.DialogTitle { <init>(...); }
 
 # view res/layout/abc_screen_simple_overlay_action_mode.xml #generated:23
@@ -70,7 +70,7 @@
 
 # view res/layout/abc_screen_toolbar.xml #generated:36
 # view res/layout/ucrop_activity_photobox.xml #generated:8
-# view v26\res/layout-v26/abc_screen_toolbar.xml #generated:37
+# view v26/res/layout-v26/abc_screen_toolbar.xml #generated:37
 -keep class android.support.v7.widget.Toolbar { <init>(...); }
 
 # view res/layout/abc_screen_simple.xml #generated:25
@@ -81,7 +81,7 @@
 # view res/layout/abc_alert_dialog_material.xml #generated:52
 # view res/layout/abc_alert_dialog_material.xml #generated:66
 # view res/layout/abc_alert_dialog_title_material.xml #generated:56
-# view watch-v20\res/layout-watch-v20/abc_alert_dialog_title_material.xml #generated:53
+# view watch-v20/res/layout-watch-v20/abc_alert_dialog_title_material.xml #generated:53
 -keep class android.widget.Space { <init>(...); }
 
 # view AndroidManifest.xml #generated:94
@@ -141,7 +141,7 @@
 # view AndroidManifest.xml #generated:41
 -keep class com.google.android.gms.gcm.GcmReceiver { <init>(...); }
 
-# view land\res/layout-land/com_mixpanel_android_activity_notification_full.xml #generated:33
+# view land/res/layout-land/com_mixpanel_android_activity_notification_full.xml #generated:33
 # view res/layout/com_mixpanel_android_activity_notification_full.xml #generated:122
 -keep class com.mixpanel.android.takeoverinapp.FadingImageView { <init>(...); }
 

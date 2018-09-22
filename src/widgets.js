@@ -92,8 +92,10 @@ export default class widgets extends Component {
             feedUrl:'',
             key: 1
         }
-        this.delete_stax = this.delete_stax.bind(this)
+        this.delete_stax = this.delete_stax.bind(this);
         this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
+        this.sharewidget = this.sharewidget.bind(this);
+        this.addStax = this.addStax.bind(this)
     }
     resetWebViewToInitialUrl = () => {
         this.setState({
@@ -139,6 +141,27 @@ export default class widgets extends Component {
         else {
             this.setState({ offlineFlag: true });
         }
+    }
+
+/** 
+  * (Add stax button click
+   >> Calls addWidget Function)
+  * @param  :nil     
+  * @return :nil
+  * @created by    :dhi
+  * @modified by   :dhi
+  * @modified date :22/09/18
+ */
+
+    async addStax(){
+        this.resetWebViewToInitialUrl();
+        var username = await AsyncStorage.getItem("username");
+        if ((username == null || username == commons.guestuserkey()) && this.state.widgetData.length >= 5) {
+            this.setState({ gotoLoginFlow: true });
+            return;
+        }
+        this.setState({ dialogWidgetName: true });
+        this.mixpanelTrack("Enter Stax Name View");
     }
     /** 
   * (Activate search stax dialogue box )
@@ -2516,15 +2539,7 @@ async mixpanelTrack(event)
                                                     <View style={{ width: '80%' }}>
                                                         <Text allowFontScaling={false} style={widgets_style.box_view_bar_text}>{item_main.widgetname=="Most Frequent"?Strings.mostfrequent_stax:item_main.widgetname}</Text>
                                                     </View>
-                                                    <TouchableOpacity style={{ width: '15%', alignSelf: 'center' }} onPress={async() => {
-                                                        
-                                                        // this.mixpanelTrack("Full Screen View");
-                                                        // this.mixpanelTrack("Full Screen View :"+this.state.widgetName);
-                                                        // var feed=this.state.feedUrl;
-                                                        // this.resetWebViewToInitialUrl();
-                                                        // var openLink=this.state.openLink;
-                                                        // navigate("widgetFullScreen", { "widgetdata": this.state.widgetData,"feed":feed,"openLink":feed, "index": this.state.curindex, scrollto: this.scrollto.bind(this) });
-                                                    }}>
+                                                    <TouchableOpacity style={{ width: '15%', alignSelf: 'center' }} onPress={this.sharewidget}>
                                                     
                                                         <Image style={[widgets_style.box_view_bar_icon, { height: 20, width: 20, marginLeft: '15%' }]} source={assetsConfig.sharesIconbar} />
                                                     </TouchableOpacity>

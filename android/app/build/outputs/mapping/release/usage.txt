@@ -100,7 +100,7 @@ android.support.annotation.VisibleForTesting
 android.support.annotation.WorkerThread
 android.support.annotation.XmlRes
 android.support.compat.R:
-    9:117:public R()
+    9:9:public R()
 android.support.compat.R$attr
 android.support.compat.R$bool
 android.support.compat.R$color
@@ -3606,7 +3606,7 @@ android.support.v7.app.WindowDecorActionBar$ActionModeImpl:
     1145:1145:public void onCloseSubMenu(android.support.v7.view.menu.SubMenuBuilder)
 android.support.v7.app.WindowDecorActionBar$TabImpl
 android.support.v7.appcompat.R:
-    9:1121:public R()
+    9:9:public R()
 android.support.v7.appcompat.R$anim
 android.support.v7.appcompat.R$attr:
     24:24:public R$attr()
@@ -3631,7 +3631,7 @@ android.support.v7.appcompat.R$styleable:
     1121:1121:public R$styleable()
 android.support.v7.cardview.BuildConfig
 android.support.v7.cardview.R:
-    9:40:public R()
+    9:9:public R()
 android.support.v7.cardview.R$attr
 android.support.v7.cardview.R$color:
     23:23:public R$color()
@@ -5101,7 +5101,7 @@ com.facebook.ProgressOutputStream:
     98:98:long getBatchProgress()
     102:102:long getMaxProgress()
 com.facebook.R:
-    9:1266:public R()
+    9:9:public R()
 com.facebook.R$anim
 com.facebook.R$attr
 com.facebook.R$bool
@@ -7087,7 +7087,7 @@ com.facebook.react.HeadlessJsTaskService$2
 com.facebook.react.MemoryPressureRouter:
     25:26:public void destroy(android.content.Context)
 com.facebook.react.R:
-    9:1251:public R()
+    9:9:public R()
 com.facebook.react.R$anim
 com.facebook.react.R$attr
 com.facebook.react.R$bool
@@ -9061,7 +9061,7 @@ com.google.android.gms.auth.zzg
 com.google.android.gms.auth.zzh
 com.google.android.gms.auth.zzi
 com.google.android.gms.base.R:
-    9:84:public R()
+    9:9:public R()
 com.google.android.gms.base.R$attr
 com.google.android.gms.base.R$color:
     18:18:public R$color()
@@ -9196,7 +9196,7 @@ com.google.android.gms.common.GoogleSignatureVerifier:
     private final com.google.android.gms.common.zzg zza(android.content.pm.PackageInfo)
 com.google.android.gms.common.ProGuardCanary
 com.google.android.gms.common.R:
-    9:13:public R()
+    9:9:public R()
 com.google.android.gms.common.R$integer
 com.google.android.gms.common.R$string:
     13:13:public R$string()
@@ -10280,7 +10280,7 @@ com.google.android.gms.gcm.PendingCallback
 com.google.android.gms.gcm.PeriodicTask
 com.google.android.gms.gcm.PeriodicTask$Builder
 com.google.android.gms.gcm.R:
-    9:10:public R()
+    9:9:public R()
 com.google.android.gms.gcm.R$string:
     10:10:public R$string()
 com.google.android.gms.gcm.Task
@@ -11120,7 +11120,7 @@ com.imagepicker.ImagePickerPackage:
     25:27:public ImagePickerPackage(int)
     36:36:public java.util.List createJSModules()
 com.imagepicker.R:
-    9:1252:public R()
+    9:9:public R()
 com.imagepicker.R$anim
 com.imagepicker.R$attr
 com.imagepicker.R$bool
@@ -11144,16 +11144,16 @@ com.imagepicker.media.ImageConfig:
     98:98:public com.imagepicker.media.ImageConfig withSaveToCameraRoll(boolean)
 com.imagepicker.media.VideoConfig
 com.imagepicker.permissions.PermissionUtils:
-    21:81:public PermissionUtils()
+    21:21:public PermissionUtils()
 com.imagepicker.permissions.PermissionsHelper
 com.imagepicker.utils.MediaUtils:
-    38:380:public MediaUtils()
+    38:38:public MediaUtils()
 com.imagepicker.utils.ReadableMapUtils:
     12:12:public ReadableMapUtils()
 com.imagepicker.utils.RealPathUtil:
     19:19:public RealPathUtil()
 com.imagepicker.utils.UI:
-    21:98:public UI()
+    21:21:public UI()
 com.kevinejohn.RNMixpanel.BuildConfig
 com.kevinejohn.RNMixpanel.R
 com.kevinejohn.RNMixpanel.R$anim
@@ -11191,7 +11191,7 @@ com.learnium.RNDeviceInfo.RNDeviceInfo:
     27:27:public java.util.List createJSModules()
 com.mixpanel.android.BuildConfig
 com.mixpanel.android.R:
-    9:149:public R()
+    9:9:public R()
 com.mixpanel.android.R$anim:
     10:10:public R$anim()
 com.mixpanel.android.R$animator:
@@ -11825,7 +11825,7 @@ com.rt2zz.reactnativecontacts.ReactNativeContacts:
     36:37:public static void onRequestPermissionsResult(int,java.lang.String[],int[])
 com.yalantis.ucrop.BuildConfig
 com.yalantis.ucrop.R:
-    9:1232:public R()
+    9:9:public R()
 com.yalantis.ucrop.R$anim
 com.yalantis.ucrop.R$attr
 com.yalantis.ucrop.R$bool
@@ -12029,7 +12029,7 @@ id.zelory.compressor.ImageUtil:
 id.zelory.compressor.R
 im.shimo.react.prompt.BuildConfig
 im.shimo.react.prompt.R:
-    9:1255:public R()
+    9:9:public R()
 im.shimo.react.prompt.R$anim
 im.shimo.react.prompt.R$attr
 im.shimo.react.prompt.R$bool
@@ -13895,7 +13895,7 @@ okio.Util:
 okio.package-info
 org.devio.rn.splashscreen.BuildConfig
 org.devio.rn.splashscreen.R:
-    9:1434:public R()
+    9:9:public R()
 org.devio.rn.splashscreen.R$anim
 org.devio.rn.splashscreen.R$attr
 org.devio.rn.splashscreen.R$bool
@@ -13935,7 +13935,7 @@ org.pgsqlite.R$style
 org.pgsqlite.R$styleable
 org.pgsqlite.R$xml
 org.pgsqlite.SQLitePluginConverter:
-    23:48:public SQLitePluginConverter()
+    23:23:public SQLitePluginConverter()
 org.pgsqlite.SQLitePluginPackage:
     28:29:public SQLitePluginPackage(android.app.Activity)
     46:46:public java.util.List createJSModules()

@@ -11,7 +11,7 @@ import {
   Dimensions,
   Image,TouchableOpacity,TextInput, Linking,AsyncStorage,
   Platform,
-  AppState
+  AppState,
 
 } from 'react-native';
 import TabNavigator from 'react-native-tab-navigator';
@@ -77,6 +77,9 @@ constructor(props){
         selectedTab: 'Home',
         avatarSource:require('./assets/perfil_toolbar_39px.png'),
         count:"",
+        widgetData: [],
+        gotoLoginFlow: false,
+        dialogWidgetName: false,
        // font_s:30,
        // istab:false
     };
@@ -180,6 +183,7 @@ async handleAppStateChange(newAppState) {
     }
   }
 async openLink1(url)
+
 {
     const { navigate } = this.props.navigation;
     var username = await AsyncStorage.getItem("username");
@@ -261,6 +265,7 @@ async setAccount()
          var imagereturnD=await databasehelper.getProfileImage();
          var imageData=imagereturnD.res;
          var imageBase64=imageData[0].profileimage;
+         var username = await AsyncStorage.getItem("username");
         
         if(imageBase64!='0' && imageBase64!='' && imageBase64!=null && imageBase64!='fgdfhdfhhgfgh' )
         {
@@ -269,12 +274,13 @@ async setAccount()
             avatarSource:{uri: `data:image/gif;base64,${imageBase64}`}
           });
         }
-       /* else{
+        
+       else if(username !== null && username !== commons.guestuserkey()){
           this.setState({                
-            avatarSource:require('./assets/icon_login_grey_px24.png')
+            avatarSource:require('./assets/profile-avatar-png-4.png')
           });          
         }
-        */
+        
         var userData=await databasehelper.getuser();
 
         this.setState({                
@@ -402,7 +408,7 @@ async headerComponent()
                                 </TouchableOpacity>
                                 </View>
                                             <View style={{paddingBottom:3}}>
-                                                <TouchableOpacity style={{marginBottom:10}} onPress={() => {  }}>
+                                                <TouchableOpacity style={{marginBottom:10}} onPress={() => this.refs.widget.addStax() }>
                                                     <Image  source={require('./assets/bt_add.png')}
                                                         style={{
                                                             marginLeft: 10,
@@ -414,7 +420,7 @@ async headerComponent()
                                                     />
                                                 </TouchableOpacity>
                                             </View>
-                                            
+                                                                      
 
 
       </View>

@@ -1,14 +1,26 @@
 [
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\xml\\provider_paths.xml",
-        "source": "F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\xml\\provider_paths.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/xml/homescreewidget_info.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/xml/homescreewidget_info.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\xml\\homescreewidget_info.xml",
-        "source": "F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\xml\\homescreewidget_info.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\xml\\provider_paths.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\xml\\provider_paths.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\xml\\preferences.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\xml\\preferences.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\xml\\homescreewidget_info.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\xml\\homescreewidget_info.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/xml/preferences.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/7742d8b9c74ea2f3cccc4a31cb5a69c8/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\xml\\preferences.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/xml/provider_paths.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/xml/provider_paths.xml"
     }
 ]

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v14\\values-v14.xml",
+            "outputFile": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/values-v14/values-v14.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\mixpanel-android-5.3.0.aar\\35c709faca42e80dc778177bd8c89d44\\res\\values-v14\\values-v14.xml",
+                    "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/values-v14/values-v14.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -17,10 +17,42 @@
             ]
         },
         {
-            "outputFile": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\values-v14\\values-v14.xml",
+            "outputFile": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\mixpanel-android-5.3.0.aar\\35c709faca42e80dc778177bd8c89d44\\res\\values-v14\\values-v14.xml",
+                    "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\mixpanel-android-5.3.0.aar\\35c709faca42e80dc778177bd8c89d44\\res\\values-v14\\values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "605"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\values-v14\\values-v14.xml",
+            "map": [
+                {
+                    "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\mixpanel-android-5.3.0.aar\\35c709faca42e80dc778177bd8c89d44\\res\\values-v14\\values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "605"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/values-v14/values-v14.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,298 +1,594 @@
 [
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\select_dialog_multichoice_material.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_list_menu_item_radio.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_item.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\node_modules\\react-native-image-picker\\android\\build\\intermediates\\bundles\\release\\res\\layout\\list_item.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_item.xml",
-        "source": "F:\\Aprrow_Mobile\\node_modules\\react-native-image-picker\\android\\build\\intermediates\\bundles\\release\\res\\layout\\list_item.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_dialog_title_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_dialog_title_material.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_device_auth_dialog_fragment.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_device_auth_dialog_fragment.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_blue_round.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_blue_round.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_layout.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_screen_toolbar.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/notification_media_cancel_action.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/res/layout/notification_media_cancel_action.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\widget_config_activity.xml",
-        "source": "F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\layout\\widget_config_activity.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/widget_standard.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/layout/widget_standard.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_smart_device_dialog_fragment.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_radio.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout\\notification_template_part_time.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/select_dialog_item_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_big_media_narrow.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\widget_config_activity.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\layout\\widget_config_activity.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_menu_item_layout.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_expanded_menu_layout.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/notification_media_action.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/res/layout/notification_media_action.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_menu_layout.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/widget_intial_layout.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/layout/widget_intial_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_white_large.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_white_large.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_expanded_menu_layout.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_activity_photobox.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_activity_photobox.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/ucrop_activity_photobox.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/layout/ucrop_activity_photobox.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_screen_simple.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_alert_dialog_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_alert_dialog_material.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_alert_dialog_title_material.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/com_facebook_login_fragment.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/layout/com_facebook_login_fragment.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_big_media_custom.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_white_large.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_white_large.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_mixpanel_android_activity_notification_full.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\mixpanel-android-5.3.0.aar\\35c709faca42e80dc778177bd8c89d44\\res\\layout\\com_mixpanel_android_activity_notification_full.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_action_menu_item_layout.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_activity_photobox.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_activity_photobox.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\redbox_item_frame.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\layout\\redbox_item_frame.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_media_custom.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/com_facebook_activity_layout.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/layout/com_facebook_activity_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_white_small.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_white_small.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_activity_layout.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\com_facebook_activity_layout.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_controls.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_controls.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/notification_template_lines_media.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/res/layout/notification_template_lines_media.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_dialog_title_material.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/com_mixpanel_android_activity_notification_mini.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/layout/com_mixpanel_android_activity_notification_mini.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_view.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_view.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media_custom.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_media_custom.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_activity_chooser_view.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_white_small.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_white_small.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_tooltip.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_tooltip.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_popup_menu_item_layout.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_activity_chooser_view.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_activity_layout.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\com_facebook_activity_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_lines_media.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_controls.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_controls.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_bar_title_item.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_media_action.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_action_bar_up_container.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_aspect_ratio.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_aspect_ratio.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/ucrop_layout_rotate_wheel.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/layout/ucrop_layout_rotate_wheel.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_media.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_search_view.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_tooltip.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_tooltip.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_list_menu_item_layout.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/list_item.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/node_modules/react-native-image-picker/android/build/intermediates/bundles/release/res/layout/list_item.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\redbox_view.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\layout\\redbox_view.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_lines_media.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_mode_close_item_material.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/ucrop_view.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/layout/ucrop_view.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\redbox_item_title.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\layout\\redbox_item_title.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/notification_template_big_media.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/res/layout/notification_template_big_media.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\dev_loading_view.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\layout\\dev_loading_view.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_aspect_ratio.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_aspect_ratio.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/widget_standard_grid_item.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/layout/widget_standard_grid_item.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_alert_dialog_material.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/dev_loading_view.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/7742d8b9c74ea2f3cccc4a31cb5a69c8/res/layout/dev_loading_view.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_white_round.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_white_round.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/notification_template_media_custom.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/res/layout/notification_template_media_custom.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_tooltip.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_tooltip.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_blue_small.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_blue_small.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_screen_content_include.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\redbox_item_title.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\layout\\redbox_item_title.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_fragment_photobox.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_fragment_photobox.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_white_large.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/layout/messenger_button_send_white_large.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\widget_standard.xml",
-        "source": "F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\layout\\widget_standard.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/ucrop_fragment_photobox.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/layout/ucrop_fragment_photobox.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_layout_scale_wheel.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_layout_scale_wheel.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/launch_screen.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/layout/launch_screen.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\widget_intial_layout.xml",
-        "source": "F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\layout\\widget_intial_layout.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_fragment_photobox.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_fragment_photobox.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_media_cancel_action.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_layout_scale_wheel.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_layout_scale_wheel.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_big_media.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\widget_intial_layout.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\layout\\widget_intial_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\edit_text.xml",
-        "source": "F:\\Aprrow_Mobile\\node_modules\\react-native-prompt-android\\android\\build\\intermediates\\bundles\\release\\res\\layout\\edit_text.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_list_menu_item_icon.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_layout_rotate_wheel.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_layout_rotate_wheel.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_action_mode_bar.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_action_mode_bar.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_layout_rotate_wheel.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_layout_rotate_wheel.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\fps_view.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\layout\\fps_view.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\launch_screen.xml",
-        "source": "F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\layout\\launch_screen.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/redbox_item_frame.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/7742d8b9c74ea2f3cccc4a31cb5a69c8/res/layout/redbox_item_frame.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_login_fragment.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\com_facebook_login_fragment.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/ucrop_layout_scale_wheel.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/layout/ucrop_layout_scale_wheel.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_tooltip_bubble.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\com_facebook_tooltip_bubble.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_icon.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_expanded_menu_layout.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_blue_large.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_blue_large.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_tooltip_bubble.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\com_facebook_tooltip_bubble.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\widget_standard_grid_item.xml",
-        "source": "F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\layout\\widget_standard_grid_item.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_action_menu_layout.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_blue_large.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_blue_large.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_mixpanel_android_activity_notification_mini.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\mixpanel-android-5.3.0.aar\\35c709faca42e80dc778177bd8c89d44\\res\\layout\\com_mixpanel_android_activity_notification_mini.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\select_dialog_item_material.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\widget_standard_grid_item.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\layout\\widget_standard_grid_item.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/edit_text.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/node_modules/react-native-prompt-android/android/build/intermediates/bundles/release/res/layout/edit_text.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/widget_config_activity.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/layout/widget_config_activity.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_multichoice_material.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/notification_template_big_media_narrow.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_blue_round.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_toolbar.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_smart_device_dialog_fragment.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/select_dialog_multichoice_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_select_dialog_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/notification_template_media.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/com_facebook_smart_device_dialog_fragment.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/layout/com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/redbox_item_title.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/7742d8b9c74ea2f3cccc4a31cb5a69c8/res/layout/redbox_item_title.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/com_facebook_device_auth_dialog_fragment.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_custom.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_mixpanel_android_activity_notification_full.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\mixpanel-android-5.3.0.aar\\35c709faca42e80dc778177bd8c89d44\\res\\layout\\com_mixpanel_android_activity_notification_full.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\redbox_item_frame.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\layout\\redbox_item_frame.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/redbox_view.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/7742d8b9c74ea2f3cccc4a31cb5a69c8/res/layout/redbox_view.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/notification_template_big_media_custom.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_search_view.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_blue_small.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/layout/messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_screen_content_include.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\ucrop_view.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\layout\\ucrop_view.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/com_facebook_tooltip_bubble.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/layout/com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_alert_dialog_title_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_title_item.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/ucrop_controls.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/layout/ucrop_controls.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_view.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_layout.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\redbox_view.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\layout\\redbox_view.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_white_small.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/layout/messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/notification_template_big_media_narrow_custom.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/165bfcc597ca1f962a3b030021e516db/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_screen_toolbar.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\dev_loading_view.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\layout\\dev_loading_view.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_material.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_white_round.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/layout/messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_white_round.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_blue_small.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_blue_round.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/layout/messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_content_include.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_blue_large.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/layout/messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_action_bar_title_item.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\widget_standard.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\layout\\widget_standard.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_cancel_action.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\edit_text.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\node_modules\\react-native-prompt-android\\android\\build\\intermediates\\bundles\\release\\res\\layout\\edit_text.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/fps_view.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/7742d8b9c74ea2f3cccc4a31cb5a69c8/res/layout/fps_view.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\fps_view.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.52.0.aar\\9d8c934b14e4cddbdb108bf79d6e8883\\res\\layout\\fps_view.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\launch_screen.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\src\\main\\res\\layout\\launch_screen.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/ucrop_aspect_ratio.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/layout/ucrop_aspect_ratio.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_login_fragment.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\layout\\com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_screen_simple.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow_custom.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\99ce139f3b13e265133e9ed354f61a2c\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/com_mixpanel_android_activity_notification_full.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/layout/com_mixpanel_android_activity_notification_full.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout/abc_popup_menu_item_layout.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_mixpanel_android_activity_notification_mini.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\mixpanel-android-5.3.0.aar\\35c709faca42e80dc778177bd8c89d44\\res\\layout\\com_mixpanel_android_activity_notification_mini.xml"
     }
 ]

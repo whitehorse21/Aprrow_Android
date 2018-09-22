@@ -1,110 +1,218 @@
 [
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_btn_checkable.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_btn_checkable.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_edittext.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_edittext.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_edittext.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_edittext.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_btn_colored_text_material.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_btn_colored_text_material.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_dark.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_secondary_text_material_dark.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_hint_foreground_material_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\6258daf3a519994589acb09bbf51020e\\res\\color\\common_google_signin_btn_text_light.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_tint_switch_track.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_tint_switch_track.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\prompt_color.xml",
-        "source": "F:\\Aprrow_Mobile\\node_modules\\react-native-prompt-android\\android\\build\\intermediates\\bundles\\release\\res\\color\\prompt_color.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/com_facebook_button_text_color.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/color/com_facebook_button_text_color.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\com_facebook_button_text_color.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\color\\com_facebook_button_text_color.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_tint_btn_checkable.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_seek_thumb.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_seek_thumb.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/color/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\6258daf3a519994589acb09bbf51020e\\res\\color\\common_google_signin_btn_text_dark.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_seek_thumb.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_search_url_text.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_search_url_text.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_search_url_text.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\6258daf3a519994589acb09bbf51020e\\res\\color\\common_google_signin_btn_tint.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\6258daf3a519994589acb09bbf51020e\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_search_url_text.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_search_url_text.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_light.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_primary_text_material_light.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_tint_seek_thumb.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_hint_foreground_material_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_hint_foreground_material_light.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_default.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_default.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_light.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_spinner.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_spinner.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_tint_default.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_tint_default.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_hint_foreground_material_dark.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_hint_foreground_material_dark.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_default.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_default.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_light.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_hint_foreground_material_light.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_hint_foreground_material_light.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/color/common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\com_facebook_send_button_text_color.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\color\\com_facebook_send_button_text_color.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_primary_text_material_dark.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\com_facebook_send_button_text_color.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\color\\com_facebook_send_button_text_color.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\switch_thumb_material_dark.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_primary_text_material_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_primary_text_material_light.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_switch_track.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_switch_track.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_dark.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_btn_colored_text_material.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_btn_colored_text_material.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\switch_thumb_material_light.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_switch_track.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_switch_track.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\ucrop_scale_text_view_selector.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\color\\ucrop_scale_text_view_selector.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\ucrop_scale_text_view_selector.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.2-native.aar\\a5565d601a2e8dda652b5034c293ed9c\\res\\color\\ucrop_scale_text_view_selector.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_btn_checkable.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_primary_text_material_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_dark.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/common_google_signin_btn_tint.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ef700af9e0686967686caa259fbe643c/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/ucrop_scale_text_view_selector.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/a4bfedb758c13c88fc2a3abd0c8e82c5/res/color/ucrop_scale_text_view_selector.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\prompt_color.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\node_modules\\react-native-prompt-android\\android\\build\\intermediates\\bundles\\release\\res\\color\\prompt_color.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\6258daf3a519994589acb09bbf51020e\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_tint_edittext.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\com_facebook_button_text_color.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.26.0.aar\\989db86d54c24d576d5c877a61e2a5b5\\res\\color\\com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\6258daf3a519994589acb09bbf51020e\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/prompt_color.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/node_modules/react-native-prompt-android/android/build/intermediates/bundles/release/res/color/prompt_color.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_secondary_text_material_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_spinner.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_hint_foreground_material_light.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/switch_thumb_material_light.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/abc_tint_spinner.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_dark.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/com_facebook_send_button_text_color.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.26.0.aar/e407f85beceaad313e5e46cae1a99e4c/res/color/com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_btn_colored_text_material.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_light.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\227091b7447e2dad3802e2cc985d77a6\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/color/switch_thumb_material_dark.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/d8e37f1fbdacff38acc7b9ade49fd897/res/color/switch_thumb_material_dark.xml"
     }
 ]

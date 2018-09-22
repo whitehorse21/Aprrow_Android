@@ -1,6 +1,10 @@
 [
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\animator\\com_mixpanel_android_slide_down.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\mixpanel-android-5.3.0.aar\\35c709faca42e80dc778177bd8c89d44\\res\\animator\\com_mixpanel_android_slide_down.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/animator/com_mixpanel_android_slide_down.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/36970f698582f62e00a7ade70c2f2023/res/animator/com_mixpanel_android_slide_down.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\animator\\com_mixpanel_android_slide_down.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\mixpanel-android-5.3.0.aar\\35c709faca42e80dc778177bd8c89d44\\res\\animator\\com_mixpanel_android_slide_down.xml"
     }
 ]

@@ -919,13 +919,13 @@ export default class storepurchase extends Component {
                 </View>
                 <View style={{flexDirection:'column'}}>
                 <View style={{flexDirection:'row'}}>
-                  <Text style={{marginLeft:65,color:'#1698E2',fontWeight:'bold'}}>USD 0.09</Text>
+                  <Text style={{marginLeft:65,color:'#1698E2',fontWeight:'bold'}}>{/* USD 0.09 */}{this.state.priceUnit} {this.state.price}</Text>
                   <Image style={{width:25,height:25,marginTop:-2, }} source={assetsConfig.rightArrow} />
                 </View>
                   <View style={{borderWidth:.5,width:120, marginLeft:20, marginBottom:5,borderColor:'grey',borderWidth:.4}} />
                   <View style={{flexDirection:'row',marginLeft:60,justifyContent:'space-between'}}>
                   <Image style={{height:21,width:21}} source={assetsConfig.puchaseCurrency} />{/* <View>USD 2.99</View> */}
-                  <Text style={{color:"#1698E2",fontWeight:'bold'}}>10</Text>
+                  <Text style={{color:"#1698E2",fontWeight:'bold'}}>{this.state.coins}</Text>
                   <Image style={{width:25,height:25,marginTop:-2, }} source={assetsConfig.rightArrow} />
                   </View>
                 </View>
@@ -942,7 +942,7 @@ export default class storepurchase extends Component {
               <Text style={{marginBottom:2,fontSize:11,marginTop:3}}>Unlimited App Stax Downloads</Text>
               </View>
               <View style={{flexDirection:'row', marginLeft:30, marginTop:8}}>
-                <Text style={{color:'#1698E2',fontWeight:'bold'}}>USD 2.99</Text>
+                <Text style={{color:'#1698E2',fontWeight:'bold'}}>{this.state.priceUnit} {this.state.price} {/* USD 0.09 */}</Text>
                 <Image style={{width:25,height:25,marginTop:-2, }} source={assetsConfig.rightArrow} />
               </View>
             </View>

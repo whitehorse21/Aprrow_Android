@@ -1,18 +1,34 @@
 [
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/layout-v21/notification_action.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout-v21\\notification_action.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/layout-v21/notification_template_icon_group.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout-v21\\notification_action_tombstone.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
-        "merged": "F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/c94888d92cd49e33468415e525680a6e/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/F:\\Aprrow_Mobile\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/C:\\Users\\DHISIGMA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\d8fc74615c9763d8cbde4a198c6591ee\\res\\layout-v21\\notification_template_icon_group.xml"
     }
 ]

@@ -1,1 +1,1 @@
-[{"name":"combined_res_and_classes","index":0,"scopes":["PROJECT","EXTERNAL_LIBRARIES","SUB_PROJECTS"],"types":["CLASSES","RESOURCES"],"format":"JAR","present":true}]
+[{"name":"combined_res_and_classes","index":0,"scopes":["EXTERNAL_LIBRARIES","SUB_PROJECTS","PROJECT"],"types":["CLASSES","RESOURCES"],"format":"JAR","present":true}]

@@ -80,6 +80,7 @@ constructor(props){
         widgetData: [],
         gotoLoginFlow: false,
         dialogWidgetName: false,
+        showImageTitle: true
        // font_s:30,
        // istab:false
     };
@@ -271,13 +272,14 @@ async setAccount()
         {
            //avatarSource:{uri: `data:image/gif;base64,${imageBase64}`}
            this.setState({                
-            avatarSource:{uri: `data:image/gif;base64,${imageBase64}`}
+            avatarSource:{uri: `data:image/gif;base64,${imageBase64}`},
+            showImageTitle:false
           });
         }
         
        else if(username !== null && username !== commons.guestuserkey()){
           this.setState({                
-            avatarSource:require('./assets/profile-avatar-png-4.png')
+            avatarSource:require('./assets/profile-avatarr.png')
           });          
         }
         
@@ -690,7 +692,7 @@ async upBadge()
         </TabNavigator.Item>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'Logout'}
-          title={Strings.menu_profile}
+          title={this.state.showImageTitle ? Strings.menu_profile:null}
           titleStyle={{fontSize:font_s}}
           selectedTitleStyle={{color: "#3496f0"}}
           renderIcon={() => <Image style={{borderRadius: h/2,width: h,height: h}} source={this.state.avatarSource} />}

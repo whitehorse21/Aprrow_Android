@@ -529,7 +529,7 @@ public final class R {
         public static final int common_google_signin_btn_text_light = 0x7f0200a9;
         public static final int common_google_signin_btn_text_light_focused = 0x7f0200aa;
         public static final int common_google_signin_btn_text_light_normal = 0x7f0200ab;
-        public static final int notification_template_icon_bg = 0x7f020181;
+        public static final int notification_template_icon_bg = 0x7f020182;
     }
     public static final class id {
         public static final int action0 = 0x7f0d00aa;

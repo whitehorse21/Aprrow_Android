@@ -1518,10 +1518,10 @@ export default class widgeteditor extends Component {
                     )}
                 </View>
                 {/* </Modal>*/}
-                < Dialog
+                < Dialog 
                     visible={this.state.dialogWidgetBack}
                     onTouchOutside={() => this.setState({ dialogWidgetRename: false })}
-                    animation='fade'
+                    animation='fade' 
                 >
                     <View >
                         <Text allowFontScaling={false} style={[device_style.dialog_text, { color: 'black', marginBottom: 5, fontFamily: 'Roboto', textAlign: 'center' }]}>{Strings.staxeditor_save_title}</Text>

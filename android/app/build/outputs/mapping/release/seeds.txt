@@ -9626,6 +9626,7 @@ com.aprrow.R$drawable: int src_assets_logo_aprrow_white_130x22
 com.aprrow.R$drawable: int src_assets_marker_logo_aprrow
 com.aprrow.R$drawable: int src_assets_perfil_toolbar_39px
 com.aprrow.R$drawable: int src_assets_photo_mini_perfil
+com.aprrow.R$drawable: int src_assets_profileavatarpng4
 com.aprrow.R$drawable: int src_assets_sharplogo_square_orange
 com.aprrow.R$drawable: int src_assets_smartphone_android
 com.aprrow.R$drawable: int src_assets_tmp_search

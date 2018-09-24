@@ -919,14 +919,14 @@ export default class storepurchase extends Component {
                 </View>
                 <View style={{flexDirection:'column'}}>
                 <View style={{flexDirection:'row'}}>
-                  <Text style={{marginLeft:65,color:'#1698E2',fontWeight:'bold'}}  onPress={() => this.downloadstax("payment")}>{/* USD 0.09 */}{this.state.priceUnit} {this.state.price}</Text>
+                  <Text style={{marginLeft:65,color:'#1698E2',fontWeight:'bold'}}  onPress={() => this.downloadstax_execute()}>{/* USD 0.09 */}{this.state.priceUnit} {this.state.price}</Text>
                   <Image style={{width:25,height:25,marginTop:-2, }} source={assetsConfig.rightArrow} />
                 </View>
                   <View style={{borderWidth:.5,width:120, marginLeft:20, marginBottom:5,borderColor:'grey',borderWidth:.4}} />
                   <View style={{flexDirection:'row',marginLeft:60,justifyContent:'space-between'}}>
-                  <Image style={{height:21,width:21}} source={assetsConfig.puchaseCurrency} />{/* <View>USD 2.99</View> */}
+                  <Image  style={{height:21,width:21}} source={assetsConfig.puchaseCurrency} />{/* <View>USD 2.99</View> */}
                   <Text style={{color:"#1698E2",fontWeight:'bold'}} onPress={() => this.downloadstax("coins")}>{this.state.coins}</Text>
-                  <Image style={{width:25,height:25,marginTop:-2, }} source={assetsConfig.rightArrow} />
+                  <Image  style={{width:25,height:25,marginTop:-2, }} source={assetsConfig.rightArrow} />
                   </View>
                 </View>
             </View>
@@ -949,7 +949,10 @@ export default class storepurchase extends Component {
             <View style={{borderWidth:.3,borderColor:'grey',marginTop:13, marginBottom:13}} />
             <View style={{flexDirection:"column"}}>
               <Text style={{textAlign:'center', fontSize:11.5}}>By processing,you agree to the</Text>
+              <TouchableOpacity disabled={this.state.appsdisplay} onPress={async () => {
+              await this.setState({ termsconmodel: true })}}>
               <Text style={{textAlign:'center',color:'#1698E2',textDecorationLine:'underline',fontSize:11,fontWeight:'bold',fontFamily:'Italic'}} >Purchase terms  & conditions </Text>
+           </TouchableOpacity>
             </View>
             
             
@@ -984,6 +987,7 @@ export default class storepurchase extends Component {
                   this.setState({ gotologinflow: false })
                   const { navigate } = this.props.navigation;
                   navigate("login", {});
+               
                 }}
                 style={{ marginLeft: 10, height: 42, width: 125, backgroundColor: "#F16822", borderRadius: 5, alignItems: "center", justifyContent: "center" }}>
                 <Text allowFontScaling={false} style={{ color: "white", fontFamily: 'Roboto-Bold', fontSize: 16 }}>{Strings.guestuser_loginbtn}</Text>
@@ -1102,18 +1106,16 @@ export default class storepurchase extends Component {
                     <Image source={require("../assets/aprrow_coin.png")} />
                   </Touch>
                 </View> */}
-
+{/* sdk.dir=/Users/Admin/Library/Android/sdk */}
               {/* </View> */}
-              <View style={{marginTop:'7%', marginLeft:'30%',width:'50%'}}>
+              <View style={{marginTop:'7%', marginLeft:'30%',width:200}}>
                 <Text allowFontScaling={false} style={{ marginTop: 18, marginLeft:10, }}>{this.state.downloads} downloads</Text>
               </View>
             </View>
           </View>
           {/* <View style={{ flexDirection: "column", width: '60%', height: 5 }}>
             <TouchableOpacity disabled={this.state.appsdisplay} onPress={async () => {
-              await this.setState({ termsconmodel: true })
-
-            }}>
+              await this.setState({ termsconmodel: true })}}>
               <Text allowFontScaling={false} style={{ color: "red", marginTop: 3, marginBottom: 9, marginLeft: '6%', textDecorationLine: 'underline', fontSize: 14 }}>Purchase Terms & Conditions</Text>
             </TouchableOpacity>
           </View> */}

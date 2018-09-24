@@ -2037,7 +2037,7 @@ async mixpanelTrack(event)
         var bubble = [];
         const { navigate } = this.props.navigation;
         return (
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1 ,}}>
                 <Dialog visible={this.state.offlineFlag}
                     onTouchOutside={() => this.setState({ offlineFlag: false })}
                     animation='fade'
@@ -2315,7 +2315,7 @@ async mixpanelTrack(event)
                         swipeDirection="right"
                         animationIn="fadeIn"
                         animationOut="fadeOut">
-                        <View style={{ backgroundColor: "white", borderRadius: 5, height: "40%" }}>
+                        <View style={{ backgroundColor: "white", borderRadius: 5, height: "40%" ,zIndex:-1}}>
                             <View style={{ backgroundColor: "#006BBD", height: '18%', width: '100%', alignItems: "center", justifyContent: "center", flexDirection: "row" }}>
                                 <Text allowFontScaling={false} style={[{ fontSize: 18, fontFamily:'Roboto-Bold', color: "white" }]}>{Strings.guestuser_create}</Text>
                             </View>
@@ -2357,7 +2357,7 @@ async mixpanelTrack(event)
                         swipeDirection="right"
                         animationIn="fadeIn"
                         animationOut="fadeOut">
-                        <View style={[styles.container, { borderRadius: 3 }]}>
+                        <View style={[styles.container, { borderRadius: 3,zIndex:-1 }]}>
                             <View style={{ backgroundColor: "#006BBD", height: '10%', width: '100%', alignItems: "center", justifyContent: "center" }}>
                                 <Text allowFontScaling={false} style={[styles.title, { color: "white", fontFamily:'Roboto-Bold' }]}>{Strings.staxviewer_organize_head}</Text>
                             </View>
@@ -2527,9 +2527,10 @@ async mixpanelTrack(event)
                             onIndexChanged={(index) => this.indexChange(index)}>
                             {this.state.widgetData.map((item_main, key) => {
                                 return (
-                                    <View style={styles.slide1} key={key}>
+                                    <View style={[styles.slide1,{backgroundColor:'#eeeeef'}]} key={key}>
                                         <View style={[widgets_style.box_view, { backgroundColor: item_main.backgroundcolor }]}>
                                             <View style={[widgets_style.box_view_bar, { backgroundColor: item_main.headercolor, justifyContent: "space-between" }]}>
+                                            
                                                 < View style={{ flexDirection: "row", alignItems: 'center',marginRight:4,marginLeft:4 }}>
                                                 <Touch timeout={3500} pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.editor_click()}>
                                                     <View style={{ width: '10%' }}>
@@ -2544,7 +2545,16 @@ async mixpanelTrack(event)
                                                         <Image style={[widgets_style.box_view_bar_icon, { height: 20, width: 20, marginLeft: '15%' }]} source={assetsConfig.sharesIconbar} />
                                                     </TouchableOpacity>
                                                 </View>
+                
                                             </View>
+                                            
+                                            
+                                            {/* <TouchableOpacity style={{ alignSelf: 'center', display: this.state.compressFeed }} onPress={async () => {
+                                                            await this.setState({ WebViewHeight: '48%', FlatViewHeight: '47%', expandFeed: 'flex', compressFeed: 'none' });
+                                                        }}>
+                                                            <Image style={{}} source={assetsConfig.iconExpandMoreBlack} />
+                                                        </TouchableOpacity> */}
+
                                             {commons.renderIf(item_main.WebView == 'none',
                                                 <ImageBackground style={{ width: '100%', height: '100%', flex: 1 }}
                                                     source={{ uri: item_main.backgroundpicture }}
@@ -2562,11 +2572,12 @@ async mixpanelTrack(event)
                                                             </ TouchableOpacity>
                                                         }
                                                         numColumns={item_main.mostusedwidget == 2 ? 2 : 4}
-                                                    /></ImageBackground>)}
+                                            /></ImageBackground>)}
+                                                    
                                             {commons.renderIf(item_main.WebView == 'flex' && item_main.mostusedwidget == 2 && this.state.appState=='active',
-                                                <View style={{ width: '100%', height: '100%', alignItems: 'center' }}>
-                                                    <View style={{ width: '100%', height: this.state.FlatViewHeight }}>
-                                                        <ImageBackground style={{ width: '100%', height: '100%' }}
+                                                <View style={{zIndex:-1, width: '100%', height: '100%'/* ,borderWidth:1,borderColor:'red', */, alignItems: 'center' }}>
+                                                    <View style={{ width: '100%', height: this.state.FlatViewHeight/* , borderWidth:1,borderColor:'green' */}}>
+                                                        <ImageBackground style={{ width: '100%', height: '100%',}}
                                                             source={{ uri: item_main.backgroundpicture }}
                                                             imageStyle={{ resizeMode: 'cover' }
                                                             }>
@@ -2585,8 +2596,25 @@ async mixpanelTrack(event)
                                                             />
                                                         </ImageBackground>
                                                     </View>
-                                                    <View style={{ width: '100%', height: this.state.WebViewHeight }}>
-                                                        <TouchableOpacity style={{ alignSelf: 'center', display: this.state.expandFeed }} onPress={async () => {
+                                                    <View style={{zIndex:-1,width:'100%',height:25,borderBottomWidth:.5,borderBottomColor:'grey',justifyContent:'center',alignSelf:'center',alignItems:'center'}}>
+                                                    {/* <Image style={{}} source={assetsConfig.iconExpandLessBlack} /> */}
+                                                    <TouchableOpacity style={{ alignSelf: 'center', display: this.state.expandFeed }} onPress={async () => {
+                                                            await this.setState({ WebViewHeight: '95%', FlatViewHeight: '0%', expandFeed: 'none', compressFeed: 'flex' })
+                                                        }}>
+                                                            <Image style={{width:20,height:15}} source={assetsConfig.shutter} />
+                                                        </TouchableOpacity>
+                                                        <TouchableOpacity style={{ alignSelf: 'center', display: this.state.compressFeed }} onPress={async () => {
+                                                            await this.setState({ WebViewHeight: '48%', FlatViewHeight: '47%', expandFeed: 'flex', compressFeed: 'none' });
+                                                        }}>
+                                                            <Image style={{width:20,height:15}} source={assetsConfig.shutter} />
+                                                        </TouchableOpacity>
+                                                    </View>
+                                                    <View style={{justifyContent:'flex-end',flexDirection:'row',alignSelf:'flex-end',marginTop:-12}}>
+                                                    <Image style={{width:60,height:20}} source={assetsConfig.donatehand} />
+                                                    </View>
+                                                    <View style={{ width: '100%',paddingTop:13, height: this.state.WebViewHeight ,/* borderWidth:1,borderColor:'red' */}}>
+                                                    
+                                                        {/* <TouchableOpacity style={{ alignSelf: 'center', display: this.state.expandFeed }} onPress={async () => {
                                                             await this.setState({ WebViewHeight: '95%', FlatViewHeight: '0%', expandFeed: 'none', compressFeed: 'flex' })
                                                         }}>
                                                             <Image style={{}} source={assetsConfig.iconExpandLessBlack} />
@@ -2595,7 +2623,7 @@ async mixpanelTrack(event)
                                                             await this.setState({ WebViewHeight: '48%', FlatViewHeight: '47%', expandFeed: 'flex', compressFeed: 'none' });
                                                         }}>
                                                             <Image style={{}} source={assetsConfig.iconExpandMoreBlack} />
-                                                        </TouchableOpacity>
+                                                        </TouchableOpacity> */}
                                                         <WebView
                                                             key={ this.state.key }
                                                             source={{uri:this.state.feed}}
@@ -2610,57 +2638,72 @@ async mixpanelTrack(event)
                                                             onNavigationStateChange={(navState) => {this.webView.canGoBack = navState.canGoBack;this.setState({feedUrl:navState.url}); }}
                                                           />
                                                         <View style={{height:'7%'}}>
+                                                        {/* <Text>bsbb</Text> */}
                                                         </View>
                                                     </View>
                                                 </View>
-                                            )
+                                             )
                                             }
-                                            <View style={{ position: 'absolute', flexDirection: 'row', bottom: 0, height:'8%', width: '100%', display: item_main.WebView, backgroundColor: 'white', justifyContent: 'center' }}>
+                                            <View style={{zIndex:-1, position: 'absolute',justifyContent:'space-between', flexDirection: 'row',borderWidth:.5,borderColor:'grey', bottom: 0, height:'9%',marginBottom:10, width: '100%', display: item_main.WebView, backgroundColor: 'white', justifyContent: 'center' }}>
+                                            <View style={{justifyContent:"center",marginRight:10}}>
+                                            <Image style={{width:45,height:17,borderRadius:5}} source={assetsConfig.liveicon} />
+                                            </View>
+                                            <View style={{flexDirection:'row',justifyContent:'space-between'}}>
+                                          {commons.renderIf(item_main.websiteView == "flex",
+                                          <View style={{justifyContent:'center',marginLeft:20}}>
+                                                    <TouchableOpacity onPress={async() =>{
+                                                        await this.setState({ feed: item_main.websiteLink, openLink: item_main.websiteLink })
+                                                        this.resetWebViewToInitialUrl();}} style={{ display: item_main.websiteView, display: item_main.youtubeView }}>
+                                                        <Image  style={{}} source={assetsConfig.webSite} />
+                                                    </TouchableOpacity></View>)}
                                                 {commons.renderIf(item_main.facebookView == "flex",
+                                                <View style={{justifyContent:'center',marginLeft:20}}>
                                                     <TouchableOpacity onPress={async() =>{
                                                         await this.setState({ feed: item_main.facebookLink, openLink: item_main.facebookLink });
                                                         this.resetWebViewToInitialUrl();
-                                                        }} style={{ flex: 0.1, display: item_main.facebookView, justifyContent: 'center' }}>
+                                                        }} style={{ display: item_main.facebookView }}>
                                                         <Image  source={assetsConfig.iconCircleFacebook} />
-                                                    </TouchableOpacity>)}
+                                                    </TouchableOpacity></View>)}
                                                 {commons.renderIf(item_main.twitterView == "flex",
+                                                <View style={{justifyContent:'center',marginLeft:20}}>
                                                     <TouchableOpacity onPress={async() =>{
                                                         await this.setState({ feed: item_main.twitterLink, openLink: item_main.twitterLink })
                                                         this.resetWebViewToInitialUrl();
-                                                        }} style={{ flex: 0.1, display: item_main.twitterView, justifyContent: 'center' }}>
+                                                        }} style={{ display: item_main.twitterView}}>
                                                         <Image  source={assetsConfig.iconCircleTwitter} />
-                                                    </TouchableOpacity>)}
+                                                    </TouchableOpacity></View>)}
                                                 {commons.renderIf(item_main.instagramView == "flex",
+                                                <View style={{justifyContent:'center',marginLeft:20}}>
                                                     <TouchableOpacity onPress={async() =>{
                                                         await this.setState({ feed: item_main.instagramLink, openLink: item_main.instagramLink });
-                                                        this.resetWebViewToInitialUrl();}} style={{ flex: 0.1, display: item_main.instagramView, justifyContent: 'center' }}>
+                                                        this.resetWebViewToInitialUrl();}} style={{ display: item_main.instagramView,}}>
                                                         <Image  source={assetsConfig.iconCircleInstagram} />
-                                                    </TouchableOpacity>)}
+                                                    </TouchableOpacity></View>)}
                                                 {commons.renderIf(item_main.youtubeView == "flex",
+                                                <View style={{justifyContent:'center',marginLeft:20}}>
                                                     <TouchableOpacity onPress={async() =>{
                                                         await this.setState({ feed: item_main.youtubeLink, openLink: item_main.youtubeLink });
-                                                        this.resetWebViewToInitialUrl();}} style={{ flex: 0.1, display: item_main.youtubeView, justifyContent: 'center' }}>
+                                                        this.resetWebViewToInitialUrl();}} style={{ display: item_main.youtubeView }}>
                                                         <Image  source={assetsConfig.iconCircleYoutube} />
-                                                    </TouchableOpacity>)}
+                                                    </TouchableOpacity></View>)}
                                                 {commons.renderIf(item_main.pinterestView == "flex",
+                                                <View style={{justifyContent:'center',marginLeft:20}}>
                                                     <TouchableOpacity onPress={async() =>{
                                                         await this.setState({ feed: item_main.pinterestLink, openLink: item_main.pinterestLink })
-                                                        this.resetWebViewToInitialUrl();}} style={{ flex: 0.1, display: item_main.pinterestView, justifyContent: 'center' }}>
-                                                        <Image  source={assetsConfig.iconCirclePinterest} />
-                                                    </TouchableOpacity>)}
-                                            </View>
-                                            {commons.renderIf(item_main.websiteView == "flex",
-                                                    <TouchableOpacity onPress={async() =>{
-                                                        await this.setState({ feed: item_main.websiteLink, openLink: item_main.websiteLink })
-                                                        this.resetWebViewToInitialUrl();}} style={{ display: item_main.websiteView,left:0,bottom:0,position:'absolute',marginLeft:2,marginBottom:3 }}>
-                                                        <Image  style={{}} source={assetsConfig.webSite} />
-                                                    </TouchableOpacity>)}
-                                            {commons.renderIf(item_main.donateView == "flex",
-                                                <TouchableOpacity onPress={async() =>{ 
-                                                   await this.setState({ feed: item_main.donateLink, openLink: item_main.donateLink })
-                                                   this.resetWebViewToInitialUrl();}} style={{ display: item_main.donateView,right:0,bottom:0,position:'absolute',marginRight:3}}>
-                                                    <Image style={{}} source={assetsConfig.donateButton} />
-                                                </TouchableOpacity>)}
+                                                        this.resetWebViewToInitialUrl();}} style={{ display: item_main.pinterestView, }}>
+                                                        <Image  source={assetsConfig.iconCircleYoutube} />
+                                                    </TouchableOpacity></View>)}
+                                                    <View style={{justifyContent:'center',marginLeft:30}}>
+                                                    <Image style={{width:30,height:30,borderRadius:5}} source={assetsConfig.vipicon} />
+                                                    </View>
+                                                    </View>
+                                                    </View>
+                                                {/* <TouchableOpacity onPress={async() =>{ 
+                                                    await this.setState({ feed: item_main.donateLink, openLink: item_main.donateLink })
+                                                this.resetWebViewToInitialUrl();}} style={{ display: item_main.donateView,right:50,bottom:50,position:'absolute',marginRight:3}}> */}
+                                                {/* </TouchableOpacity> */}
+                                            {/* {commons.renderIf(item_main.donateView == "flex", */}
+                                                {/* )} */}
                                         </View>
                                     </View>
                                 )

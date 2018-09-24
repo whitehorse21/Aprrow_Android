@@ -55,7 +55,7 @@ export default {
     iconCircleTwitter:require('../assets/icon_circle_twitter.png'),
     iconCircleInstagram:require('../assets/icon_circle_instagram.png'),
     iconCircleYoutube:require('../assets/icon_circle_youtube.png'),
-    iconCirclePinterest:require('../assets/icon_circle_pinterest.png'),
+    iconCirclePinterest:require('../assets/icon-circle.png'),
     webSite:require('../assets/Website.png'),
     donateButton:require('../assets/Donate_Button.png'),
     configButton:require("../assets/config_button.png"),
@@ -136,6 +136,10 @@ export default {
     purchaseLogoo:require('../assets/arrow-icon.png'),
     rightArrow:require('../assets/icon-keyboard-arrow-right.png'),
     puchaseCurrency:require('../assets/arrow-coin.png'),
+    donatehand:require('../assets/donatehand.png'),
+    liveicon:require('../assets/live.png'),
+    vipicon:require('../assets/vip.png'),
+    shutter:require('../assets/equal.png'),
     
     
   };

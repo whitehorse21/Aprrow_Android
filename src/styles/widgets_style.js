@@ -28,7 +28,7 @@ export default StyleSheet.create({
 
     },box_view:{
         alignItems:'center',
-        marginTop:10,
+        marginTop:6,
      //  borderRadius:10,
         marginRight:30,
         marginLeft:30,

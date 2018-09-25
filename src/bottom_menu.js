@@ -50,6 +50,10 @@ function px2dp(px) {
 var navigation = null;
 export default class TabDemo extends Component {
   static navigationOptions = ({ navigation }) => {
+      
+    tabBarOptions: {
+        upperCaseLabel:{false}
+    }
     const { params = {} } = navigation.state;
     const { navigate } = navigation;
     let title =params.title;
@@ -436,6 +440,7 @@ async headerComponent()
       
     var title='';
     var headerLeft=null;
+   
     
     var headerRight ='';
     var header=undefined;
@@ -581,8 +586,14 @@ async upBadge()
 
   render() {
    // alert(istab);
+   var home=Strings.menu_home
+   var rewards=Strings.menu_rewards
+    var notifications=Strings.menu_notification
+    var  discover=Strings.menu_discover
+    var avatartitle=Strings.menu_profile
+//    console.log(Strings.menu_home)
     var window=Dimensions.get('window').height;
-    var h=(window*.04);
+    var h=(this.state.showImageTitle ? window*.04 : window*.06);
     //var font_s=7;
     var font_s=8;
     var icon_wh=35;
@@ -595,11 +606,13 @@ async upBadge()
     return (
       <TabNavigator 
      tabBarStyle={tabstyle}  
-      style={styles.container}>
+      style={styles.container}
+      upperCaseLabel={false}
+      >
         <TabNavigator.Item
           selected={this.state.selectedTab === 'Home'}
-          title={Strings.menu_home}
-          titleStyle={{fontSize:font_s}}
+          title={home.charAt(0).toUpperCase()+home.slice(1).toLowerCase()}
+          titleStyle={{fontSize:font_s,}}
           selectedTitleStyle={{color: "#3496f0"}}
           renderIcon={() => istab=="true"?<Image source={require('./assets/icon_home_grey_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_home_grey_px24.png')} style={{}} />}
           renderSelectedIcon={() =>istab=="true"?<Image source={require('./assets/icon_home_active_blue_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_home_active_blue_px24.png')} style={{}} />}
@@ -622,6 +635,7 @@ async upBadge()
           title={Strings.menu_staxs}
           titleStyle={{fontSize:font_s}}
           selectedTitleStyle={{color: "#3496f0"}}
+          tabBarOptions={{upperCaseLabel:false}}
           renderIcon={() => istab=="true"?<Image source={require('./assets/icon_stax_grey_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_stax_grey_px24.png')} style={{ }} />}
           renderSelectedIcon={() => istab=="true"?<Image source={require('./assets/icon_stax_active_blue_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_stax_active_blue_px24.png')} style={{ }} />}
           onPress={async() =>{ 
@@ -637,8 +651,10 @@ async upBadge()
         </TabNavigator.Item>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'Discover'}
-          title={Strings.menu_discover}
+        //   title={Strings.menu_discover}
+          title={discover.charAt(0).toUpperCase()+discover.slice(1).toLowerCase()}
           titleStyle={{fontSize:font_s}}
+          upperCaseLabel={false}
           selectedTitleStyle={{color: "#3496f0"}}
           renderIcon={() => istab=="true"?<Image source={require('./assets/icon_discover_grey_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_discover_grey_px24.png')} style={{ }} />}
           renderSelectedIcon={() =>istab=="true"? <Image source={require('./assets/icon_discover_active_blue_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_discover_active_blue_px24.png')} style={{ }} />}
@@ -655,8 +671,10 @@ async upBadge()
         </TabNavigator.Item>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'Rewards'}
-          title={Strings.menu_rewards}
+        //   title={Strings.menu_rewards}
+        title={rewards.charAt(0).toUpperCase()+rewards.slice(1).toLowerCase()}
           titleStyle={{fontSize:font_s}}
+          upperCaseLabel={false}
           selectedTitleStyle={{color: "#3496f0"}}
           renderIcon={() => istab=="true"?<Image source={require('./assets/icon_rewards_grey_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_rewards_grey_px24.png')} style={{ }} />}
           renderSelectedIcon={() => istab=="true"?<Image source={require('./assets/icon_rewards_active_blue_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_rewards_active_blue_px24.png')} style={{ }} />}
@@ -673,7 +691,8 @@ async upBadge()
         </TabNavigator.Item>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'Notification'}
-          title={Strings.menu_notification}
+        //   title={Strings.menu_notification}
+        title={notifications.charAt(0).toUpperCase()+notifications.slice(1).toLowerCase()}
           titleStyle={{fontSize:font_s}}
           selectedTitleStyle={{color: "#3496f0"}}
           renderBadge={()=>commons.renderIf(this.state.count!="" && this.state.count!=null,<Text style={{borderRadius:10,width:20,height:20,color:'#FFFFFF',backgroundColor:'#FF5600',textAlign:'center',fontWeight:'500'}}>{this.state.count}</Text>)}
@@ -691,12 +710,14 @@ async upBadge()
           <Notification setNav={this.setNav} handleBackButtonClick={this.handleBackButtonClick} setNavigation={this.setNavigation}  ref={"Notification"} navigation={navigation}/>
         </TabNavigator.Item>
         <TabNavigator.Item
+        // style={{marginTop:5}}
           selected={this.state.selectedTab === 'Logout'}
-          title={this.state.showImageTitle ? Strings.menu_profile:null}
+          avatartitle
+          title={this.state.showImageTitle ? avatartitle.charAt(0).toUpperCase()+avatartitle.slice(1).toLowerCase():null}
           titleStyle={{fontSize:font_s}}
           selectedTitleStyle={{color: "#3496f0"}}
-          renderIcon={() => <Image style={{borderRadius: h/2,width: h,height: h}} source={this.state.avatarSource} />}
-          renderSelectedIcon={() => <Image style={{borderRadius: h/2,width: h,height: h}} source={this.state.avatarSource} />}
+          renderIcon={() => <Image style={{borderRadius: h/2,width: h,height: h,marginBottom:this.state.showImageTitle ? null: -8 }} source={this.state.avatarSource} />}
+          renderSelectedIcon={() => <Image style={{borderRadius: h/2,width: h,height: h,marginBottom:this.state.showImageTitle ? null: -8}} source={this.state.avatarSource} />}
           onPress={async() =>{await this.setState({selectedTab: 'Logout'}); this.headerComponent();
           this.refs.Logout.componentDidMount();
           try{

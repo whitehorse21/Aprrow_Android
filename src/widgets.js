@@ -2596,7 +2596,7 @@ async mixpanelTrack(event)
                                                             />
                                                         </ImageBackground>
                                                     </View>
-                                                    <View style={{zIndex:-1,width:'100%',height:25,borderBottomWidth:.5,borderBottomColor:'grey',justifyContent:'center',alignSelf:'center',alignItems:'center'}}>
+                                                    <View style={{zIndex:-1,width:'100%',height:17,borderBottomWidth:.5,borderBottomColor:'grey',justifyContent:'center',alignSelf:'center',alignItems:'center'}}>
                                                     {/* <Image style={{}} source={assetsConfig.iconExpandLessBlack} /> */}
                                                     <TouchableOpacity style={{ alignSelf: 'center', display: this.state.expandFeed }} onPress={async () => {
                                                             await this.setState({ WebViewHeight: '95%', FlatViewHeight: '0%', expandFeed: 'none', compressFeed: 'flex' })
@@ -2609,8 +2609,8 @@ async mixpanelTrack(event)
                                                             <Image style={{width:20,height:15}} source={assetsConfig.shutter} />
                                                         </TouchableOpacity>
                                                     </View>
-                                                    <View style={{justifyContent:'flex-end',flexDirection:'row',alignSelf:'flex-end',marginTop:-12}}>
-                                                    <Image style={{width:60,height:20}} source={assetsConfig.donatehand} />
+                                                    <View style={{justifyContent:'flex-end',flexDirection:'row',alignSelf:'flex-end',marginTop:-15,marginRight:7}}>
+                                                    <Image style={{width:95,height:30}} source={assetsConfig.donatehand} />
                                                     </View>
                                                     <View style={{ width: '100%',paddingTop:13, height: this.state.WebViewHeight ,/* borderWidth:1,borderColor:'red' */}}>
                                                     
@@ -2644,7 +2644,7 @@ async mixpanelTrack(event)
                                                 </View>
                                              )
                                             }
-                                            <View style={{zIndex:-1, position: 'absolute',justifyContent:'space-between', flexDirection: 'row',borderWidth:.5,borderColor:'grey', bottom: 0, height:'9%',marginBottom:10, width: '100%', display: item_main.WebView, backgroundColor: 'white', justifyContent: 'center' }}>
+                                            <View style={{zIndex:-1, position: 'absolute',justifyContent:'space-between', flexDirection: 'row',borderWidth:.5,borderColor:'grey', bottom: 0, height:'9%',marginBottom:6, width: '100%', display: item_main.WebView, backgroundColor: 'white', justifyContent: 'center' }}>
                                             <View style={{justifyContent:"center",marginRight:10}}>
                                             <Image style={{width:45,height:17,borderRadius:5}} source={assetsConfig.liveicon} />
                                             </View>

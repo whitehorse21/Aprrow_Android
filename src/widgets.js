@@ -2527,8 +2527,8 @@ async mixpanelTrack(event)
                             onIndexChanged={(index) => this.indexChange(index)}>
                             {this.state.widgetData.map((item_main, key) => {
                                 return (
-                                    <View style={[styles.slide1,{backgroundColor:'#eeeeef'}]} key={key}>
-                                        <View style={[widgets_style.box_view, { backgroundColor: item_main.backgroundcolor }]}>
+                                    <View style={[styles.slide1,{backgroundColor:'white',/* paddingBottom:14 */}]} key={key}>
+                                        <View style={[widgets_style.box_view, { backgroundColor: item_main.backgroundcolor,paddingBottom:16,borderWidth:1 }]}>
                                             <View style={[widgets_style.box_view_bar, { backgroundColor: item_main.headercolor, justifyContent: "space-between" }]}>
                                             
                                                 < View style={{ flexDirection: "row", alignItems: 'center',marginRight:4,marginLeft:4 }}>
@@ -2560,7 +2560,7 @@ async mixpanelTrack(event)
                                                     source={{ uri: item_main.backgroundpicture }}
                                                     imageStyle={{ resizeMode: 'cover' }
                                                     }>
-                                                    <FlatList style={{ flex: 1 }}
+                                                    <FlatList style={{ flex: 1,paddingBottom:5}}
                                                         data={item_main.applist}
                                                         extraData={item_main}
                                                         renderItem={({ item }) =>
@@ -2575,7 +2575,7 @@ async mixpanelTrack(event)
                                             /></ImageBackground>)}
                                                     
                                             {commons.renderIf(item_main.WebView == 'flex' && item_main.mostusedwidget == 2 && this.state.appState=='active',
-                                                <View style={{zIndex:-1, width: '100%', height: '100%'/* ,borderWidth:1,borderColor:'red', */, alignItems: 'center' }}>
+                                                <View style={{zIndex:-1, width: '100%'/* ,borderWidth:1,borderColor:'red', */, alignItems: 'center' }}>
                                                     <View style={{ width: '100%', height: this.state.FlatViewHeight/* , borderWidth:1,borderColor:'green' */}}>
                                                         <ImageBackground style={{ width: '100%', height: '100%',}}
                                                             source={{ uri: item_main.backgroundpicture }}

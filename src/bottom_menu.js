@@ -593,7 +593,7 @@ async upBadge()
     var avatartitle=Strings.menu_profile
 //    console.log(Strings.menu_home)
     var window=Dimensions.get('window').height;
-    var h=(this.state.showImageTitle ? window*.04 : window*.06);
+    var h=window*.06
     //var font_s=7;
     var font_s=8;
     var icon_wh=35;
@@ -713,11 +713,11 @@ async upBadge()
         // style={{marginTop:5}}
           selected={this.state.selectedTab === 'Logout'}
           avatartitle
-          title={this.state.showImageTitle ? avatartitle.charAt(0).toUpperCase()+avatartitle.slice(1).toLowerCase():null}
+        //   title={this.state.showImageTitle ? avatartitle.charAt(0).toUpperCase()+avatartitle.slice(1).toLowerCase():null}
           titleStyle={{fontSize:font_s}}
           selectedTitleStyle={{color: "#3496f0"}}
-          renderIcon={() => <Image style={{borderRadius: h/2,width: h,height: h,marginBottom:this.state.showImageTitle ? null: -8 }} source={this.state.avatarSource} />}
-          renderSelectedIcon={() => <Image style={{borderRadius: h/2,width: h,height: h,marginBottom:this.state.showImageTitle ? null: -8}} source={this.state.avatarSource} />}
+          renderIcon={() => <Image style={{borderRadius: h/2,width: h,height: h,marginBottom: -8 }} source={this.state.avatarSource} />}
+          renderSelectedIcon={() => <Image style={{borderRadius: h/2,width: h,height: h,marginBottom: -8}} source={this.state.avatarSource} />}
           onPress={async() =>{await this.setState({selectedTab: 'Logout'}); this.headerComponent();
           this.refs.Logout.componentDidMount();
           try{

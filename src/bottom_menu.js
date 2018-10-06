@@ -49,21 +49,7 @@ function px2dp(px) {
 
 var navigation = null;
 export default class TabDemo extends Component {
-  static navigationOptions = ({ navigation }) => {
-    const { params = {} } = navigation.state;
-    const { navigate } = navigation;
-    let title =params.title;
-    let header=params.header;
-    let headerStyle = { backgroundColor: '#006BBD' };
-    let headerTitleStyle = { color: 'white', marginLeft: 0, fontSize: 18,alignSelf:'center',fontWeight:'200',fontFamily:'Roboto-Bold' };
-    let headerTintColor = 'white';
-    let headerTitleAllowFontScaling = false;
-    let headerRight = params.headerRight ;
-    let headerLeft=params.headerLeft;
-    return { title, headerStyle, headerTitleStyle, headerTintColor, headerRight, headerLeft,
-        header,headerTitleAllowFontScaling
-       }; 
-  } 
+  
 
 
 
@@ -72,11 +58,16 @@ export default class TabDemo extends Component {
 constructor(props){
 
     super(props);
-  
+    this.TabBarheight = { height:'8%' }
+    this._animatedValue = new Animated.Value(0);
     this.state = {
+
         selectedTab: 'Home',
         avatarSource:require('./assets/perfil_toolbar_39px.png'),
         count:"",
+        isSrollThere:false,
+        headerHeight:60,
+        cdeviceName:''
        // font_s:30,
        // istab:false
     };
@@ -85,7 +76,6 @@ constructor(props){
     this.setHeader = this.setHeader.bind(this);
     this.setNav = this.setNav.bind(this);
     this.badgeCount = this.badgeCount.bind(this);
-    
     this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
     this.handler = this.handler.bind(this)
     this.handleAppStateChange=this.handleAppStateChange.bind(this);
@@ -95,7 +85,26 @@ constructor(props){
     global.applist=[];
 
 }
+// onScrollStart=()=>{
+//     alert('dsdsd')
+// }
 
+static navigationOptions = ({ navigation }) => {
+    const { params = {} } = navigation.state;
+    const { navigate } = navigation;
+    let title =params.title;
+    let header=params.header;
+    let headerStyle = { backgroundColor: '#006BBD',};
+    let headerTitleStyle = { color: 'white', marginLeft: 0, fontSize: 18,alignSelf:'center',fontWeight:'200',fontFamily:'Roboto-Bold' };
+    let headerTintColor = 'white';
+    let headerTitleAllowFontScaling = false;
+    let headerRight = params.headerRight ;
+    let headerLeft=params.headerLeft;
+    return { 
+        title, headerStyle, headerTitleStyle, headerTintColor, headerRight, headerLeft,
+        header,headerTitleAllowFontScaling
+       }; 
+  } 
 async componentWillUnmount()
 {
     //BackHandler.removeEventListener('hardwareBackPress', this.handleBackButtonClick);
@@ -284,8 +293,10 @@ async setAccount()
   }
 setHeader(content)
 {
-    const headerLeft=<View style={{marginLeft:10}}><Text allowFontScaling={false} style={{ color: 'white', fontFamily:'Roboto-Bold', marginLeft: 0, fontSize: 18 }}>{Strings.menu_stax}</Text><Text allowFontScaling={false} style={{ color: '#A7A9AC', fontFamily:'Roboto-Bold', marginLeft: 0, fontSize: 14, }}>{content}</Text></View>;
+    const headerLeft=<View style={{marginLeft:10,backgroundColor:'pink'}}><Text allowFontScaling={false} style={{ color: 'white', fontFamily:'Roboto-Bold', marginLeft: 0, fontSize: 18 }}>Strings.menu_stax</Text><Text allowFontScaling={false} style={{ color: '#A7A9AC', fontFamily:'Roboto-Bold', marginLeft: 0, fontSize: 14, }}>{content}</Text></View>;
     navigation.setParams({ headerLeft:headerLeft});
+    this.setState({cdeviceName:content})
+    this.refs.widget.togetDevicename(this.state.cdeviceName)
 }
 async setNav(content)
 {
@@ -317,20 +328,25 @@ showdevicemanagment()
 {
 
 }
-async componentWillMount()
-{
-   // this.headerComponent();
-}
+// async componentWillMount()
+// {
+//    // this.headerComponent();
+// }
 async headerComponent()
 {
    //alert("this.state.selectedTab"+this.state.selectedTab);
     if(this.state.selectedTab === 'Home')
     {
-   const title='';
-   const headerRight=null;
-   var headerLeft=<View style={{justifyContent:'center',alignItems:'center',height:Dimensions.get('window').height,width:Dimensions.get('window').width}}><Image style={{}} source={require("./assets/logo_aprrow_white_130x22.png")}/></View>;
-   const header=undefined;
-   navigation.setParams({ title: title,headerRight:headerRight,headerLeft:headerLeft,header:header });
+//    const title='';
+//    const headerRight=null;
+//    var headerLeft=<View style={{justifyContent:'center',alignItems:'center',height:Dimensions.get('window').height,width:Dimensions.get('window').width}}><Image style={{}} source={require("./assets/logo_aprrow_white_130x22.png")}/></View>;
+//    const header=undefined;
+    var title='';
+    var headerRight ='';
+    var header=null;
+    var headerLeft='';
+    navigation.setParams({header:header});
+//    navigation.setParams({ title: title,headerRight:headerRight,headerLeft:headerLeft,header:header });
     }
     else if(this.state.selectedTab === 'STAX')
     {
@@ -341,7 +357,7 @@ async headerComponent()
     var header=undefined;
 
     const headerRight=(
-      <View style={{ flexDirection: 'row', margin: 10 ,paddingTop:25}}>
+      <View style={{ flexDirection: 'row', margin: 10 ,paddingTop:25,backgroundColor:'red'}}>
 <View style={{marginTop:5, marginLeft:5}}>
      <TouchableOpacity onPress={() => { this.refs.widget.syncdata() }}>
               <Image source={require('./assets/icon_sync_white_21px.png')}
@@ -402,7 +418,7 @@ async headerComponent()
                                 </TouchableOpacity>
                                 </View>
                                             <View style={{paddingBottom:3}}>
-                                                <TouchableOpacity style={{marginBottom:10}} onPress={() => {  }}>
+                                                <TouchableOpacity style={{marginBottom:10}} onPress={() => this.refs.widget.addStax()} >
                                                     <Image  source={require('./assets/bt_add.png')}
                                                         style={{
                                                             marginLeft: 10,
@@ -480,7 +496,7 @@ async headerComponent()
           </View>
       </View>
       );
-      navigation.setParams({ title: title,headerLeft:headerLeft,headerRight:headerRight,header:header });
+      navigation.setParams({ header:null });
 
   }
   else if(this.state.selectedTab === 'Rewards')
@@ -536,7 +552,7 @@ async headerComponent()
         </View>
        
     );
-    navigation.setParams({ title: title,headerLeft:headerLeft,headerRight:headerRight,header:header });
+    navigation.setParams({ header: null });
   }
   else if(this.state.selectedTab === 'Logout')
   {
@@ -570,11 +586,23 @@ async upBadge()
 {
     //this.setState({selectedTab:"Rewards"});
 }
-
+// async onScrollView (check) {
+//     console.log("eheeehehehheheheheheheheheheeheheheheh hasss dene rinkiya ke papa")
+//     // if(check){
+//         this.TabBarheight = { height:0,overflow:'hidden' }
+//     // }else {
+//         // this.TabBarheight = { height:'8%' }
+//     // }
+// }
   render() {
+    var home=Strings.menu_home
+    var rewards=Strings.menu_rewards
+     var notifications=Strings.menu_notification
+     var  discover=Strings.menu_discover
+     var avatartitle=Strings.menu_profile
    // alert(istab);
     var window=Dimensions.get('window').height;
-    var h=(window*.04);
+    var h=(window*.06);
     //var font_s=7;
     var font_s=8;
     var icon_wh=35;
@@ -586,11 +614,11 @@ async upBadge()
     }
     return (
       <TabNavigator 
-     tabBarStyle={tabstyle}  
+     tabBarStyle={this.TabBarheight}  
       style={styles.container}>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'Home'}
-          title={Strings.menu_home}
+          title={home.charAt(0).toUpperCase()+home.slice(1).toLowerCase()}
           titleStyle={{fontSize:font_s}}
           selectedTitleStyle={{color: "#3496f0"}}
           renderIcon={() => istab=="true"?<Image source={require('./assets/icon_home_grey_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_home_grey_px24.png')} style={{}} />}
@@ -605,7 +633,7 @@ async upBadge()
 
           }
           }}>
-         <Welcome ref={"Home"} handleBackButtonClick={this.handleBackButtonClick} navigation={navigation} setNavigation={this.setNavigation} handler = {this.handler} badgeCount={this.badgeCount}/> 
+            <Welcome ref={"Home"} handleBackButtonClick={this.handleBackButtonClick} navigation={navigation} setNavigation={this.setNavigation} handler = {this.handler} badgeCount={this.badgeCount}/> 
          {/*React.createElement(sharedApprow, {}, null)*/}
 
         </TabNavigator.Item>
@@ -617,7 +645,7 @@ async upBadge()
           renderIcon={() => istab=="true"?<Image source={require('./assets/icon_stax_grey_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_stax_grey_px24.png')} style={{ }} />}
           renderSelectedIcon={() => istab=="true"?<Image source={require('./assets/icon_stax_active_blue_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_stax_active_blue_px24.png')} style={{ }} />}
           onPress={async() =>{ 
-            await this.setState({selectedTab: 'STAX'}); this.headerComponent();
+            await this.setState({selectedTab: 'STAX'}); /* this.headerComponent(); */
             
             this.refs.widget.Repeat_ComponentDidMount();
           //this.refs.widget.resetWebViewToInitialUrl();
@@ -629,7 +657,7 @@ async upBadge()
         </TabNavigator.Item>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'Discover'}
-          title={Strings.menu_discover}
+          title={discover.charAt(0).toUpperCase()+discover.slice(1).toLowerCase()}
           titleStyle={{fontSize:font_s}}
           selectedTitleStyle={{color: "#3496f0"}}
           renderIcon={() => istab=="true"?<Image source={require('./assets/icon_discover_grey_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_discover_grey_px24.png')} style={{ }} />}
@@ -647,7 +675,7 @@ async upBadge()
         </TabNavigator.Item>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'Rewards'}
-          title={Strings.menu_rewards}
+          title={rewards.charAt(0).toUpperCase()+rewards.slice(1).toLowerCase()}
           titleStyle={{fontSize:font_s}}
           selectedTitleStyle={{color: "#3496f0"}}
           renderIcon={() => istab=="true"?<Image source={require('./assets/icon_rewards_grey_px24.png')} style={{width:icon_wh,height:icon_wh}} />:<Image source={require('./assets/icon_rewards_grey_px24.png')} style={{ }} />}
@@ -665,7 +693,7 @@ async upBadge()
         </TabNavigator.Item>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'Notification'}
-          title={Strings.menu_notification}
+          title={notifications.charAt(0).toUpperCase()+notifications.slice(1).toLowerCase()}
           titleStyle={{fontSize:font_s}}
           selectedTitleStyle={{color: "#3496f0"}}
           renderBadge={()=>commons.renderIf(this.state.count!="" && this.state.count!=null,<Text style={{borderRadius:10,width:20,height:20,color:'#FFFFFF',backgroundColor:'#FF5600',textAlign:'center',fontWeight:'500'}}>{this.state.count}</Text>)}
@@ -684,11 +712,11 @@ async upBadge()
         </TabNavigator.Item>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'Logout'}
-          title={Strings.menu_profile}
+        //   title={Strings.menu_profile}   
           titleStyle={{fontSize:font_s}}
           selectedTitleStyle={{color: "#3496f0"}}
-          renderIcon={() => <Image style={{borderRadius: h/2,width: h,height: h}} source={this.state.avatarSource} />}
-          renderSelectedIcon={() => <Image style={{borderRadius: h/2,width: h,height: h}} source={this.state.avatarSource} />}
+          renderIcon={() => <Image style={{borderRadius: h/2,width: h,height: h,marginBottom:-8}} source={this.state.avatarSource} />}
+          renderSelectedIcon={() => <Image style={{borderRadius: h/2,width: h,height: h,marginBottom:-8}} source={this.state.avatarSource} />}
           onPress={async() =>{await this.setState({selectedTab: 'Logout'}); this.headerComponent();
           this.refs.Logout.componentDidMount();
           try{
@@ -697,7 +725,7 @@ async upBadge()
             {
                 
             }}}>
-          <Logout setNavigation={this.setNavigation} ref={"Logout"} handleBackButtonClick={this.handleBackButtonClick} navigation={navigation}/>
+          <Logout setNavigation={this.setNavigation} ref={"Logout"}   handleBackButtonClick={this.handleBackButtonClick} navigation={navigation}/>
           </TabNavigator.Item> 
       </TabNavigator>
     );

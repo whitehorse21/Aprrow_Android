@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/c4a6f59a1892b07f612651af0bcbaac8/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/c4a6f59a1892b07f612651af0bcbaac8/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/c4a6f59a1892b07f612651af0bcbaac8/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-watch-v20/abc_dialog_material_background.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/a1e35c0a949b44c87f8d2bb008a297ef/res/drawable-watch-v20/abc_dialog_material_background.xml"
+    }
+]

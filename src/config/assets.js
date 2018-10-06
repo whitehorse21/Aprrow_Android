@@ -136,6 +136,12 @@ export default {
     purchaseLogoo:require('../assets/arrow-icon.png'),
     rightArrow:require('../assets/icon-keyboard-arrow-right.png'),
     puchaseCurrency:require('../assets/arrow-coin.png'),
+    shutterIcon:require('../assets/equal.png'),
+    donatehand:require('../assets/donatehand.png'),
+    liveicon:require('../assets/live.png'),
+    vipicon:require('../assets/vip.png'),
+    shutter:require('../assets/equal.png'),
+  
     
     
   };

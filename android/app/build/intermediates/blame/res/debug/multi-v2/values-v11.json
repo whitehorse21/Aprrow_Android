@@ -31,6 +31,38 @@
                     }
                 }
             ]
+        },
+        {
+            "outputFile": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/b2f26a69f97d192576f25c968531190f/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "596"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/b2f26a69f97d192576f25c968531190f/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "596"
+                    }
+                }
+            ]
         }
     ]
 }

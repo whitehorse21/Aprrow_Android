@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/xml/homescreewidget_info.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/xml/homescreewidget_info.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/xml/preferences.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/431faa0f6507825b2287cb1317714b4e/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/xml/provider_paths.xml",
+        "source": "/var/www/html/approw/Aprrow_Android/android/app/src/main/res/xml/provider_paths.xml"
+    }
+]

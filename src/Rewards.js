@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {BackHandler, View, ToastAndroid, Button, Dimensions, ScrollView, ImageBackground, TouchableOpacity, Image, StyleSheet, Text, TextInput, FlatList, AsyncStorage } from "react-native";
+import {BackHandler, View, ToastAndroid, Button,Animated, Dimensions, ScrollView, ImageBackground, TouchableOpacity, Image, StyleSheet, Text, TextInput, FlatList, AsyncStorage } from "react-native";
 import commons from './commons';
 import LoaderNew from './utils/LoaderNew';
 import databasehelper from './utils/databasehelper.js';
@@ -15,6 +15,8 @@ import assetsConfig from "./config/assets.js";
 var Mixpanel = require('react-native-mixpanel');
 var awsData = require("./config/AWSConfig.json");
 export default class Rewards extends Component {
+    scroll = new Animated.Value(0);
+    headerY;
     static navigationOptions = ({ navigation }) => {
         const { params = {} } = navigation.state;
         const { navigate } = navigation
@@ -29,6 +31,7 @@ export default class Rewards extends Component {
     };
     constructor(props) {
         super(props);
+        this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 210), -1);
         this.state = {
             currentBadge: "",
             userName: "",
@@ -683,7 +686,18 @@ export default class Rewards extends Component {
                         <Text allowFontScaling={false} style={{ fontSize: 16, marginTop: 5, color: "#444444" }}>{Strings.reward_popup_100coin}</Text>
                     </View>
                 </Dialog>
-                <View style={{ width: '100%', height: 130, backgroundColor: this.getSliderBgColor(), flexDirection: "row" }}>
+                <Animated.View
+                    style={{position:'absolute',
+                    zIndex:1,
+                    elevation:0,
+                    flex:1,
+                    transform : [{
+                    translateY:this.headerY
+                    }],
+                    backgroundColor:'#006BBD'
+                    }}
+                >
+                  <View style={{ width: '100%', height: 130, backgroundColor: this.getSliderBgColor(), flexDirection: "row" }}>
                     <Image source={this.state.userImage}
                         style={{ marginLeft: 8, alignSelf: "center", height: 50, width: 50, borderRadius: 40 }}
                     />
@@ -741,6 +755,18 @@ export default class Rewards extends Component {
                         <Image style={{ height: 15, width: 12 }} source={assetsConfig.arrowDownGold}></Image>
                     </View>
                 </View>
+              </Animated.View>
+        <Animated.ScrollView
+          scrollEventThrottle={1}
+          bounces={false}
+          showsVerticalScrollIndicator={false}
+          style={{zIndex: 0, height: "100%", elevation: -1}}
+          onScroll={Animated.event(
+            [{nativeEvent: {contentOffset: {y: this.scroll}}}],
+            {useNativeDriver: true},
+          )}
+          overScrollMode="never">
+            <View style={{marginTop:210}}/>
                 <Tabs >
                     {/* First tab */}
                     <View title={Strings.reward_tab_head1} style={{ flex: 1, backgroundColor: "white" }}>
@@ -822,6 +848,7 @@ export default class Rewards extends Component {
                         </FlatList>
                     </View>
                 </Tabs>
+                </Animated.ScrollView>
             </View >
         )
     }

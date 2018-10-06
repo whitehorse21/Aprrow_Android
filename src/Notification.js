@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   Image,
   FlatList,
+  Animated,
   TextInput,
   Dimensions,
   Alert,ToastAndroid,ScrollView         // Container component
@@ -23,10 +24,15 @@ import Strings from './utils/strings.js';
 import assetsConfig from "./config/assets.js";
 var Mixpanel = require('react-native-mixpanel');
 var aws_data11 = require("./config/AWSConfig.json");
+var {height, width} = Dimensions.get('window');
+
 export default class NotificationClass extends React.Component {
+  scroll = new Animated.Value(0);
+  headerY;
   constructor(props)
   {
     super(props);
+    this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 60), -1);
     this.state={
       dlist : [],
       dlist2 : [],
@@ -1452,6 +1458,64 @@ async setVal()
                         </View>
                     </View>
                 </Dialog>
+                <Animated.View style={[{position:'absolute',
+                    zIndex:1,
+                    elevation:0,
+                    flex:1,
+                    transform : [{
+                    translateY:this.headerY
+                    }],
+                    backgroundColor:'#006BBD'
+                    }]}>
+                    <View
+                    style={{
+                        alignItems: "center",
+                        width: width,
+                        height: 50,
+                        flexDirection: "column",
+                        alignItems: "center"
+                    }}>
+                    <View
+                        style={{
+                            borderColor: "#006BBD",
+                            borderWidth: 1,
+                            borderRadius: 30,
+                            alignItems: "center",
+                            width: width,
+                            marginRight: -18,
+                            // width:width,
+                            height:40,
+                            flexDirection: "row",
+                            alignItems: "center"
+                        }}>
+                        <Image
+                            style={{ width: 25, height: 25, marginLeft: 15, marginRight: 5 }}
+                            source={require("./assets/icon_search_white.png")}
+                        />
+                        
+                        <TextInput
+                            style={{ width: "80%", borderWidth: 0,color:'#FFFFFF',fontFamily:'Roboto'}}
+                            allowFontScaling={false}
+                            placeholder={Strings.menu_search}
+                            placeholderTextColor="white"
+                            onChangeText={(value) =>{this.setval(value)}}
+                            onSubmitEditing={() => {this.search(false)}}
+                            underlineColorAndroid="white"
+                        />
+                    </View>
+                    </View>
+                </Animated.View>
+                <Animated.ScrollView
+          scrollEventThrottle={1}
+          bounces={false}
+          showsVerticalScrollIndicator={false}
+          style={{zIndex: 0, height: "100%", elevation: -1}}
+          onScroll={Animated.event(
+            [{nativeEvent: {contentOffset: {y: this.scroll}}}],
+            {useNativeDriver: true},
+          )}
+          overScrollMode="never">
+              <View style={{marginTop:50}}/>
           <Tabs setVal={this.setVal}>
             <View title={Strings.notification_tab_head1} style={{backgroundColor:'white',flex: 1,alignItems: 'center',backgroundColor: '#ffffff'}}>
                 <View style={{backgroundColor:'white',flex: 1,display:this.state.YesNotification}}>
@@ -1577,7 +1641,7 @@ async setVal()
                                             </TouchableOpacity>                                                        
                                         <View style={{marginTop:10,height:1,backgroundColor:"#b2babb",paddingRight:20,width:'95%'}}>  
                                         </View>
-                                    </View>
+                                    </View>          
                                 </View>
                                  <View style={{display:item.type_CollectReward}}>
                                     <View style={{ width: '100%' ,paddingLeft:20,paddingRight:20,display:item.display}}>                                      
@@ -1788,7 +1852,8 @@ async setVal()
                           <Text allowFontScaling={false} style={{fontSize:18}}>{Strings.notification_read_alert}</Text>
                         </View> 
             </View>
-          </Tabs>          
+          </Tabs>  
+          </Animated.ScrollView>        
           <Modal
                         isVisible={this.state.gotologinflow}
                         onBackButtonPress={() => this.setState({ gotologinflow: false })}

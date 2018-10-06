@@ -1,0 +1,4 @@
+#Sat Oct 06 16:59:09 IST 2018
+base.0=/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/transforms/dex/release/0
+path.0=classes.dex
+renamed.0=classes.dex

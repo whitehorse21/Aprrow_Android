@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BackHandler,View, Button, TextInput, Dimensions, ScrollView, TouchableOpacity, Image, StyleSheet, Text, FlatList, AsyncStorage } from "react-native";
+import { BackHandler,View, Button,Animated, TextInput, Dimensions, ScrollView, TouchableOpacity, Image, StyleSheet, Text, FlatList, AsyncStorage } from "react-native";
 import commons from './commons';
 import { Dialog } from 'react-native-simple-dialogs';
 import LoaderNew from './utils/LoaderNew';
@@ -10,8 +10,11 @@ import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';
 var Mixpanel = require('react-native-mixpanel');
 var aws_data11 = require("./config/AWSConfig.json");
 import Strings from './utils/strings.js';
+var {height, width} = Dimensions.get('window');
 import assetsConfig from "./config/assets.js";
 export default class storehome extends Component {
+    scroll = new Animated.Value(0);
+    headerY;
     static navigationOptions = ({ navigation }) => {
         const { params = {} } = navigation.state;
         const { navigate } = navigation
@@ -19,7 +22,7 @@ export default class storehome extends Component {
         let headerStyle = { backgroundColor: '#006BBD' };
         let headerTitleStyle = { color: 'white', fontWeight: '500', marginLeft: 0, fontSize: 18 };
         let headerTintColor = 'white';
-        var windowProp = Dimensions.get('window').width;
+        var width = Dimensions.get('window').width;
         let headerLeft = (
             <View>
             </View>
@@ -28,7 +31,7 @@ export default class storehome extends Component {
             <View
                 style={{
                     alignItems: "center",
-                    width: windowProp,
+                    width: width,
                     height: 40,
                     flexDirection: "column",
                     alignItems: "center"
@@ -36,7 +39,7 @@ export default class storehome extends Component {
                 <View
                     style={{
                         alignItems: "center",
-                        width: windowProp,
+                        width: width,
                         marginRight: -18,
                         height: 40,
                         flexDirection: "row",
@@ -68,6 +71,7 @@ export default class storehome extends Component {
     };
     constructor(props) {
         super(props);
+        this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 60), -1);
         this.state = {
             isOpen: false,
             categories: [],// ["Home Discover", "Teams", "Celebrities", "Games", "Youtubers", "Cities", "Movies", "Personas", "Favorites"],
@@ -799,7 +803,7 @@ export default class storehome extends Component {
                         </View>
                     </View>
                 </Dialog>
-    <Dialog visible={this.state.offlineFlag}
+                <Dialog visible={this.state.offlineFlag}
                     onTouchOutside={() => this.setState({ offlineFlag: false })}
                     animation='fade'
                 >
@@ -816,20 +820,86 @@ export default class storehome extends Component {
                         </View>
                     </View>
                 </Dialog>
-                <View style={{ width: '100%', height: (this.state.dh) * (1 / 20), backgroundColor: "#1a8cff", alignItems: "center" }} >
-                    <ModalDropdown style={{ flex: 1, marginTop: 8 }} 
-                        options={this.state.categories}
-                        defaultIndex={-1}
-                        defaultValue={Strings.discover_categorylist_caption}
-                        textStyle={{ color: "#ffff", fontSize: 16,fontFamily:"Roboto" }}
-                        onSelect={(idx, value) => this.categoryselected(idx, value)}
-                        renderRow={this._dropdown_2_renderRow.bind(this)}
-                        adjustFrame={style => this._adjustFrame(style)}
-                        dropdownStyle={{ flex: 1, alignItems: "center",justifyContent:'center'}}
-                        renderSeparator={(sectionID, rowID, adjacentRowHighlighted) => this._renderSeparator(sectionID, rowID, adjacentRowHighlighted)}
-                    />
-                </View>
-                <ScrollView style={{ flex: 1 }}>
+                
+                <Animated.View style={[{position:'absolute',
+                    zIndex:1,
+                    elevation:0,
+                    flex:1,
+                    transform : [{
+                    translateY:this.headerY
+                    }],
+                    backgroundColor:'#006BBD'
+                    }]}>
+                    <View
+                    style={{
+                        alignItems: "center",
+                        width: width,
+                        height: 50,
+                        flexDirection: "column",
+                        alignItems: "center"
+                    }}>
+                        <View
+                            style={{
+                                //  borderColor: "white",
+                                // borderWidth: 1,
+                                //    borderRadius: 30,
+                                alignItems: "center",
+                                width: width,
+                                marginRight: -18,
+                                height:40,
+                                flexDirection: "row",
+                                alignItems: "center"
+                            }}>
+
+                            <Image
+                                style={{ width: 20, height: 20, marginLeft: 2, marginRight: 5 }}
+                                source={require("./assets/icon_search_white.png")}
+                            />
+                            <TextInput
+                                style={{ width: "100%", borderWidth: 0, color: "white",fontSize:12 }}
+                                allowFontScaling={false}
+                                placeholder={Strings.menu_searchstax}
+                                placeholderTextColor="#3F97DC"
+                                onChangeText={(value) =>{this.setval(value)}}
+                                onSubmitEditing={() => {this.search(false)}}
+                                underlineColorAndroid="transparent"
+                            />
+
+                        </View>
+
+                        <View style={{ width: "100%", height: 5, alignItems: 'center',paddingLeft:27}}>
+
+                            <Image
+                                style={{ width: Dimensions.get('window').width - 60, height:1}}
+                                source={require("./assets/line_search_stax.png")}
+                            />
+                        </View>
+                    </View>
+                    <View style={{ width: '100%', height: (this.state.dh) * (1 / 20), backgroundColor: "#1a8cff", alignItems: "center" }} >
+                        <ModalDropdown style={{ flex: 1, marginTop: 8 }} 
+                            options={this.state.categories}
+                            defaultIndex={-1}
+                            defaultValue={Strings.discover_categorylist_caption}
+                            textStyle={{ color: "#ffff", fontSize: 16,fontFamily:"Roboto" }}
+                            onSelect={(idx, value) => this.categoryselected(idx, value)}
+                            renderRow={this._dropdown_2_renderRow.bind(this)}
+                            adjustFrame={style => this._adjustFrame(style)}
+                            dropdownStyle={{ flex: 1, alignItems: "center",justifyContent:'center'}}
+                            renderSeparator={(sectionID, rowID, adjacentRowHighlighted) => this._renderSeparator(sectionID, rowID, adjacentRowHighlighted)}
+                        />
+                    </View>
+                </Animated.View>
+                <Animated.ScrollView 
+                    style={{zIndex: 0, height: "100%", elevation: -1}}
+                    onScroll={Animated.event(
+                      [{nativeEvent: {contentOffset: {y: this.scroll}}}],
+                      {useNativeDriver: true},
+                    )}
+                    bounces={false}
+                    overScrollMode="never"
+                    scrollEventThrottle={1} 
+                >
+                <View style={{marginTop:70}}/>
            {commons.renderIf(this.state.bannerDet.length > 0,
                   <Swiper style={{ flex: 1 }}
                   ref={"slidermain"}
@@ -912,7 +982,7 @@ export default class storehome extends Component {
                             </View>
                         )}
                     </View>
-                </ScrollView>
+                </Animated.ScrollView>
             </View>
         );
     }

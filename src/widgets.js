@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
     AsyncStorage,AppState, Animated, WebView, ActivityIndicator,
     Easing, Dimensions,BackHandler,
+    PanResponder,
     Platform, Text, Image, View, StatusBar, ScrollView, StyleSheet, TextInput, ViewPagerAndroid, FlatList, ToastAndroid, TouchableOpacity, ImageBackground, Linking
 } from 'react-native';
 import device_style from './styles/device.style';
@@ -27,7 +28,13 @@ var awsData = require("./config/AWSConfig.json");
 const window = Dimensions.get('window');
 var DeviceInfo = require('react-native-device-info');
 var screen = "staxviewer"
+let deviceHeight=Dimensions.get('window').height
+let deviceWidth=Dimensions.get('window').width
+require('events').EventEmitter.defaultMaxListeners = 0
+
 export default class widgets extends Component {
+    scroll = new Animated.Value(0);
+    headerY;
     constructor(props) {
         super(props)
         this.state = {
@@ -90,16 +97,78 @@ export default class widgets extends Component {
             uri:'',
             appState: AppState.currentState,
             feedUrl:'',
-            key: 1
+            key: 1,
+            value:null,active:false,miniHeight:30,release:false,
+            currentdeviceName:''
         }
         this.delete_stax = this.delete_stax.bind(this)
+        // this.delete_stax = this.delete_stax.bind(this)
         this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
+        this._animatedValue = new Animated.ValueXY()
+        this._value = {x: 0, y: 0}
+        this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 92), -1);
+        
+        this._animatedValue.addListener((value) => this._value = value);
+        this._panResponder = PanResponder.create({
+            onMoveShouldSetResponderCapture: () => true,
+            onMoveShouldSetPanResponderCapture: () => true,
+            onPanResponderGrant: (e, gestureState) => {
+                // console.log(gestureState,'llllllllllllllllllll');
+                this._animatedValue.addListener((e)=>{
+                    this.setState({value:e.y})
+                }
+            );
+                this.setState({active:true})
+              this._animatedValue.setOffset({x: this._value.x, y: this._value.y});
+              this._animatedValue.setValue({x: 0, y: 0});
+            },
+            onPanResponderMove:(e,gestureState)=>{
+            //   console.log(this.state.value,'kkkkkkkkkkkkkkkkkk');
+              if(this._animatedValue.y._value <=0  ){
+              return Animated.event([
+              null, {dx:0, dy: this._animatedValue.y}
+            ])(e,gestureState)}}
+          ,
+            onPanResponderRelease: () => {
+              this._animatedValue.flattenOffset();
+        //       this.setState({release:true})
+              if(-this.state.value >= 100){
+               Animated.spring(
+                 this._animatedValue,
+                 {toValue:{x:0,y:-233}}
+                ).start();
+              }
+              else{
+                Animated.spring(
+                  this._animatedValue,
+                  {toValue:{x:0,y:0}}
+          ).start();
+          }
+            },
+     
+          });
     }
     resetWebViewToInitialUrl = () => {
         this.setState({
           key: this.state.key + 1,
         });
       };
+
+  togetDevicename=(content)=>{
+        this.setState({currentdeviceName:content})
+  }
+
+        onScrollonstax=(e)=>{
+            alert('fffff')
+        }
+
+      componentWillMount(){
+        
+      }
+
+
+
+
     componentWillReceiveProps(nextprops) {
     }
     async showdevicemanagment() {
@@ -120,6 +189,18 @@ export default class widgets extends Component {
   * @modified by   :dhi
   * @modified date :05/09/18
  */
+
+async addStax(){
+    this.resetWebViewToInitialUrl();
+    var username = await AsyncStorage.getItem("username");
+    if ((username == null || username == commons.guestuserkey()) && this.state.widgetData.length >= 5) {
+        this.setState({ gotoLoginFlow: true });
+        return;
+    }
+    this.setState({ dialogWidgetName: true });
+    this.mixpanelTrack("Enter Stax Name View");
+}
+
     async  sharewidget() {
         this.mixpanelTrack("Share with Friends");
         var connectionStatus = await commons.isconnected();
@@ -228,6 +309,7 @@ export default class widgets extends Component {
                      }
                   await this.widgetDisplay(deviceid);     
                   this.props.setHeader(devicename);
+                  
                 }
                 else {
                     ToastAndroid.show(JSON.stringify(result), 500);
@@ -500,6 +582,7 @@ export default class widgets extends Component {
                         await this.setState({ choosenDeviceId: dataObj.deviceid, choosenDevice: dataObj });
                         //  this.props.navigation.setParams({ devicename: dataObj.devicename });
                         this.props.setHeader(dataObj.devicename)
+                        this.setState({currentdeviceName:object.devicename})
                     }
                 }
                 if (this.state.choosenDeviceId == deviceObj.id)
@@ -2490,6 +2573,7 @@ async mixpanelTrack(event)
                             </View>
                         </View>
                     </Modal>
+                    
                     {commons.renderIf(this.state.widgetData.length > 0,
                         <Swiper style={{ flex: 1 }}
                             ref={"slidermain"}
@@ -2505,9 +2589,104 @@ async mixpanelTrack(event)
                             {this.state.widgetData.map((item_main, key) => {
                                 return (
                                     <View style={styles.slide1} key={key}>
-                                        <View style={[widgets_style.box_view, { backgroundColor: item_main.backgroundcolor }]}>
-                                            <View style={[widgets_style.box_view_bar, { backgroundColor: item_main.headercolor, justifyContent: "space-between" }]}>
-                                                < View style={{ flexDirection: "row", alignItems: 'center',marginRight:4,marginLeft:4 }}>
+                                        <View style={[widgets_style.box_view, { backgroundColor: item_main.backgroundcolor,paddingBottom:14 }]}>
+                   <Animated.View
+                    style={{position:'absolute',
+                    zIndex:1,
+                    elevation:0,
+                    flex:1,
+                    transform : [{
+                    translateY:this.headerY
+                    }],
+                    backgroundColor:'transparent'
+                    }}
+                   >
+                   
+                    <View style={{width:'100%',height:58,backgroundColor:'#006BBD',flexDirection:"row",justifyContent:'space-around'}}>
+                    <View style={{marginTop:8,width:'50%'}}><Text allowFontScaling={false} style={{ color: 'white', fontFamily:'Roboto-Bold', marginLeft: 16, fontSize: 18 }}>{Strings.menu_stax}</Text><Text allowFontScaling={false} style={{ color: '#A7A9AC', fontFamily:'Roboto-Bold', fontSize: 14 ,marginLeft: 16}}>{this.state.currentdeviceName}</Text></View>
+                    <View style={{ flexDirection: 'row',justifyContent:'center',alignItems:'center',width:'50%'}}>
+                        <View style={{}}>
+                         <TouchableOpacity onPress={() => this.syncdata() }>
+                          <Image source={require('./assets/icon_sync_white_21px.png')}
+                                    style={{
+
+                                        //   marginTop: 1,
+                                        //   marginBottom: 1
+                                    }}
+                                />
+                            </TouchableOpacity>
+                            </View>
+                        
+                        <View style={{marginLeft: 10,}}>
+                        <Touch pointerEvents = {'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.shareApplist() }>
+                            <Image source={require('./assets/icon_applist_white_21px.png')}
+                                style={{
+                                    //   marginLeft: 10,
+                                    //   marginTop: 1,
+                                    //   marginBottom: 1
+                                }}
+                            />
+                        </Touch>
+                        </View>
+
+
+
+                            {/* <TouchableOpacity onPress={() => this.refs.widget.sharewidget()}>
+                                <Image source={require('./assets/icon_share_white.png')}
+                                    style={{
+                                        marginLeft: 10,
+                                        marginTop: 1,
+                                        marginBottom: 1
+                                    }}
+                                />
+                            </TouchableOpacity> */}
+                        
+                        <View style={{marginLeft: 10,}}>
+                            <TouchableOpacity onPress={() => this.OrganizeStax()}>
+                                <Image source={require('./assets/icon_organizer_white_21px.png')}
+                                    style={{
+                                        //   marginLeft: 10,
+                                        //   marginTop: 1,
+                                        //   marginBottom: 1
+                                    }}
+                                />
+                            </TouchableOpacity>
+                            </View>
+                                
+                                <View style={{marginLeft: 10,}}>
+                                <TouchableOpacity onPress={() => this.serach_widget()}>
+                                    <Image source={require('./assets/icon_search_white_21px.png')}
+                                        style={{
+                                            // marginLeft: 10,
+                                            // marginTop: 1,
+                                            // marginBottom: 1
+                                        }}
+                                    />
+                                </TouchableOpacity>
+                                </View>
+                                            <View style={{marginTop:12,marginLeft: 10,}}>
+                                                <TouchableOpacity onPress={() => this.addStax()}  >
+                                                    <Image  source={require('./assets/bt_add.png')}
+                                                        style={{
+                                                            // marginLeft: 10,
+                                                            // marginTop: 1,
+                                                            // marginBottom: 1,
+                                                            width:42,
+                                                            height:42,
+                                                        }}
+                                                    />
+                                                </TouchableOpacity>
+                                            </View>
+                                            
+
+
+                             </View>
+
+                          </View>
+
+                                            <View style={{height:7,width:'100%',backgroundColor:'white'}} />
+                                            <View style={[widgets_style.box_view_bar, { backgroundColor: item_main.headercolor, justifyContent: "space-between", }]}>
+                                                < View style={{ flexDirection: "row", alignItems: 'center',marginRight:4,marginLeft:4,height:'100%',width:'100%'}}>
                                                 <Touch timeout={3500} pointerEvents={'auto'} disabled={false} activeOpacity={0.7} onPress={() => this.editor_click()}>
                                                     <View style={{ width: '10%' }}>
                                                         <Image style={widgets_style.box_view_bar_icon} source={assetsConfig.settingIconbar} />
@@ -2516,38 +2695,67 @@ async mixpanelTrack(event)
                                                     <View style={{ width: '80%' }}>
                                                         <Text allowFontScaling={false} style={widgets_style.box_view_bar_text}>{item_main.widgetname=="Most Frequent"?Strings.mostfrequent_stax:item_main.widgetname}</Text>
                                                     </View>
-                                                    <TouchableOpacity style={{ width: '15%', alignSelf: 'center' }} onPress={async() => {
+                                                    <TouchableOpacity style={{ width: '15%', alignSelf: 'center' }} onPress={()=>{this.sharewidget()}}
                                                         
                                                         // this.mixpanelTrack("Full Screen View");
-                                                        // this.mixpanelTrack("Full Screen View :"+this.state.widgetName);
                                                         // var feed=this.state.feedUrl;
                                                         // this.resetWebViewToInitialUrl();
                                                         // var openLink=this.state.openLink;
                                                         // navigate("widgetFullScreen", { "widgetdata": this.state.widgetData,"feed":feed,"openLink":feed, "index": this.state.curindex, scrollto: this.scrollto.bind(this) });
-                                                    }}>
+                                                    >
                                                     
                                                         <Image style={[widgets_style.box_view_bar_icon, { height: 20, width: 20, marginLeft: '15%' }]} source={assetsConfig.sharesIconbar} />
                                                     </TouchableOpacity>
                                                 </View>
                                             </View>
+
+                         </Animated.View>
+
+
+
                                             {commons.renderIf(item_main.WebView == 'none',
-                                                <ImageBackground style={{ width: '100%', height: '100%', flex: 1 }}
+                                            // <View style={{borderWidth:1,borderColor:'red'}}>
+                                                <ImageBackground style={{ width: '100%', flex: 1 }}
                                                     source={{ uri: item_main.backgroundpicture }}
                                                     imageStyle={{ resizeMode: 'cover' }
-                                                    }>
-                                                    <FlatList style={{ flex: 1 }}
+                                                                                        }>
+                                            <Animated.ScrollView
+                                            scrollEventThrottle={1}
+                                            bounces={false}
+                                            showsVerticalScrollIndicator={false}
+                                            style={{zIndex: 0, height: "100%", elevation: -1}}
+                                            onScroll={Animated.event(
+                                                [{nativeEvent: {contentOffset: {y: this.scroll}}}],
+                                                {useNativeDriver: true,
+                                                    listener:(e)=>{
+                                                        // this.onScrollonstax(e)
+                                                    }
+                                                
+                                                },
+                                                
+
+                                            )
+                                            }
+                                            overScrollMode="never"
+                                            >
+                                                    <FlatList style={{ flex: 1,marginTop:90}}
                                                         data={item_main.applist}
                                                         extraData={item_main}
                                                         renderItem={({ item }) =>
                                                             <TouchableOpacity onPress={() => this.luanchapp(item.package)} style={{ flexDirection: 'column', marginTop: '6%', alignItems: 'center', flex: item_main.mostusedwidget == 2 ? .5 : .25, marginLeft:((Object.keys(item_main.applist).length)-1==item.key && item.key % 2 == 0 && item_main.mostusedwidget == 2) ? '-15%' : item.key % 2 == 0 && item_main.mostusedwidget == 2 ? '-22%':0, marginRight: item.key % 2 != 0 && item_main.mostusedwidget == 2 ? '-22%' : 0 }}>
                                                                 <View key={item.key} style={{}}>
                                                                     <Image style={{ alignSelf: "center", width: 50, height: 50 }} source={{ uri: item.icon }} />
-                                                                    <Text  allowFontScaling={false} style={{   marginTop: 1, marginLeft: 2,width: 60, fontFamily:'Roboto', fontSize: 12, textAlign: 'center', color: item_main.fontcolor }}  >{item.appname}</Text>{/* numberOfLines={2} */}
+                                                                    <Text  allowFontScaling={false} style={{   marginTop: 1, marginLeft: 2,width: 77, fontFamily:'Roboto', fontSize: 12, textAlign: 'center', color: item_main.fontcolor }}  >{item.appname}</Text>{/* numberOfLines={2} */}
                                                                 </View>
                                                             </ TouchableOpacity>
                                                         }
                                                         numColumns={item_main.mostusedwidget == 2 ? 2 : 4}
-                                                    /></ImageBackground>)}
+                                                    />
+                                                 </Animated.ScrollView>
+                                                    </ImageBackground>
+                                                    // </View>
+                                                )
+                                                    }
                                             {commons.renderIf(item_main.WebView == 'flex' && item_main.mostusedwidget == 2 && this.state.appState=='active',
                                                 <View style={{ width: '100%', height: '100%', alignItems: 'center' }}>
                                                     <View style={{ width: '100%', height: this.state.FlatViewHeight }}>
@@ -2570,21 +2778,37 @@ async mixpanelTrack(event)
                                                             />
                                                         </ImageBackground>
                                                     </View>
-                                                    <View style={{ width: '100%', height: this.state.WebViewHeight }}>
-                                                        <TouchableOpacity style={{ alignSelf: 'center', display: this.state.expandFeed }} onPress={async () => {
+                                                       
+                                                    <View style={{zIndex:-1,width:'100%',height:17,borderBottomWidth:.5,borderBottomColor:'grey',justifyContent:'center',alignSelf:'center',alignItems:'center'}}>
+                                                    {/* <Image style={{}} source={assetsConfig.iconExpandLessBlack} /> */}
+                                                    <TouchableOpacity style={{ alignSelf: 'center', display: this.state.expandFeed }} onPress={async () => {
                                                             await this.setState({ WebViewHeight: '95%', FlatViewHeight: '0%', expandFeed: 'none', compressFeed: 'flex' })
                                                         }}>
-                                                            <Image style={{}} source={assetsConfig.iconExpandLessBlack} />
+                                                            <Image style={{width:20,height:15}} source={assetsConfig.shutter} />
                                                         </TouchableOpacity>
                                                         <TouchableOpacity style={{ alignSelf: 'center', display: this.state.compressFeed }} onPress={async () => {
                                                             await this.setState({ WebViewHeight: '48%', FlatViewHeight: '47%', expandFeed: 'flex', compressFeed: 'none' });
                                                         }}>
-                                                            <Image style={{}} source={assetsConfig.iconExpandMoreBlack} />
+                                                            <Image style={{width:20,height:15}} source={assetsConfig.shutter} />
                                                         </TouchableOpacity>
+                                                    </View>
+                                                    <View style={{justifyContent:'flex-end',flexDirection:'row',alignSelf:'flex-end',marginTop:-15,marginRight:7}}>
+                                                    <Image style={{width:95,height:30}} source={assetsConfig.donatehand} />
+                                                    </View>
+
+                                                    <View style={ {zIndex:-1, width: '100%', height: '95%', height:this.state.WebViewHeight, }}
+            
+                                                    >
+
+                                                        {/* <TouchableOpacity style={{ alignSelf: 'center', display: this.state.compressFeed }} onPress={async () => {
+                                                            await this.setState({ WebViewHeight: '48%', FlatViewHeight: '47%', expandFeed: 'flex', compressFeed: 'none' } );
+                                                        }} >
+                                                            <Image style={{}} source={assetsConfig.iconExpandMoreBlack} />
+                                                        </TouchableOpacity> */}
                                                         <WebView
                                                             key={ this.state.key }
                                                             source={{uri:this.state.feed}}
-                                                            style={{ flex: 1, display: item_main.WebView, justifyContent: 'center' }}
+                                                            style={{ flex: 1, display: item_main.WebView, justifyContent: 'center'}}
                                                             scalesPageToFit={true}
                                                             bounces={false}
                                                             scrollEnabled={false}
@@ -2600,52 +2824,61 @@ async mixpanelTrack(event)
                                                 </View>
                                             )
                                             }
-                                            <View style={{ position: 'absolute', flexDirection: 'row', bottom: 0, height:'8%', width: '100%', display: item_main.WebView, backgroundColor: 'white', justifyContent: 'center' }}>
+                                             <View style={{zIndex:1, position: 'absolute',justifyContent:'space-between', flexDirection: 'row',borderWidth:.5,borderColor:'grey', bottom: 0, height:'9%',marginBottom:6, width: '100%', display: item_main.WebView, backgroundColor: 'white', justifyContent: 'center' }}>
+                                            <View style={{justifyContent:"center",marginRight:10}}>
+                                            <Image style={{width:45,height:17,borderRadius:5}} source={assetsConfig.liveicon} />
+                                            </View>
+                                            <View style={{flexDirection:'row',justifyContent:'space-between'}}>
+                                          {commons.renderIf(item_main.websiteView == "flex",
+                                          <View style={{justifyContent:'center',marginLeft:20}}>
+                                                    <TouchableOpacity onPress={async() =>{
+                                                        await this.setState({ feed: item_main.websiteLink, openLink: item_main.websiteLink })
+                                                        this.resetWebViewToInitialUrl();}} style={{ display: item_main.websiteView, display: item_main.youtubeView }}>
+                                                        <Image  style={{}} source={assetsConfig.webSite} />
+                                                    </TouchableOpacity></View>)}
                                                 {commons.renderIf(item_main.facebookView == "flex",
+                                                <View style={{justifyContent:'center',marginLeft:20}}>
                                                     <TouchableOpacity onPress={async() =>{
                                                         await this.setState({ feed: item_main.facebookLink, openLink: item_main.facebookLink });
                                                         this.resetWebViewToInitialUrl();
-                                                        }} style={{ flex: 0.1, display: item_main.facebookView, justifyContent: 'center' }}>
+                                                        }} style={{ display: item_main.facebookView }}>
                                                         <Image  source={assetsConfig.iconCircleFacebook} />
-                                                    </TouchableOpacity>)}
+                                                    </TouchableOpacity></View>)}
                                                 {commons.renderIf(item_main.twitterView == "flex",
+                                                <View style={{justifyContent:'center',marginLeft:20}}>
                                                     <TouchableOpacity onPress={async() =>{
                                                         await this.setState({ feed: item_main.twitterLink, openLink: item_main.twitterLink })
                                                         this.resetWebViewToInitialUrl();
-                                                        }} style={{ flex: 0.1, display: item_main.twitterView, justifyContent: 'center' }}>
+                                                        }} style={{ display: item_main.twitterView}}>
                                                         <Image  source={assetsConfig.iconCircleTwitter} />
-                                                    </TouchableOpacity>)}
+                                                    </TouchableOpacity></View>)}
                                                 {commons.renderIf(item_main.instagramView == "flex",
+                                                <View style={{justifyContent:'center',marginLeft:20}}>
                                                     <TouchableOpacity onPress={async() =>{
                                                         await this.setState({ feed: item_main.instagramLink, openLink: item_main.instagramLink });
-                                                        this.resetWebViewToInitialUrl();}} style={{ flex: 0.1, display: item_main.instagramView, justifyContent: 'center' }}>
+                                                        this.resetWebViewToInitialUrl();}} style={{ display: item_main.instagramView,}}>
                                                         <Image  source={assetsConfig.iconCircleInstagram} />
-                                                    </TouchableOpacity>)}
+                                                    </TouchableOpacity></View>)}
                                                 {commons.renderIf(item_main.youtubeView == "flex",
+                                                <View style={{justifyContent:'center',marginLeft:20}}>
                                                     <TouchableOpacity onPress={async() =>{
                                                         await this.setState({ feed: item_main.youtubeLink, openLink: item_main.youtubeLink });
-                                                        this.resetWebViewToInitialUrl();}} style={{ flex: 0.1, display: item_main.youtubeView, justifyContent: 'center' }}>
+                                                        this.resetWebViewToInitialUrl();}} style={{ display: item_main.youtubeView }}>
                                                         <Image  source={assetsConfig.iconCircleYoutube} />
-                                                    </TouchableOpacity>)}
+                                                    </TouchableOpacity></View>)}
                                                 {commons.renderIf(item_main.pinterestView == "flex",
+                                                <View style={{justifyContent:'center',marginLeft:20}}>
                                                     <TouchableOpacity onPress={async() =>{
                                                         await this.setState({ feed: item_main.pinterestLink, openLink: item_main.pinterestLink })
-                                                        this.resetWebViewToInitialUrl();}} style={{ flex: 0.1, display: item_main.pinterestView, justifyContent: 'center' }}>
-                                                        <Image  source={assetsConfig.iconCirclePinterest} />
-                                                    </TouchableOpacity>)}
-                                            </View>
-                                            {commons.renderIf(item_main.websiteView == "flex",
-                                                    <TouchableOpacity onPress={async() =>{
-                                                        await this.setState({ feed: item_main.websiteLink, openLink: item_main.websiteLink })
-                                                        this.resetWebViewToInitialUrl();}} style={{ display: item_main.websiteView,left:0,bottom:0,position:'absolute',marginLeft:2,marginBottom:3 }}>
-                                                        <Image  style={{}} source={assetsConfig.webSite} />
-                                                    </TouchableOpacity>)}
-                                            {commons.renderIf(item_main.donateView == "flex",
-                                                <TouchableOpacity onPress={async() =>{ 
-                                                   await this.setState({ feed: item_main.donateLink, openLink: item_main.donateLink })
-                                                   this.resetWebViewToInitialUrl();}} style={{ display: item_main.donateView,right:0,bottom:0,position:'absolute',marginRight:3}}>
-                                                    <Image style={{}} source={assetsConfig.donateButton} />
-                                                </TouchableOpacity>)}
+                                                        this.resetWebViewToInitialUrl();}} style={{ display: item_main.pinterestView, }}>
+                                                        <Image  source={assetsConfig.iconCircleYoutube} />
+                                                    </TouchableOpacity></View>)}
+                                                    <View style={{justifyContent:'center',marginLeft:30}}>
+                                                    <Image style={{width:30,height:30,borderRadius:5}} source={assetsConfig.vipicon} />
+                                                    </View>
+                                                    </View>
+                                                    </View>
+                                            
                                         </View>
                                     </View>
                                 )

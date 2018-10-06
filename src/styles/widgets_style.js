@@ -28,7 +28,6 @@ export default StyleSheet.create({
 
     },box_view:{
         alignItems:'center',
-        marginTop:10,
      //  borderRadius:10,
         marginRight:30,
         marginLeft:30,
@@ -81,7 +80,7 @@ export default StyleSheet.create({
         backgroundColor:'#006BBD',
        // borderTopLeftRadius:10,
       //  borderTopRightRadius:10,
-        height:'6%',
+        height:27,
         flexDirection:'row',
         width:'100%'
 

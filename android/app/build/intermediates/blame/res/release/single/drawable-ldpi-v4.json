@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_crop.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/11efe9316bd1ff4f00d8230bdb75c6a3/res/drawable-ldpi-v4/ucrop_ic_crop.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/com_mixpanel_android_logo.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/b2f26a69f97d192576f25c968531190f/res/drawable-ldpi-v4/com_mixpanel_android_logo.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_reset.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/11efe9316bd1ff4f00d8230bdb75c6a3/res/drawable-ldpi-v4/ucrop_ic_reset.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_cross.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/11efe9316bd1ff4f00d8230bdb75c6a3/res/drawable-ldpi-v4/ucrop_ic_cross.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/com_mixpanel_android_arrowright_faded.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/b2f26a69f97d192576f25c968531190f/res/drawable-ldpi-v4/com_mixpanel_android_arrowright_faded.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/com_mixpanel_android_arrowleft_faded.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/b2f26a69f97d192576f25c968531190f/res/drawable-ldpi-v4/com_mixpanel_android_arrowleft_faded.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/com_mixpanel_android_arrowleft.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/b2f26a69f97d192576f25c968531190f/res/drawable-ldpi-v4/com_mixpanel_android_arrowleft.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_rotate.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/11efe9316bd1ff4f00d8230bdb75c6a3/res/drawable-ldpi-v4/ucrop_ic_rotate.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_next.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/11efe9316bd1ff4f00d8230bdb75c6a3/res/drawable-ldpi-v4/ucrop_ic_next.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_done.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/11efe9316bd1ff4f00d8230bdb75c6a3/res/drawable-ldpi-v4/ucrop_ic_done.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/com_mixpanel_android_arrowright.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/b2f26a69f97d192576f25c968531190f/res/drawable-ldpi-v4/com_mixpanel_android_arrowright.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_angle.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/11efe9316bd1ff4f00d8230bdb75c6a3/res/drawable-ldpi-v4/ucrop_ic_angle.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/com_mixpanel_android_checkmark.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/mixpanel-android-5.3.0.aar/b2f26a69f97d192576f25c968531190f/res/drawable-ldpi-v4/com_mixpanel_android_checkmark.png"
+    },
+    {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_scale.png",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/11efe9316bd1ff4f00d8230bdb75c6a3/res/drawable-ldpi-v4/ucrop_ic_scale.png"
+    }
+]

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BackHandler,Dimensions,Platform, FlatList, Text, TextInput, KeyboardAvoidingView, Button, View, StyleSheet, Image, ScrollView, TouchableOpacity, AsyncStorage, ToastAndroid } from 'react-native';
+import {BackHandler,Dimensions,Platform, FlatList, Text, TextInput, KeyboardAvoidingView, Button, View, StyleSheet,Animated,   Image, ScrollView, TouchableOpacity, AsyncStorage, ToastAndroid } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import { Dialog } from 'react-native-simple-dialogs';
 import ToastExample from './nativemodules/Toast';
@@ -19,6 +19,7 @@ import PushNotification from 'react-native-push-notification';
 import { Header } from 'react-navigation';
 import assetsConfig from "./config/assets.js";
 import Strings from './utils/strings.js';
+var {height, width} = Dimensions.get('window');
 var DeviceInfo = require('react-native-device-info');
 var awsData = require("./config/AWSConfig.json");
 var Mixpanel = require('react-native-mixpanel');
@@ -33,6 +34,8 @@ loactiontrackingservice.starservice();
 smartstaxservice.starservice();
 smartstaxAppUpdateservice.starservice();
 export default class Welcome extends Component {
+  scroll = new Animated.Value(0);
+  headerY;
   static navigationOptions = ({ navigation }) => {
     const { params = {} } = navigation.state;
     const { navigate } = navigation
@@ -40,7 +43,7 @@ export default class Welcome extends Component {
     let headerStyle = { backgroundColor: '#006BBD' };
     let headerTitleStyle = { color: 'white', fontWeight: '500', marginLeft: 0, fontSize: 18,alignSelf:'center' };
     let headerTintColor = 'white';
-    return { title, headerStyle, headerTitleStyle, headerTintColor, 
+    return {  headerStyle, headerTitleStyle, headerTintColor, 
      }; 
   }; 
   handleSave = () => {
@@ -534,6 +537,7 @@ export default class Welcome extends Component {
   }
   constructor(props) {
     super(props); 
+    this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 60), -1);
     this.state = {
       showDialog_d3:false,
       dialogVisible: false,
@@ -1082,8 +1086,23 @@ export default class Welcome extends Component {
   render() {
     const { navigate } = this.props.navigation
     return (
-      <KeyboardAvoidingView behavior='padding' style={{ flex: 1,backgroundColor:'white' }}>  
-     <LoaderNew ref={"loaderRef"}  />
+      <View style={{flex:1}}>
+      <Animated.View style={[{position:'absolute',
+            zIndex:1,
+            elevation:0,
+            flex:1,
+            transform : [{
+              translateY:this.headerY
+            }],
+            backgroundColor:'#006BBD'
+            }]}>
+            <View style={{flex:1,height:60, width:width,justifyContent:'center',alignContent:'center',flexDirection:'row'}}>
+              <View style={{ marginTop:60 * 0.3}}>
+                <Image style={{}} source={require("./assets/logo_aprrow_white_130x22.png")}/>
+              </View>
+            </View>
+        </Animated.View>
+        <LoaderNew ref={"loaderRef"}  />
         <Dialog
           visible={this.state.appUsageBox}
           onTouchOutside={() => this.setState({ appUsageBox: false })}
@@ -1153,10 +1172,19 @@ export default class Welcome extends Component {
         </TouchableOpacity>
       </View>     
         </Dialog>
-          <ScrollView style={styles.outer}>
-            <View style={{ height: 2 }}>
-            </View>
-            {
+      {/* <KeyboardAvoidingView behavior='padding' style={{ flex: 1,backgroundColor:'white' }}>   */}
+          <Animated.ScrollView
+            style={{zIndex: 0, height: "100%", elevation: -1}}
+            onScroll={Animated.event(
+              [{nativeEvent: {contentOffset: {y: this.scroll}}}],
+              {useNativeDriver: true},
+            )}
+            bounces={false}
+            overScrollMode="never"
+            scrollEventThrottle={1} 
+           > 
+           <View style={{marginTop:60}}/>
+{
   commons.renderIf(this.state.offlineFlag && this.state.bannerDet.length > 0&&!this.state.backendDown,
     <Swiper style={{ flex: 1 }}
       ref={"slidermain"}
@@ -1307,8 +1335,9 @@ export default class Welcome extends Component {
             </View>
            <View style={{height:'1%',marginBottom:'3%'}}>
             </View>
-          </ScrollView>
-      </KeyboardAvoidingView>
+          </Animated.ScrollView>
+      {/* </KeyboardAvoidingView> */}
+      </View>
     );
   }
 }

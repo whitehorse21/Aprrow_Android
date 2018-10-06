@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/var/www/html/approw/Aprrow_Android/android/app/build/intermediates/res/merged/debug/layout-v26/abc_screen_toolbar.xml",
+        "source": "/home/vishal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/a1e35c0a949b44c87f8d2bb008a297ef/res/layout-v26/abc_screen_toolbar.xml"
+    },
+    {
         "merged": "/Users/admin/Work/Source/Working/Remote/aprrow_dev_master/android/app/build/intermediates/res/merged/debug/layout-v26/abc_screen_toolbar.xml",
         "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/cb89e55362cc5299c846fee02544dae8/res/layout-v26/abc_screen_toolbar.xml"
     }

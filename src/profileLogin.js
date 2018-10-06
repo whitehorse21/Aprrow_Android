@@ -1,5 +1,5 @@
 import React from 'react';
-import { BackHandler,Linking,AsyncStorage,CheckBox, StyleSheet, Text, View, TextInput, Button, ScrollView, ToastAndroid, Image,KeyboardAvoidingView,AppRegistry,ToolbarAndroid,SectionList, TouchableOpacity,TouchableHighlight,Dimensions } from 'react-native';
+import { BackHandler,Linking,AsyncStorage,CheckBox, StyleSheet,Animated, Text, View, TextInput, Button, ScrollView, ToastAndroid, Image,KeyboardAvoidingView,AppRegistry,ToolbarAndroid,SectionList, TouchableOpacity,TouchableHighlight,Dimensions } from 'react-native';
 import { Dialog } from 'react-native-simple-dialogs';
 import { NavigationActions } from 'react-navigation';
 import { Dropdown } from 'react-native-material-dropdown';
@@ -15,7 +15,14 @@ import FBSDK, {
 import ToastExample from './nativemodules/Toast';
 var Mixpanel = require('react-native-mixpanel');
 var aws_data11 = require("./config/AWSConfig.json");
+
+const HEADER_MAX_HEIGHT = 90;
+const HEADER_MIN_HEIGHT = 0;
+const HEADER_SCROLL_DISTANCE = HEADER_MAX_HEIGHT - HEADER_MIN_HEIGHT;
+
 export default class profile extends React.Component {
+    scroll = new Animated.Value(0);
+    headerY;
     static navigationOptions = {
         title: 'ProfileLogin',
         headerStyle: { backgroundColor: '#006BBD' },
@@ -31,6 +38,8 @@ export default class profile extends React.Component {
       };
   constructor(props) {
     super(props);
+    this.offset= 0;
+    this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 90), -1);
     this.state = {
       dialogVisible: false,
       avatarSource:require('./assets/icon_perfil_sign_in_65px.png'),     
@@ -42,12 +51,21 @@ export default class profile extends React.Component {
       login_logoutlabel:Strings.profilelogin_logout,
       offlineFlag:false,
       gotologinflow:false,
-      backend_Down_Popup:false
+      backend_Down_Popup:false,
+      animation:new Animated.Value(0),
+      scroll:new Animated.ValueXY(0),
+      scrollY: new Animated.Value(0),
+      viewHeight:200,
+      currentScroll:0
     };
     navigation = this.props.navigation;
     this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
+    // this.state.scroll.setValue({x:0,y:70})
+    // this._animatedValue=new Animated.ValueXY();
+    // this._animatedValue.setValue({x:0,y:0});
    
   }
+
   async componentWillUnmount()
     {
         BackHandler.removeEventListener('hardwareBackPress', this.handleBackButtonClick);
@@ -289,12 +307,86 @@ export default class profile extends React.Component {
 
  //  commons.replaceScreen(this,'bottom_menu',{}); 
   }
+//   componentWillMount(){
+//       Animated.timing(this.state.scroll,{
+//           toValue:{x:0,y:-100},
+//           duration:1000,
+//           delay:1000
+//       }).start();
+//   }
   render() {
+    //   const miniValue=(100+this.state.scrollY.y)
    const{navigate}=this.props.navigation;
    var window=Dimensions.get('window').height;
    var h=(window*.13);
+   let currentHeight =90;
+   let hideHeight = 0 ;
+//    const headerHeight = this.state.animation.interpolate({
+//     inputRange: [0,1],
+//     outputRange: [currentHeight,hideHeight],
+// 
+  
     return (
-     < KeyboardAvoidingView behavior='padding' style={{ paddingBottom:30, flex: 1,backgroundColor:'#ffffff' }}>  
+     < KeyboardAvoidingView behavior='padding' style={{ paddingBottom:30, flex: 1,backgroundColor:'#ffffff' }}>
+        <View style={{flex:1}}>
+
+        <Animated.View style={[{position:'absolute',
+                    zIndex:1,
+                    elevation:0,
+                    flex:1,
+                    transform : [{
+                    translateY:this.headerY
+                    }],
+                    backgroundColor:'#006BBD'
+                    }]}>
+            <View style={{backgroundColor:'#006BBD',justifyContent:'center',flexDirection:'row',height:90}}>
+                <View style={{ width: '25%', justifyContent:'center',alignItems:'center'}}> 
+   {/* <View style={{    headerHeight
+               width: h,
+               height: h,
+               borderRadius: h/2,
+               borderWidth: 2,
+               borderColor:'#ffffff',
+               justifyContent:'center',
+               alignItems:'center'
+               }}>      */}
+                <TouchableOpacity onPress={async()=>{
+                 var username=await AsyncStorage.getItem("username");
+                 if(username==null||username==commons.guestuserkey())
+                 {
+                     this.setState({gotologinflow:true});
+                     return;
+                 }
+                
+                   navigate("profile");
+                 
+                 
+                 }}>         
+                    <Image style={{borderRadius: h/2,width: h,height: h,marginLeft:5}} source={this.state.avatarSource} /> 
+                    </TouchableOpacity>          
+                    {/*</View>*/}
+                    </View>
+                    <View style={{marginLeft:2, width: '62%',justifyContent:'center',}}>
+                        <Text allowFontScaling={false} style={{ fontSize: 16, fontFamily:'Roboto-Bold', color: 'white',justifyContent:'center',textDecorationLine:'underline' }}>{this.state.HName}</Text>
+                        <Text allowFontScaling={false} style={styles.textH}>{this.state.H1Name}</Text>     
+                    </View>
+                    <TouchableOpacity onPress={async () =>{
+                    var username=await AsyncStorage.getItem("username");
+                    if(username==null||username==commons.guestuserkey())
+                    {
+                        const { navigate } = this.props.navigation;
+                        navigate("login",{});
+                        return;
+                    }
+                    this.setState({showlogout: true});          
+                    
+                    }} style={{width: '13%',justifyContent:'center',marginRight:10}}>
+                        <Image source={require('./assets/icon_logout_white_30px.png')} style={styles.imageS}/>
+                        <Text allowFontScaling={false} style={styles.textH}>{this.state.login_logoutlabel}</Text> 
+                </TouchableOpacity> 
+            </View>
+                     
+    </Animated.View>  
      <View style={{ paddingBottom:6 }}>  
 
      <Dialog visible={this.state.backend_Down_Popup}
@@ -340,56 +432,22 @@ export default class profile extends React.Component {
                         </View>
                     </View>
                 </Dialog>
-     <View style={{height:'20%',backgroundColor:'#006BBD',justifyContent:'center',flexDirection:'row'}}>
-
-     <View style={{ width: '25%', justifyContent:'center',alignItems:'center'}}>
-        {/* <View style={{    
-                    width: h,
-                    height: h,
-                    borderRadius: h/2,
-                    borderWidth: 2,
-                    borderColor:'#ffffff',
-                    justifyContent:'center',
-                    alignItems:'center'
-                    }}>      */}
-           <TouchableOpacity onPress={async()=>{
-                      var username=await AsyncStorage.getItem("username");
-                      if(username==null||username==commons.guestuserkey())
-                      {
-                          this.setState({gotologinflow:true});
-                          return;
-                      }
-                     
-                     
-                     
-                        navigate("profile");
-                      
-                      
-                      }}>         
-            <Image style={{borderRadius: h/2,width: h,height: h,marginLeft:5}} source={this.state.avatarSource} /> 
-            </TouchableOpacity>          
-         {/*</View>*/}
-         </View>
-         <View style={{marginLeft:2, width: '62%',justifyContent:'center',}}>
-              <Text allowFontScaling={false} style={{ fontSize: 16, fontFamily:'Roboto-Bold', color: 'white',justifyContent:'center',textDecorationLine:'underline' }}>{this.state.HName}</Text>
-              <Text allowFontScaling={false} style={styles.textH}>{this.state.H1Name}</Text>     
-         </View>
-         <TouchableOpacity onPress={async () =>{
-           var username=await AsyncStorage.getItem("username");
-           if(username==null||username==commons.guestuserkey())
-           {
-               const { navigate } = this.props.navigation;
-               navigate("login",{});
-               return;
-           }
-            this.setState({showlogout: true});          
-           
-           }} style={{width: '13%',justifyContent:'center',marginRight:10}}>
-             <Image source={require('./assets/icon_logout_white_30px.png')} style={styles.imageS}/>
-             <Text allowFontScaling={false} style={styles.textH}>{this.state.login_logoutlabel}</Text> 
-         </TouchableOpacity>          
-      </View>
-     
+     <Animated.ScrollView
+     onScroll={Animated.event(
+        [{nativeEvent: 
+        {contentOffset: {y: this.state.scrollY}}}]
+       )}
+       style={{zIndex: 0, height: "100%", elevation: -1}}
+       onScroll={Animated.event(
+            [{nativeEvent: {contentOffset: {y: this.scroll}}}],
+            {useNativeDriver: true},
+       )}
+       bounces={false}
+       overScrollMode="never"
+       scrollEventThrottle={1}
+    //  onScrollEndDrag={this.onScrollEndDrag}
+     >
+     <View style={{marginTop:90}}/>
       <Touch pointerEvents = {'auto'} disabled={false} activeOpacity={0.7}  onPress={() =>{navigate('Settings');}} style={styles.outerView}> 
                   <View style={styles.imageView}>
                       <Image source={require('./assets/icon_settings_blue_24px.png')}
@@ -529,7 +587,7 @@ export default class profile extends React.Component {
                   </View>
               </TouchableOpacity>
               <Text allowFontScaling={false} style={{fontSize: (Dimensions.get("window").width)*0.040,  color: 'black',alignSelf:'center'}}>{Strings.profilelogin_copy}</Text>
-
+     </Animated.ScrollView>
 
               <Modal
                         isVisible={this.state.showlogout}
@@ -611,6 +669,7 @@ export default class profile extends React.Component {
                         </View>
                     </Modal>
     </View>
+    </View>
      </ KeyboardAvoidingView>
        
     );
@@ -624,7 +683,7 @@ const styles = StyleSheet.create({
   },
  
  outerView: {height:'8%',flexDirection: 'row',backgroundColor:'#ffffff',alignItems:'center'},
- imageView: {width:'30%',backgroundColor:'#ffffff',marginTop: 2,justifyContent:'center'},
+ imageView: {width:'30%',height:70,backgroundColor:'#ffffff',marginTop: 2,justifyContent:'center'},
  imageS:{  alignSelf:'center',  marginTop: 1,  marginBottom: 1 },
  textView: {width:'70%',backgroundColor:'#ffffff',marginTop: 2},
  headView: {width:'100%',backgroundColor:'#ffffff',marginTop: 2},

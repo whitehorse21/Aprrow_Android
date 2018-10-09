@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Linking, BackHandler, Platform, View, Alert, ToastAndroid, Dimensions, Button, ScrollView, ImageBackground, TouchableOpacity, Image, StyleSheet, Text, TextInput, FlatList, AsyncStorage } from "react-native";
+import { Linking, BackHandler, Platform, View, Alert,Animated, ToastAndroid, Dimensions, Button, ScrollView, ImageBackground, TouchableOpacity, Image, StyleSheet, Text, TextInput, FlatList, AsyncStorage } from "react-native";
 import commons from './commons';
 import LoaderNew from './utils/LoaderNew';
 import Share, { ShareSheet } from "react-native-share";
@@ -22,7 +22,7 @@ export default class storepurchase extends Component {
     let title = Strings.discoverpurchase_page_head;
     let headerStyle = { backgroundColor: '#006BBD' };
     let headerTitleStyle = { color: 'white', fontFamily: 'Roboto-Bold', fontWeight: '100', marginLeft: 0, fontSize: 18 };
-    let headerTintColor = 'white';
+    let headerTintColor = 'black';
     let headerTitleAllowFontScaling = false;
     let headerLeft = (
       <View style={{ flexDirection: 'row' }}>
@@ -31,10 +31,13 @@ export default class storepurchase extends Component {
         </TouchableOpacity>
       </View>
     );
-    return { title, headerStyle, headerTitleStyle, headerTintColor, headerLeft, headerTitleAllowFontScaling };
+    return {  header:null  };
   };
+  scroll = new Animated.Value(0);
+    headerY;
   constructor(props) {
     super(props);
+    this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 63), -1);
     this.state = {
       stackid: "",
       staxbackground: "data:image/jpeg;base64",
@@ -867,6 +870,27 @@ export default class storepurchase extends Component {
   render() {
     return (
       <View style={{ flex: 1, backgroundColor: "white" }}>
+      <Animated.View
+                    style={{position:'absolute',
+                    zIndex:1,
+                    elevation:0,
+                    flex:1,
+                    width:'100%',
+                    transform : [{
+                    translateY:this.headerY
+                    }],
+                    backgroundColor:'transparent'
+                    }}
+                   >
+      <View style={{width:'100%',height:60,backgroundColor:'#006BBD'}}>
+      <View style={{ flexDirection: 'row', }}>
+        <TouchableOpacity onPress={() => this.backPage()}>
+          <Image style={{ height: 25, width: 25, marginTop: 18, marginBottom: 1, marginLeft: 5 }} source={assetsConfig.iconArrowBack} />
+        </TouchableOpacity>
+      <Text style={{marginTop:18,fontSize:18,color:'white',fontWeight:'500',marginLeft:28}} >{Strings.discoverpurchase_page_head}</Text>
+      </View>
+      </View>
+      </Animated.View>
         <LoaderNew ref={"loaderRef"} />
         <Modal
           isVisible={this.state.termsconmodel}
@@ -1050,8 +1074,27 @@ export default class storepurchase extends Component {
             </View>
           </View>
         </Dialog>
-        <ScrollView style={{ flex: 1 }}>
-          <ImageBackground style={{ height: this.state.istab == true ? Dimensions.get('window').width - 80 : Dimensions.get('window').width - 50, width: Dimensions.get('window').width }}
+        <Animated.ScrollView
+                                            scrollEventThrottle={1}
+                                            bounces={false}
+                                            showsVerticalScrollIndicator={false}
+                                            style={{zIndex: 0, height: "100%", elevation: -1}}
+                                            onScroll={Animated.event(
+                                                [{nativeEvent: {contentOffset: {y: this.scroll}}}],
+                                                {useNativeDriver: true,
+                                                    listener:(e)=>{
+                                                        // this.onScrollonstax(e)
+                                                    }
+                                                
+                                                },
+                                                
+
+                                            )
+                                            }
+                                            overScrollMode="never"
+                                            >
+                                            <View style={{width:'100%',marginTop:60}} />
+          <ImageBackground style={{height: this.state.istab == true ? Dimensions.get('window').width - 80 : Dimensions.get('window').width - 50, width: Dimensions.get('window').width }}
             source={{ uri: this.state.staxbackground + "?time=" + this.state.timestamp }}
             imageStyle={{ resizeMode: 'stretch' }}
 
@@ -1126,7 +1169,7 @@ export default class storepurchase extends Component {
           <Text allowFontScaling={false} style={{ marginTop: 15, marginLeft: 15 }}>{this.state.Description}</Text>
 
 
-        </ScrollView>
+        </Animated.ScrollView>
       </View >
     )
   }

@@ -293,7 +293,7 @@ async setAccount()
   }
 setHeader(content)
 {
-    const headerLeft=<View style={{marginLeft:10,backgroundColor:'pink'}}><Text allowFontScaling={false} style={{ color: 'white', fontFamily:'Roboto-Bold', marginLeft: 0, fontSize: 18 }}>Strings.menu_stax</Text><Text allowFontScaling={false} style={{ color: '#A7A9AC', fontFamily:'Roboto-Bold', marginLeft: 0, fontSize: 14, }}>{content}</Text></View>;
+    const headerLeft=<View style={{marginLeft:10}}><Text allowFontScaling={false} style={{ color: 'white', fontFamily:'Roboto-Bold', marginLeft: 0, fontSize: 18 }}>{Strings.menu_stax}</Text><Text allowFontScaling={false} style={{ color: '#A7A9AC', fontFamily:'Roboto-Bold', marginLeft: 0, fontSize: 14, }}>{content}</Text></View>;
     navigation.setParams({ headerLeft:headerLeft});
     this.setState({cdeviceName:content})
     this.refs.widget.togetDevicename(this.state.cdeviceName)
@@ -357,7 +357,7 @@ async headerComponent()
     var header=undefined;
 
     const headerRight=(
-      <View style={{ flexDirection: 'row', margin: 10 ,paddingTop:25,backgroundColor:'red'}}>
+      <View style={{ flexDirection: 'row', margin: 10 ,paddingTop:25}}>
 <View style={{marginTop:5, marginLeft:5}}>
      <TouchableOpacity onPress={() => { this.refs.widget.syncdata() }}>
               <Image source={require('./assets/icon_sync_white_21px.png')}
@@ -435,7 +435,7 @@ async headerComponent()
 
       </View>
     );
-    navigation.setParams({ title: title,headerLeft:headerLeft,headerRight:headerRight,header:header }); 
+    navigation.setParams({ header:null }) 
    // this.props.navigation.setParams({ showdevicemanagment:  });
 
   }

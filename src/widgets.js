@@ -106,7 +106,7 @@ export default class widgets extends Component {
         this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
         this._animatedValue = new Animated.ValueXY()
         this._value = {x: 0, y: 0}
-        this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 92), -1);
+        this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 65), -1);
         
         this._animatedValue.addListener((value) => this._value = value);
         this._panResponder = PanResponder.create({

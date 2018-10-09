@@ -11,6 +11,7 @@ import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
 import Modal from 'react-native-modal';
 import Strings from './utils/strings.js';
 import assetsConfig from "./config/assets.js";
+let Height=Dimensions.get('window').height;
 
 var Mixpanel = require('react-native-mixpanel');
 var awsData = require("./config/AWSConfig.json");
@@ -31,7 +32,7 @@ export default class Rewards extends Component {
     };
     constructor(props) {
         super(props);
-        this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 210), -1);
+        this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 180), -1);
         this.state = {
             currentBadge: "",
             userName: "",
@@ -47,7 +48,11 @@ export default class Rewards extends Component {
             offlineFlag:false,
             userImage: assetsConfig.photoMiniPerfil,
             gotoLoginFlow:false,
-            backendDownPopup:false
+            backendDownPopup:false,
+            translateY: new Animated.Value(0),
+            TabsTranslateY: new Animated.Value(0),
+            TabsHeight: new Animated.Value(60),
+            scrollY: new Animated.Value(0)
         };
         this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
     }
@@ -571,6 +576,18 @@ export default class Rewards extends Component {
         var windowProp = Dimensions.get('window');
         var winheight = windowProp.height;
         var winwidth = windowProp.width;
+        const tabY = Animated.add(this.scroll,this.headerY);
+        let translateY = this.state.scrollY.interpolate({
+            inputRange: [0, 220],
+            outputRange: [0, -210],
+            extrapolate: 'clamp'
+          });
+      
+          let TabsTranslateY = this.state.scrollY.interpolate({
+            inputRange: [0, 220],
+            outputRange: [0, -210],
+            extrapolate: 'clamp'
+          });
         return (
             <View style={{ flex: 1 }}>
               <Modal
@@ -692,7 +709,7 @@ export default class Rewards extends Component {
                     elevation:0,
                     flex:1,
                     transform : [{
-                    translateY:this.headerY
+                    translateY:translateY
                     }],
                     backgroundColor:'#006BBD'
                     }}
@@ -756,28 +773,44 @@ export default class Rewards extends Component {
                     </View>
                 </View>
               </Animated.View>
-        <Animated.ScrollView
-          scrollEventThrottle={1}
-          bounces={false}
-          showsVerticalScrollIndicator={false}
-          style={{zIndex: 0, height: "100%", elevation: -1}}
-          onScroll={Animated.event(
-            [{nativeEvent: {contentOffset: {y: this.scroll}}}],
-            {useNativeDriver: true},
-          )}
-          overScrollMode="never">
-            <View style={{marginTop:210}}/>
-                <Tabs >
+        <Animated.View style={{
+          flex: 0,
+          marginTop:210,
+          backgroundColor:'green',
+          transform: [{translateY: TabsTranslateY}],
+          height: Dimensions.get('window').height
+        }}>
+
+        
+                <Tabs 
+                  style={{
+                      transform :[{transform:tabY}],
+                      zIndex:2,
+                      width:"100%",
+                  }}                
+                >
                     {/* First tab */}
-                    <View title={Strings.reward_tab_head1} style={{ flex: 1, backgroundColor: "white" }}>
+                    <View title={Strings.reward_tab_head1} style={{ flex: 1, backgroundColor: "white"}}>
+                    <Animated.ScrollView
+  q                     scrollEventThrottle={1}
+                        bounces={false}
+                        showsVerticalScrollIndicator={false}
+                        style={{zIndex: 0, height: "100%", elevation: -1}}
+                        onScroll={Animated.event(
+                            [{nativeEvent: {contentOffset: {y: this.state.scrollY}}}],
+                            {useNativeDriver: true},
+                        )}
+                        overScrollMode="never">
+                        
                         <FlatList
                             data={this.state.taskProgress}
+                            style={{flex:1,marginTop:0}}
                             extraData={this.state}
                             renderItem={({ item }) =>
                                 <View style={{ marginTop: 15, marginBottom: 15, marginLeft: 5, flexDirection: "column" }}>
                                     {commons.renderIf(!item.eligibleforcoin,
-                                        <View style={{}}>
-                                            <View style={{}}>
+                                        <View style={{flex:1}}>
+                                            <View style={{flex:0}}>
                                                 <View syle={{ flexDirection: "row" }}>
                                                     <Text allowFontScaling={false} style={{ fontSize: 17, color: "black" }}>{item.taskheading}</Text>
                                                 </View>
@@ -829,8 +862,21 @@ export default class Rewards extends Component {
                                 </View>
                             }>
                         </FlatList>
+                    <View style={{marginTop: Height * 0.40}}/>
+                        
+                        </Animated.ScrollView>
                     </View>
                     <View title={Strings.reward_tab_head2} style={{ flex: 1, backgroundColor: "white" }}>
+                    <Animated.ScrollView
+  q                     scrollEventThrottle={1}
+                        bounces={false}
+                        showsVerticalScrollIndicator={false}
+                        style={{zIndex: 0, height: "100%", elevation: -1}}
+                        onScroll={Animated.event(
+                            [{nativeEvent: {contentOffset: {y: this.state.scrollY}}}],
+                            {useNativeDriver: true},
+                        )}
+                        overScrollMode="never">
                         <FlatList
                             data={this.state.timeLine}
                             style={{ flex: 1, marginTop: 35 }}
@@ -846,9 +892,11 @@ export default class Rewards extends Component {
                                     </View>
                                 </View>}>
                         </FlatList>
+                        </Animated.ScrollView>
                     </View>
                 </Tabs>
-                </Animated.ScrollView>
+               
+                </Animated.View>
             </View >
         )
     }

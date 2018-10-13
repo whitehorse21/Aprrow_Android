@@ -587,6 +587,7 @@ export default class profile extends React.Component {
                   </View>
               </TouchableOpacity>
               <Text allowFontScaling={false} style={{fontSize: (Dimensions.get("window").width)*0.040,  color: 'black',alignSelf:'center'}}>{Strings.profilelogin_copy}</Text>
+              {/* <View style={{marginBottom:90, borderWidth:4}}/> */}
      </Animated.ScrollView>
 
               <Modal
@@ -682,7 +683,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fbfcfc"
   },
  
- outerView: {height:'8%',flexDirection: 'row',backgroundColor:'#ffffff',alignItems:'center'},
+ outerView: {height:'6%',flexDirection: 'row',backgroundColor:'#ffffff',alignItems:'center'},
  imageView: {width:'30%',height:70,backgroundColor:'#ffffff',marginTop: 2,justifyContent:'center'},
  imageS:{  alignSelf:'center',  marginTop: 1,  marginBottom: 1 },
  textView: {width:'70%',backgroundColor:'#ffffff',marginTop: 2},

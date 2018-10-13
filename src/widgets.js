@@ -159,7 +159,6 @@ export default class widgets extends Component {
   }
 
         onScrollonstax=(e)=>{
-            alert('fffff')
         }
 
       componentWillMount(){
@@ -1310,6 +1309,7 @@ async addStax(){
                    try
                    {
                     const responseJson=await resp.json();
+                    console.log(responseJson.widgets,"responseJson.widgets")
                     await commons.writelog(screen, "08_recieved stax update response", commons.gettimestamp_log())
                     var widgetData = responseJson.widgets;
                     await commons.writelog(screen, "09_reading stax update response", commons.gettimestamp_log())
@@ -1727,7 +1727,6 @@ async addStax(){
     async create_widgets() {
         this.mixpanelTrack("Create Stax");
         this.setState({ dialogWidgetName: false, loading: true });
-        //alert(this.props.navigation.state.params.item.id);
         var widget_id = await commons.getuuid();
         var time = commons.gettimestamp();
         var widget_name = this.state.Widget_name;
@@ -2759,11 +2758,30 @@ async mixpanelTrack(event)
                                             {commons.renderIf(item_main.WebView == 'flex' && item_main.mostusedwidget == 2 && this.state.appState=='active',
                                                 <View style={{ width: '100%', height: '100%', alignItems: 'center' }}>
                                                     <View style={{ width: '100%', height: this.state.FlatViewHeight }}>
-                                                        <ImageBackground style={{ width: '100%', height: '100%' }}
+                                                        <ImageBackground style={{ width: '100%', flex:1 }}
                                                             source={{ uri: item_main.backgroundpicture }}
                                                             imageStyle={{ resizeMode: 'cover' }
                                                             }>
-                                                            <FlatList style={{ flex: 1}}
+                                                            <Animated.ScrollView
+                                                                scrollEventThrottle={1}
+                                                                bounces={false}
+                                                                showsVerticalScrollIndicator={false}
+                                                                // style={{zIndex: 0, height: "100%", elevation: -1}}
+                                                                onScroll={Animated.event(
+                                                                    [{nativeEvent: {contentOffset: {y: this.scroll}}}],
+                                                                    {useNativeDriver: true,
+                                                                        listener:(e)=>{
+                                                                            // this.onScrollonstax(e)
+                                                                        }
+                                                                    
+                                                                    },
+                                                                    
+
+                                                                )
+                                                                }
+                                                                overScrollMode="never"
+                                                                >
+                                                            <FlatList style={{ flex: 1, marginTop:90}}
                                                                 data={item_main.applist}
                                                                 extraData={item_main}
                                                                 renderItem={({ item }) =>
@@ -2776,9 +2794,10 @@ async mixpanelTrack(event)
                                                                 }
                                                                 numColumns={item_main.mostusedwidget == 2 ? 2 : 4}
                                                             />
+                                                         </Animated.ScrollView> 
                                                         </ImageBackground>
                                                     </View>
-                                                       
+                                                       <View style={{marginTop:this.state.FlatViewHeight == '0%'?90:0}}/>
                                                     <View style={{zIndex:-1,width:'100%',height:17,borderBottomWidth:.5,borderBottomColor:'grey',justifyContent:'center',alignSelf:'center',alignItems:'center'}}>
                                                     {/* <Image style={{}} source={assetsConfig.iconExpandLessBlack} /> */}
                                                     <TouchableOpacity style={{ alignSelf: 'center', display: this.state.expandFeed }} onPress={async () => {
@@ -2787,7 +2806,7 @@ async mixpanelTrack(event)
                                                             <Image style={{width:20,height:15}} source={assetsConfig.shutter} />
                                                         </TouchableOpacity>
                                                         <TouchableOpacity style={{ alignSelf: 'center', display: this.state.compressFeed }} onPress={async () => {
-                                                            await this.setState({ WebViewHeight: '48%', FlatViewHeight: '47%', expandFeed: 'flex', compressFeed: 'none' });
+                                                            await this.setState({ WebViewHeight: '45%', FlatViewHeight: '47%', expandFeed: 'flex', compressFeed: 'none' });
                                                         }}>
                                                             <Image style={{width:20,height:15}} source={assetsConfig.shutter} />
                                                         </TouchableOpacity>
@@ -2824,7 +2843,7 @@ async mixpanelTrack(event)
                                                 </View>
                                             )
                                             }
-                                             <View style={{zIndex:1, position: 'absolute',justifyContent:'space-between', flexDirection: 'row',borderWidth:.5,borderColor:'grey', bottom: 0, height:'9%',marginBottom:6, width: '100%', display: item_main.WebView, backgroundColor: 'white', justifyContent: 'center' }}>
+                                             <View style={{zIndex:1, position: 'absolute',justifyContent:'space-between', flexDirection: 'row',borderWidth:.5,borderColor:'grey', bottom: 0, height:'9%',marginBottom:0, width: '100%', display: item_main.WebView, backgroundColor: 'white', justifyContent: 'center' }}>
                                             <View style={{justifyContent:"center",marginRight:10}}>
                                             <Image style={{width:45,height:17,borderRadius:5}} source={assetsConfig.liveicon} />
                                             </View>

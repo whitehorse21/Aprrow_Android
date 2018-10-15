@@ -99,15 +99,17 @@ export default class widgets extends Component {
             feedUrl:'',
             key: 1,
             value:null,active:false,miniHeight:30,release:false,
-            currentdeviceName:''
+            currentdeviceName:'',
+            scrollDone:false,
         }
         this.delete_stax = this.delete_stax.bind(this)
         // this.delete_stax = this.delete_stax.bind(this)
         this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
         this._animatedValue = new Animated.ValueXY()
         this._value = {x: 0, y: 0}
+        this._valuess = {x: 0, y: 0}
         this.headerY = Animated.multiply(Animated.diffClamp(this.scroll, 0, 65), -1);
-        
+        this.scroll.addListener((value)=> this._valuess = value);
         this._animatedValue.addListener((value) => this._value = value);
         this._panResponder = PanResponder.create({
             onMoveShouldSetResponderCapture: () => true,
@@ -162,13 +164,13 @@ export default class widgets extends Component {
         }
 
       componentWillMount(){
-        
       }
 
 
 
 
     componentWillReceiveProps(nextprops) {
+
     }
     async showdevicemanagment() {
         this.mixpanelTrack("Device");
@@ -2088,6 +2090,14 @@ async mixpanelTrack(event)
     offlineFunc() {
         this.setState({ offlineFlag: false }); 
     }
+    _onScrollEndDrag (event) {
+        console.log(event.nativeEvent.contentOffset.y,"dasdsadsadsadsadsadasdsadsadsadsadasd")
+        if (event.nativeEvent.contentOffset.y >= 65 ){
+            this.setState({scrollDone:true})
+        }else {
+            this.setState({scrollDone:false});
+        }
+    }
     render() {
         var windowProp = Dimensions.get('window');
         var winheight = windowProp.height;
@@ -2095,6 +2105,7 @@ async mixpanelTrack(event)
         var device_loop = [];
         var bubble = [];
         const { navigate } = this.props.navigation;
+        console.log(this.state.WebViewHeight,"WebViewHeight")
         return (
             <View style={{ flex: 1 }}>
                 <Dialog visible={this.state.offlineFlag}
@@ -2735,6 +2746,7 @@ async mixpanelTrack(event)
 
                                             )
                                             }
+                                            
                                             overScrollMode="never"
                                             >
                                                     <FlatList style={{ flex: 1,marginTop:90}}
@@ -2765,6 +2777,7 @@ async mixpanelTrack(event)
                                                             <Animated.ScrollView
                                                                 scrollEventThrottle={1}
                                                                 bounces={false}
+                                                                onScrollEndDrag={(event)=>{this._onScrollEndDrag(event)}}
                                                                 showsVerticalScrollIndicator={false}
                                                                 // style={{zIndex: 0, height: "100%", elevation: -1}}
                                                                 onScroll={Animated.event(
@@ -2797,11 +2810,11 @@ async mixpanelTrack(event)
                                                          </Animated.ScrollView> 
                                                         </ImageBackground>
                                                     </View>
-                                                       <View style={{marginTop:this.state.FlatViewHeight == '0%'?90:0}}/>
+                                                       <View style={{marginTop:this.state.FlatViewHeight == '0%'?this.state.scrollDone?35:90:0}}/>
                                                     <View style={{zIndex:-1,width:'100%',height:17,borderBottomWidth:.5,borderBottomColor:'grey',justifyContent:'center',alignSelf:'center',alignItems:'center'}}>
                                                     {/* <Image style={{}} source={assetsConfig.iconExpandLessBlack} /> */}
                                                     <TouchableOpacity style={{ alignSelf: 'center', display: this.state.expandFeed }} onPress={async () => {
-                                                            await this.setState({ WebViewHeight: '95%', FlatViewHeight: '0%', expandFeed: 'none', compressFeed: 'flex' })
+                                                            await this.setState({ WebViewHeight: '100%', FlatViewHeight: '0%', expandFeed: 'none', compressFeed: 'flex' })
                                                         }}>
                                                             <Image style={{width:20,height:15}} source={assetsConfig.shutter} />
                                                         </TouchableOpacity>
@@ -2815,7 +2828,7 @@ async mixpanelTrack(event)
                                                     <Image style={{width:95,height:30}} source={assetsConfig.donatehand} />
                                                     </View>
 
-                                                    <View style={ {zIndex:-1, width: '100%', height: '95%', height:this.state.WebViewHeight, }}
+                                                    <View style={ {zIndex:-1, width: '100%', height: '100%', height:this.state.WebViewHeight, }}
             
                                                     >
 

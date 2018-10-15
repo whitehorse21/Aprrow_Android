@@ -95,6 +95,6 @@
     <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
     <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
-    <meta-data android:name="com.bugsnag.android.BUILD_UUID" android:value="97bb6595-d1e4-4d1b-8230-27cd53d16b66"/>
+    <meta-data android:name="com.bugsnag.android.BUILD_UUID" android:value="4e0858e2-307d-40c2-b5c4-a94e4a204f86"/>
   </application>
 </manifest>

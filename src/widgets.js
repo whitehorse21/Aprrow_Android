@@ -150,6 +150,17 @@ export default class widgets extends Component {
      
           });
     }
+
+    renderSeparator = () => (
+        <View
+          style={{
+            height:100,
+            marginLeft:100,
+            backgroundColor:'red'
+          }}
+        />
+      );
+
     resetWebViewToInitialUrl = () => {
         this.setState({
           key: this.state.key + 1,
@@ -2702,8 +2713,9 @@ async mixpanelTrack(event)
                                                         <Image style={widgets_style.box_view_bar_icon} source={assetsConfig.settingIconbar} />
                                                     </View>
                                                 </Touch>
+                                                
                                                     <View style={{ width: '80%' }}>
-                                                        <Text allowFontScaling={false} style={widgets_style.box_view_bar_text}>{item_main.widgetname=="Most Frequent"?Strings.mostfrequent_stax:item_main.widgetname}</Text>
+                                                        <Text allowFontScaling={false} style={widgets_style.box_view_bar_text}> {item_main.widgetname=="Most Frequent"?Strings.mostfrequent_stax:item_main.widgetname} </Text>
                                                     </View>
                                                     <TouchableOpacity style={{ width: '15%', alignSelf: 'center' }} onPress={()=>{this.sharewidget()}}
                                                         
@@ -2729,6 +2741,47 @@ async mixpanelTrack(event)
                                                     source={{ uri: item_main.backgroundpicture }}
                                                     imageStyle={{ resizeMode: 'cover' }
                                                                                         }>
+                                                   {item_main.widgetname ==('New York City') &&
+                                                   <View style={{height:deviceHeight-100}} >
+                                                   <Animated.ScrollView
+                                                   contentContainerStyle={{flex:0}}
+                                                   scrollEventThrottle={1}
+                                                   bounces={false}
+                                                   style={{flex:0}}
+                                                   showsVerticalScrollIndicator={false}
+                                                   onScroll={Animated.event(
+                                                       [{nativeEvent: {contentOffset: {y: this.scroll}}}],
+                                                       {useNativeDriver: true,
+                                                           listener:(e)=>{
+                                                           }
+                                                       
+                                                       },
+                                                       
+       
+                                                   )
+                                                   }
+                                                   
+                                                   overScrollMode="never"
+                                                   >
+                                                   <View style={{flex:1}}>
+                                                                  <FlatList
+                                                                data={item_main.applist}
+                                                                extraData={item_main}
+                                                                style={{marginTop:90}}
+                                                                renderItem={({ item }) =>
+                                                                    <TouchableOpacity onPress={() => this.luanchapp(item.package)} style={{ flexDirection: 'column', marginTop: '6%', alignItems: 'center', }}>
+                                                                        <View key={item.key} style={{flex:1,marginLeft:20,marginRight:180}} >
+                                                                            <Image style={{ alignSelf: "center", width: 50, height: 50 }} source={{ uri: item.icon }} />
+                                                                            <Text allowFontScaling={false} style={{marginTop: 1, marginLeft: 2,width: 60,fontFamily:'Roboto', fontSize: 12, textAlign: 'center', color: item_main.fontcolor }} >{item.appname}</Text>
+                                                                        </View>
+                                                                    </ TouchableOpacity>
+                                                                }
+                                                                numColumns={2} 
+                                                   /> 
+                                                   </View>
+                                                    </Animated.ScrollView>  
+                                                    </View>
+                                                    }
                                             <Animated.ScrollView
                                             scrollEventThrottle={1}
                                             bounces={false}
@@ -2738,7 +2791,7 @@ async mixpanelTrack(event)
                                                 [{nativeEvent: {contentOffset: {y: this.scroll}}}],
                                                 {useNativeDriver: true,
                                                     listener:(e)=>{
-                                                        // this.onScrollonstax(e)
+                                                 
                                                     }
                                                 
                                                 },
@@ -2756,7 +2809,7 @@ async mixpanelTrack(event)
                                                             <TouchableOpacity onPress={() => this.luanchapp(item.package)} style={{ flexDirection: 'column', marginTop: '6%', alignItems: 'center', flex: item_main.mostusedwidget == 2 ? .5 : .25, marginLeft:((Object.keys(item_main.applist).length)-1==item.key && item.key % 2 == 0 && item_main.mostusedwidget == 2) ? '-15%' : item.key % 2 == 0 && item_main.mostusedwidget == 2 ? '-22%':0, marginRight: item.key % 2 != 0 && item_main.mostusedwidget == 2 ? '-22%' : 0 }}>
                                                                 <View key={item.key} style={{}}>
                                                                     <Image style={{ alignSelf: "center", width: 50, height: 50 }} source={{ uri: item.icon }} />
-                                                                    <Text  allowFontScaling={false} style={{   marginTop: 1, marginLeft: 2,width: 77, fontFamily:'Roboto', fontSize: 12, textAlign: 'center', color: item_main.fontcolor }}  >{item.appname}</Text>{/* numberOfLines={2} */}
+                                                                    <Text  allowFontScaling={false} style={{   marginTop: 1, marginLeft: 2,width: 77, fontFamily:'Roboto', fontSize: 12, textAlign: 'center', color: item_main.fontcolor }}  >{item.appname}</Text>
                                                                 </View>
                                                             </ TouchableOpacity>
                                                         }
@@ -2764,7 +2817,7 @@ async mixpanelTrack(event)
                                                     />
                                                  </Animated.ScrollView>
                                                     </ImageBackground>
-                                                    // </View>
+                                    
                                                 )
                                                     }
                                             {commons.renderIf(item_main.WebView == 'flex' && item_main.mostusedwidget == 2 && this.state.appState=='active',
@@ -2774,6 +2827,7 @@ async mixpanelTrack(event)
                                                             source={{ uri: item_main.backgroundpicture }}
                                                             imageStyle={{ resizeMode: 'cover' }
                                                             }>
+                                                           
                                                             <Animated.ScrollView
                                                                 scrollEventThrottle={1}
                                                                 bounces={false}
@@ -2788,7 +2842,6 @@ async mixpanelTrack(event)
                                                                         }
                                                                     
                                                                     },
-                                                                    
 
                                                                 )
                                                                 }

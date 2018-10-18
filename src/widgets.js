@@ -2741,7 +2741,7 @@ async mixpanelTrack(event)
                                                     source={{ uri: item_main.backgroundpicture }}
                                                     imageStyle={{ resizeMode: 'cover' }
                                                                                         }>
-                                                   {item_main.widgetname ==('New York City') &&
+                                                   {/* {item_main.widgetname ==('New York City') && */}
                                                    <View style={{height:deviceHeight-100}} >
                                                    <Animated.ScrollView
                                                    contentContainerStyle={{flex:0}}
@@ -2770,18 +2770,17 @@ async mixpanelTrack(event)
                                                                 style={{marginTop:90}}
                                                                 renderItem={({ item }) =>
                                                                     <TouchableOpacity onPress={() => this.luanchapp(item.package)} style={{ flexDirection: 'column', marginTop: '6%', alignItems: 'center', }}>
-                                                                        <View key={item.key} style={{flex:1,marginLeft:20,marginRight:180}} >
+                                                                        <View key={item.key} style={{flex:1,marginLeft:item_main.mostusedwidget == 2 ? 10 : 8.7,marginRight:item_main.mostusedwidget == 2 ? 170 : null}} >
                                                                             <Image style={{ alignSelf: "center", width: 50, height: 50 }} source={{ uri: item.icon }} />
-                                                                            <Text allowFontScaling={false} style={{marginTop: 1, marginLeft: 2,width: 60,fontFamily:'Roboto', fontSize: 12, textAlign: 'center', color: item_main.fontcolor }} >{item.appname}</Text>
+                                                                            <Text allowFontScaling={false} style={{marginTop: 1, marginLeft: 2,width: 77,fontFamily:'Roboto', fontSize: 12, textAlign: 'center', color: item_main.fontcolor }} >{item.appname}</Text>
                                                                         </View>
                                                                     </ TouchableOpacity>
                                                                 }
-                                                                numColumns={2} 
+                                                                numColumns={item_main.mostusedwidget == 2 ? 2 : 4}
                                                    /> 
                                                    </View>
                                                     </Animated.ScrollView>  
                                                     </View>
-                                                    }
                                             <Animated.ScrollView
                                             scrollEventThrottle={1}
                                             bounces={false}
